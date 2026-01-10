@@ -1,0 +1,41 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-label="GitHub repositories clone history">
+<style>
+  .card { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .title { font-weight:700; font-size:16px; fill:#0b1220; }
+  .muted { font-size:12px; fill:#6b7280; }
+  .axis { font-size:11px; fill:#6b7280; }
+  .line { fill:none; stroke-width:2; }
+  @media (prefers-color-scheme: dark) {
+    .title, .muted, .axis { fill: #ffffff; }
+  }
+</style>
+<rect x="0" y="0" width="900" height="360" fill="transparent" />
+<text x="18" y="30" class="title card">Clone history (snapshots): HelixCipher</text>
+<text x="18" y="48" class="muted card">Note: history builds over runs. More runs = better monthly/yearly charts.</text>
+
+
+  <!-- axes -->
+  <line x1="80" y1="64" x2="80" y2="312" stroke="#e6eaf2"/>
+  <line x1="80" y1="312" x2="860" y2="312" stroke="#e6eaf2"/>
+  
+    <polyline points="80,64 185,64 266,64 345,64 860,64" class="line" style="stroke:#1f6feb;"/>
+    <text x="86" y="78" class="axis" style="fill:#1f6feb">gif-maker (latest 79)</text>
+  
+    <polyline points="80,176 185,176 266,176 345,176 860,176" class="line" style="stroke:#16a34a;"/>
+    <text x="86" y="92" class="axis" style="fill:#16a34a">HelixCipher (latest 46)</text>
+  
+    <polyline points="80,291 185,291 266,291 345,291 860,291" class="line" style="stroke:#f97316;"/>
+    <text x="86" y="106" class="axis" style="fill:#f97316">one-persons-feature-is-another-persons-exploit (latest 12)</text>
+  
+    <polyline points="80,295 185,295 266,295 345,295 860,295" class="line" style="stroke:#e11d48;"/>
+    <text x="86" y="120" class="axis" style="fill:#e11d48">clone-sweeper (latest 11)</text>
+  
+    <polyline points="80,301 185,301 266,301 345,301 860,301" class="line" style="stroke:#a78bfa;"/>
+    <text x="86" y="134" class="axis" style="fill:#a78bfa">Dynamic-webscraper-WIP- (latest 9)</text>
+  
+    <polyline points="80,312 185,312 266,312 345,312 860,312" class="line" style="stroke:#06b6d4;"/>
+    <text x="86" y="148" class="axis" style="fill:#06b6d4">ai-agent (latest 6)</text>
+  
+
+</svg>
