@@ -2,30 +2,17 @@
 """
 clone_sweeper.py
 
-Generates REPO_CLONES.svg (full table) and stats.svg (summary card) for a GitHub owner.
+Enhanced: renders SVGs using Jinja2 templates, persists per-repo history snapshots,
+and produces three artifacts:
 
-Defaults / behaviour summary:
- - By default only public repositories are processed. To include private repos set:
-       export INCLUDE_PRIVATE=true
-   or pass CLI flag:
-       python clone_sweeper.py --include-private
- - The Personal Access Token (PAT) environment variable name defaults to `TOKEN`.
-   You can change that at runtime with `--token-env`.
- - The script can auto-detect the owner from:
-     1) --owner CLI arg
-     2) GITHUB_REPOSITORY env var (set when running in GitHub Actions)
-     3) the authenticated user returned by the PAT (/user)
-     4) git remote 'origin' URL when running inside a cloned repo
- - Outputs:
-     - REPO_CLONES.svg -> full table with columns similar to the old markdown table
-     - stats.svg        -> compact summary card with top-N repos and a small bar chart
- - When called with --push the script will `git add` + `git commit` + `git push` the generated SVGs.
+ - stats.svg        (summary card — top-N repos by clones)
+ - REPO_CLONES.svg  (full tabular SVG)
+ - history.svg      (trend charts derived from persisted snapshots)
 
-This file intentionally prioritizes readability and defensive handling:
- - All external strings are escaped before embedding in XML/SVG using escape_xml()
- - The script sleeps 0.12s between per-repo API calls to avoid hitting API bursts.
- - Git commit/push uses the repo remote and temporarily rewrites the origin URL to include the PAT
-   for CI environments where `persist-credentials: false` is used.
+Behavior notes:
+ - By default only public repos are processed. Use INCLUDE_PRIVATE env or --include-private to opt-in.
+ - PAT environment variable name defaults to TOKEN (override with --token-env).
+ - For more information read README.md
 """
 import os
 import sys
@@ -34,9 +21,11 @@ import datetime
 import requests
 import time
 import subprocess
-from typing import Optional, List, Dict, Any
+from typing import Optional, List, Dict, Any, Tuple
 from urllib.parse import urlparse
 import re
+import sqlite3
+from jinja2 import Template
 
 # Base GitHub API constants
 API_BASE = "https://api.github.com"
@@ -65,6 +54,10 @@ def escape_xml(s: Optional[str]) -> str:
              .replace(">", "&gt;")
              .replace('"', "&quot;")
              .replace("'", "&apos;"))
+
+def ensure_dir(path: str):
+    if not os.path.exists(path):
+        os.makedirs(path, exist_ok=True)
 
 # ---------------------------
 # HTTP helpers
@@ -145,10 +138,6 @@ def get_authenticated_username(token: Optional[str]) -> Optional[str]:
     return None
 
 def owner_from_github_repository_env() -> Optional[str]:
-    """
-    When running inside GitHub Actions the environment variable GITHUB_REPOSITORY is available
-    in the format "owner/repo". Extract and return the owner portion.
-    """
     repo = os.environ.get("GITHUB_REPOSITORY")
     if repo and "/" in repo:
         return repo.split("/", 1)[0]
@@ -263,130 +252,352 @@ def fetch_clone_stats(owner: str, repo_name: str, token: Optional[str]) -> Dict[
         return {"count": None, "uniques": None}
 
 # ---------------------------
+# History persistence (SQLite)
+# ---------------------------
+DB_PATH = "history.db"
+
+def init_db():
+    """
+    Initialize the SQLite database and create the repo_clones table if it doesn't exist.
+    """
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS repo_clones (
+            repo_name TEXT NOT NULL,
+            day TEXT NOT NULL,
+            clone_count INTEGER,
+            unique_clones INTEGER,
+            PRIMARY KEY (repo_name, day)
+        )
+    """)
+    conn.commit()
+    conn.close()
+
+def upsert_clone_data(repo_name: str, day: str, clone_count: Optional[int], unique_clones: Optional[int]):
+    """
+    Insert or update clone data for a specific repo and day.
+    Uses INSERT OR REPLACE to handle existing records.
+    """
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("""
+        INSERT OR REPLACE INTO repo_clones (repo_name, day, clone_count, unique_clones)
+        VALUES (?, ?, ?, ?)
+    """, (repo_name, day, clone_count, unique_clones))
+    conn.commit()
+    conn.close()
+
+def remove_missing_repos(current_repos: List[str]):
+    """
+    Remove data for repos that no longer exist in the current repo list.
+    This handles the case where a repo is deleted or removed from the owner's account.
+    """
+    if not current_repos:
+        return
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    placeholders = ','.join('?' * len(current_repos))
+    cursor.execute(f"""
+        DELETE FROM repo_clones
+        WHERE repo_name NOT IN ({placeholders})
+    """, current_repos)
+    conn.commit()
+    conn.close()
+
+def read_history_from_db(repo_name: str) -> List[Tuple[datetime.datetime, Optional[int], Optional[int]]]:
+    """
+    Read history from database for a specific repo.
+    Returns list of (datetime, clone_count_or_None, unique_count_or_None) sorted ascending.
+    """
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT day, clone_count, unique_clones
+        FROM repo_clones
+        WHERE repo_name = ?
+        ORDER BY day ASC
+    """, (repo_name,))
+    rows = []
+    for day_str, clone_count, unique_clones in cursor.fetchall():
+        try:
+            dt = datetime.datetime.fromisoformat(day_str)
+            rows.append((dt, clone_count, unique_clones))
+        except Exception:
+            continue
+    conn.close()
+    return rows
+
+
+# ---------------------------
+# Jinja2 templates (embedded)
+# ---------------------------
+SUMMARY_SVG_TEMPLATE = """
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ width }}" height="{{ height }}" viewBox="0 0 {{ width }} {{ height }}" role="img" aria-label="GitHub repository clone statistics">
+<style>
+  .card  { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .title { font-weight: 700; font-size: 18px; fill: #0b1220; }
+  .meta  { font-weight: 400; font-size: 12px; fill: #374151; opacity: 0.95; }
+  .label { font-weight: 600; font-size: 12px; fill: #0b1220; }
+  .count { font-weight: 700; font-size: 12px; fill: #0b1220; text-anchor: start; }
+  .count-small { font-weight: 600; font-size: 11px; fill:#6b7280; text-anchor: start; }
+
+  .bar-clone { fill: #1f6feb; rx:6; }
+  .bar-uniq  { fill: #06b6d4; rx:6; }
+  .bar-comb  { fill: #16a34a; rx:6; }
+
+  .bar-bg { fill: #e5e7eb; rx:6; }
+  @media (prefers-color-scheme: dark) {
+    .title, .meta, .label, .count, .count-small { fill: #ffffff; }
+    .meta, .count-small { opacity: 0.9; }
+  }
+</style>
+
+<rect x="0" y="0" width="{{ width }}" height="{{ height }}" rx="12" fill="transparent"/>
+<text x="18" y="34" class="title card">GitHub repos — {{ owner|e }}</text>
+<text x="18" y="54" class="meta card">Total repos: {{ total_repos }} · Clones: {{ total_clones }} · Unique Clones: {{ total_uniques }} · Total reported clones: {{ total_combined }} · {{ mode_note }}</text>
+
+{% set base_y = 90 %}
+{% for row in rows %}
+  {% set block_top = base_y + loop.index0 * per_block_h %}
+  <!-- repository label -->
+  <text x="18" y="{{ block_top }}" class="label card">{{ row.name|e }}</text>
+
+  <!-- CLONES bar (top) -->
+  <rect x="{{ bar_x }}" y="{{ block_top + 14 }}" width="{{ bar_max_width }}" height="{{ bar_h }}" class="bar-bg"/>
+  <rect x="{{ bar_x }}" y="{{ block_top + 14 }}" width="{{ row.bar_w_clone }}" height="{{ bar_h }}" class="bar-clone"/>
+  <text x="{{ bar_x + bar_max_width + 12 }}" y="{{ block_top + 14 + 12 }}" class="count card">{{ row.clone_label|e }}</text>
+
+  <!-- UNIQUES bar (middle) -->
+  <rect x="{{ bar_x }}" y="{{ block_top + 14 + (bar_h + bar_gap) }}" width="{{ bar_max_width }}" height="{{ bar_h }}" class="bar-bg"/>
+  <rect x="{{ bar_x }}" y="{{ block_top + 14 + (bar_h + bar_gap) }}" width="{{ row.bar_w_uniq }}" height="{{ bar_h }}" class="bar-uniq"/>
+  <text x="{{ bar_x + bar_max_width + 12 }}" y="{{ block_top + 14 + (bar_h + bar_gap) + 12 }}" class="count-small card">{{ row.uniq_label|e }}</text>
+
+  <!-- COMBINED bar (bottom) -->
+  <rect x="{{ bar_x }}" y="{{ block_top + 14 + 2*(bar_h + bar_gap) }}" width="{{ bar_max_width }}" height="{{ bar_h }}" class="bar-bg"/>
+  <rect x="{{ bar_x }}" y="{{ block_top + 14 + 2*(bar_h + bar_gap) }}" width="{{ row.bar_w_comb }}" height="{{ bar_h }}" class="bar-comb"/>
+  <text x="{{ bar_x + bar_max_width + 12 }}" y="{{ block_top + 14 + 2*(bar_h + bar_gap) + 12 }}" class="count card">{{ row.comb_label|e }}</text>
+{% endfor %}
+
+</svg>
+"""
+
+TABLE_SVG_TEMPLATE = """
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ table_w }}" height="{{ svg_h }}" viewBox="0 0 {{ table_w }} {{ svg_h }}" role="img" aria-label="GitHub repository clones table">
+<style>
+  .card { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .title { font-weight:700; font-size:16px; fill: #0b1220; }
+  .meta  { font-size:12px; fill:#374151; opacity:0.9; }
+  .th    { font-size:12px; font-weight:700; fill:#0b1220; }
+  .td    { font-size:12px; fill:#0b1220; }
+  .muted { font-size:11px; fill:#6b7280; }
+  .row-even { fill: #ffffff; }
+  .row-odd  { fill: #f8fafc; }
+  .table-border { stroke: #e6eaf2; stroke-width: 1; fill: none; }
+  @media (prefers-color-scheme: dark) {
+    .title, .meta, .th, .td, .muted { fill: #ffffff; }
+    .row-even { fill: #0b1220; }
+    .row-odd  { fill: #071026; }
+    .table-border { stroke: #0f172a; }
+  }
+</style>
+<text x="{{ padding }}" y="{{ padding + 14 }}" class="title card">GitHub repositories — {{ owner|e }}</text>
+<text x="{{ padding }}" y="{{ padding + 32 }}" class="meta card">Generated: {{ generated_at }} · Mode: {{ mode_note }} · Total repos: {{ total_repos }} · Total clones (sum of visible): {{ total_clones }}</text>
+<rect x="{{ tbl_x }}" y="{{ tbl_y }}" width="{{ tbl_w }}" height="{{ tbl_h }}" rx="8" class="row-even"/>
+<rect x="{{ tbl_x }}" y="{{ tbl_y }}" width="{{ tbl_w }}" height="{{ tbl_h }}" class="table-border"/>
+{% for col in cols %}
+  <text x="{{ col.x }}" y="{{ header_y }}" class="th card">{{ col.hdr }}</text>
+{% endfor %}
+<line x1="{{ tbl_x }}" y1="{{ sep_y }}" x2="{{ tbl_x + tbl_w }}" y2="{{ sep_y }}" stroke="#e6eaf2" />
+{% for r in rows %}
+  {% set i = loop.index0 %}
+  <rect x="{{ tbl_x }}" y="{{ tbl_y + row_top_offset + i*row_h }}" width="{{ tbl_w }}" height="{{ row_h }}" class="{{ 'row-even' if (i%2==0) else 'row-odd' }}" opacity="0.95"/>
+  {% for col in cols %}
+    {% set val = r[col.key] %}
+    {% if col.key == 'name' %}
+      <text x="{{ col.x }}" y="{{ tbl_y + row_top_offset + i*row_h + 16 }}" class="td card">{{ val|e }}</text>
+    {% elif col.key == 'description' %}
+      {% set lines = r['_desc_lines'] %}
+      {% if lines|length == 0 %}
+        <text x="{{ col.x }}" y="{{ tbl_y + row_top_offset + i*row_h + 16 }}" class="muted card">-</text>
+      {% else %}
+        <text x="{{ col.x }}" y="{{ tbl_y + row_top_offset + i*row_h + 14 }}" class="td card">{{ lines[0]|e }}</text>
+        {% if lines|length > 1 %}
+          <text x="{{ col.x }}" y="{{ tbl_y + row_top_offset + i*row_h + 28 }}" class="td card">{{ lines[1]|e }}</text>
+        {% endif %}
+      {% endif %}
+    {% else %}
+      <text x="{{ col.x }}" y="{{ tbl_y + row_top_offset + i*row_h + 16 }}" class="td card">{{ val|e }}</text>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+<text x="{{ padding }}" y="{{ footer_y }}" class="muted card">{{ footer_note }}</text>
+</svg>
+"""
+
+HISTORY_SVG_TEMPLATE = """
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ width }}" height="{{ height }}" viewBox="0 0 {{ width }} {{ height }}" role="img" aria-label="GitHub repositories clone history">
+<style>
+  .card { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .title { font-weight:700; font-size:16px; fill:#0b1220; }
+  .muted { font-size:12px; fill:#6b7280; }
+  .axis { font-size:11px; fill:#6b7280; }
+  .line { fill:none; stroke-width:2; }
+  @media (prefers-color-scheme: dark) {
+    .title, .muted, .axis { fill: #ffffff; }
+  }
+</style>
+<rect x="0" y="0" width="{{ width }}" height="{{ height }}" fill="transparent" />
+<text x="18" y="30" class="title card">Clone history (snapshots): {{ owner|e }}</text>
+<text x="18" y="48" class="muted card">Note: history builds over runs. More runs = better monthly/yearly charts.</text>
+
+{% if series %}
+  <!-- axes -->
+  <line x1="{{ margin_left }}" y1="{{ margin_top }}" x2="{{ margin_left }}" y2="{{ margin_top + plot_h }}" stroke="#e6eaf2"/>
+  <line x1="{{ margin_left }}" y1="{{ margin_top + plot_h }}" x2="{{ margin_left + plot_w }}" y2="{{ margin_top + plot_h }}" stroke="#e6eaf2"/>
+  {% for s in series %}
+    <polyline points="{{ s.points }}" class="line" style="stroke:{{ s.color }};"/>
+    <text x="{{ margin_left + 6 }}" y="{{ margin_top + 14 + loop.index0 * 14 }}" class="axis" style="fill:{{ s.color }}">{{ s.label|e }}</text>
+  {% endfor %}
+{% else %}
+  <text x="18" y="{{ margin_top + 20 }}" class="muted card">No history data yet. Run the action or script with --push repeatedly to collect snapshots.</text>
+{% endif %}
+</svg>
+"""
+
+# ---------------------------
+# Rendering helpers
+# ---------------------------
+def render_template(template_str: str, ctx: dict) -> str:
+    tpl = Template(template_str)
+    return tpl.render(**ctx)
+
+# ---------------------------
 # Outputs - summary SVG (stats.svg)
 # ---------------------------
-def generate_svg(owner: str, repo_rows: List[Dict[str, Any]], include_private: bool,
-                 out_path="stats.svg", top_n=6):
+def generate_summary_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]],
+                               include_private: bool, out_path="stats.svg", top_n=6):
     """
-    Create a compact summary SVG (stats.svg) that shows top_n repositories by clone_count.
+    Render summary card with three stacked bar metrics per repo:
+      - top bar: total clones (clone_count)
+      - middle bar: unique cloners (clone_uniques)
+      - bottom bar: combined (clone_count + clone_uniques)
 
-    The summary SVG includes:
-      - title and meta line (total repos, reported clones, mode)
-      - a simple horizontal bar chart for top_n repos
-      - counts drawn to the right of the bars (avoids contrast issues)
-
-    Layout decisions:
-      - Column sizing is computed with conservative char->px approximations so labels don't overlap bars.
-      - Colors and @media (prefers-color-scheme: dark) rules are used so text adapts to light/dark themes.
+    Each metric uses its own scale (max per metric) so short/long metrics are visible.
+    Counts are rendered to the right of each bar. Missing values (None) are shown as 'N/A'.
     """
+    # totals for header
     total_clones = sum((r.get("clone_count") or 0) for r in repo_rows)
+    total_uniques = sum((r.get("clone_uniques") or 0) for r in repo_rows)
+    total_combined = sum(((r.get("clone_count") or 0) + (r.get("clone_uniques") or 0)) for r in repo_rows)
     total_repos = len(repo_rows)
 
     # Sort repos by clone_count (descending) and take the top_n for the chart
     rows_sorted = sorted(repo_rows, key=lambda x: (x.get("clone_count") or 0), reverse=True)
     chart_rows = rows_sorted[:top_n]
 
-    # Layout parameters (tweak these if you want different sizing)
+    # sizing heuristics
     padding = 18
-    title_h = 52
-    row_h = 30
-
-    # Approximate character width (px) used to estimate column widths
     CHAR_PX = 7.5
-    min_name_col = 120
-    max_name_col = 420
-    min_bar_area = 220
-    right_margin_for_counts = 18
+    bar_h = 18
+    bar_gap = 8
 
-    def safe_label(name: str) -> str:
-        """
-        Truncate long repo names for display purposes in the compact card.
-        """
-        return name if len(name) <= 48 else name[:45] + "…"
-
-    # Compute the name column width based on longest label we will render
-    labels = [safe_label(r.get("name") or "") for r in chart_rows]
+    # compute label width requirement
+    labels = [r.get("name") or "" for r in chart_rows]
     max_label_chars = max((len(l) for l in labels), default=0)
-    name_col_width = int(max(min_name_col, min(max_label_chars * CHAR_PX + 10, max_name_col)))
+    name_col_width = int(max(120, min(max_label_chars * CHAR_PX + 10, 420)))
 
-    # Compute the width needed to render counts (right-hand side)
-    counts = [str(r.get("clone_count") or 0) for r in chart_rows]
-    max_count_chars = max((len(c) for c in counts), default=1)
-    count_text_w = int(max(48, max_count_chars * CHAR_PX + 8))
+    # Build textual labels for counts (for sizing)
+    clone_labels = []
+    uniq_labels = []
+    comb_labels = []
+    for r in chart_rows:
+        c = r.get("clone_count")
+        u = r.get("clone_uniques")
+        cstr = "N/A" if c is None else str(c)
+        ustr = "N/A" if u is None else str(u)
+        comb = None
+        if c is None and u is None:
+            comb_label = "N/A"
+        else:
+            # treat missing as 0 for combined label if one present
+            comb_val = (c or 0) + (u or 0)
+            comb_label = str(comb_val)
+        clone_labels.append(cstr)
+        uniq_labels.append(ustr)
+        comb_labels.append(comb_label)
 
-    # Compute canvas width iteratively to allow a reasonable bar area
-    width = max(760, padding * 3 + name_col_width + min_bar_area + count_text_w + right_margin_for_counts)
-    for _ in range(3):
-        bar_x = padding + name_col_width + 12
-        bar_max_width = width - bar_x - padding - count_text_w - right_margin_for_counts
-        if bar_max_width < 80:
-            # Expand the canvas if bar area is too small
-            width += (120 - bar_max_width)
-            continue
-        required_width = padding * 3 + name_col_width + max(min_bar_area, bar_max_width) + count_text_w + right_margin_for_counts
-        if required_width > width:
-            width = required_width
-            continue
-        break
+    all_count_labels = clone_labels + uniq_labels + comb_labels
+    max_count_chars = max((len(s) for s in all_count_labels), default=1)
+    count_text_w = int(max(64, max_count_chars * CHAR_PX + 12))
 
-    # Compute canvas height: vertical space for header + rows + padding
-    height = title_h + padding + row_h * max(len(chart_rows), 1) + padding
-    # Avoid divide-by-zero when no clone counts are present
-    max_val = max((r.get("clone_count") or 0) for r in chart_rows) or 1
-
-    # Begin building SVG as a list of strings for efficient concatenation
-    svg = []
-    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{int(width)}" height="{int(height)}" viewBox="0 0 {int(width)} {int(height)}" role="img" aria-label="GitHub repository clone statistics">')
-    svg.append("""
-<style>
-  .card  { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-  .title { font-weight: 700; font-size: 18px; fill: #0b1220; }
-  .meta  { font-weight: 400; font-size: 12px; fill: #374151; opacity: 0.95; }
-  .label { font-weight: 500; font-size: 12px; fill: #0b1220; }
-  .count { font-weight: 700; font-size: 12px; fill: #0b1220; }
-  @media (prefers-color-scheme: dark) {
-    .title, .meta, .label, .count { fill: #ffffff; }
-    .meta { opacity: 0.9; }
-  }
-</style>
-""")
-    # Transparent background: GitHub will show it against the page background
-    svg.append(f'<rect x="0" y="0" width="{int(width)}" height="{int(height)}" rx="12" fill="transparent"/>')
-    svg.append(f'<text x="{padding}" y="{padding + 16}" class="title card">GitHub repos — {escape_xml(owner)}</text>')
-    svg.append(f'<text x="{padding}" y="{padding + 36}" class="meta card">Total repos: {total_repos} · Total reported clones: {total_clones} · {"Includes private repos" if include_private else "Public repos only"}</text>')
-
-    # Chart drawing area origin
-    y_start = padding + title_h
+    # canvas width computation
+    width = max(820, padding * 3 + name_col_width + 220 + count_text_w + 18)
     bar_x = padding + name_col_width + 12
-    bar_max_width = width - bar_x - padding - count_text_w - right_margin_for_counts
+    bar_max_width = int(width - bar_x - padding - count_text_w - 18)
 
-    # Draw each chart row: name | bar background | bar foreground | right-hand count
-    for i, r in enumerate(chart_rows):
-        y = y_start + i * row_h
-        name = escape_xml(safe_label(r.get("name") or ""))
-        count = r.get("clone_count") or 0
-        bar_w = int((count / max_val) * bar_max_width) if max_val else 0
+    # per-repo block height and total height
+    per_block_h = int(12 + 3*bar_h + 2*bar_gap)  # label + three bars + gaps
+    height = 90 + len(chart_rows) * per_block_h
 
-        svg.append(f'<text x="{padding}" y="{y + 18}" class="label card">{name}</text>')
-        svg.append(f'<rect x="{bar_x}" y="{y + 4}" width="{int(bar_max_width)}" height="18" rx="6" fill="#e5e7eb"/>')
-        svg.append(f'<rect x="{bar_x}" y="{y + 4}" width="{int(bar_w)}" height="18" rx="6" fill="#1f6feb"/>')
-        count_x = bar_x + int(bar_max_width) + 10
-        svg.append(f'<text x="{int(count_x)}" y="{y + 18}" class="count card">{count}</text>')
+    # compute per-metric maxima (avoid zero)
+    max_clones = max((r.get("clone_count") or 0) for r in chart_rows) or 1
+    max_uniques = max((r.get("clone_uniques") or 0) for r in chart_rows) or 1
+    max_comb = max(((r.get("clone_count") or 0) + (r.get("clone_uniques") or 0)) for r in chart_rows) or 1
 
-    svg.append("</svg>")
+    # build rows with scaled bar widths and labels
+    rows_for_template = []
+    for r, clab, ulab, comblab in zip(chart_rows, clone_labels, uniq_labels, comb_labels):
+        c = r.get("clone_count")
+        u = r.get("clone_uniques")
+        cval = 0 if c is None else int(c)
+        uval = 0 if u is None else int(u)
+        comb_val = cval + uval
 
-    # Persist summary SVG
+        bar_w_clone = int((cval / max_clones) * bar_max_width) if max_clones else 0
+        bar_w_uniq  = int((uval / max_uniques) * bar_max_width) if max_uniques else 0
+        bar_w_comb  = int((comb_val / max_comb) * bar_max_width) if max_comb else 0
+
+        rows_for_template.append({
+            "name": r.get("name") or "",
+            "clone_label": clab,
+            "uniq_label": ulab,
+            "comb_label": comblab,
+            "bar_w_clone": bar_w_clone,
+            "bar_w_uniq": bar_w_uniq,
+            "bar_w_comb": bar_w_comb,
+        })
+
+    ctx = {
+        "owner": owner,
+        "total_repos": total_repos,
+        "total_clones": total_clones,
+        "total_uniques": total_uniques,
+        "total_combined": total_combined,
+        "mode_note": "Includes private repos" if include_private else "Public repos only",
+        "rows": rows_for_template,
+        "width": width,
+        "height": height,
+        "bar_x": bar_x,
+        "bar_max_width": bar_max_width,
+        "bar_h": bar_h,
+        "bar_gap": bar_gap,
+        "per_block_h": per_block_h,
+    }
+
+    svg = render_template(SUMMARY_SVG_TEMPLATE, ctx)
     with open(out_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(svg))
+        f.write(svg)
     print(f"Wrote summary svg to {out_path}")
+
 
 # ---------------------------
 # Outputs - full table SVG (REPO_CLONES.svg)
 # ---------------------------
-def generate_table_svg(owner: str, repo_rows: List[Dict[str, Any]], include_private: bool,
-                       out_path="REPO_CLONES.svg", max_rows: Optional[int] = None):
+def generate_table_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]], include_private: bool,
+                             out_path="REPO_CLONES.svg", max_rows: Optional[int] = None):
     """
-    Generate a full table as an SVG that mirrors the columns previously written to REPO_CLONES.md.
+    Generate a full table as an SVG.
 
     The produced table contains columns:
       - Repo (name)
@@ -401,6 +612,7 @@ def generate_table_svg(owner: str, repo_rows: List[Dict[str, Any]], include_priv
     Column widths are computed dynamically from the data with min/max clamping so
     the SVG remains visually stable even with unusually long names/descriptions.
     """
+
     # Copy rows (optionally truncate to max_rows)
     rows = repo_rows[:] if max_rows is None else repo_rows[:max_rows]
     total_repos = len(repo_rows)
@@ -410,15 +622,17 @@ def generate_table_svg(owner: str, repo_rows: List[Dict[str, Any]], include_priv
     COLS = [
         ("name", "Repo", 140, 420, False, 30),
         ("description", "Description", 220, 600, False, 60),
+        ("language", "Language", 80, 140, False, 20),
         ("stargazers_count", "Stars", 56, 80, True, 0),
         ("forks_count", "Forks", 56, 80, True, 0),
+        ("watchers_count", "Watchers", 56, 80, True, 0),
         ("open_issues_count", "Open issues", 82, 110, True, 0),
         ("pushed_at", "Last push", 140, 200, False, 20),
+        ("size", "Size KB", 72, 110, True, 0),
         ("clone_count", "Clones (14d)", 90, 140, True, 0),
         ("clone_uniques", "Unique clones (14d)", 110, 160, True, 0),
     ]
 
-    # Character-to-pixel heuristic used to estimate column widths
     CHAR_PX = 7.2
 
     def cell_text(col_key, r):
@@ -439,6 +653,9 @@ def generate_table_svg(owner: str, repo_rows: List[Dict[str, Any]], include_priv
         if col_key == "clone_uniques":
             v = r.get("clone_uniques")
             return str(v) if v is not None else "N/A"
+        if col_key == "size":
+            v = r.get("size")
+            return str(v) if v is not None else ""
         return str(r.get(col_key) or "")
 
     # Measure the character requirements for each column from the data, capped by wrap heuristics
@@ -480,145 +697,220 @@ def generate_table_svg(owner: str, repo_rows: List[Dict[str, Any]], include_priv
 
     # Compute overall table width and height
     table_w = sum(col_px[k] for k, *_ in [(c[0],) for c in COLS]) + gap * (len(COLS) - 1) + padding * 2
-    table_w = max(table_w, 760)  # ensure a minimum width for aesthetics
+    table_w = max(table_w, 760)
 
     visible_rows = rows
     table_h = header_h + row_h * len(visible_rows) + padding * 2
     svg_h = table_y + table_h + padding
 
-    # Build SVG document
-    svg = []
-    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{int(table_w)}" height="{int(svg_h)}" viewBox="0 0 {int(table_w)} {int(svg_h)}" role="img" aria-label="GitHub repository clones table">')
-    svg.append("""
-<style>
-  .card { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-  .title { font-weight:700; font-size:16px; fill: #0b1220; }
-  .meta  { font-size:12px; fill:#374151; opacity:0.9; }
-  .th    { font-size:12px; font-weight:700; fill:#0b1220; }
-  .td    { font-size:12px; fill:#0b1220; }
-  .muted { font-size:11px; fill:#6b7280; }
-  .row-even { fill: #ffffff; }
-  .row-odd  { fill: #f8fafc; }
-  .table-border { stroke: #e6eaf2; stroke-width: 1; fill: none; }
-  @media (prefers-color-scheme: dark) {
-    .title, .meta, .th, .td, .muted { fill: #ffffff; }
-    .row-even { fill: #0b1220; }
-    .row-odd  { fill: #071026; }
-    .table-border { stroke: #0f172a; }
-  }
-</style>
-""")
-
-    # Header lines with owner, generation timestamp, and mode indicator
-    svg.append(f'<text x="{padding}" y="{padding + 14}" class="title card">GitHub repositories — {escape_xml(owner)}</text>')
-    svg.append(f'<text x="{padding}" y="{padding + 32}" class="meta card">Generated: {escape_xml(datetime.datetime.utcnow().isoformat()+"Z")} · Mode: {"Includes private repos" if include_private else "Public repos only"} · Total repos: {total_repos} · Total clones (sum of visible): {total_clones}</text>')
-
-    # Table outer background and border
-    tbl_x = table_x
-    tbl_y = table_y + 28
-    tbl_w = table_w - padding * 2
-    tbl_h = header_h + row_h * len(visible_rows)
-    svg.append(f'<rect x="{tbl_x}" y="{tbl_y}" width="{tbl_w}" height="{tbl_h}" rx="8" class="row-even"/>')
-    svg.append(f'<rect x="{tbl_x}" y="{tbl_y}" width="{tbl_w}" height="{tbl_h}" class="table-border"/>')
-
-    # Compute x positions for each column based on the column widths
-    col_x = []
-    cur_x = tbl_x + 12
+    # Build column metadata for template
+    col_positions = []
+    cur_x = table_x + 12
     for key, hdr, min_px, max_px, isnumeric, wrap_chars in COLS:
-        col_x.append((key, cur_x))
+        col_positions.append({"key": key, "hdr": hdr, "x": int(cur_x), "px": col_px[key]})
         cur_x += col_px[key] + gap
 
-    # Render header row cells
-    header_y = tbl_y + 20
-    for key, x_pos in col_x:
-        hdr_text = next(h for (k, h, *_) in COLS if k == key)
-        svg.append(f'<text x="{int(x_pos)}" y="{header_y}" class="th card">{escape_xml(hdr_text)}</text>')
-
-    # Horizontal header separator
-    sep_y = tbl_y + 28
-    svg.append(f'<line x1="{tbl_x}" y1="{sep_y}" x2="{tbl_x + tbl_w}" y2="{sep_y}" stroke="#e6eaf2" />')
-
-    # Render each data row with subtle zebra striping
-    for i, r in enumerate(visible_rows):
-        row_y_top = tbl_y + 28 + i * row_h
-        is_even = (i % 2 == 0)
-        row_class = "row-even" if is_even else "row-odd"
-        # Row background rectangle provides striping effect
-        svg.append(f'<rect x="{tbl_x}" y="{row_y_top}" width="{tbl_w}" height="{row_h}" class="{row_class}" opacity="0.95"/>')
-
-        # Render cells for each column in this row
-        for key, x_pos in col_x:
-            val = cell_text(key, r)
-            if key == "name":
-                # Repo name column: render the repository name (not an active hyperlink,
-                # but visually looks like a link). Using escape_xml to prevent SVG breakage.
-                name_display = escape_xml(val)
-                svg.append(f'<text x="{int(x_pos)}" y="{row_y_top + 16}" class="td card">{name_display}</text>')
-            elif key == "description":
-                # Description column: naive two-line wrap/truncation to keep table compact.
-                text = str(val or "")
-                wrap_limit = next((w for (k, _, min_px, max_px, _, w) in COLS if k == key), 60)
-                if not text:
-                    svg.append(f'<text x="{int(x_pos)}" y="{row_y_top + 16}" class="muted card">-</text>')
+    # Build row display data (including description wrap)
+    rows_display = []
+    for r in visible_rows:
+        desc = (r.get("description") or "").strip()
+        wrap_limit = next((w for (k,_,_,_,_,w) in COLS if k == "description"), 60)
+        if not desc:
+            desc_lines = []
+        else:
+            words = desc.split()
+            line1 = ""
+            line2 = ""
+            cur = ""
+            for w in words:
+                if len(cur) + len(w) + 1 <= wrap_limit:
+                    cur = (cur + " " + w).strip()
                 else:
-                    # Word-splitting wrap algorithm: fill up to wrap_limit chars per line, up to 2 lines.
-                    words = text.split()
-                    line1 = ""
-                    line2 = ""
-                    cur = ""
-                    for w in words:
-                        if len(cur) + len(w) + 1 <= wrap_limit:
-                            cur = (cur + " " + w).strip()
-                        else:
-                            if not line1:
-                                line1 = cur or w
-                                cur = w
-                            else:
-                                line2 = cur + " " + w if cur else w
-                                cur = ""
-                                break
-                    if not line1 and cur:
-                        line1 = cur
-                    if not line2 and cur and len(line1) + len(cur) <= wrap_limit * 2:
-                        if not line2:
-                            line2 = cur
-                    # truncate if still too long
-                    def trunc(s, n):
-                        return (s[:n - 1] + "…") if len(s) > n else s
-                    line1 = trunc(line1, wrap_limit)
-                    line2 = trunc(line2, wrap_limit)
-                    svg.append(f'<text x="{int(x_pos)}" y="{row_y_top + 14}" class="td card">{escape_xml(line1)}</text>')
-                    if line2:
-                        svg.append(f'<text x="{int(x_pos)}" y="{row_y_top + 28}" class="td card">{escape_xml(line2)}</text>')
-            elif key == "pushed_at":
-                # Push date rendered in human-friendly truncated ISO format
-                svg.append(f'<text x="{int(x_pos)}" y="{row_y_top + 16}" class="td card">{escape_xml(val)}</text>')
-            else:
-                # Numeric or short text columns: render directly
-                svg.append(f'<text x="{int(x_pos)}" y="{row_y_top + 16}" class="td card">{escape_xml(val)}</text>')
+                    if not line1:
+                        line1 = cur or w
+                        cur = w
+                    else:
+                        line2 = cur + " " + w if cur else w
+                        cur = ""
+                        break
+            if not line1 and cur:
+                line1 = cur
+            if not line2 and cur and len(line1) + len(cur) <= wrap_limit * 2:
+                if not line2:
+                    line2 = cur
+            def trunc(s, n):
+                return (s[:n - 1] + "…") if len(s) > n else s
+            line1 = trunc(line1, wrap_limit)
+            line2 = trunc(line2, wrap_limit)
+            desc_lines = [line1] if line1 else []
+            if line2:
+                desc_lines.append(line2)
+        # Prepare numeric/text fields for template (use humanized values)
+        rows_display.append({
+            "name": r.get("name") or "",
+            "description": r.get("description") or "",
+            "_desc_lines": desc_lines,
+            "language": r.get("language") or "",
+            "stargazers_count": r.get("stargazers_count", 0),
+            "forks_count": r.get("forks_count", 0),
+            "watchers_count": r.get("watchers_count", r.get("watchers", 0)),
+            "open_issues_count": r.get("open_issues_count", 0),
+            "pushed_at": (r.get("pushed_at") or "")[:19].replace("T", " "),
+            "size": r.get("size", ""),
+            "clone_count": r.get("clone_count") if r.get("clone_count") is not None else "N/A",
+            "clone_uniques": r.get("clone_uniques") if r.get("clone_uniques") is not None else "N/A",
+        })
 
-    # Footer note explaining the data window and permissions
-    footer_y = tbl_y + tbl_h + 18
-    note = ("Note: GitHub traffic/clones shows recent ~14 days and requires owner access for analytics. "
-            "If you see 'N/A' clone stats, the token may not have permission.")
-    svg.append(f'<text x="{padding}" y="{footer_y}" class="muted card">{escape_xml(note)}</text>')
-    svg.append("</svg>")
-
-    # Persist the table SVG to disk
+    ctx = {
+        "owner": owner,
+        "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
+        "mode_note": "Includes private repos" if include_private else "Public repos only",
+        "total_repos": total_repos,
+        "total_clones": total_clones,
+        "cols": col_positions,
+        "rows": rows_display,
+        "padding": padding,
+        "tbl_x": table_x,
+        "tbl_y": table_y,
+        "tbl_w": table_w - padding*2,
+        "tbl_h": table_h,
+        "table_w": table_w,
+        "svg_h": svg_h,
+        "header_y": table_y + 28,
+        "sep_y": table_y + 28,
+        "row_top_offset": 28,
+        "row_h": row_h,
+        "footer_note": "Note: GitHub traffic/clones shows recent ~14 days and requires owner access for analytics. If you see 'N/A' clone stats, the token may not have permission.",
+    }
+    svg = render_template(TABLE_SVG_TEMPLATE, ctx)
     with open(out_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(svg))
+        f.write(svg)
     print(f"Wrote table svg to {out_path}")
 
-# ---------------------------
-# Git commit & push (robust)
-# ---------------------------
-def git_commit_and_push(files: List[str], commit_message: str = "chore: update repo stats", token_env: Optional[str] = None):
+def generate_history_svg(owner: str, repo_rows: List[Dict[str, Any]], out_path="history.svg", top_n=6):
     """
-    Commit and push a list of files to the current repository.
+    Read per-repo history from database and render a small multi-series line chart (SVG).
+    The chart shows the available snapshots. If no history exists, a friendly message is shown.
+
+    Now plots both total clones and unique cloners per repo (two series per repo when data exists).
+    """
+    # pick top_n repos by latest snapshot or clone_count
+    rows_sorted = sorted(repo_rows, key=lambda x: (x.get("clone_count") or 0), reverse=True)
+    chart_repos = rows_sorted[:top_n]
+
+    # Read history series (limit to recent samples e.g., last 60 points)
+    series_data = []
+    colors = ["#1f6feb", "#16a34a", "#f97316", "#e11d48", "#a78bfa", "#06b6d4"]
+    # We'll use pairwise colors: clones color, uniques color (slightly different shade)
+    def color_for(idx, kind="clones"):
+        base = colors[idx % len(colors)]
+        if kind == "clones":
+            return base
+        # simple tint for uniques (append opacity when rendering not applicable in inline stroke)
+        # use an alternate mapping of colors for uniqueness
+        alt = ["#60a5fa", "#34d399", "#fb923c", "#fb7185", "#c4b5fd", "#67e8f9"]
+        return alt[idx % len(alt)]
+
+    for idx, r in enumerate(chart_repos):
+        name = r.get("name") or ""
+        hist = read_history_from_db(name)
+        # hist is list of (dt, clone, unique)
+        if not hist:
+            continue
+        # Prepare separate series for clones and uniques, skip None points
+        clones_pts = [(dt, c) for (dt, c, u) in hist if c is not None]
+        uniques_pts = [(dt, u) for (dt, c, u) in hist if u is not None]
+        # require at least one point for each series to include
+        if clones_pts:
+            series_data.append({
+                "label": f"{name} — clones",
+                "points": clones_pts[-60:],
+                "color": color_for(idx, "clones")
+            })
+        if uniques_pts:
+            series_data.append({
+                "label": f"{name} — uniques",
+                "points": uniques_pts[-60:],
+                "color": color_for(idx, "uniques")
+            })
+
+    width = 900
+    height = 360
+    margin_left = 80
+    margin_top = 64
+    plot_w = width - margin_left - 40
+    plot_h = height - margin_top - 48
+
+    ctx_series = []
+    if series_data:
+        # compute global time range and value range across all series
+        all_times = []
+        all_vals = []
+        for s in series_data:
+            for dt, v in s["points"]:
+                all_times.append(dt)
+                all_vals.append(v)
+        if not all_times or not all_vals:
+            series_for_template = []
+        else:
+            tmin = min(all_times)
+            tmax = max(all_times)
+            vmin = min(all_vals)
+            vmax = max(all_vals) if max(all_vals) > 0 else 1
+
+            # mapping functions
+            def tx(dt):
+                if tmax == tmin:
+                    return margin_left + plot_w / 2
+                total = (tmax - tmin).total_seconds()
+                return margin_left + ((dt - tmin).total_seconds() / total) * plot_w
+
+            def vy(v):
+                # invert y (higher values near top)
+                if vmax == vmin:
+                    return margin_top + plot_h / 2
+                return margin_top + plot_h - ((v - vmin) / (vmax - vmin)) * plot_h
+
+            # prepare series polylines
+            for s in series_data:
+                pts = s["points"]
+                # ensure sorted by time
+                pts_sorted = sorted(pts, key=lambda x: x[0])
+                pts_str = " ".join(f"{int(tx(dt))},{int(vy(v))}" for dt, v in pts_sorted)
+                ctx_series.append({
+                    "label": f"{s['label']} (latest {s['points'][-1][1]})",
+                    "points": pts_str,
+                    "color": s["color"]
+                })
+
+    ctx = {
+        "owner": owner,
+        "series": ctx_series,
+        "width": width,
+        "height": height,
+        "margin_left": margin_left,
+        "margin_top": margin_top,
+        "plot_w": plot_w,
+        "plot_h": plot_h,
+    }
+    svg = render_template(HISTORY_SVG_TEMPLATE, ctx)
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"Wrote history svg to {out_path}")
+
+# ---------------------------
+# Git commit & push
+# ---------------------------
+def git_commit_and_push(files: List[str], commit_message: str = "chore: update repo stats", token_env: Optional[str] = None, branch: Optional[str] = None, force_push: bool = False):
+    """
+    Commit and push a list of files to the repository.
 
     Behavior:
       - If `git` is not available the function returns early.
       - Sets local git identity to `actions@github.com` / `github-actions[bot]` to avoid CI commit failures.
+      - If `branch` is specified, switches to that branch (creating it if needed), commits files, and pushes.
+        After push, returns to the original branch.
+      - If `force_push` is True, uses --force-with-lease for the push.
       - Adds the files, attempts to commit; if there's nothing to commit the function returns.
       - If token_env is provided and a token exists in that environment variable, the remote origin URL
         is temporarily rewritten to include the token in the URL (https://<token>@github.com/owner/repo.git)
@@ -630,7 +922,14 @@ def git_commit_and_push(files: List[str], commit_message: str = "chore: update r
     except Exception:
         print("git not found; skipping push.")
         return
-
+    
+    # Check if we are inside a git repository
+    try:
+        subprocess.run(["git", "rev-parse", "--git-dir"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except subprocess.CalledProcessError:
+        print("Not inside a git repository; skipping commit and push.")
+        return
+    
     # Configure local git identity (important in CI)
     try:
         subprocess.run(["git", "config", "--local", "user.email", "actions@github.com"], check=True)
@@ -639,6 +938,30 @@ def git_commit_and_push(files: List[str], commit_message: str = "chore: update r
         # If config fails silently, continue — commit might still succeed if global identity set
         pass
 
+    # Handle branch switching if requested
+    original_branch = None
+    if branch:
+        try:
+            # Get current branch name
+            res = subprocess.run(["git", "branch", "--show-current"], capture_output=True, text=True, check=True)
+            original_branch = res.stdout.strip()
+            
+            # Check if target branch exists
+            res = subprocess.run(["git", "rev-parse", "--verify", branch], capture_output=True, stderr=subprocess.DEVNULL)
+            branch_exists = res.returncode == 0
+            
+            if branch_exists:
+                # Branch exists, check it out
+                subprocess.run(["git", "checkout", branch], check=True)
+            else:
+                # Create new orphan branch (no history)
+                subprocess.run(["git", "checkout", "--orphan", branch], check=True)
+                # Remove all files from staging (orphan branch starts with all files staged)
+                subprocess.run(["git", "rm", "-rf", "."], check=True, stderr=subprocess.DEVNULL)
+        except Exception as e:
+            print(f"Failed to switch to branch {branch}: {e}")
+            return
+
     # Stage the files for commit (raises on failure)
     subprocess.run(["git", "add"] + files, check=True)
     try:
@@ -646,14 +969,27 @@ def git_commit_and_push(files: List[str], commit_message: str = "chore: update r
         subprocess.run(["git", "commit", "-m", commit_message], check=True)
     except subprocess.CalledProcessError:
         print("No changes to commit.")
+        # Return to original branch if we switched
+        if original_branch:
+            subprocess.run(["git", "checkout", original_branch], check=True)
         return
-
+    
+    # Build push command
+    push_cmd = ["git", "push"]
+    if force_push:
+        push_cmd.append("--force-with-lease")
+    if branch:
+        push_cmd.extend(["origin", branch])
+    
     # Push handling: if token_env is provided, use it to push over HTTPS in CI
     if token_env:
         token = os.environ.get(token_env)
         if not token:
             print(f"Token env var {token_env} not set; attempting normal push.")
-            subprocess.run(["git", "push"], check=True)
+            subprocess.run(push_cmd, check=True)
+            # Return to original branch if we switched
+            if original_branch:
+                subprocess.run(["git", "checkout", original_branch], check=True)
             return
         try:
             res = subprocess.run(["git", "remote", "get-url", "origin"], capture_output=True, text=True, check=True)
@@ -664,18 +1000,27 @@ def git_commit_and_push(files: List[str], commit_message: str = "chore: update r
                 token_url = f"https://{token}@{parsed.netloc}{parsed.path}"
                 subprocess.run(["git", "remote", "set-url", "origin", token_url], check=True)
                 try:
-                    subprocess.run(["git", "push"], check=True)
+                    subprocess.run(push_cmd, check=True)
                 finally:
                     # Restore original remote URL even if push fails
                     subprocess.run(["git", "remote", "set-url", "origin", origin_url], check=True)
             else:
                 # Non-HTTPS remote (ssh) — just attempt push (CI may have SSH key)
-                subprocess.run(["git", "push"], check=True)
+                subprocess.run(push_cmd, check=True)
         except Exception as e:
             print(f"Push failed: {e}")
+        finally:
+            # Return to original branch if we switched
+            if original_branch:
+                subprocess.run(["git", "checkout", original_branch], check=True)
     else:
         # No token env specified — normal push
-        subprocess.run(["git", "push"], check=True)
+        try:
+            subprocess.run(push_cmd, check=True)
+        finally:
+            # Return to original branch if we switched
+            if original_branch:
+                subprocess.run(["git", "checkout", original_branch], check=True)
 
 # ---------------------------
 # CLI entrypoint
@@ -687,14 +1032,15 @@ def main():
     Sets up argument parsing, owner detection, repo fetching, clone stats collection,
     generates the two SVG outputs, and optionally commits & pushes them when --push is provided.
     """
-    parser = argparse.ArgumentParser(description="Generate GitHub repo clones summary (SVGs).")
+    parser = argparse.ArgumentParser(description="Generate GitHub repo clones summary (SVGs) with history.")
     parser.add_argument("--owner", help="GitHub username (owner). If omitted, detect automatically.")
     parser.add_argument("--push", action="store_true", help="Commit & push generated files back to this repo")
     parser.add_argument("--include-private", action="store_true", help="Include private repositories (opt-in)")
     parser.add_argument("--token-env", default="TOKEN", help="Environment variable name for PAT (default: TOKEN)")
     parser.add_argument("--svg-out", default="stats.svg", help="Summary SVG filename")
     parser.add_argument("--table-out", default="REPO_CLONES.svg", help="Full table SVG filename")
-    parser.add_argument("--top-n", default=6, type=int, help="Number of top repos to show in summary SVG")
+    parser.add_argument("--history-out", default="history.svg", help="History SVG filename")
+    parser.add_argument("--top-n", default=6, type=int, help="Number of top repos to show in summary & history SVGs")
     args = parser.parse_args()
 
     # Determine whether to include private repos: CLI flag overrides environment variable
@@ -722,28 +1068,43 @@ def main():
     else:
         print(f"Including private repos — {len(repos)} repos will be processed (ensure TOKEN has repo scope).")
 
+    # Initialize database
+    init_db()
+
     # Build the local repo_rows list with metadata + clone stats fetch
     repo_rows = []
+    today = datetime.datetime.utcnow().date().isoformat()
+    current_repo_names = []
     for r in repos:
         name = r.get("name")
+        current_repo_names.append(name)
         stats = fetch_clone_stats(owner, name, token)
-        repo_rows.append({
+        row = {
             "name": name,
             "description": r.get("description"),
+            "language": r.get("language"),
             "stargazers_count": r.get("stargazers_count", 0),
             "forks_count": r.get("forks_count", 0),
+            "watchers_count": r.get("watchers_count", r.get("watchers", 0)),
             "open_issues_count": r.get("open_issues_count", 0),
             "pushed_at": r.get("pushed_at"),
+            "size": r.get("size"),
             "clone_count": stats.get("count"),
             "clone_uniques": stats.get("uniques"),
-        })
+        }
+        repo_rows.append(row)
+        # persist snapshot to database (using day as key)
+        upsert_clone_data(name, today, row["clone_count"], row["clone_uniques"])
         # small throttle between API calls to be polite to GitHub and avoid bursts
         time.sleep(0.12)
 
-    # Generate the full table SVG (replacement for the old markdown output)
+    # Remove repos that no longer exist
+    remove_missing_repos(current_repo_names)
+
+    # Generate the full table SVG
     try:
         print("Generating full table SVG ->", args.table_out)
-        generate_table_svg(owner, repo_rows, include_private, out_path=args.table_out)
+        generate_table_svg_jinja(owner, repo_rows, include_private, out_path=args.table_out)
     except Exception as e:
         print("ERROR generating table SVG:", e)
         sys.exit(1)
@@ -751,25 +1112,40 @@ def main():
     # Generate the compact summary SVG
     try:
         print("Generating summary SVG ->", args.svg_out)
-        generate_svg(owner, repo_rows, include_private, out_path=args.svg_out, top_n=args.top_n)
+        generate_summary_svg_jinja(owner, repo_rows, include_private, out_path=args.svg_out, top_n=args.top_n)
     except Exception as e:
         print("ERROR generating summary SVG:", e)
         sys.exit(1)
 
+    try:
+        print("Generating history SVG ->", args.history_out)
+        generate_history_svg(owner, repo_rows, out_path=args.history_out, top_n=args.top_n)
+    except Exception as e:
+        print("ERROR generating history SVG:", e)
+        sys.exit(1)
+
     # If requested, stage/commit/push generated files back to the repository
     if args.push:
-        files_to_commit = [args.table_out, args.svg_out]
-        # Only include files that actually exist on disk
-        files_to_commit = [f for f in files_to_commit if os.path.exists(f)]
-        if not files_to_commit:
-            print("Nothing to commit (no generated files found). Aborting push.")
-            sys.exit(0)
-        print("Committing and pushing files:", files_to_commit)
-        git_commit_and_push(files_to_commit, commit_message="chore: update repo clones summary (SVGs)", token_env=args.token_env)
-        print("Push complete.")
+        # SVG files go to main branch
+        svg_files = [args.table_out, args.svg_out, args.history_out]
+        svg_files = [f for f in svg_files if os.path.exists(f)]
+        
+        # Database goes to history-db branch
+        if os.path.exists(DB_PATH):
+            print(f"Committing {DB_PATH} to history-db branch")
+            git_commit_and_push([DB_PATH], commit_message="chore: update clone history database", token_env=args.token_env, branch="history-db", force_push=True)
+        
+        # Commit SVG files to main/current branch
+        if svg_files:
+            print("Committing and pushing SVG files:", svg_files)
+            git_commit_and_push(svg_files, commit_message="chore: update repo clones summary (SVGs)", token_env=args.token_env)
+            print("Push complete.")
+        else:
+            print("No SVG files to commit.")
     else:
         # When not pushing, show which files were generated locally
-        print("Run complete. Files generated (not pushed):", [f for f in [args.table_out, args.svg_out] if os.path.exists(f)])
+        generated = [f for f in [args.table_out, args.svg_out, args.history_out] if os.path.exists(f)]
+        print("Run complete. Files generated (not pushed):", generated)
 
 if __name__ == "__main__":
     main()
