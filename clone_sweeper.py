@@ -460,23 +460,86 @@ HISTORY_SVG_TEMPLATE = """
     .title, .muted, .axis { fill: #ffffff; }
   }
 </style>
-<rect x="0" y="0" width="{{ width }}" height="{{ height }}" fill="transparent" />
-<text x="18" y="30" class="title card">Clone history (snapshots): {{ owner|e }}</text>
-<text x="18" y="48" class="muted card">Note: history builds over runs. More runs = better monthly/yearly charts.</text>
 
-{% if series %}
+<rect x="0" y="0" width="{{ width }}" height="{{ height }}" fill="transparent" />
+
+<text x="18" y="28" class="title card">
+  Clone history (snapshots): {{ owner|e }}
+</text>
+<text x="18" y="46" class="muted card">
+  Monthly and yearly aggregates derived from daily snapshots (per repo).
+</text>
+
+<!-- Top: Monthly chart -->
+<g transform="translate(0,96)">
+  <text x="18" y="14" class="muted card">
+    Monthly aggregates · months: {{ months_count }} ({{ months_start }} → {{ months_end }})
+  </text>
+
   <!-- axes -->
-  <line x1="{{ margin_left }}" y1="{{ margin_top }}" x2="{{ margin_left }}" y2="{{ margin_top + plot_h }}" stroke="#e6eaf2"/>
-  <line x1="{{ margin_left }}" y1="{{ margin_top + plot_h }}" x2="{{ margin_left + plot_w }}" y2="{{ margin_top + plot_h }}" stroke="#e6eaf2"/>
-  {% for s in series %}
-    <polyline points="{{ s.points }}" class="line" style="stroke:{{ s.color }};"/>
-    <text x="{{ margin_left + 6 }}" y="{{ margin_top + 14 + loop.index0 * 14 }}" class="axis" style="fill:{{ s.color }}">{{ s.label|e }}</text>
+  <line x1="{{ margin_left }}" y1="{{ margin_top }}"
+        x2="{{ margin_left }}" y2="{{ margin_top + monthly_plot_h }}"
+        stroke="#e6eaf2"/>
+  <line x1="{{ margin_left }}" y1="{{ margin_top + monthly_plot_h }}"
+        x2="{{ margin_left + plot_w }}" y2="{{ margin_top + monthly_plot_h }}"
+        stroke="#e6eaf2"/>
+
+  {% for s in monthly_series %}
+    <polyline points="{{ s.points }}" class="line" style="stroke:{{ s.color }}"/>
+    <text x="{{ margin_left + 6 }}"
+          y="{{ margin_top + 14 + loop.index0 * 14 }}"
+          class="axis"
+          style="fill:{{ s.color }}">
+      {{ s.label|e }}
+    </text>
   {% endfor %}
-{% else %}
-  <text x="18" y="{{ margin_top + 20 }}" class="muted card">No history data yet. Run the action or script with --push repeatedly to collect snapshots.</text>
-{% endif %}
+
+  <text x="{{ margin_left }}"
+        y="{{ margin_top + monthly_plot_h + 20 }}"
+        class="axis card">{{ months_start }}</text>
+  <text x="{{ margin_left + plot_w }}"
+        y="{{ margin_top + monthly_plot_h + 20 }}"
+        class="axis card"
+        text-anchor="end">{{ months_end }}</text>
+</g>
+
+<!-- Bottom: Yearly chart -->
+<g transform="translate(0,{{ 96 + monthly_plot_h + 64 }})">
+  <text x="18" y="14" class="muted card">
+    Yearly aggregates · years: {{ years_count }} ({{ years_start }} → {{ years_end }})
+  </text>
+
+  <!-- axes -->
+  <line x1="{{ margin_left }}" y1="{{ margin_top }}"
+        x2="{{ margin_left }}" y2="{{ margin_top + yearly_plot_h }}"
+        stroke="#e6eaf2"/>
+  <line x1="{{ margin_left }}" y1="{{ margin_top + yearly_plot_h }}"
+        x2="{{ margin_left + plot_w }}" y2="{{ margin_top + yearly_plot_h }}"
+        stroke="#e6eaf2"/>
+
+  {% for s in yearly_series %}
+    <polyline points="{{ s.points }}" class="line" style="stroke:{{ s.color }}"/>
+    <text x="{{ margin_left + 6 }}"
+          y="{{ margin_top + 14 + loop.index0 * 14 }}"
+          class="axis"
+          style="fill:{{ s.color }}">
+      {{ s.label|e }}
+    </text>
+  {% endfor %}
+
+  <text x="{{ margin_left }}"
+        y="{{ margin_top + yearly_plot_h + 20 }}"
+        class="axis card">{{ years_start }}</text>
+  <text x="{{ margin_left + plot_w }}"
+        y="{{ margin_top + yearly_plot_h + 20 }}"
+        class="axis card"
+        text-anchor="end">{{ years_end }}</text>
+</g>
+
 </svg>
 """
+
+
 
 # ---------------------------
 # Rendering helpers
@@ -484,6 +547,48 @@ HISTORY_SVG_TEMPLATE = """
 def render_template(template_str: str, ctx: dict) -> str:
     tpl = Template(template_str)
     return tpl.render(**ctx)
+
+# ---------------------------
+# Aggregate history helpers
+# ---------------------------
+def month_key(dt: datetime.datetime) -> Tuple[int, int]:
+    return (dt.year, dt.month)
+
+def aggregate_history_by_month(hist: List[Tuple[datetime.datetime, Optional[int], Optional[int]]]) -> List[Tuple[datetime.datetime, int, int]]:
+    """
+    Aggregate daily snapshots into monthly sums.
+    Returns list of tuples: (month_dt (first-of-month), sum_clones, sum_uniques) sorted ascending.
+    """
+    buckets = {}
+    for dt, clones, uniques in hist:
+        k = month_key(dt)
+        if k not in buckets:
+            buckets[k] = [0, 0]
+        buckets[k][0] += (clones or 0)
+        buckets[k][1] += (uniques or 0)
+    # convert to sorted list of datetimes
+    out = []
+    for (y, m) in sorted(buckets.keys()):
+        out.append((datetime.datetime(y, m, 1), buckets[(y, m)][0], buckets[(y, m)][1]))
+    return out
+
+def aggregate_history_by_year(hist: List[Tuple[datetime.datetime, Optional[int], Optional[int]]]) -> List[Tuple[datetime.datetime, int, int]]:
+    """
+    Aggregate daily snapshots into yearly sums.
+    Returns list: (year_dt (first-of-year), sum_clones, sum_uniques) sorted ascending.
+    """
+    buckets = {}
+    for dt, clones, uniques in hist:
+        y = dt.year
+        if y not in buckets:
+            buckets[y] = [0, 0]
+        buckets[y][0] += (clones or 0)
+        buckets[y][1] += (uniques or 0)
+    out = []
+    for y in sorted(buckets.keys()):
+        out.append((datetime.datetime(y, 1, 1), buckets[y][0], buckets[y][1]))
+    return out
+
 
 # ---------------------------
 # Outputs - summary SVG (stats.svg)
@@ -803,114 +908,159 @@ def generate_table_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]], includ
 
 def generate_history_svg(owner: str, repo_rows: List[Dict[str, Any]], out_path="history.svg", top_n=6):
     """
-    Read per-repo history from database and render a small multi-series line chart (SVG).
-    The chart shows the available snapshots. If no history exists, a friendly message is shown.
-
-    Now plots both total clones and unique cloners per repo (two series per repo when data exists).
+    Builds monthly and yearly aggregated series from the stored DB snapshots and
+    renders two stacked SVG charts: monthly (top) and yearly (bottom).
     """
-    # pick top_n repos by latest snapshot or clone_count
+    # choose top_n repos by latest clone_count
     rows_sorted = sorted(repo_rows, key=lambda x: (x.get("clone_count") or 0), reverse=True)
     chart_repos = rows_sorted[:top_n]
 
-    # Read history series (limit to recent samples e.g., last 60 points)
-    series_data = []
     colors = ["#1f6feb", "#16a34a", "#f97316", "#e11d48", "#a78bfa", "#06b6d4"]
-    # We'll use pairwise colors: clones color, uniques color (slightly different shade)
+    alt = ["#60a5fa", "#34d399", "#fb923c", "#fb7185", "#c4b5fd", "#67e8f9"]
+
     def color_for(idx, kind="clones"):
-        base = colors[idx % len(colors)]
         if kind == "clones":
-            return base
-        # simple tint for uniques (append opacity when rendering not applicable in inline stroke)
-        # use an alternate mapping of colors for uniqueness
-        alt = ["#60a5fa", "#34d399", "#fb923c", "#fb7185", "#c4b5fd", "#67e8f9"]
+            return colors[idx % len(colors)]
         return alt[idx % len(alt)]
+
+    monthly_series = []  # each entry: {'label':..., 'points':..., 'color':...}
+    yearly_series = []
+
+    # collect all monthly/yearly x-keys to compute shared ranges
+    all_month_keys = []
+    all_year_keys = []
+
+    per_repo_monthly = {}
+    per_repo_yearly = {}
 
     for idx, r in enumerate(chart_repos):
         name = r.get("name") or ""
         hist = read_history_from_db(name)
-        # hist is list of (dt, clone, unique)
         if not hist:
             continue
-        # Prepare separate series for clones and uniques, skip None points
-        clones_pts = [(dt, c) for (dt, c, u) in hist if c is not None]
-        uniques_pts = [(dt, u) for (dt, c, u) in hist if u is not None]
-        # require at least one point for each series to include
-        if clones_pts:
-            series_data.append({
-                "label": f"{name} — clones",
-                "points": clones_pts[-60:],
-                "color": color_for(idx, "clones")
-            })
-        if uniques_pts:
-            series_data.append({
-                "label": f"{name} — uniques",
-                "points": uniques_pts[-60:],
-                "color": color_for(idx, "uniques")
-            })
+        monthly = aggregate_history_by_month(hist)
+        yearly = aggregate_history_by_year(hist)
+        if monthly:
+            per_repo_monthly[name] = monthly
+            all_month_keys.extend([dt for dt,_,_ in monthly])
+        if yearly:
+            per_repo_yearly[name] = yearly
+            all_year_keys.extend([dt for dt,_,_ in yearly])
 
+    # Sort and deduplicate keys
+    all_month_keys = sorted(list(dict.fromkeys(all_month_keys)))
+    all_year_keys = sorted(list(dict.fromkeys(all_year_keys)))
+
+    # mapping functions for monthly (discrete x positions)
     width = 900
-    height = 360
     margin_left = 80
-    margin_top = 64
+    margin_top = 24
     plot_w = width - margin_left - 40
-    plot_h = height - margin_top - 48
 
-    ctx_series = []
-    if series_data:
-        # compute global time range and value range across all series
-        all_times = []
-        all_vals = []
-        for s in series_data:
-            for dt, v in s["points"]:
-                all_times.append(dt)
-                all_vals.append(v)
-        if not all_times or not all_vals:
-            series_for_template = []
-        else:
-            tmin = min(all_times)
-            tmax = max(all_times)
-            vmin = min(all_vals)
-            vmax = max(all_vals) if max(all_vals) > 0 else 1
+    monthly_plot_h = 180
+    yearly_plot_h = 120
 
-            # mapping functions
-            def tx(dt):
-                if tmax == tmin:
-                    return margin_left + plot_w / 2
-                total = (tmax - tmin).total_seconds()
-                return margin_left + ((dt - tmin).total_seconds() / total) * plot_w
+    months_count = len(all_month_keys) or 0
+    years_count = len(all_year_keys) or 0
 
-            def vy(v):
-                # invert y (higher values near top)
-                if vmax == vmin:
-                    return margin_top + plot_h / 2
-                return margin_top + plot_h - ((v - vmin) / (vmax - vmin)) * plot_h
+    def month_tx(dt):
+        if months_count <= 1:
+            return margin_left + plot_w / 2
+        idx = all_month_keys.index(dt)
+        return margin_left + (idx / (months_count - 1)) * plot_w
 
-            # prepare series polylines
-            for s in series_data:
-                pts = s["points"]
-                # ensure sorted by time
-                pts_sorted = sorted(pts, key=lambda x: x[0])
-                pts_str = " ".join(f"{int(tx(dt))},{int(vy(v))}" for dt, v in pts_sorted)
-                ctx_series.append({
-                    "label": f"{s['label']} (latest {s['points'][-1][1]})",
-                    "points": pts_str,
-                    "color": s["color"]
-                })
+    def year_tx(dt):
+        if years_count <= 1:
+            return margin_left + plot_w / 2
+        idx = all_year_keys.index(dt)
+        return margin_left + (idx / (years_count - 1)) * plot_w
+
+    # value ranges: compute global vmin/vmax for monthly and yearly separately
+    monthly_vals = []
+    yearly_vals = []
+    for monthly in per_repo_monthly.values():
+        for dt, c, u in monthly:
+            monthly_vals.append(c or 0)
+            monthly_vals.append(u or 0)
+    for yearly in per_repo_yearly.values():
+        for dt, c, u in yearly:
+            yearly_vals.append(c or 0)
+            yearly_vals.append(u or 0)
+
+    m_vmin = min(monthly_vals) if monthly_vals else 0
+    m_vmax = max(monthly_vals) if monthly_vals and max(monthly_vals) > 0 else 1
+    y_vmin = min(yearly_vals) if yearly_vals else 0
+    y_vmax = max(yearly_vals) if yearly_vals and max(yearly_vals) > 0 else 1
+
+    def map_y(v, vmin, vmax, plot_h):
+        if vmax == vmin:
+            return margin_top + plot_h / 2
+        return margin_top + plot_h - ((v - vmin) / (vmax - vmin)) * plot_h
+
+    # build monthly series (two lines per repo: clones & uniques)
+    for idx, (name, monthly) in enumerate(per_repo_monthly.items()):
+        # clones
+        pts_sorted = sorted(monthly, key=lambda x: x[0])
+        points_clone = " ".join(f"{int(month_tx(dt))},{int(map_y(c or 0, m_vmin, m_vmax, monthly_plot_h))}" for dt, c, u in pts_sorted)
+        monthly_series.append({
+            "label": f"{name} — clones (latest {pts_sorted[-1][1]})",
+            "points": points_clone,
+            "color": color_for(idx, "clones")
+        })
+        # uniques
+        points_uniq = " ".join(f"{int(month_tx(dt))},{int(map_y(u or 0, m_vmin, m_vmax, monthly_plot_h))}" for dt, c, u in pts_sorted)
+        monthly_series.append({
+            "label": f"{name} — uniques (latest {pts_sorted[-1][2]})",
+            "points": points_uniq,
+            "color": color_for(idx, "uniques")
+        })
+
+    # build yearly series
+    for idx, (name, yearly) in enumerate(per_repo_yearly.items()):
+        pts_sorted = sorted(yearly, key=lambda x: x[0])
+        points_clone = " ".join(f"{int(year_tx(dt))},{int(map_y(c or 0, y_vmin, y_vmax, yearly_plot_h))}" for dt, c, u in pts_sorted)
+        yearly_series.append({
+            "label": f"{name} — clones (latest {pts_sorted[-1][1]})",
+            "points": points_clone,
+            "color": color_for(idx, "clones")
+        })
+        points_uniq = " ".join(f"{int(year_tx(dt))},{int(map_y(u or 0, y_vmin, y_vmax, yearly_plot_h))}" for dt, c, u in pts_sorted)
+        yearly_series.append({
+            "label": f"{name} — uniques (latest {pts_sorted[-1][2]})",
+            "points": points_uniq,
+            "color": color_for(idx, "uniques")
+        })
+
+    # Prepare human-friendly labels for start/end
+    months_start = all_month_keys[0].strftime("%Y-%m") if all_month_keys else "-"
+    months_end = all_month_keys[-1].strftime("%Y-%m") if all_month_keys else "-"
+    years_start = all_year_keys[0].strftime("%Y") if all_year_keys else "-"
+    years_end = all_year_keys[-1].strftime("%Y") if all_year_keys else "-"
 
     ctx = {
         "owner": owner,
-        "series": ctx_series,
+        "monthly_series": monthly_series,
+        "yearly_series": yearly_series,
         "width": width,
-        "height": height,
+        "height": 96 + monthly_plot_h + 64 + yearly_plot_h + 40,
         "margin_left": margin_left,
         "margin_top": margin_top,
         "plot_w": plot_w,
-        "plot_h": plot_h,
+        "monthly_plot_h": monthly_plot_h,
+        "yearly_plot_h": yearly_plot_h,
+        "months_count": months_count,
+        "years_count": years_count,
+        "months_start": months_start,
+        "months_end": months_end,
+        "years_start": years_start,
+        "years_end": years_end,
     }
+
     svg = render_template(HISTORY_SVG_TEMPLATE, ctx)
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(svg)
     print(f"Wrote history svg to {out_path}")
+
 
 # ---------------------------
 # Git commit & push
