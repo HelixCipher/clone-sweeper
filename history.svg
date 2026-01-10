@@ -1,0 +1,265 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-label="GitHub repositories clone history">
+<style>
+  .card { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .title { font-weight:700; font-size:16px; fill:#0b1220; }
+  .muted { font-size:12px; fill:#6b7280; }
+  .axis { font-size:11px; fill:#6b7280; }
+  .line { fill:none; stroke-width:2; }
+  @media (prefers-color-scheme: dark) {
+    .title, .muted, .axis { fill: #ffffff; }
+  }
+</style>
+
+<rect x="0" y="0" width="900" height="500" fill="transparent" />
+
+<text x="18" y="28" class="title card">
+  Clone history (snapshots): HelixCipher
+</text>
+<text x="18" y="46" class="muted card">
+  Monthly and yearly aggregates derived from daily snapshots (per repo).
+</text>
+
+<!-- Top: Monthly chart -->
+<g transform="translate(0,96)">
+  <text x="18" y="14" class="muted card">
+    Monthly aggregates · months: 1 (2026-01 → 2026-01)
+  </text>
+
+  <!-- axes -->
+  <line x1="80" y1="24"
+        x2="80" y2="204"
+        stroke="#e6eaf2"/>
+  <line x1="80" y1="204"
+        x2="860" y2="204"
+        stroke="#e6eaf2"/>
+
+  
+    <polyline points="470,24" class="line" style="stroke:#1f6feb"/>
+    <text x="86"
+          y="38"
+          class="axis"
+          style="fill:#1f6feb">
+      gif-maker — clones (latest 79)
+    </text>
+  
+    <polyline points="470,88" class="line" style="stroke:#60a5fa"/>
+    <text x="86"
+          y="52"
+          class="axis"
+          style="fill:#60a5fa">
+      gif-maker — uniques (latest 53)
+    </text>
+  
+    <polyline points="470,105" class="line" style="stroke:#16a34a"/>
+    <text x="86"
+          y="66"
+          class="axis"
+          style="fill:#16a34a">
+      HelixCipher — clones (latest 46)
+    </text>
+  
+    <polyline points="470,147" class="line" style="stroke:#34d399"/>
+    <text x="86"
+          y="80"
+          class="axis"
+          style="fill:#34d399">
+      HelixCipher — uniques (latest 29)
+    </text>
+  
+    <polyline points="470,189" class="line" style="stroke:#f97316"/>
+    <text x="86"
+          y="94"
+          class="axis"
+          style="fill:#f97316">
+      one-persons-feature-is-another-persons-exploit — clones (latest 12)
+    </text>
+  
+    <polyline points="470,194" class="line" style="stroke:#fb923c"/>
+    <text x="86"
+          y="108"
+          class="axis"
+          style="fill:#fb923c">
+      one-persons-feature-is-another-persons-exploit — uniques (latest 10)
+    </text>
+  
+    <polyline points="470,191" class="line" style="stroke:#e11d48"/>
+    <text x="86"
+          y="122"
+          class="axis"
+          style="fill:#e11d48">
+      clone-sweeper — clones (latest 11)
+    </text>
+  
+    <polyline points="470,191" class="line" style="stroke:#fb7185"/>
+    <text x="86"
+          y="136"
+          class="axis"
+          style="fill:#fb7185">
+      clone-sweeper — uniques (latest 11)
+    </text>
+  
+    <polyline points="470,196" class="line" style="stroke:#a78bfa"/>
+    <text x="86"
+          y="150"
+          class="axis"
+          style="fill:#a78bfa">
+      Dynamic-webscraper-WIP- — clones (latest 9)
+    </text>
+  
+    <polyline points="470,199" class="line" style="stroke:#c4b5fd"/>
+    <text x="86"
+          y="164"
+          class="axis"
+          style="fill:#c4b5fd">
+      Dynamic-webscraper-WIP- — uniques (latest 8)
+    </text>
+  
+    <polyline points="470,204" class="line" style="stroke:#06b6d4"/>
+    <text x="86"
+          y="178"
+          class="axis"
+          style="fill:#06b6d4">
+      ai-agent — clones (latest 6)
+    </text>
+  
+    <polyline points="470,204" class="line" style="stroke:#67e8f9"/>
+    <text x="86"
+          y="192"
+          class="axis"
+          style="fill:#67e8f9">
+      ai-agent — uniques (latest 6)
+    </text>
+  
+
+  <text x="80"
+        y="224"
+        class="axis card">2026-01</text>
+  <text x="860"
+        y="224"
+        class="axis card"
+        text-anchor="end">2026-01</text>
+</g>
+
+<!-- Bottom: Yearly chart -->
+<g transform="translate(0,340)">
+  <text x="18" y="14" class="muted card">
+    Yearly aggregates · years: 1 (2026 → 2026)
+  </text>
+
+  <!-- axes -->
+  <line x1="80" y1="24"
+        x2="80" y2="144"
+        stroke="#e6eaf2"/>
+  <line x1="80" y1="144"
+        x2="860" y2="144"
+        stroke="#e6eaf2"/>
+
+  
+    <polyline points="470,24" class="line" style="stroke:#1f6feb"/>
+    <text x="86"
+          y="38"
+          class="axis"
+          style="fill:#1f6feb">
+      gif-maker — clones (latest 79)
+    </text>
+  
+    <polyline points="470,66" class="line" style="stroke:#60a5fa"/>
+    <text x="86"
+          y="52"
+          class="axis"
+          style="fill:#60a5fa">
+      gif-maker — uniques (latest 53)
+    </text>
+  
+    <polyline points="470,78" class="line" style="stroke:#16a34a"/>
+    <text x="86"
+          y="66"
+          class="axis"
+          style="fill:#16a34a">
+      HelixCipher — clones (latest 46)
+    </text>
+  
+    <polyline points="470,106" class="line" style="stroke:#34d399"/>
+    <text x="86"
+          y="80"
+          class="axis"
+          style="fill:#34d399">
+      HelixCipher — uniques (latest 29)
+    </text>
+  
+    <polyline points="470,134" class="line" style="stroke:#f97316"/>
+    <text x="86"
+          y="94"
+          class="axis"
+          style="fill:#f97316">
+      one-persons-feature-is-another-persons-exploit — clones (latest 12)
+    </text>
+  
+    <polyline points="470,137" class="line" style="stroke:#fb923c"/>
+    <text x="86"
+          y="108"
+          class="axis"
+          style="fill:#fb923c">
+      one-persons-feature-is-another-persons-exploit — uniques (latest 10)
+    </text>
+  
+    <polyline points="470,135" class="line" style="stroke:#e11d48"/>
+    <text x="86"
+          y="122"
+          class="axis"
+          style="fill:#e11d48">
+      clone-sweeper — clones (latest 11)
+    </text>
+  
+    <polyline points="470,135" class="line" style="stroke:#fb7185"/>
+    <text x="86"
+          y="136"
+          class="axis"
+          style="fill:#fb7185">
+      clone-sweeper — uniques (latest 11)
+    </text>
+  
+    <polyline points="470,139" class="line" style="stroke:#a78bfa"/>
+    <text x="86"
+          y="150"
+          class="axis"
+          style="fill:#a78bfa">
+      Dynamic-webscraper-WIP- — clones (latest 9)
+    </text>
+  
+    <polyline points="470,140" class="line" style="stroke:#c4b5fd"/>
+    <text x="86"
+          y="164"
+          class="axis"
+          style="fill:#c4b5fd">
+      Dynamic-webscraper-WIP- — uniques (latest 8)
+    </text>
+  
+    <polyline points="470,144" class="line" style="stroke:#06b6d4"/>
+    <text x="86"
+          y="178"
+          class="axis"
+          style="fill:#06b6d4">
+      ai-agent — clones (latest 6)
+    </text>
+  
+    <polyline points="470,144" class="line" style="stroke:#67e8f9"/>
+    <text x="86"
+          y="192"
+          class="axis"
+          style="fill:#67e8f9">
+      ai-agent — uniques (latest 6)
+    </text>
+  
+
+  <text x="80"
+        y="164"
+        class="axis card">2026</text>
+  <text x="860"
+        y="164"
+        class="axis card"
+        text-anchor="end">2026</text>
+</g>
+
+</svg>
