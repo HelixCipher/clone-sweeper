@@ -341,6 +341,7 @@ SUMMARY_SVG_TEMPLATE = """
   .label { font-weight: 600; font-size: 12px; fill: #0b1220; }
   .count { font-weight: 700; font-size: 12px; fill: #0b1220; text-anchor: start; }
   .count-small { font-weight: 600; font-size: 11px; fill:#6b7280; text-anchor: start; }
+  .muted { font-size:12px; fill:#6b7280; }
 
   .bar-clone { fill: #1f6feb; rx:6; }
   .bar-uniq  { fill: #06b6d4; rx:6; }
@@ -348,20 +349,32 @@ SUMMARY_SVG_TEMPLATE = """
 
   .bar-bg { fill: #e5e7eb; rx:6; }
   @media (prefers-color-scheme: dark) {
-    .title, .meta, .label, .count, .count-small { fill: #ffffff; }
+    .title, .meta, .label, .count, .count-small, .muted { fill: #ffffff; }
     .meta, .count-small { opacity: 0.9; }
   }
 </style>
 
 <rect x="0" y="0" width="{{ width }}" height="{{ height }}" rx="12" fill="transparent"/>
-<text x="18" y="34" class="title card">GitHub repos — {{ owner|e }}</text>
-<text x="18" y="54" class="meta card">Total repos: {{ total_repos }} · Clones: {{ total_clones }} · Unique Clones: {{ total_uniques }} · Total reported clones: {{ total_combined }} · {{ mode_note }}</text>
+<text x="{{ padding }}" y="34" class="title card">GitHub repos — {{ owner|e }}</text>
+<text x="{{ padding }}" y="54" class="meta card">Total repos: {{ total_repos }} · Clones: {{ total_clones }} · Unique Clones: {{ total_uniques }} · Total reported clones: {{ total_combined }} · {{ mode_note }}</text>
 
-{% set base_y = 90 %}
+<!-- LEGEND: colored squares + labels -->
+<g id="legend">
+  <rect x="{{ padding }}" y="70" width="12" height="12" class="bar-clone"/>
+  <text x="{{ padding + 18 }}" y="80" class="muted card">Clones (14d)</text>
+
+  <rect x="{{ padding + 180 }}" y="70" width="12" height="12" class="bar-uniq"/>
+  <text x="{{ padding + 198 }}" y="80" class="muted card">Unique cloners (14d)</text>
+
+  <rect x="{{ padding + 420 }}" y="70" width="12" height="12" class="bar-comb"/>
+  <text x="{{ padding + 438 }}" y="80" class="muted card">Combined</text>
+</g>
+
+{% set base_y = 102 %}
 {% for row in rows %}
   {% set block_top = base_y + loop.index0 * per_block_h %}
   <!-- repository label -->
-  <text x="18" y="{{ block_top }}" class="label card">{{ row.name|e }}</text>
+  <text x="{{ padding }}" y="{{ block_top }}" class="label card">{{ row.name|e }}</text>
 
   <!-- CLONES bar (top) -->
   <rect x="{{ bar_x }}" y="{{ block_top + 14 }}" width="{{ bar_max_width }}" height="{{ bar_h }}" class="bar-bg"/>
@@ -538,7 +551,7 @@ def generate_summary_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]],
 
     # per-repo block height and total height
     per_block_h = int(12 + 3*bar_h + 2*bar_gap)  # label + three bars + gaps
-    height = 90 + len(chart_rows) * per_block_h
+    height = 120 + len(chart_rows) * per_block_h
 
     # compute per-metric maxima (avoid zero)
     max_clones = max((r.get("clone_count") or 0) for r in chart_rows) or 1
@@ -583,6 +596,7 @@ def generate_summary_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]],
         "bar_h": bar_h,
         "bar_gap": bar_gap,
         "per_block_h": per_block_h,
+        "padding": padding,  # exposed for legend/template placement
     }
 
     svg = render_template(SUMMARY_SVG_TEMPLATE, ctx)

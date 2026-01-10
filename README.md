@@ -19,7 +19,7 @@ For each repo, it shows three stacked bar sections:
 
 2. **Unique cloners** (middle bar)
 
-**Total reported clones** (bottom bar = clones + unique cloners)
+**Combined** (bottom bar = clones + unique cloners)
 
 Each metric is scaled independently so smaller values remain visible.
 
