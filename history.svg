@@ -19,22 +19,22 @@
   <line x1="80" y1="64" x2="80" y2="312" stroke="#e6eaf2"/>
   <line x1="80" y1="312" x2="860" y2="312" stroke="#e6eaf2"/>
   
-    <polyline points="80,64 185,64 266,64 345,64 860,64" class="line" style="stroke:#1f6feb;"/>
+    <polyline points="470,64" class="line" style="stroke:#1f6feb;"/>
     <text x="86" y="78" class="axis" style="fill:#1f6feb">gif-maker (latest 79)</text>
   
-    <polyline points="80,176 185,176 266,176 345,176 860,176" class="line" style="stroke:#16a34a;"/>
+    <polyline points="470,176" class="line" style="stroke:#16a34a;"/>
     <text x="86" y="92" class="axis" style="fill:#16a34a">HelixCipher (latest 46)</text>
   
-    <polyline points="80,291 185,291 266,291 345,291 860,291" class="line" style="stroke:#f97316;"/>
+    <polyline points="470,291" class="line" style="stroke:#f97316;"/>
     <text x="86" y="106" class="axis" style="fill:#f97316">one-persons-feature-is-another-persons-exploit (latest 12)</text>
   
-    <polyline points="80,295 185,295 266,295 345,295 860,295" class="line" style="stroke:#e11d48;"/>
+    <polyline points="470,295" class="line" style="stroke:#e11d48;"/>
     <text x="86" y="120" class="axis" style="fill:#e11d48">clone-sweeper (latest 11)</text>
   
-    <polyline points="80,301 185,301 266,301 345,301 860,301" class="line" style="stroke:#a78bfa;"/>
+    <polyline points="470,301" class="line" style="stroke:#a78bfa;"/>
     <text x="86" y="134" class="axis" style="fill:#a78bfa">Dynamic-webscraper-WIP- (latest 9)</text>
   
-    <polyline points="80,312 185,312 266,312 345,312 860,312" class="line" style="stroke:#06b6d4;"/>
+    <polyline points="470,312" class="line" style="stroke:#06b6d4;"/>
     <text x="86" y="148" class="axis" style="fill:#06b6d4">ai-agent (latest 6)</text>
   
 
