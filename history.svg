@@ -40,34 +40,34 @@
           y="38"
           class="axis"
           style="fill:#1f6feb">
-      clone-sweeper — clones (latest 152)
+      clone-sweeper — clones (latest 162)
     </text>
   
-    <polyline points="470,122" class="line" style="stroke:#60a5fa"/>
+    <polyline points="470,119" class="line" style="stroke:#60a5fa"/>
     <text x="86"
           y="52"
           class="axis"
           style="fill:#60a5fa">
-      clone-sweeper — uniques (latest 71)
+      clone-sweeper — uniques (latest 78)
     </text>
   
-    <polyline points="470,110" class="line" style="stroke:#16a34a"/>
+    <polyline points="470,112" class="line" style="stroke:#16a34a"/>
     <text x="86"
           y="66"
           class="axis"
           style="fill:#16a34a">
-      gif-maker — clones (latest 81)
+      gif-maker — clones (latest 84)
     </text>
   
-    <polyline points="470,141" class="line" style="stroke:#34d399"/>
+    <polyline points="470,142" class="line" style="stroke:#34d399"/>
     <text x="86"
           y="80"
           class="axis"
           style="fill:#34d399">
-      gif-maker — uniques (latest 55)
+      gif-maker — uniques (latest 58)
     </text>
   
-    <polyline points="470,150" class="line" style="stroke:#f97316"/>
+    <polyline points="470,153" class="line" style="stroke:#f97316"/>
     <text x="86"
           y="94"
           class="axis"
@@ -75,7 +75,7 @@
       HelixCipher — clones (latest 48)
     </text>
   
-    <polyline points="470,173" class="line" style="stroke:#fb923c"/>
+    <polyline points="470,175" class="line" style="stroke:#fb923c"/>
     <text x="86"
           y="108"
           class="axis"
@@ -83,7 +83,7 @@
       HelixCipher — uniques (latest 29)
     </text>
   
-    <polyline points="470,191" class="line" style="stroke:#e11d48"/>
+    <polyline points="470,192" class="line" style="stroke:#e11d48"/>
     <text x="86"
           y="122"
           class="axis"
@@ -161,23 +161,23 @@
           y="38"
           class="axis"
           style="fill:#1f6feb">
-      clone-sweeper — clones (latest 152)
+      clone-sweeper — clones (latest 162)
     </text>
   
-    <polyline points="470,89" class="line" style="stroke:#60a5fa"/>
+    <polyline points="470,87" class="line" style="stroke:#60a5fa"/>
     <text x="86"
           y="52"
           class="axis"
           style="fill:#60a5fa">
-      clone-sweeper — uniques (latest 71)
+      clone-sweeper — uniques (latest 78)
     </text>
   
-    <polyline points="470,81" class="line" style="stroke:#16a34a"/>
+    <polyline points="470,83" class="line" style="stroke:#16a34a"/>
     <text x="86"
           y="66"
           class="axis"
           style="fill:#16a34a">
-      gif-maker — clones (latest 81)
+      gif-maker — clones (latest 84)
     </text>
   
     <polyline points="470,102" class="line" style="stroke:#34d399"/>
@@ -185,10 +185,10 @@
           y="80"
           class="axis"
           style="fill:#34d399">
-      gif-maker — uniques (latest 55)
+      gif-maker — uniques (latest 58)
     </text>
   
-    <polyline points="470,108" class="line" style="stroke:#f97316"/>
+    <polyline points="470,110" class="line" style="stroke:#f97316"/>
     <text x="86"
           y="94"
           class="axis"
@@ -196,7 +196,7 @@
       HelixCipher — clones (latest 48)
     </text>
   
-    <polyline points="470,123" class="line" style="stroke:#fb923c"/>
+    <polyline points="470,125" class="line" style="stroke:#fb923c"/>
     <text x="86"
           y="108"
           class="axis"
@@ -204,7 +204,7 @@
       HelixCipher — uniques (latest 29)
     </text>
   
-    <polyline points="470,135" class="line" style="stroke:#e11d48"/>
+    <polyline points="470,136" class="line" style="stroke:#e11d48"/>
     <text x="86"
           y="122"
           class="axis"
