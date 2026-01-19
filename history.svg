@@ -40,50 +40,50 @@
           y="38"
           class="axis"
           style="fill:#1f6feb">
-      clone-sweeper — clones (latest 162)
+      clone-sweeper — clones (latest 168)
     </text>
   
-    <polyline points="470,119" class="line" style="stroke:#60a5fa"/>
+    <polyline points="470,118" class="line" style="stroke:#60a5fa"/>
     <text x="86"
           y="52"
           class="axis"
           style="fill:#60a5fa">
-      clone-sweeper — uniques (latest 78)
+      clone-sweeper — uniques (latest 82)
     </text>
   
-    <polyline points="470,112" class="line" style="stroke:#16a34a"/>
+    <polyline points="470,130" class="line" style="stroke:#16a34a"/>
     <text x="86"
           y="66"
           class="axis"
           style="fill:#16a34a">
-      gif-maker — clones (latest 84)
+      gif-maker — clones (latest 71)
     </text>
   
-    <polyline points="470,142" class="line" style="stroke:#34d399"/>
+    <polyline points="470,154" class="line" style="stroke:#34d399"/>
     <text x="86"
           y="80"
           class="axis"
           style="fill:#34d399">
-      gif-maker — uniques (latest 58)
+      gif-maker — uniques (latest 49)
     </text>
   
-    <polyline points="470,153" class="line" style="stroke:#f97316"/>
+    <polyline points="470,174" class="line" style="stroke:#f97316"/>
     <text x="86"
           y="94"
           class="axis"
           style="fill:#f97316">
-      HelixCipher — clones (latest 48)
+      HelixCipher — clones (latest 31)
     </text>
   
-    <polyline points="470,175" class="line" style="stroke:#fb923c"/>
+    <polyline points="470,188" class="line" style="stroke:#fb923c"/>
     <text x="86"
           y="108"
           class="axis"
           style="fill:#fb923c">
-      HelixCipher — uniques (latest 29)
+      HelixCipher — uniques (latest 18)
     </text>
   
-    <polyline points="470,192" class="line" style="stroke:#e11d48"/>
+    <polyline points="470,193" class="line" style="stroke:#e11d48"/>
     <text x="86"
           y="122"
           class="axis"
@@ -91,7 +91,7 @@
       one-persons-feature-is-another-persons-exploit — clones (latest 14)
     </text>
   
-    <polyline points="470,194" class="line" style="stroke:#fb7185"/>
+    <polyline points="470,195" class="line" style="stroke:#fb7185"/>
     <text x="86"
           y="136"
           class="axis"
@@ -99,20 +99,20 @@
       one-persons-feature-is-another-persons-exploit — uniques (latest 12)
     </text>
   
-    <polyline points="470,199" class="line" style="stroke:#a78bfa"/>
+    <polyline points="470,200" class="line" style="stroke:#a78bfa"/>
     <text x="86"
           y="150"
           class="axis"
           style="fill:#a78bfa">
-      Dynamic-webscraper-WIP- — clones (latest 8)
+      Dynamic-webscraper-WIP- — clones (latest 7)
     </text>
   
-    <polyline points="470,199" class="line" style="stroke:#c4b5fd"/>
+    <polyline points="470,200" class="line" style="stroke:#c4b5fd"/>
     <text x="86"
           y="164"
           class="axis"
           style="fill:#c4b5fd">
-      Dynamic-webscraper-WIP- — uniques (latest 8)
+      Dynamic-webscraper-WIP- — uniques (latest 7)
     </text>
   
     <polyline points="470,204" class="line" style="stroke:#06b6d4"/>
@@ -120,7 +120,7 @@
           y="178"
           class="axis"
           style="fill:#06b6d4">
-      ai-agent — clones (latest 4)
+      playwright-pixelscan — clones (latest 4)
     </text>
   
     <polyline points="470,204" class="line" style="stroke:#67e8f9"/>
@@ -128,7 +128,7 @@
           y="192"
           class="axis"
           style="fill:#67e8f9">
-      ai-agent — uniques (latest 4)
+      playwright-pixelscan — uniques (latest 4)
     </text>
   
 
@@ -161,47 +161,47 @@
           y="38"
           class="axis"
           style="fill:#1f6feb">
-      clone-sweeper — clones (latest 162)
+      clone-sweeper — clones (latest 168)
     </text>
   
-    <polyline points="470,87" class="line" style="stroke:#60a5fa"/>
+    <polyline points="470,86" class="line" style="stroke:#60a5fa"/>
     <text x="86"
           y="52"
           class="axis"
           style="fill:#60a5fa">
-      clone-sweeper — uniques (latest 78)
+      clone-sweeper — uniques (latest 82)
     </text>
   
-    <polyline points="470,83" class="line" style="stroke:#16a34a"/>
+    <polyline points="470,94" class="line" style="stroke:#16a34a"/>
     <text x="86"
           y="66"
           class="axis"
           style="fill:#16a34a">
-      gif-maker — clones (latest 84)
+      gif-maker — clones (latest 71)
     </text>
   
-    <polyline points="470,102" class="line" style="stroke:#34d399"/>
+    <polyline points="470,111" class="line" style="stroke:#34d399"/>
     <text x="86"
           y="80"
           class="axis"
           style="fill:#34d399">
-      gif-maker — uniques (latest 58)
+      gif-maker — uniques (latest 49)
     </text>
   
-    <polyline points="470,110" class="line" style="stroke:#f97316"/>
+    <polyline points="470,124" class="line" style="stroke:#f97316"/>
     <text x="86"
           y="94"
           class="axis"
           style="fill:#f97316">
-      HelixCipher — clones (latest 48)
+      HelixCipher — clones (latest 31)
     </text>
   
-    <polyline points="470,125" class="line" style="stroke:#fb923c"/>
+    <polyline points="470,133" class="line" style="stroke:#fb923c"/>
     <text x="86"
           y="108"
           class="axis"
           style="fill:#fb923c">
-      HelixCipher — uniques (latest 29)
+      HelixCipher — uniques (latest 18)
     </text>
   
     <polyline points="470,136" class="line" style="stroke:#e11d48"/>
@@ -212,7 +212,7 @@
       one-persons-feature-is-another-persons-exploit — clones (latest 14)
     </text>
   
-    <polyline points="470,137" class="line" style="stroke:#fb7185"/>
+    <polyline points="470,138" class="line" style="stroke:#fb7185"/>
     <text x="86"
           y="136"
           class="axis"
@@ -220,20 +220,20 @@
       one-persons-feature-is-another-persons-exploit — uniques (latest 12)
     </text>
   
-    <polyline points="470,140" class="line" style="stroke:#a78bfa"/>
+    <polyline points="470,141" class="line" style="stroke:#a78bfa"/>
     <text x="86"
           y="150"
           class="axis"
           style="fill:#a78bfa">
-      Dynamic-webscraper-WIP- — clones (latest 8)
+      Dynamic-webscraper-WIP- — clones (latest 7)
     </text>
   
-    <polyline points="470,140" class="line" style="stroke:#c4b5fd"/>
+    <polyline points="470,141" class="line" style="stroke:#c4b5fd"/>
     <text x="86"
           y="164"
           class="axis"
           style="fill:#c4b5fd">
-      Dynamic-webscraper-WIP- — uniques (latest 8)
+      Dynamic-webscraper-WIP- — uniques (latest 7)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#06b6d4"/>
@@ -241,7 +241,7 @@
           y="178"
           class="axis"
           style="fill:#06b6d4">
-      ai-agent — clones (latest 4)
+      playwright-pixelscan — clones (latest 4)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#67e8f9"/>
@@ -249,7 +249,7 @@
           y="192"
           class="axis"
           style="fill:#67e8f9">
-      ai-agent — uniques (latest 4)
+      playwright-pixelscan — uniques (latest 4)
     </text>
   
 
