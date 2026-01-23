@@ -40,15 +40,15 @@
           y="38"
           class="axis"
           style="fill:#1f6feb">
-      clone-sweeper — clones (latest 192)
+      clone-sweeper — clones (latest 202)
     </text>
   
-    <polyline points="470,113" class="line" style="stroke:#60a5fa"/>
+    <polyline points="470,112" class="line" style="stroke:#60a5fa"/>
     <text x="86"
           y="52"
           class="axis"
           style="fill:#60a5fa">
-      clone-sweeper — uniques (latest 100)
+      clone-sweeper — uniques (latest 106)
     </text>
   
     <polyline points="470,198" class="line" style="stroke:#16a34a"/>
@@ -56,47 +56,47 @@
           y="66"
           class="axis"
           style="fill:#16a34a">
-      HelixCipher — clones (latest 12)
+      Ikigai — clones (latest 12)
     </text>
   
-    <polyline points="470,199" class="line" style="stroke:#34d399"/>
+    <polyline points="470,198" class="line" style="stroke:#34d399"/>
     <text x="86"
           y="80"
           class="axis"
           style="fill:#34d399">
-      HelixCipher — uniques (latest 11)
+      Ikigai — uniques (latest 12)
     </text>
   
-    <polyline points="470,200" class="line" style="stroke:#f97316"/>
+    <polyline points="470,198" class="line" style="stroke:#f97316"/>
     <text x="86"
           y="94"
           class="axis"
           style="fill:#f97316">
-      Dynamic-webscraper-WIP- — clones (latest 10)
+      HelixCipher — clones (latest 12)
     </text>
   
-    <polyline points="470,201" class="line" style="stroke:#fb923c"/>
+    <polyline points="470,199" class="line" style="stroke:#fb923c"/>
     <text x="86"
           y="108"
           class="axis"
           style="fill:#fb923c">
-      Dynamic-webscraper-WIP- — uniques (latest 9)
+      HelixCipher — uniques (latest 11)
     </text>
   
-    <polyline points="470,201" class="line" style="stroke:#e11d48"/>
+    <polyline points="470,198" class="line" style="stroke:#e11d48"/>
     <text x="86"
           y="122"
           class="axis"
           style="fill:#e11d48">
-      Ikigai — clones (latest 9)
+      Dynamic-webscraper-WIP- — clones (latest 12)
     </text>
   
-    <polyline points="470,201" class="line" style="stroke:#fb7185"/>
+    <polyline points="470,199" class="line" style="stroke:#fb7185"/>
     <text x="86"
           y="136"
           class="axis"
           style="fill:#fb7185">
-      Ikigai — uniques (latest 9)
+      Dynamic-webscraper-WIP- — uniques (latest 11)
     </text>
   
     <polyline points="470,201" class="line" style="stroke:#a78bfa"/>
@@ -115,12 +115,12 @@
       gif-maker — uniques (latest 9)
     </text>
   
-    <polyline points="470,204" class="line" style="stroke:#06b6d4"/>
+    <polyline points="470,203" class="line" style="stroke:#06b6d4"/>
     <text x="86"
           y="178"
           class="axis"
           style="fill:#06b6d4">
-      one-persons-feature-is-another-persons-exploit — clones (latest 6)
+      ai-agent — clones (latest 7)
     </text>
   
     <polyline points="470,204" class="line" style="stroke:#67e8f9"/>
@@ -128,7 +128,7 @@
           y="192"
           class="axis"
           style="fill:#67e8f9">
-      one-persons-feature-is-another-persons-exploit — uniques (latest 6)
+      ai-agent — uniques (latest 6)
     </text>
   
 
@@ -161,15 +161,15 @@
           y="38"
           class="axis"
           style="fill:#1f6feb">
-      clone-sweeper — clones (latest 192)
+      clone-sweeper — clones (latest 202)
     </text>
   
-    <polyline points="470,83" class="line" style="stroke:#60a5fa"/>
+    <polyline points="470,82" class="line" style="stroke:#60a5fa"/>
     <text x="86"
           y="52"
           class="axis"
           style="fill:#60a5fa">
-      clone-sweeper — uniques (latest 100)
+      clone-sweeper — uniques (latest 106)
     </text>
   
     <polyline points="470,140" class="line" style="stroke:#16a34a"/>
@@ -177,7 +177,7 @@
           y="66"
           class="axis"
           style="fill:#16a34a">
-      HelixCipher — clones (latest 12)
+      Ikigai — clones (latest 12)
     </text>
   
     <polyline points="470,140" class="line" style="stroke:#34d399"/>
@@ -185,39 +185,39 @@
           y="80"
           class="axis"
           style="fill:#34d399">
-      HelixCipher — uniques (latest 11)
+      Ikigai — uniques (latest 12)
     </text>
   
-    <polyline points="470,141" class="line" style="stroke:#f97316"/>
+    <polyline points="470,140" class="line" style="stroke:#f97316"/>
     <text x="86"
           y="94"
           class="axis"
           style="fill:#f97316">
-      Dynamic-webscraper-WIP- — clones (latest 10)
+      HelixCipher — clones (latest 12)
     </text>
   
-    <polyline points="470,142" class="line" style="stroke:#fb923c"/>
+    <polyline points="470,140" class="line" style="stroke:#fb923c"/>
     <text x="86"
           y="108"
           class="axis"
           style="fill:#fb923c">
-      Dynamic-webscraper-WIP- — uniques (latest 9)
+      HelixCipher — uniques (latest 11)
     </text>
   
-    <polyline points="470,142" class="line" style="stroke:#e11d48"/>
+    <polyline points="470,140" class="line" style="stroke:#e11d48"/>
     <text x="86"
           y="122"
           class="axis"
           style="fill:#e11d48">
-      Ikigai — clones (latest 9)
+      Dynamic-webscraper-WIP- — clones (latest 12)
     </text>
   
-    <polyline points="470,142" class="line" style="stroke:#fb7185"/>
+    <polyline points="470,140" class="line" style="stroke:#fb7185"/>
     <text x="86"
           y="136"
           class="axis"
           style="fill:#fb7185">
-      Ikigai — uniques (latest 9)
+      Dynamic-webscraper-WIP- — uniques (latest 11)
     </text>
   
     <polyline points="470,142" class="line" style="stroke:#a78bfa"/>
@@ -236,12 +236,12 @@
       gif-maker — uniques (latest 9)
     </text>
   
-    <polyline points="470,144" class="line" style="stroke:#06b6d4"/>
+    <polyline points="470,143" class="line" style="stroke:#06b6d4"/>
     <text x="86"
           y="178"
           class="axis"
           style="fill:#06b6d4">
-      one-persons-feature-is-another-persons-exploit — clones (latest 6)
+      ai-agent — clones (latest 7)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#67e8f9"/>
@@ -249,7 +249,7 @@
           y="192"
           class="axis"
           style="fill:#67e8f9">
-      one-persons-feature-is-another-persons-exploit — uniques (latest 6)
+      ai-agent — uniques (latest 6)
     </text>
   
 
