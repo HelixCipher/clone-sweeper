@@ -1,5 +1,5 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" width="1716" height="522" viewBox="0 0 1716 522" role="img" aria-label="GitHub repository clones table">
+<svg xmlns="http://www.w3.org/2000/svg" width="1931" height="522" viewBox="0 0 1931 522" role="img" aria-label="GitHub repository clones table">
 <style>
   .card { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
   .title { font-weight:700; font-size:16px; fill: #0b1220; }
@@ -18,36 +18,36 @@
   }
 </style>
 <text x="18" y="32" class="title card">GitHub repositories — HelixCipher</text>
-<text x="18" y="50" class="meta card">Generated: 2026-01-23T03:26:59.700627Z · Mode: Public repos only · Total repos: 15 · Total clones (sum of visible): 286</text>
-<rect x="18" y="30" width="1680" height="474" rx="8" class="row-even"/>
-<rect x="18" y="30" width="1680" height="474" class="table-border"/>
+<text x="18" y="50" class="meta card">Generated: 2026-01-24T03:21:25.390327Z · Mode: Public repos only · Total repos: 15 · Total clones (sum of visible): 278</text>
+<rect x="18" y="30" width="1895" height="474" rx="8" class="row-even"/>
+<rect x="18" y="30" width="1895" height="474" class="table-border"/>
 
   <text x="30" y="58" class="th card">Repo</text>
 
   <text x="444" y="58" class="th card">Description</text>
 
-  <text x="837" y="58" class="th card">Language</text>
+  <text x="1052" y="58" class="th card">Language</text>
 
-  <text x="978" y="58" class="th card">Stars</text>
+  <text x="1193" y="58" class="th card">Stars</text>
 
-  <text x="1042" y="58" class="th card">Forks</text>
+  <text x="1257" y="58" class="th card">Forks</text>
 
-  <text x="1106" y="58" class="th card">Watchers</text>
+  <text x="1321" y="58" class="th card">Watchers</text>
 
-  <text x="1170" y="58" class="th card">Open issues</text>
+  <text x="1385" y="58" class="th card">Open issues</text>
 
-  <text x="1260" y="58" class="th card">Last push</text>
+  <text x="1475" y="58" class="th card">Last push</text>
 
-  <text x="1422" y="58" class="th card">Size KB</text>
+  <text x="1637" y="58" class="th card">Size KB</text>
 
-  <text x="1502" y="58" class="th card">Clones (14d)</text>
+  <text x="1717" y="58" class="th card">Clones (14d)</text>
 
-  <text x="1600" y="58" class="th card">Unique clones (14d)</text>
+  <text x="1815" y="58" class="th card">Unique clones (14d)</text>
 
-<line x1="18" y1="58" x2="1698" y2="58" stroke="#e6eaf2" />
+<line x1="18" y1="58" x2="1913" y2="58" stroke="#e6eaf2" />
 
   
-  <rect x="18" y="58" width="1680" height="26" class="row-even" opacity="0.95"/>
+  <rect x="18" y="58" width="1895" height="26" class="row-even" opacity="0.95"/>
   
     
     
@@ -64,52 +64,52 @@
   
     
     
-      <text x="837" y="74" class="td card">Python</text>
+      <text x="1052" y="74" class="td card">Python</text>
     
   
     
     
-      <text x="978" y="74" class="td card">0</text>
+      <text x="1193" y="74" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="74" class="td card">0</text>
+      <text x="1257" y="74" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="74" class="td card">0</text>
+      <text x="1321" y="74" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="74" class="td card">0</text>
+      <text x="1385" y="74" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="74" class="td card">2026-01-22 03:41:39</text>
+      <text x="1475" y="74" class="td card">2026-01-23 03:27:00</text>
     
   
     
     
-      <text x="1422" y="74" class="td card">108</text>
+      <text x="1637" y="74" class="td card">111</text>
     
   
     
     
-      <text x="1502" y="74" class="td card">202</text>
+      <text x="1717" y="74" class="td card">196</text>
     
   
     
     
-      <text x="1600" y="74" class="td card">106</text>
+      <text x="1815" y="74" class="td card">102</text>
     
   
 
   
-  <rect x="18" y="84" width="1680" height="26" class="row-odd" opacity="0.95"/>
+  <rect x="18" y="84" width="1895" height="26" class="row-odd" opacity="0.95"/>
   
     
     
@@ -129,52 +129,52 @@
   
     
     
-      <text x="837" y="100" class="td card">Shell</text>
+      <text x="1052" y="100" class="td card">Shell</text>
     
   
     
     
-      <text x="978" y="100" class="td card">0</text>
+      <text x="1193" y="100" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="100" class="td card">0</text>
+      <text x="1257" y="100" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="100" class="td card">0</text>
+      <text x="1321" y="100" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="100" class="td card">0</text>
+      <text x="1385" y="100" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="100" class="td card">2026-01-18 21:20:43</text>
+      <text x="1475" y="100" class="td card">2026-01-18 21:20:43</text>
     
   
     
     
-      <text x="1422" y="100" class="td card">4</text>
+      <text x="1637" y="100" class="td card">4</text>
     
   
     
     
-      <text x="1502" y="100" class="td card">12</text>
+      <text x="1717" y="100" class="td card">12</text>
     
   
     
     
-      <text x="1600" y="100" class="td card">12</text>
+      <text x="1815" y="100" class="td card">12</text>
     
   
 
   
-  <rect x="18" y="110" width="1680" height="26" class="row-even" opacity="0.95"/>
+  <rect x="18" y="110" width="1895" height="26" class="row-even" opacity="0.95"/>
   
     
     
@@ -191,52 +191,52 @@
   
     
     
-      <text x="837" y="126" class="td card"></text>
+      <text x="1052" y="126" class="td card"></text>
     
   
     
     
-      <text x="978" y="126" class="td card">0</text>
+      <text x="1193" y="126" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="126" class="td card">0</text>
+      <text x="1257" y="126" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="126" class="td card">0</text>
+      <text x="1321" y="126" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="126" class="td card">0</text>
+      <text x="1385" y="126" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="126" class="td card">2026-01-08 20:54:27</text>
+      <text x="1475" y="126" class="td card">2026-01-08 20:54:27</text>
     
   
     
     
-      <text x="1422" y="126" class="td card">9422</text>
+      <text x="1637" y="126" class="td card">9422</text>
     
   
     
     
-      <text x="1502" y="126" class="td card">12</text>
+      <text x="1717" y="126" class="td card">8</text>
     
   
     
     
-      <text x="1600" y="126" class="td card">11</text>
+      <text x="1815" y="126" class="td card">7</text>
     
   
 
   
-  <rect x="18" y="136" width="1680" height="26" class="row-odd" opacity="0.95"/>
+  <rect x="18" y="136" width="1895" height="26" class="row-odd" opacity="0.95"/>
   
     
     
@@ -247,58 +247,61 @@
     
       
       
-        <text x="444" y="152" class="muted card">-</text>
+        <text x="444" y="150" class="td card">A short educational guide and hands-on workbook</text>
+        
+          <text x="444" y="164" class="td card">demonstrating how image metadata can leak sensitive informa…</text>
+        
       
     
   
     
     
-      <text x="837" y="152" class="td card">Jupyter Notebook</text>
+      <text x="1052" y="152" class="td card">Jupyter Notebook</text>
     
   
     
     
-      <text x="978" y="152" class="td card">0</text>
+      <text x="1193" y="152" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="152" class="td card">0</text>
+      <text x="1257" y="152" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="152" class="td card">0</text>
+      <text x="1321" y="152" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="152" class="td card">0</text>
+      <text x="1385" y="152" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="152" class="td card">2026-01-05 07:57:22</text>
+      <text x="1475" y="152" class="td card">2026-01-05 07:57:22</text>
     
   
     
     
-      <text x="1422" y="152" class="td card">97111</text>
+      <text x="1637" y="152" class="td card">97111</text>
     
   
     
     
-      <text x="1502" y="152" class="td card">5</text>
+      <text x="1717" y="152" class="td card">5</text>
     
   
     
     
-      <text x="1600" y="152" class="td card">5</text>
+      <text x="1815" y="152" class="td card">5</text>
     
   
 
   
-  <rect x="18" y="162" width="1680" height="26" class="row-even" opacity="0.95"/>
+  <rect x="18" y="162" width="1895" height="26" class="row-even" opacity="0.95"/>
   
     
     
@@ -309,58 +312,61 @@
     
       
       
-        <text x="444" y="178" class="muted card">-</text>
+        <text x="444" y="176" class="td card">A web-based tool to generate GIFs from images, multiple</text>
+        
+          <text x="444" y="190" class="td card">images, or videos. Built with React + Vite for the frontend…</text>
+        
       
     
   
     
     
-      <text x="837" y="178" class="td card">JavaScript</text>
+      <text x="1052" y="178" class="td card">JavaScript</text>
     
   
     
     
-      <text x="978" y="178" class="td card">0</text>
+      <text x="1193" y="178" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="178" class="td card">0</text>
+      <text x="1257" y="178" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="178" class="td card">0</text>
+      <text x="1321" y="178" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="178" class="td card">0</text>
+      <text x="1385" y="178" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="178" class="td card">2026-01-05 07:56:37</text>
+      <text x="1475" y="178" class="td card">2026-01-05 07:56:37</text>
     
   
     
     
-      <text x="1422" y="178" class="td card">24354</text>
+      <text x="1637" y="178" class="td card">24354</text>
     
   
     
     
-      <text x="1502" y="178" class="td card">9</text>
+      <text x="1717" y="178" class="td card">8</text>
     
   
     
     
-      <text x="1600" y="178" class="td card">9</text>
+      <text x="1815" y="178" class="td card">8</text>
     
   
 
   
-  <rect x="18" y="188" width="1680" height="26" class="row-odd" opacity="0.95"/>
+  <rect x="18" y="188" width="1895" height="26" class="row-odd" opacity="0.95"/>
   
     
     
@@ -371,58 +377,61 @@
     
       
       
-        <text x="444" y="204" class="muted card">-</text>
+        <text x="444" y="202" class="td card">Versatile web scraping tool designed to extract and</text>
+        
+          <text x="444" y="216" class="td card">structure data from any website, dynamically adjusting to t…</text>
+        
       
     
   
     
     
-      <text x="837" y="204" class="td card">Python</text>
+      <text x="1052" y="204" class="td card">Python</text>
     
   
     
     
-      <text x="978" y="204" class="td card">0</text>
+      <text x="1193" y="204" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="204" class="td card">0</text>
+      <text x="1257" y="204" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="204" class="td card">0</text>
+      <text x="1321" y="204" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="204" class="td card">0</text>
+      <text x="1385" y="204" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="204" class="td card">2025-12-19 09:14:24</text>
+      <text x="1475" y="204" class="td card">2025-12-19 09:14:24</text>
     
   
     
     
-      <text x="1422" y="204" class="td card">8320</text>
+      <text x="1637" y="204" class="td card">8320</text>
     
   
     
     
-      <text x="1502" y="204" class="td card">12</text>
+      <text x="1717" y="204" class="td card">13</text>
     
   
     
     
-      <text x="1600" y="204" class="td card">11</text>
+      <text x="1815" y="204" class="td card">12</text>
     
   
 
   
-  <rect x="18" y="214" width="1680" height="26" class="row-even" opacity="0.95"/>
+  <rect x="18" y="214" width="1895" height="26" class="row-even" opacity="0.95"/>
   
     
     
@@ -433,58 +442,61 @@
     
       
       
-        <text x="444" y="230" class="muted card">-</text>
+        <text x="444" y="228" class="td card">A flexible and extensible AI agent system that combines LLM</text>
+        
+          <text x="444" y="242" class="td card">capabilities with custom tools for interactive task executi…</text>
+        
       
     
   
     
     
-      <text x="837" y="230" class="td card">Python</text>
+      <text x="1052" y="230" class="td card">Python</text>
     
   
     
     
-      <text x="978" y="230" class="td card">0</text>
+      <text x="1193" y="230" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="230" class="td card">0</text>
+      <text x="1257" y="230" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="230" class="td card">0</text>
+      <text x="1321" y="230" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="230" class="td card">0</text>
+      <text x="1385" y="230" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="230" class="td card">2025-12-19 09:13:15</text>
+      <text x="1475" y="230" class="td card">2025-12-19 09:13:15</text>
     
   
     
     
-      <text x="1422" y="230" class="td card">13</text>
+      <text x="1637" y="230" class="td card">13</text>
     
   
     
     
-      <text x="1502" y="230" class="td card">7</text>
+      <text x="1717" y="230" class="td card">7</text>
     
   
     
     
-      <text x="1600" y="230" class="td card">6</text>
+      <text x="1815" y="230" class="td card">6</text>
     
   
 
   
-  <rect x="18" y="240" width="1680" height="26" class="row-odd" opacity="0.95"/>
+  <rect x="18" y="240" width="1895" height="26" class="row-odd" opacity="0.95"/>
   
     
     
@@ -495,58 +507,61 @@
     
       
       
-        <text x="444" y="256" class="muted card">-</text>
+        <text x="444" y="254" class="td card">Podcast Retriever is a Python-based tool designed to</text>
+        
+          <text x="444" y="268" class="td card">aggregate and consolidate podcast data from multiple source…</text>
+        
       
     
   
     
     
-      <text x="837" y="256" class="td card">Python</text>
+      <text x="1052" y="256" class="td card">Python</text>
     
   
     
     
-      <text x="978" y="256" class="td card">0</text>
+      <text x="1193" y="256" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="256" class="td card">0</text>
+      <text x="1257" y="256" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="256" class="td card">0</text>
+      <text x="1321" y="256" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="256" class="td card">0</text>
+      <text x="1385" y="256" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="256" class="td card">2025-12-19 09:12:29</text>
+      <text x="1475" y="256" class="td card">2025-12-19 09:12:29</text>
     
   
     
     
-      <text x="1422" y="256" class="td card">10</text>
+      <text x="1637" y="256" class="td card">10</text>
     
   
     
     
-      <text x="1502" y="256" class="td card">4</text>
+      <text x="1717" y="256" class="td card">5</text>
     
   
     
     
-      <text x="1600" y="256" class="td card">4</text>
+      <text x="1815" y="256" class="td card">5</text>
     
   
 
   
-  <rect x="18" y="266" width="1680" height="26" class="row-even" opacity="0.95"/>
+  <rect x="18" y="266" width="1895" height="26" class="row-even" opacity="0.95"/>
   
     
     
@@ -557,58 +572,61 @@
     
       
       
-        <text x="444" y="282" class="muted card">-</text>
+        <text x="444" y="280" class="td card">A multi-agent system that automates job searching and career</text>
+        
+          <text x="444" y="294" class="td card">guidance using state-of-the-art language models and web scr…</text>
+        
       
     
   
     
     
-      <text x="837" y="282" class="td card">Python</text>
+      <text x="1052" y="282" class="td card">Python</text>
     
   
     
     
-      <text x="978" y="282" class="td card">0</text>
+      <text x="1193" y="282" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="282" class="td card">0</text>
+      <text x="1257" y="282" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="282" class="td card">0</text>
+      <text x="1321" y="282" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="282" class="td card">0</text>
+      <text x="1385" y="282" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="282" class="td card">2025-12-19 09:11:41</text>
+      <text x="1475" y="282" class="td card">2025-12-19 09:11:41</text>
     
   
     
     
-      <text x="1422" y="282" class="td card">9</text>
+      <text x="1637" y="282" class="td card">9</text>
     
   
     
     
-      <text x="1502" y="282" class="td card">2</text>
+      <text x="1717" y="282" class="td card">3</text>
     
   
     
     
-      <text x="1600" y="282" class="td card">2</text>
+      <text x="1815" y="282" class="td card">3</text>
     
   
 
   
-  <rect x="18" y="292" width="1680" height="26" class="row-odd" opacity="0.95"/>
+  <rect x="18" y="292" width="1895" height="26" class="row-odd" opacity="0.95"/>
   
     
     
@@ -619,58 +637,61 @@
     
       
       
-        <text x="444" y="308" class="muted card">-</text>
+        <text x="444" y="306" class="td card">playwright-pixelscan is a Python-based project that</text>
+        
+          <text x="444" y="320" class="td card">demonstrates how to use Playwright to simulate mobile brows…</text>
+        
       
     
   
     
     
-      <text x="837" y="308" class="td card">Python</text>
+      <text x="1052" y="308" class="td card">Python</text>
     
   
     
     
-      <text x="978" y="308" class="td card">1</text>
+      <text x="1193" y="308" class="td card">1</text>
     
   
     
     
-      <text x="1042" y="308" class="td card">0</text>
+      <text x="1257" y="308" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="308" class="td card">1</text>
+      <text x="1321" y="308" class="td card">1</text>
     
   
     
     
-      <text x="1170" y="308" class="td card">0</text>
+      <text x="1385" y="308" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="308" class="td card">2025-12-19 09:07:33</text>
+      <text x="1475" y="308" class="td card">2025-12-19 09:07:33</text>
     
   
     
     
-      <text x="1422" y="308" class="td card">10</text>
+      <text x="1637" y="308" class="td card">10</text>
     
   
     
     
-      <text x="1502" y="308" class="td card">4</text>
+      <text x="1717" y="308" class="td card">4</text>
     
   
     
     
-      <text x="1600" y="308" class="td card">4</text>
+      <text x="1815" y="308" class="td card">4</text>
     
   
 
   
-  <rect x="18" y="318" width="1680" height="26" class="row-even" opacity="0.95"/>
+  <rect x="18" y="318" width="1895" height="26" class="row-even" opacity="0.95"/>
   
     
     
@@ -681,58 +702,61 @@
     
       
       
-        <text x="444" y="334" class="muted card">-</text>
+        <text x="444" y="332" class="td card">Understand and predict the contribution of heat pumps to</text>
+        
+          <text x="444" y="346" class="td card">total energy usage, leveraging high-resolution temporal and…</text>
+        
       
     
   
     
     
-      <text x="837" y="334" class="td card">Jupyter Notebook</text>
+      <text x="1052" y="334" class="td card">Jupyter Notebook</text>
     
   
     
     
-      <text x="978" y="334" class="td card">0</text>
+      <text x="1193" y="334" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="334" class="td card">0</text>
+      <text x="1257" y="334" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="334" class="td card">0</text>
+      <text x="1321" y="334" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="334" class="td card">0</text>
+      <text x="1385" y="334" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="334" class="td card">2025-04-12 07:50:49</text>
+      <text x="1475" y="334" class="td card">2025-04-12 07:50:49</text>
     
   
     
     
-      <text x="1422" y="334" class="td card">4169</text>
+      <text x="1637" y="334" class="td card">4169</text>
     
   
     
     
-      <text x="1502" y="334" class="td card">2</text>
+      <text x="1717" y="334" class="td card">2</text>
     
   
     
     
-      <text x="1600" y="334" class="td card">2</text>
+      <text x="1815" y="334" class="td card">2</text>
     
   
 
   
-  <rect x="18" y="344" width="1680" height="26" class="row-odd" opacity="0.95"/>
+  <rect x="18" y="344" width="1895" height="26" class="row-odd" opacity="0.95"/>
   
     
     
@@ -743,58 +767,61 @@
     
       
       
-        <text x="444" y="360" class="muted card">-</text>
+        <text x="444" y="358" class="td card">Aims to develop an AI model that predicts whether a visitor</text>
+        
+          <text x="444" y="372" class="td card">session on an e-commerce website will result in a purchase.…</text>
+        
       
     
   
     
     
-      <text x="837" y="360" class="td card">Jupyter Notebook</text>
+      <text x="1052" y="360" class="td card">Jupyter Notebook</text>
     
   
     
     
-      <text x="978" y="360" class="td card">0</text>
+      <text x="1193" y="360" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="360" class="td card">0</text>
+      <text x="1257" y="360" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="360" class="td card">0</text>
+      <text x="1321" y="360" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="360" class="td card">0</text>
+      <text x="1385" y="360" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="360" class="td card">2025-03-12 21:28:28</text>
+      <text x="1475" y="360" class="td card">2025-03-12 21:28:28</text>
     
   
     
     
-      <text x="1422" y="360" class="td card">1396</text>
+      <text x="1637" y="360" class="td card">1396</text>
     
   
     
     
-      <text x="1502" y="360" class="td card">5</text>
+      <text x="1717" y="360" class="td card">5</text>
     
   
     
     
-      <text x="1600" y="360" class="td card">5</text>
+      <text x="1815" y="360" class="td card">5</text>
     
   
 
   
-  <rect x="18" y="370" width="1680" height="26" class="row-even" opacity="0.95"/>
+  <rect x="18" y="370" width="1895" height="26" class="row-even" opacity="0.95"/>
   
     
     
@@ -805,58 +832,61 @@
     
       
       
-        <text x="444" y="386" class="muted card">-</text>
+        <text x="444" y="384" class="td card">Univariate analysis of various variables from a dataset,</text>
+        
+          <text x="444" y="398" class="td card">followed by predictive modeling using decision trees and ra…</text>
+        
       
     
   
     
     
-      <text x="837" y="386" class="td card">Jupyter Notebook</text>
+      <text x="1052" y="386" class="td card">Jupyter Notebook</text>
     
   
     
     
-      <text x="978" y="386" class="td card">0</text>
+      <text x="1193" y="386" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="386" class="td card">0</text>
+      <text x="1257" y="386" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="386" class="td card">0</text>
+      <text x="1321" y="386" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="386" class="td card">0</text>
+      <text x="1385" y="386" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="386" class="td card">2025-03-12 21:04:57</text>
+      <text x="1475" y="386" class="td card">2025-03-12 21:04:57</text>
     
   
     
     
-      <text x="1422" y="386" class="td card">135</text>
+      <text x="1637" y="386" class="td card">135</text>
     
   
     
     
-      <text x="1502" y="386" class="td card">4</text>
+      <text x="1717" y="386" class="td card">4</text>
     
   
     
     
-      <text x="1600" y="386" class="td card">4</text>
+      <text x="1815" y="386" class="td card">4</text>
     
   
 
   
-  <rect x="18" y="396" width="1680" height="26" class="row-odd" opacity="0.95"/>
+  <rect x="18" y="396" width="1895" height="26" class="row-odd" opacity="0.95"/>
   
     
     
@@ -867,58 +897,61 @@
     
       
       
-        <text x="444" y="412" class="muted card">-</text>
+        <text x="444" y="410" class="td card">Analyzes crime data in Chicago from 2008-2012, along with</text>
+        
+          <text x="444" y="424" class="td card">selected census data. The goal is to explore correlations b…</text>
+        
       
     
   
     
     
-      <text x="837" y="412" class="td card">Jupyter Notebook</text>
+      <text x="1052" y="412" class="td card">Jupyter Notebook</text>
     
   
     
     
-      <text x="978" y="412" class="td card">0</text>
+      <text x="1193" y="412" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="412" class="td card">0</text>
+      <text x="1257" y="412" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="412" class="td card">0</text>
+      <text x="1321" y="412" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="412" class="td card">0</text>
+      <text x="1385" y="412" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="412" class="td card">2025-03-12 20:49:43</text>
+      <text x="1475" y="412" class="td card">2025-03-12 20:49:43</text>
     
   
     
     
-      <text x="1422" y="412" class="td card">1885</text>
+      <text x="1637" y="412" class="td card">1885</text>
     
   
     
     
-      <text x="1502" y="412" class="td card">4</text>
+      <text x="1717" y="412" class="td card">4</text>
     
   
     
     
-      <text x="1600" y="412" class="td card">3</text>
+      <text x="1815" y="412" class="td card">3</text>
     
   
 
   
-  <rect x="18" y="422" width="1680" height="26" class="row-even" opacity="0.95"/>
+  <rect x="18" y="422" width="1895" height="26" class="row-even" opacity="0.95"/>
   
     
     
@@ -929,53 +962,56 @@
     
       
       
-        <text x="444" y="438" class="muted card">-</text>
+        <text x="444" y="436" class="td card">Convolutional Neural Networks (CNNs) from scratch, inspired</text>
+        
+          <text x="444" y="450" class="td card">by models like EfficientNet and Inception, trained on the C…</text>
+        
       
     
   
     
     
-      <text x="837" y="438" class="td card">Jupyter Notebook</text>
+      <text x="1052" y="438" class="td card">Jupyter Notebook</text>
     
   
     
     
-      <text x="978" y="438" class="td card">0</text>
+      <text x="1193" y="438" class="td card">0</text>
     
   
     
     
-      <text x="1042" y="438" class="td card">0</text>
+      <text x="1257" y="438" class="td card">0</text>
     
   
     
     
-      <text x="1106" y="438" class="td card">0</text>
+      <text x="1321" y="438" class="td card">0</text>
     
   
     
     
-      <text x="1170" y="438" class="td card">0</text>
+      <text x="1385" y="438" class="td card">0</text>
     
   
     
     
-      <text x="1260" y="438" class="td card">2025-03-12 19:40:36</text>
+      <text x="1475" y="438" class="td card">2025-03-12 19:40:36</text>
     
   
     
     
-      <text x="1422" y="438" class="td card">9563</text>
+      <text x="1637" y="438" class="td card">9563</text>
     
   
     
     
-      <text x="1502" y="438" class="td card">2</text>
+      <text x="1717" y="438" class="td card">2</text>
     
   
     
     
-      <text x="1600" y="438" class="td card">2</text>
+      <text x="1815" y="438" class="td card">2</text>
     
   
 
