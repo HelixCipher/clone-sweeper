@@ -40,7 +40,7 @@
           y="38"
           class="axis"
           style="fill:#1f6feb">
-      clone-sweeper — clones (latest 113)
+      clone-sweeper — clones (latest 116)
     </text>
   
     <polyline points="470,89" class="line" style="stroke:#60a5fa"/>
@@ -48,39 +48,39 @@
           y="52"
           class="axis"
           style="fill:#60a5fa">
-      clone-sweeper — uniques (latest 75)
+      clone-sweeper — uniques (latest 77)
     </text>
   
-    <polyline points="470,195" class="line" style="stroke:#16a34a"/>
+    <polyline points="470,170" class="line" style="stroke:#16a34a"/>
     <text x="86"
           y="66"
           class="axis"
           style="fill:#16a34a">
-      api-forge — clones (latest 14)
+      Ikigai — clones (latest 29)
     </text>
   
-    <polyline points="470,198" class="line" style="stroke:#34d399"/>
+    <polyline points="470,180" class="line" style="stroke:#34d399"/>
     <text x="86"
           y="80"
           class="axis"
           style="fill:#34d399">
-      api-forge — uniques (latest 12)
+      Ikigai — uniques (latest 23)
     </text>
   
-    <polyline points="470,197" class="line" style="stroke:#f97316"/>
+    <polyline points="470,192" class="line" style="stroke:#f97316"/>
     <text x="86"
           y="94"
           class="axis"
           style="fill:#f97316">
-      Dynamic-webscraper-WIP- — clones (latest 13)
+      api-forge — clones (latest 16)
     </text>
   
-    <polyline points="470,198" class="line" style="stroke:#fb923c"/>
+    <polyline points="470,195" class="line" style="stroke:#fb923c"/>
     <text x="86"
           y="108"
           class="axis"
           style="fill:#fb923c">
-      Dynamic-webscraper-WIP- — uniques (latest 12)
+      api-forge — uniques (latest 14)
     </text>
   
     <polyline points="470,198" class="line" style="stroke:#e11d48"/>
@@ -88,15 +88,15 @@
           y="122"
           class="axis"
           style="fill:#e11d48">
-      Ikigai — clones (latest 12)
+      HelixCipher — clones (latest 12)
     </text>
   
-    <polyline points="470,198" class="line" style="stroke:#fb7185"/>
+    <polyline points="470,200" class="line" style="stroke:#fb7185"/>
     <text x="86"
           y="136"
           class="axis"
           style="fill:#fb7185">
-      Ikigai — uniques (latest 12)
+      HelixCipher — uniques (latest 11)
     </text>
   
     <polyline points="470,198" class="line" style="stroke:#a78bfa"/>
@@ -104,15 +104,15 @@
           y="150"
           class="axis"
           style="fill:#a78bfa">
-      HelixCipher — clones (latest 12)
+      Dynamic-webscraper-WIP- — clones (latest 12)
     </text>
   
-    <polyline points="470,200" class="line" style="stroke:#c4b5fd"/>
+    <polyline points="470,198" class="line" style="stroke:#c4b5fd"/>
     <text x="86"
           y="164"
           class="axis"
           style="fill:#c4b5fd">
-      HelixCipher — uniques (latest 11)
+      Dynamic-webscraper-WIP- — uniques (latest 12)
     </text>
   
     <polyline points="470,204" class="line" style="stroke:#06b6d4"/>
@@ -161,7 +161,7 @@
           y="38"
           class="axis"
           style="fill:#1f6feb">
-      clone-sweeper — clones (latest 113)
+      clone-sweeper — clones (latest 116)
     </text>
   
     <polyline points="470,67" class="line" style="stroke:#60a5fa"/>
@@ -169,39 +169,39 @@
           y="52"
           class="axis"
           style="fill:#60a5fa">
-      clone-sweeper — uniques (latest 75)
+      clone-sweeper — uniques (latest 77)
     </text>
   
-    <polyline points="470,138" class="line" style="stroke:#16a34a"/>
+    <polyline points="470,121" class="line" style="stroke:#16a34a"/>
     <text x="86"
           y="66"
           class="axis"
           style="fill:#16a34a">
-      api-forge — clones (latest 14)
+      Ikigai — clones (latest 29)
     </text>
   
-    <polyline points="470,140" class="line" style="stroke:#34d399"/>
+    <polyline points="470,128" class="line" style="stroke:#34d399"/>
     <text x="86"
           y="80"
           class="axis"
           style="fill:#34d399">
-      api-forge — uniques (latest 12)
+      Ikigai — uniques (latest 23)
     </text>
   
-    <polyline points="470,139" class="line" style="stroke:#f97316"/>
+    <polyline points="470,136" class="line" style="stroke:#f97316"/>
     <text x="86"
           y="94"
           class="axis"
           style="fill:#f97316">
-      Dynamic-webscraper-WIP- — clones (latest 13)
+      api-forge — clones (latest 16)
     </text>
   
-    <polyline points="470,140" class="line" style="stroke:#fb923c"/>
+    <polyline points="470,138" class="line" style="stroke:#fb923c"/>
     <text x="86"
           y="108"
           class="axis"
           style="fill:#fb923c">
-      Dynamic-webscraper-WIP- — uniques (latest 12)
+      api-forge — uniques (latest 14)
     </text>
   
     <polyline points="470,140" class="line" style="stroke:#e11d48"/>
@@ -209,15 +209,15 @@
           y="122"
           class="axis"
           style="fill:#e11d48">
-      Ikigai — clones (latest 12)
+      HelixCipher — clones (latest 12)
     </text>
   
-    <polyline points="470,140" class="line" style="stroke:#fb7185"/>
+    <polyline points="470,141" class="line" style="stroke:#fb7185"/>
     <text x="86"
           y="136"
           class="axis"
           style="fill:#fb7185">
-      Ikigai — uniques (latest 12)
+      HelixCipher — uniques (latest 11)
     </text>
   
     <polyline points="470,140" class="line" style="stroke:#a78bfa"/>
@@ -225,15 +225,15 @@
           y="150"
           class="axis"
           style="fill:#a78bfa">
-      HelixCipher — clones (latest 12)
+      Dynamic-webscraper-WIP- — clones (latest 12)
     </text>
   
-    <polyline points="470,141" class="line" style="stroke:#c4b5fd"/>
+    <polyline points="470,140" class="line" style="stroke:#c4b5fd"/>
     <text x="86"
           y="164"
           class="axis"
           style="fill:#c4b5fd">
-      HelixCipher — uniques (latest 11)
+      Dynamic-webscraper-WIP- — uniques (latest 12)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#06b6d4"/>
