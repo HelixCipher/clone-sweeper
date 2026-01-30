@@ -251,6 +251,47 @@ def fetch_clone_stats(owner: str, repo_name: str, token: Optional[str]) -> Dict[
         print(f"  error fetching traffic for {repo_name}: {e}")
         return {"count": None, "uniques": None}
 
+def fetch_download_stats(owner: str, repo_name: str, token: Optional[str]) -> Optional[int]:
+    """
+    Fetch total download counts for all releases of a specific repo using:
+      GET /repos/{owner}/{repo}/releases
+
+    Sums download counts from all assets across all releases.
+    Returns total download count or None if unavailable.
+
+    If the API returns a non-200 status or the repo has no releases,
+    the function prints a friendly message and returns None.
+    
+    Note: GitHub only tracks downloads for release assets, not for repo ZIP downloads.
+    """
+    url = f"{API_BASE}/repos/{owner}/{repo_name}/releases"
+    try:
+        releases = paginate(url, token)
+        total_downloads = 0
+        total_assets = 0
+        release_count = len(releases)
+        
+        for release in releases:
+            assets = release.get("assets", [])
+            for asset in assets:
+                download_count = asset.get("download_count", 0)
+                total_downloads += download_count
+                total_assets += 1
+        
+        if release_count == 0:
+            print(f"  No releases found for {repo_name} - downloads require published releases with assets")
+            return None
+        elif total_assets == 0:
+            print(f"  {repo_name} has {release_count} release(s) but no downloadable assets - downloads show N/A")
+            return None
+        else:
+            print(f"  {repo_name}: {total_downloads} downloads from {total_assets} assets in {release_count} releases")
+            return total_downloads
+    except Exception as e:
+        # Network or unexpected JSON parse errors
+        print(f"  error fetching downloads for {repo_name}: {e}")
+        return None
+
 # ---------------------------
 # History persistence (SQLite)
 # ---------------------------
@@ -259,6 +300,7 @@ DB_PATH = "history.db"
 def init_db():
     """
     Initialize the SQLite database and create the repo_clones table if it doesn't exist.
+    The table includes columns for clone counts, unique clones, and download counts.
     """
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
@@ -268,23 +310,30 @@ def init_db():
             day TEXT NOT NULL,
             clone_count INTEGER,
             unique_clones INTEGER,
+            download_count INTEGER DEFAULT 0,
             PRIMARY KEY (repo_name, day)
         )
     """)
-    conn.commit()
+    # Check if download_count column exists (for migration from older schema)
+    cursor.execute("PRAGMA table_info(repo_clones)")
+    columns = [col[1] for col in cursor.fetchall()]
+    if 'download_count' not in columns:
+        cursor.execute("ALTER TABLE repo_clones ADD COLUMN download_count INTEGER DEFAULT 0")
+        conn.commit()
     conn.close()
 
-def upsert_clone_data(repo_name: str, day: str, clone_count: Optional[int], unique_clones: Optional[int]):
+def upsert_clone_data(repo_name: str, day: str, clone_count: Optional[int], unique_clones: Optional[int], download_count: Optional[int] = 0):
     """
     Insert or update clone data for a specific repo and day.
     Uses INSERT OR REPLACE to handle existing records.
+    Now includes download_count for release asset downloads.
     """
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute("""
-        INSERT OR REPLACE INTO repo_clones (repo_name, day, clone_count, unique_clones)
-        VALUES (?, ?, ?, ?)
-    """, (repo_name, day, clone_count, unique_clones))
+        INSERT OR REPLACE INTO repo_clones (repo_name, day, clone_count, unique_clones, download_count)
+        VALUES (?, ?, ?, ?, ?)
+    """, (repo_name, day, clone_count, unique_clones, download_count or 0))
     conn.commit()
     conn.close()
 
@@ -305,28 +354,65 @@ def remove_missing_repos(current_repos: List[str]):
     conn.commit()
     conn.close()
 
-def read_history_from_db(repo_name: str) -> List[Tuple[datetime.datetime, Optional[int], Optional[int]]]:
+def read_history_from_db(repo_name: str) -> List[Tuple[datetime.datetime, Optional[int], Optional[int], Optional[int]]]:
     """
     Read history from database for a specific repo.
-    Returns list of (datetime, clone_count_or_None, unique_count_or_None) sorted ascending.
+    Returns list of (datetime, clone_count_or_None, unique_count_or_None, download_count_or_None) sorted ascending.
     """
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute("""
-        SELECT day, clone_count, unique_clones
+        SELECT day, clone_count, unique_clones, download_count
         FROM repo_clones
         WHERE repo_name = ?
         ORDER BY day ASC
     """, (repo_name,))
     rows = []
-    for day_str, clone_count, unique_clones in cursor.fetchall():
+    for day_str, clone_count, unique_clones, download_count in cursor.fetchall():
         try:
             dt = datetime.datetime.fromisoformat(day_str)
-            rows.append((dt, clone_count, unique_clones))
+            rows.append((dt, clone_count, unique_clones, download_count))
         except Exception:
             continue
     conn.close()
     return rows
+
+def calculate_downloads_14d(repo_name: str, current_downloads: Optional[int]) -> Optional[int]:
+    """
+    Calculate the 14-day download count by comparing current downloads
+    with the download count from 14 days ago.
+    
+    Returns the 14-day download count or None if not enough history.
+    """
+    if current_downloads is None:
+        return None
+    
+    # Get history from database
+    history = read_history_from_db(repo_name)
+    if not history:
+        return None
+    
+    # Find the entry from 14 days ago (or closest to it)
+    today = datetime.datetime.utcnow().date()
+    target_date = today - datetime.timedelta(days=14)
+    
+    # Look for an entry from around 14 days ago
+    downloads_14d_ago = None
+    for dt, _, _, download_count in history:
+        entry_date = dt.date()
+        # Find closest entry to 14 days ago
+        if entry_date <= target_date:
+            downloads_14d_ago = download_count
+            break
+    
+    if downloads_14d_ago is None:
+        # No data from 14 days ago, can't calculate 14-day count
+        return None
+    
+    # Calculate the difference (downloads in the last 14 days)
+    # Note: downloads are cumulative, so subtract older count from current
+    download_14d = current_downloads - downloads_14d_ago
+    return max(0, download_14d)  # Ensure non-negative
 
 
 # ---------------------------
@@ -356,7 +442,7 @@ SUMMARY_SVG_TEMPLATE = """
 
 <rect x="0" y="0" width="{{ width }}" height="{{ height }}" rx="12" fill="transparent"/>
 <text x="{{ padding }}" y="34" class="title card">GitHub repos — {{ owner|e }}</text>
-<text x="{{ padding }}" y="54" class="meta card">Total repos: {{ total_repos }} · Clones: {{ total_clones }} · Unique Clones: {{ total_uniques }} · Total reported clones: {{ total_combined }} · {{ mode_note }}</text>
+<text x="{{ padding }}" y="54" class="meta card">Repos: {{ total_repos }} · Clones: {{ total_clones }} · Uniques: {{ total_uniques }} · Combined: {{ total_combined }} · Downloads (14d): {{ total_downloads_14d }} · Downloads (total): {{ total_downloads_all }} · {{ mode_note }}</text>
 
 <!-- LEGEND: colored squares + labels -->
 <g id="legend">
@@ -415,7 +501,7 @@ TABLE_SVG_TEMPLATE = """
   }
 </style>
 <text x="{{ padding }}" y="{{ padding + 14 }}" class="title card">GitHub repositories — {{ owner|e }}</text>
-<text x="{{ padding }}" y="{{ padding + 32 }}" class="meta card">Generated: {{ generated_at }} · Mode: {{ mode_note }} · Total repos: {{ total_repos }} · Total clones (sum of visible): {{ total_clones }}</text>
+<text x="{{ padding }}" y="{{ padding + 32 }}" class="meta card">Generated: {{ generated_at }} · Mode: {{ mode_note }} · Repos: {{ total_repos }} · Clones: {{ total_clones }} · Downloads: {{ total_downloads }}</text>
 <rect x="{{ tbl_x }}" y="{{ tbl_y }}" width="{{ tbl_w }}" height="{{ tbl_h }}" rx="8" class="row-even"/>
 <rect x="{{ tbl_x }}" y="{{ tbl_y }}" width="{{ tbl_w }}" height="{{ tbl_h }}" class="table-border"/>
 {% for col in cols %}
@@ -554,39 +640,41 @@ def render_template(template_str: str, ctx: dict) -> str:
 def month_key(dt: datetime.datetime) -> Tuple[int, int]:
     return (dt.year, dt.month)
 
-def aggregate_history_by_month(hist: List[Tuple[datetime.datetime, Optional[int], Optional[int]]]) -> List[Tuple[datetime.datetime, int, int]]:
+def aggregate_history_by_month(hist: List[Tuple[datetime.datetime, Optional[int], Optional[int], Optional[int]]]) -> List[Tuple[datetime.datetime, int, int, int]]:
     """
     Aggregate daily snapshots into monthly sums.
-    Returns list of tuples: (month_dt (first-of-month), sum_clones, sum_uniques) sorted ascending.
+    Returns list of tuples: (month_dt (first-of-month), sum_clones, sum_uniques, sum_downloads) sorted ascending.
     """
     buckets = {}
-    for dt, clones, uniques in hist:
+    for dt, clones, uniques, downloads in hist:
         k = month_key(dt)
         if k not in buckets:
-            buckets[k] = [0, 0]
+            buckets[k] = [0, 0, 0]
         buckets[k][0] += (clones or 0)
         buckets[k][1] += (uniques or 0)
+        buckets[k][2] += (downloads or 0)
     # convert to sorted list of datetimes
     out = []
     for (y, m) in sorted(buckets.keys()):
-        out.append((datetime.datetime(y, m, 1), buckets[(y, m)][0], buckets[(y, m)][1]))
+        out.append((datetime.datetime(y, m, 1), buckets[(y, m)][0], buckets[(y, m)][1], buckets[(y, m)][2]))
     return out
 
-def aggregate_history_by_year(hist: List[Tuple[datetime.datetime, Optional[int], Optional[int]]]) -> List[Tuple[datetime.datetime, int, int]]:
+def aggregate_history_by_year(hist: List[Tuple[datetime.datetime, Optional[int], Optional[int], Optional[int]]]) -> List[Tuple[datetime.datetime, int, int, int]]:
     """
     Aggregate daily snapshots into yearly sums.
-    Returns list: (year_dt (first-of-year), sum_clones, sum_uniques) sorted ascending.
+    Returns list: (year_dt (first-of-year), sum_clones, sum_uniques, sum_downloads) sorted ascending.
     """
     buckets = {}
-    for dt, clones, uniques in hist:
+    for dt, clones, uniques, downloads in hist:
         y = dt.year
         if y not in buckets:
-            buckets[y] = [0, 0]
+            buckets[y] = [0, 0, 0]
         buckets[y][0] += (clones or 0)
         buckets[y][1] += (uniques or 0)
+        buckets[y][2] += (downloads or 0)
     out = []
     for y in sorted(buckets.keys()):
-        out.append((datetime.datetime(y, 1, 1), buckets[y][0], buckets[y][1]))
+        out.append((datetime.datetime(y, 1, 1), buckets[y][0], buckets[y][1], buckets[y][2]))
     return out
 
 
@@ -608,6 +696,8 @@ def generate_summary_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]],
     total_clones = sum((r.get("clone_count") or 0) for r in repo_rows)
     total_uniques = sum((r.get("clone_uniques") or 0) for r in repo_rows)
     total_combined = sum(((r.get("clone_count") or 0) + (r.get("clone_uniques") or 0)) for r in repo_rows)
+    total_downloads_14d = sum((r.get("download_14d") or 0) for r in repo_rows)
+    total_downloads_all = sum((r.get("download_total") or 0) for r in repo_rows)
     total_repos = len(repo_rows)
 
     # Sort repos by clone_count (descending) and take the top_n for the chart
@@ -692,6 +782,8 @@ def generate_summary_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]],
         "total_clones": total_clones,
         "total_uniques": total_uniques,
         "total_combined": total_combined,
+        "total_downloads_14d": total_downloads_14d,
+        "total_downloads_all": total_downloads_all,
         "mode_note": "Includes private repos" if include_private else "Public repos only",
         "rows": rows_for_template,
         "width": width,
@@ -727,6 +819,7 @@ def generate_table_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]], includ
       - Last push (ISO->readable timestamp)
       - Clones (14d)
       - Unique clones (14d)
+      - Downloads (all releases)
 
     Column widths are computed dynamically from the data with min/max clamping so
     the SVG remains visually stable even with unusually long names/descriptions.
@@ -736,6 +829,7 @@ def generate_table_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]], includ
     rows = repo_rows[:] if max_rows is None else repo_rows[:max_rows]
     total_repos = len(repo_rows)
     total_clones = sum((r.get("clone_count") or 0) for r in repo_rows)
+    total_downloads = sum((r.get("download_count") or 0) for r in repo_rows)
 
     # Definition of columns: (key, header, min_px, max_px, is_numeric, wrap_chars_for_text)
     COLS = [
@@ -747,9 +841,10 @@ def generate_table_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]], includ
         ("watchers_count", "Watchers", 56, 80, True, 0),
         ("open_issues_count", "Open issues", 82, 110, True, 0),
         ("pushed_at", "Last push", 140, 200, False, 20),
-        ("size", "Size KB", 72, 110, True, 0),
         ("clone_count", "Clones (14d)", 90, 140, True, 0),
         ("clone_uniques", "Unique clones (14d)", 110, 160, True, 0),
+        ("download_14d", "Downloads (14d)", 110, 160, True, 0),
+        ("download_total", "Downloads (total)", 110, 160, True, 0),
     ]
 
     CHAR_PX = 7.2
@@ -757,7 +852,7 @@ def generate_table_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]], includ
     def cell_text(col_key, r):
         """
         Return the appropriate display string for a given column key and repo dict.
-        Handles formatting for dates and the clone columns which may be None.
+        Handles formatting for dates and the clone/download columns which may be None.
         """
         if col_key == "name":
             return r.get("name") or ""
@@ -772,9 +867,12 @@ def generate_table_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]], includ
         if col_key == "clone_uniques":
             v = r.get("clone_uniques")
             return str(v) if v is not None else "N/A"
-        if col_key == "size":
-            v = r.get("size")
-            return str(v) if v is not None else ""
+        if col_key == "download_14d":
+            v = r.get("download_14d")
+            return str(v) if v is not None else "N/A"
+        if col_key == "download_total":
+            v = r.get("download_total")
+            return str(v) if v is not None else "N/A"
         return str(r.get(col_key) or "")
 
     # Measure the character requirements for each column from the data, capped by wrap heuristics
@@ -875,9 +973,10 @@ def generate_table_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]], includ
             "watchers_count": r.get("watchers_count", r.get("watchers", 0)),
             "open_issues_count": r.get("open_issues_count", 0),
             "pushed_at": (r.get("pushed_at") or "")[:19].replace("T", " "),
-            "size": r.get("size", ""),
             "clone_count": r.get("clone_count") if r.get("clone_count") is not None else "N/A",
             "clone_uniques": r.get("clone_uniques") if r.get("clone_uniques") is not None else "N/A",
+            "download_14d": r.get("download_14d") if r.get("download_14d") is not None else "N/A",
+            "download_total": r.get("download_total") if r.get("download_total") is not None else "N/A",
         })
 
     ctx = {
@@ -886,6 +985,7 @@ def generate_table_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]], includ
         "mode_note": "Includes private repos" if include_private else "Public repos only",
         "total_repos": total_repos,
         "total_clones": total_clones,
+        "total_downloads": total_downloads,
         "cols": col_positions,
         "rows": rows_display,
         "padding": padding,
@@ -899,7 +999,7 @@ def generate_table_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]], includ
         "sep_y": table_y + 28,
         "row_top_offset": 28,
         "row_h": row_h,
-        "footer_note": "Note: GitHub traffic/clones shows recent ~14 days and requires owner access for analytics. If you see 'N/A' clone stats, the token may not have permission.",
+        "footer_note": "Note: GitHub traffic/clones shows recent ~14 days and requires owner access. Downloads require published releases with assets - ZIP downloads from the repo page are not tracked. 'N/A' indicates missing data or insufficient permissions.",
     }
     svg = render_template(TABLE_SVG_TEMPLATE, ctx)
     with open(out_path, "w", encoding="utf-8") as f:
@@ -942,10 +1042,10 @@ def generate_history_svg(owner: str, repo_rows: List[Dict[str, Any]], out_path="
         yearly = aggregate_history_by_year(hist)
         if monthly:
             per_repo_monthly[name] = monthly
-            all_month_keys.extend([dt for dt,_,_ in monthly])
+            all_month_keys.extend([dt for dt,_,_,_ in monthly])
         if yearly:
             per_repo_yearly[name] = yearly
-            all_year_keys.extend([dt for dt,_,_ in yearly])
+            all_year_keys.extend([dt for dt,_,_,_ in yearly])
 
     # Sort and deduplicate keys
     all_month_keys = sorted(list(dict.fromkeys(all_month_keys)))
@@ -979,13 +1079,15 @@ def generate_history_svg(owner: str, repo_rows: List[Dict[str, Any]], out_path="
     monthly_vals = []
     yearly_vals = []
     for monthly in per_repo_monthly.values():
-        for dt, c, u in monthly:
+        for dt, c, u, d in monthly:
             monthly_vals.append(c or 0)
             monthly_vals.append(u or 0)
+            monthly_vals.append(d or 0)
     for yearly in per_repo_yearly.values():
-        for dt, c, u in yearly:
+        for dt, c, u, d in yearly:
             yearly_vals.append(c or 0)
             yearly_vals.append(u or 0)
+            yearly_vals.append(d or 0)
 
     m_vmin = min(monthly_vals) if monthly_vals else 0
     m_vmax = max(monthly_vals) if monthly_vals and max(monthly_vals) > 0 else 1
@@ -997,38 +1099,51 @@ def generate_history_svg(owner: str, repo_rows: List[Dict[str, Any]], out_path="
             return margin_top + plot_h / 2
         return margin_top + plot_h - ((v - vmin) / (vmax - vmin)) * plot_h
 
-    # build monthly series (two lines per repo: clones & uniques)
+    # build monthly series (three lines per repo: clones, uniques & downloads)
     for idx, (name, monthly) in enumerate(per_repo_monthly.items()):
         # clones
         pts_sorted = sorted(monthly, key=lambda x: x[0])
-        points_clone = " ".join(f"{int(month_tx(dt))},{int(map_y(c or 0, m_vmin, m_vmax, monthly_plot_h))}" for dt, c, u in pts_sorted)
+        points_clone = " ".join(f"{int(month_tx(dt))},{int(map_y(c or 0, m_vmin, m_vmax, monthly_plot_h))}" for dt, c, u, d in pts_sorted)
         monthly_series.append({
             "label": f"{name} — clones (latest {pts_sorted[-1][1]})",
             "points": points_clone,
             "color": color_for(idx, "clones")
         })
         # uniques
-        points_uniq = " ".join(f"{int(month_tx(dt))},{int(map_y(u or 0, m_vmin, m_vmax, monthly_plot_h))}" for dt, c, u in pts_sorted)
+        points_uniq = " ".join(f"{int(month_tx(dt))},{int(map_y(u or 0, m_vmin, m_vmax, monthly_plot_h))}" for dt, c, u, d in pts_sorted)
         monthly_series.append({
             "label": f"{name} — uniques (latest {pts_sorted[-1][2]})",
             "points": points_uniq,
             "color": color_for(idx, "uniques")
         })
+        # downloads
+        points_dl = " ".join(f"{int(month_tx(dt))},{int(map_y(d or 0, m_vmin, m_vmax, monthly_plot_h))}" for dt, c, u, d in pts_sorted)
+        monthly_series.append({
+            "label": f"{name} — downloads (latest {pts_sorted[-1][3]})",
+            "points": points_dl,
+            "color": "#f59e0b"  # amber/orange color for downloads
+        })
 
-    # build yearly series
+    # build yearly series (three lines per repo: clones, uniques & downloads)
     for idx, (name, yearly) in enumerate(per_repo_yearly.items()):
         pts_sorted = sorted(yearly, key=lambda x: x[0])
-        points_clone = " ".join(f"{int(year_tx(dt))},{int(map_y(c or 0, y_vmin, y_vmax, yearly_plot_h))}" for dt, c, u in pts_sorted)
+        points_clone = " ".join(f"{int(year_tx(dt))},{int(map_y(c or 0, y_vmin, y_vmax, yearly_plot_h))}" for dt, c, u, d in pts_sorted)
         yearly_series.append({
             "label": f"{name} — clones (latest {pts_sorted[-1][1]})",
             "points": points_clone,
             "color": color_for(idx, "clones")
         })
-        points_uniq = " ".join(f"{int(year_tx(dt))},{int(map_y(u or 0, y_vmin, y_vmax, yearly_plot_h))}" for dt, c, u in pts_sorted)
+        points_uniq = " ".join(f"{int(year_tx(dt))},{int(map_y(u or 0, y_vmin, y_vmax, yearly_plot_h))}" for dt, c, u, d in pts_sorted)
         yearly_series.append({
             "label": f"{name} — uniques (latest {pts_sorted[-1][2]})",
             "points": points_uniq,
             "color": color_for(idx, "uniques")
+        })
+        points_dl = " ".join(f"{int(year_tx(dt))},{int(map_y(d or 0, y_vmin, y_vmax, yearly_plot_h))}" for dt, c, u, d in pts_sorted)
+        yearly_series.append({
+            "label": f"{name} — downloads (latest {pts_sorted[-1][3]})",
+            "points": points_dl,
+            "color": "#f59e0b"  # amber/orange color for downloads
         })
 
     # Prepare human-friendly labels for start/end
@@ -1235,14 +1350,19 @@ def main():
     # Initialize database
     init_db()
 
-    # Build the local repo_rows list with metadata + clone stats fetch
+    # Build the local repo_rows list with metadata + clone stats + download stats fetch
     repo_rows = []
     today = datetime.datetime.utcnow().date().isoformat()
     current_repo_names = []
     for r in repos:
         name = r.get("name")
         current_repo_names.append(name)
+        # Fetch clone stats (14-day window)
         stats = fetch_clone_stats(owner, name, token)
+        # Fetch download stats (all releases)
+        downloads_total = fetch_download_stats(owner, name, token)
+        # Calculate 14-day downloads (requires historical data)
+        downloads_14d = calculate_downloads_14d(name, downloads_total)
         row = {
             "name": name,
             "description": r.get("description"),
@@ -1252,13 +1372,14 @@ def main():
             "watchers_count": r.get("watchers_count", r.get("watchers", 0)),
             "open_issues_count": r.get("open_issues_count", 0),
             "pushed_at": r.get("pushed_at"),
-            "size": r.get("size"),
             "clone_count": stats.get("count"),
             "clone_uniques": stats.get("uniques"),
+            "download_14d": downloads_14d,
+            "download_total": downloads_total,
         }
         repo_rows.append(row)
         # persist snapshot to database (using day as key)
-        upsert_clone_data(name, today, row["clone_count"], row["clone_uniques"])
+        upsert_clone_data(name, today, row["clone_count"], row["clone_uniques"], row["download_total"])
         # small throttle between API calls to be polite to GitHub and avoid bursts
         time.sleep(0.12)
 

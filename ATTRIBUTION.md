@@ -9,7 +9,7 @@ If you reuse or build upon this work, you **must** credit the original creator a
 
 ### Copy-paste attribution example
 
-> Contains material from *Gif Maker*  
+> Contains material from *Clone Sweeper*  
 > by `HelixCipher`  
 > Source: https://github.com/HelixCipher/clone-sweeper  
 > Licensed under CC BY 4.0

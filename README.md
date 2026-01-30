@@ -33,6 +33,10 @@ Each metric is scaled independently so smaller values remain visible.
 
 * Total reported clones
 
+* Downloads (14d)
+
+* Downloads (total)
+
 * Public-only vs private mode indicator
 
 ---
@@ -58,6 +62,10 @@ including:
 * Clone count (last ~14 days)
 
 * Unique cloners (last ~14 days)
+
+* Downloads (14d) — downloads from release assets in the last 14 days
+
+* Downloads (total) — total downloads from all release assets
 
 Missing traffic data is clearly shown as N/A.
 
@@ -98,6 +106,10 @@ Runs automatically via GitHub Actions (cron + manual dispatch). Safe defaults: p
 
 * Branch strategy (main vs history-db)
 
+* Download tracking — tracks downloads from release assets (requires published releases)
+
+* Added `.gitignore` to prevent accidental commits of sensitive files
+
 ---
 
 ## How History Works (Important)
@@ -116,7 +128,7 @@ Schema (simplified):
 
 ```sql
 
-repo_name | day | clone_count | unique_clones
+repo_name | day | clone_count | unique_clones | download_count
 
 
 ```
@@ -167,6 +179,7 @@ This prevents repository bloat while keeping history durable.
 * Requires repeated runs for long-term accuracy
 
 * Private repo data requires explicit opt-in
+* Download counts require published releases with downloadable assets
 
 ---
 
@@ -217,6 +230,28 @@ python clone_sweeper.py ——push
 * It lists repos, optionally filters out private repos (default: exclude), and calls GitHub’s traffic API for clones.
 
 ---
+
+## How to See Download Counts
+
+To have downloads tracked and displayed:
+
+1. Go to one of your repos (e.g., `image-resizer`)
+2. Click **"Releases"** tab → **"Create a new release"**
+3. Upload a file/asset (e.g., a compiled binary, installer, or documentation PDF)
+4. Publish the release
+5. When someone download that specific file, GitHub tracks it
+
+**Important notes about downloads:**
+
+* GitHub **only** tracks downloads for **release assets** (files attached to releases)
+* ZIP downloads from the repo's main page ("Download ZIP" button) are **NOT** tracked
+* Each asset download is counted individually
+* Download counts are cumulative (not time-windowed like clones)
+* `N/A` in the table means either:
+  * The repo has no releases
+  * Releases exist but have no downloadable assets
+  * Insufficient permissions to read release data
+
 
 
 ## Embedding the SVGs in your profile README
@@ -382,7 +417,7 @@ Any reuse, redistribution, or derivative work **must** include:
 
 #### Example Attribution
 
-> This work is based on *one—persons—feature—is—another—persons—exploit* by `HelixCipher`.  
+> This work is based on *Clone Sweeper* by `HelixCipher`.  
 > Original source: https://github.com/HelixCipher/clone—sweeper
 > Licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
 
