@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 """
-clone_sweeper.py
-
 Enhanced: renders SVGs using Jinja2 templates, persists per-repo history snapshots,
 and produces three artifacts:
 
