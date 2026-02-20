@@ -1,5 +1,5 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" width="2087" height="782" viewBox="0 0 2087 782" role="img" aria-label="GitHub repository clones table">
+<svg xmlns="http://www.w3.org/2000/svg" width="2087" height="808" viewBox="0 0 2087 808" role="img" aria-label="GitHub repository clones table">
 <style>
   .card { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
   .title { font-weight:700; font-size:16px; fill: #0b1220; }
@@ -18,9 +18,9 @@
   }
 </style>
 <text x="18" y="32" class="title card">GitHub repositories — HelixCipher</text>
-<text x="18" y="50" class="meta card">Generated: 2026-02-19T04:12:35.882894Z · Mode: Public repos only · Repos: 25 · Clones: 349 · Downloads: 0</text>
-<rect x="18" y="30" width="2051" height="734" rx="8" class="row-even"/>
-<rect x="18" y="30" width="2051" height="734" class="table-border"/>
+<text x="18" y="50" class="meta card">Generated: 2026-02-20T04:08:07.534571Z · Mode: Public repos only · Repos: 26 · Clones: 347 · Downloads: 0</text>
+<rect x="18" y="30" width="2051" height="760" rx="8" class="row-even"/>
+<rect x="18" y="30" width="2051" height="760" class="table-border"/>
 
   <text x="30" y="58" class="th card">Repo</text>
 
@@ -86,12 +86,12 @@
   
     
     
-      <text x="1385" y="74" class="td card">78</text>
+      <text x="1385" y="74" class="td card">79</text>
     
   
     
     
-      <text x="1475" y="74" class="td card">2026-02-18 23:03:22</text>
+      <text x="1475" y="74" class="td card">2026-02-19 16:08:31</text>
     
   
     
@@ -120,23 +120,23 @@
   
     
     
-      <text x="30" y="100" class="td card">project-horseshoe</text>
+      <text x="30" y="100" class="td card">Understanding-Data-Augmentation</text>
     
   
     
     
       
       
-        <text x="444" y="98" class="td card">Fast, concurrent subnet scanner designed for local network</text>
+        <text x="444" y="98" class="td card">A Jupyter notebook demonstrating the impact of data</text>
         
-          <text x="444" y="112" class="td card">discovery and TCP port enumeration.</text>
+          <text x="444" y="112" class="td card">augmentation on neural network training using ResNet18 on t…</text>
         
       
     
   
     
     
-      <text x="1052" y="100" class="td card">Python</text>
+      <text x="1052" y="100" class="td card">Jupyter Notebook</text>
     
   
     
@@ -161,17 +161,17 @@
   
     
     
-      <text x="1475" y="100" class="td card">2026-02-18 15:14:51</text>
+      <text x="1475" y="100" class="td card">2026-02-19 13:56:09</text>
     
   
     
     
-      <text x="1637" y="100" class="td card">2</text>
+      <text x="1637" y="100" class="td card">0</text>
     
   
     
     
-      <text x="1735" y="100" class="td card">2</text>
+      <text x="1735" y="100" class="td card">0</text>
     
   
     
@@ -231,12 +231,12 @@
   
     
     
-      <text x="1475" y="126" class="td card">2026-02-18 04:13:59</text>
+      <text x="1475" y="126" class="td card">2026-02-19 04:12:36</text>
     
   
     
     
-      <text x="1637" y="126" class="td card">114</text>
+      <text x="1637" y="126" class="td card">113</text>
     
   
     
@@ -260,20 +260,23 @@
   
     
     
-      <text x="30" y="152" class="td card">HelixCipher</text>
+      <text x="30" y="152" class="td card">project-horseshoe</text>
     
   
     
     
       
       
-        <text x="444" y="152" class="muted card">-</text>
+        <text x="444" y="150" class="td card">Fast, concurrent subnet scanner designed for local network</text>
+        
+          <text x="444" y="164" class="td card">discovery and TCP port enumeration.</text>
+        
       
     
   
     
     
-      <text x="1052" y="152" class="td card"></text>
+      <text x="1052" y="152" class="td card">Python</text>
     
   
     
@@ -298,17 +301,17 @@
   
     
     
-      <text x="1475" y="152" class="td card">2026-02-17 01:48:39</text>
+      <text x="1475" y="152" class="td card">2026-02-18 15:14:51</text>
     
   
     
     
-      <text x="1637" y="152" class="td card">63</text>
+      <text x="1637" y="152" class="td card">9</text>
     
   
     
     
-      <text x="1735" y="152" class="td card">39</text>
+      <text x="1735" y="152" class="td card">8</text>
     
   
     
@@ -327,23 +330,20 @@
   
     
     
-      <text x="30" y="178" class="td card">digiti-signum</text>
+      <text x="30" y="178" class="td card">HelixCipher</text>
     
   
     
     
       
       
-        <text x="444" y="176" class="td card">Digiti Signum - An scientific research project that explores</text>
-        
-          <text x="444" y="190" class="td card">classical and forensic fingerprint matching techniques usin…</text>
-        
+        <text x="444" y="178" class="muted card">-</text>
       
     
   
     
     
-      <text x="1052" y="178" class="td card">Jupyter Notebook</text>
+      <text x="1052" y="178" class="td card"></text>
     
   
     
@@ -368,17 +368,17 @@
   
     
     
-      <text x="1475" y="178" class="td card">2026-02-17 01:40:26</text>
+      <text x="1475" y="178" class="td card">2026-02-17 01:48:39</text>
     
   
     
     
-      <text x="1637" y="178" class="td card">11</text>
+      <text x="1637" y="178" class="td card">61</text>
     
   
     
     
-      <text x="1735" y="178" class="td card">11</text>
+      <text x="1735" y="178" class="td card">38</text>
     
   
     
@@ -397,23 +397,23 @@
   
     
     
-      <text x="30" y="204" class="td card">Atlas</text>
+      <text x="30" y="204" class="td card">digiti-signum</text>
     
   
     
     
       
       
-        <text x="444" y="202" class="td card">Atlas — Web-scraping toolkit for Swedish authorities.</text>
+        <text x="444" y="202" class="td card">Digiti Signum - An scientific research project that explores</text>
         
-          <text x="444" y="216" class="td card">Automates data collection with pagination, PDF crawling, me…</text>
+          <text x="444" y="216" class="td card">classical and forensic fingerprint matching techniques usin…</text>
         
       
     
   
     
     
-      <text x="1052" y="204" class="td card">Python</text>
+      <text x="1052" y="204" class="td card">Jupyter Notebook</text>
     
   
     
@@ -438,17 +438,17 @@
   
     
     
-      <text x="1475" y="204" class="td card">2026-02-16 11:58:57</text>
+      <text x="1475" y="204" class="td card">2026-02-17 01:40:26</text>
     
   
     
     
-      <text x="1637" y="204" class="td card">28</text>
+      <text x="1637" y="204" class="td card">13</text>
     
   
     
     
-      <text x="1735" y="204" class="td card">26</text>
+      <text x="1735" y="204" class="td card">13</text>
     
   
     
@@ -467,23 +467,23 @@
   
     
     
-      <text x="30" y="230" class="td card">project-jackheart</text>
+      <text x="30" y="230" class="td card">Atlas</text>
     
   
     
     
       
       
-        <text x="444" y="228" class="td card">Project Jackheart is an educational project demonstrating</text>
+        <text x="444" y="228" class="td card">Atlas — Web-scraping toolkit for Swedish authorities.</text>
         
-          <text x="444" y="242" class="td card">byte-level file techniques: hiding data in JPEGs, embedding…</text>
+          <text x="444" y="242" class="td card">Automates data collection with pagination, PDF crawling, me…</text>
         
       
     
   
     
     
-      <text x="1052" y="230" class="td card">Jupyter Notebook</text>
+      <text x="1052" y="230" class="td card">Python</text>
     
   
     
@@ -508,17 +508,17 @@
   
     
     
-      <text x="1475" y="230" class="td card">2026-02-14 12:54:46</text>
+      <text x="1475" y="230" class="td card">2026-02-16 11:58:57</text>
     
   
     
     
-      <text x="1637" y="230" class="td card">13</text>
+      <text x="1637" y="230" class="td card">28</text>
     
   
     
     
-      <text x="1735" y="230" class="td card">13</text>
+      <text x="1735" y="230" class="td card">26</text>
     
   
     
@@ -537,23 +537,23 @@
   
     
     
-      <text x="30" y="256" class="td card">todays-command</text>
+      <text x="30" y="256" class="td card">project-jackheart</text>
     
   
     
     
       
       
-        <text x="444" y="254" class="td card">Today&#39;s Command is a modern Linux desktop widget that</text>
+        <text x="444" y="254" class="td card">Project Jackheart is an educational project demonstrating</text>
         
-          <text x="444" y="268" class="td card">delivers a curated daily command directly to your screen, c…</text>
+          <text x="444" y="268" class="td card">byte-level file techniques: hiding data in JPEGs, embedding…</text>
         
       
     
   
     
     
-      <text x="1052" y="256" class="td card">TypeScript</text>
+      <text x="1052" y="256" class="td card">Jupyter Notebook</text>
     
   
     
@@ -578,17 +578,17 @@
   
     
     
-      <text x="1475" y="256" class="td card">2026-02-12 07:51:15</text>
+      <text x="1475" y="256" class="td card">2026-02-14 12:54:46</text>
     
   
     
     
-      <text x="1637" y="256" class="td card">37</text>
+      <text x="1637" y="256" class="td card">14</text>
     
   
     
     
-      <text x="1735" y="256" class="td card">17</text>
+      <text x="1735" y="256" class="td card">14</text>
     
   
     
@@ -607,23 +607,23 @@
   
     
     
-      <text x="30" y="282" class="td card">Amnesiac-Shell</text>
+      <text x="30" y="282" class="td card">todays-command</text>
     
   
     
     
       
       
-        <text x="444" y="280" class="td card">Lightweight Bash tool for Linux that provides on-demand</text>
+        <text x="444" y="280" class="td card">Today&#39;s Command is a modern Linux desktop widget that</text>
         
-          <text x="444" y="294" class="td card">private shells and automatic session history erasure, desig…</text>
+          <text x="444" y="294" class="td card">delivers a curated daily command directly to your screen, c…</text>
         
       
     
   
     
     
-      <text x="1052" y="282" class="td card">Shell</text>
+      <text x="1052" y="282" class="td card">TypeScript</text>
     
   
     
@@ -648,17 +648,17 @@
   
     
     
-      <text x="1475" y="282" class="td card">2026-02-07 21:10:27</text>
+      <text x="1475" y="282" class="td card">2026-02-12 07:51:15</text>
     
   
     
     
-      <text x="1637" y="282" class="td card">21</text>
+      <text x="1637" y="282" class="td card">38</text>
     
   
     
     
-      <text x="1735" y="282" class="td card">20</text>
+      <text x="1735" y="282" class="td card">18</text>
     
   
     
@@ -677,16 +677,16 @@
   
     
     
-      <text x="30" y="308" class="td card">Changeling</text>
+      <text x="30" y="308" class="td card">Amnesiac-Shell</text>
     
   
     
     
       
       
-        <text x="444" y="306" class="td card">A lightweight Linux utility to enable MAC address</text>
+        <text x="444" y="306" class="td card">Lightweight Bash tool for Linux that provides on-demand</text>
         
-          <text x="444" y="320" class="td card">randomization via NetworkManager, reducing the risk of devi…</text>
+          <text x="444" y="320" class="td card">private shells and automatic session history erasure, desig…</text>
         
       
     
@@ -718,17 +718,17 @@
   
     
     
-      <text x="1475" y="308" class="td card">2026-02-07 11:53:17</text>
+      <text x="1475" y="308" class="td card">2026-02-07 21:10:27</text>
     
   
     
     
-      <text x="1637" y="308" class="td card">17</text>
+      <text x="1637" y="308" class="td card">21</text>
     
   
     
     
-      <text x="1735" y="308" class="td card">15</text>
+      <text x="1735" y="308" class="td card">20</text>
     
   
     
@@ -747,23 +747,23 @@
   
     
     
-      <text x="30" y="334" class="td card">image-resizer</text>
+      <text x="30" y="334" class="td card">Changeling</text>
     
   
     
     
       
       
-        <text x="444" y="332" class="td card">A web application that allows users to resize and compress</text>
+        <text x="444" y="332" class="td card">A lightweight Linux utility to enable MAC address</text>
         
-          <text x="444" y="346" class="td card">images to a target file size while maintaining maximum qual…</text>
+          <text x="444" y="346" class="td card">randomization via NetworkManager, reducing the risk of devi…</text>
         
       
     
   
     
     
-      <text x="1052" y="334" class="td card">HTML</text>
+      <text x="1052" y="334" class="td card">Shell</text>
     
   
     
@@ -788,17 +788,17 @@
   
     
     
-      <text x="1475" y="334" class="td card">2026-01-30 21:51:44</text>
+      <text x="1475" y="334" class="td card">2026-02-07 11:53:17</text>
     
   
     
     
-      <text x="1637" y="334" class="td card">5</text>
+      <text x="1637" y="334" class="td card">17</text>
     
   
     
     
-      <text x="1735" y="334" class="td card">5</text>
+      <text x="1735" y="334" class="td card">15</text>
     
   
     
@@ -817,23 +817,23 @@
   
     
     
-      <text x="30" y="360" class="td card">E-commerce-Conversion-Prediction</text>
+      <text x="30" y="360" class="td card">image-resizer</text>
     
   
     
     
       
       
-        <text x="444" y="358" class="td card">Aims to develop an AI model that predicts whether a visitor</text>
+        <text x="444" y="358" class="td card">A web application that allows users to resize and compress</text>
         
-          <text x="444" y="372" class="td card">session on an e-commerce website will result in a purchase.…</text>
+          <text x="444" y="372" class="td card">images to a target file size while maintaining maximum qual…</text>
         
       
     
   
     
     
-      <text x="1052" y="360" class="td card">Jupyter Notebook</text>
+      <text x="1052" y="360" class="td card">HTML</text>
     
   
     
@@ -858,17 +858,17 @@
   
     
     
-      <text x="1475" y="360" class="td card">2026-01-27 10:19:46</text>
+      <text x="1475" y="360" class="td card">2026-01-30 21:51:44</text>
     
   
     
     
-      <text x="1637" y="360" class="td card">4</text>
+      <text x="1637" y="360" class="td card">3</text>
     
   
     
     
-      <text x="1735" y="360" class="td card">4</text>
+      <text x="1735" y="360" class="td card">3</text>
     
   
     
@@ -887,23 +887,23 @@
   
     
     
-      <text x="30" y="386" class="td card">Ikigai</text>
+      <text x="30" y="386" class="td card">E-commerce-Conversion-Prediction</text>
     
   
     
     
       
       
-        <text x="444" y="384" class="td card">Ikigai (生き甲斐) - Cross-distro Linux Hardening</text>
+        <text x="444" y="384" class="td card">Aims to develop an AI model that predicts whether a visitor</text>
         
-          <text x="444" y="398" class="td card">Ikigai (生き甲斐) - Cross-distro Linux Hardening</text>
+          <text x="444" y="398" class="td card">session on an e-commerce website will result in a purchase.…</text>
         
       
     
   
     
     
-      <text x="1052" y="386" class="td card">Shell</text>
+      <text x="1052" y="386" class="td card">Jupyter Notebook</text>
     
   
     
@@ -928,17 +928,17 @@
   
     
     
-      <text x="1475" y="386" class="td card">2026-01-25 16:21:55</text>
+      <text x="1475" y="386" class="td card">2026-01-27 10:19:46</text>
     
   
     
     
-      <text x="1637" y="386" class="td card">2</text>
+      <text x="1637" y="386" class="td card">3</text>
     
   
     
     
-      <text x="1735" y="386" class="td card">2</text>
+      <text x="1735" y="386" class="td card">3</text>
     
   
     
@@ -957,23 +957,23 @@
   
     
     
-      <text x="30" y="412" class="td card">api-forge</text>
+      <text x="30" y="412" class="td card">Ikigai</text>
     
   
     
     
       
       
-        <text x="444" y="410" class="td card">A POC project where we have an AI-powered OpenAPI</text>
+        <text x="444" y="410" class="td card">Ikigai (生き甲斐) - Cross-distro Linux Hardening</text>
         
-          <text x="444" y="424" class="td card">specification generator with multi-agent architecture, MCP …</text>
+          <text x="444" y="424" class="td card">Ikigai (生き甲斐) - Cross-distro Linux Hardening</text>
         
       
     
   
     
     
-      <text x="1052" y="412" class="td card">TypeScript</text>
+      <text x="1052" y="412" class="td card">Shell</text>
     
   
     
@@ -998,17 +998,17 @@
   
     
     
-      <text x="1475" y="412" class="td card">2026-01-24 13:34:13</text>
+      <text x="1475" y="412" class="td card">2026-01-25 16:21:55</text>
     
   
     
     
-      <text x="1637" y="412" class="td card">4</text>
+      <text x="1637" y="412" class="td card">1</text>
     
   
     
     
-      <text x="1735" y="412" class="td card">4</text>
+      <text x="1735" y="412" class="td card">1</text>
     
   
     
@@ -1027,23 +1027,23 @@
   
     
     
-      <text x="30" y="438" class="td card">one-persons-feature-is-another-persons-exploit</text>
+      <text x="30" y="438" class="td card">api-forge</text>
     
   
     
     
       
       
-        <text x="444" y="436" class="td card">A short educational guide and hands-on workbook</text>
+        <text x="444" y="436" class="td card">A POC project where we have an AI-powered OpenAPI</text>
         
-          <text x="444" y="450" class="td card">demonstrating how image metadata can leak sensitive informa…</text>
+          <text x="444" y="450" class="td card">specification generator with multi-agent architecture, MCP …</text>
         
       
     
   
     
     
-      <text x="1052" y="438" class="td card">Jupyter Notebook</text>
+      <text x="1052" y="438" class="td card">TypeScript</text>
     
   
     
@@ -1068,17 +1068,17 @@
   
     
     
-      <text x="1475" y="438" class="td card">2026-01-05 07:57:22</text>
+      <text x="1475" y="438" class="td card">2026-01-24 13:34:13</text>
     
   
     
     
-      <text x="1637" y="438" class="td card">2</text>
+      <text x="1637" y="438" class="td card">4</text>
     
   
     
     
-      <text x="1735" y="438" class="td card">2</text>
+      <text x="1735" y="438" class="td card">4</text>
     
   
     
@@ -1097,23 +1097,23 @@
   
     
     
-      <text x="30" y="464" class="td card">gif-maker</text>
+      <text x="30" y="464" class="td card">one-persons-feature-is-another-persons-exploit</text>
     
   
     
     
       
       
-        <text x="444" y="462" class="td card">A web-based tool to generate GIFs from images, multiple</text>
+        <text x="444" y="462" class="td card">A short educational guide and hands-on workbook</text>
         
-          <text x="444" y="476" class="td card">images, or videos. Built with React + Vite for the frontend…</text>
+          <text x="444" y="476" class="td card">demonstrating how image metadata can leak sensitive informa…</text>
         
       
     
   
     
     
-      <text x="1052" y="464" class="td card">JavaScript</text>
+      <text x="1052" y="464" class="td card">Jupyter Notebook</text>
     
   
     
@@ -1138,17 +1138,17 @@
   
     
     
-      <text x="1475" y="464" class="td card">2026-01-05 07:56:37</text>
+      <text x="1475" y="464" class="td card">2026-01-05 07:57:22</text>
     
   
     
     
-      <text x="1637" y="464" class="td card">4</text>
+      <text x="1637" y="464" class="td card">1</text>
     
   
     
     
-      <text x="1735" y="464" class="td card">4</text>
+      <text x="1735" y="464" class="td card">1</text>
     
   
     
@@ -1167,23 +1167,23 @@
   
     
     
-      <text x="30" y="490" class="td card">Dynamic-webscraper-WIP-</text>
+      <text x="30" y="490" class="td card">gif-maker</text>
     
   
     
     
       
       
-        <text x="444" y="488" class="td card">Versatile web scraping tool designed to extract and</text>
+        <text x="444" y="488" class="td card">A web-based tool to generate GIFs from images, multiple</text>
         
-          <text x="444" y="502" class="td card">structure data from any website, dynamically adjusting to t…</text>
+          <text x="444" y="502" class="td card">images, or videos. Built with React + Vite for the frontend…</text>
         
       
     
   
     
     
-      <text x="1052" y="490" class="td card">Python</text>
+      <text x="1052" y="490" class="td card">JavaScript</text>
     
   
     
@@ -1208,7 +1208,7 @@
   
     
     
-      <text x="1475" y="490" class="td card">2025-12-19 09:14:24</text>
+      <text x="1475" y="490" class="td card">2026-01-05 07:56:37</text>
     
   
     
@@ -1237,16 +1237,16 @@
   
     
     
-      <text x="30" y="516" class="td card">ai-agent</text>
+      <text x="30" y="516" class="td card">Dynamic-webscraper-WIP-</text>
     
   
     
     
       
       
-        <text x="444" y="514" class="td card">A flexible and extensible AI agent system that combines LLM</text>
+        <text x="444" y="514" class="td card">Versatile web scraping tool designed to extract and</text>
         
-          <text x="444" y="528" class="td card">capabilities with custom tools for interactive task executi…</text>
+          <text x="444" y="528" class="td card">structure data from any website, dynamically adjusting to t…</text>
         
       
     
@@ -1278,17 +1278,17 @@
   
     
     
-      <text x="1475" y="516" class="td card">2025-12-19 09:13:15</text>
+      <text x="1475" y="516" class="td card">2025-12-19 09:14:24</text>
     
   
     
     
-      <text x="1637" y="516" class="td card">6</text>
+      <text x="1637" y="516" class="td card">4</text>
     
   
     
     
-      <text x="1735" y="516" class="td card">6</text>
+      <text x="1735" y="516" class="td card">4</text>
     
   
     
@@ -1307,16 +1307,16 @@
   
     
     
-      <text x="30" y="542" class="td card">podcast-retriever</text>
+      <text x="30" y="542" class="td card">ai-agent</text>
     
   
     
     
       
       
-        <text x="444" y="540" class="td card">Podcast Retriever is a Python-based tool designed to</text>
+        <text x="444" y="540" class="td card">A flexible and extensible AI agent system that combines LLM</text>
         
-          <text x="444" y="554" class="td card">aggregate and consolidate podcast data from multiple source…</text>
+          <text x="444" y="554" class="td card">capabilities with custom tools for interactive task executi…</text>
         
       
     
@@ -1348,17 +1348,17 @@
   
     
     
-      <text x="1475" y="542" class="td card">2025-12-19 09:12:29</text>
+      <text x="1475" y="542" class="td card">2025-12-19 09:13:15</text>
     
   
     
     
-      <text x="1637" y="542" class="td card">2</text>
+      <text x="1637" y="542" class="td card">6</text>
     
   
     
     
-      <text x="1735" y="542" class="td card">2</text>
+      <text x="1735" y="542" class="td card">6</text>
     
   
     
@@ -1377,16 +1377,16 @@
   
     
     
-      <text x="30" y="568" class="td card">ai-job-finder-WIP-</text>
+      <text x="30" y="568" class="td card">podcast-retriever</text>
     
   
     
     
       
       
-        <text x="444" y="566" class="td card">A multi-agent system that automates job searching and career</text>
+        <text x="444" y="566" class="td card">Podcast Retriever is a Python-based tool designed to</text>
         
-          <text x="444" y="580" class="td card">guidance using state-of-the-art language models and web scr…</text>
+          <text x="444" y="580" class="td card">aggregate and consolidate podcast data from multiple source…</text>
         
       
     
@@ -1418,17 +1418,17 @@
   
     
     
-      <text x="1475" y="568" class="td card">2025-12-19 09:11:41</text>
+      <text x="1475" y="568" class="td card">2025-12-19 09:12:29</text>
     
   
     
     
-      <text x="1637" y="568" class="td card">4</text>
+      <text x="1637" y="568" class="td card">1</text>
     
   
     
     
-      <text x="1735" y="568" class="td card">4</text>
+      <text x="1735" y="568" class="td card">1</text>
     
   
     
@@ -1447,16 +1447,16 @@
   
     
     
-      <text x="30" y="594" class="td card">playwright-pixelscan</text>
+      <text x="30" y="594" class="td card">ai-job-finder-WIP-</text>
     
   
     
     
       
       
-        <text x="444" y="592" class="td card">playwright-pixelscan is a Python-based project that</text>
+        <text x="444" y="592" class="td card">A multi-agent system that automates job searching and career</text>
         
-          <text x="444" y="606" class="td card">demonstrates how to use Playwright to simulate mobile brows…</text>
+          <text x="444" y="606" class="td card">guidance using state-of-the-art language models and web scr…</text>
         
       
     
@@ -1468,7 +1468,7 @@
   
     
     
-      <text x="1193" y="594" class="td card">1</text>
+      <text x="1193" y="594" class="td card">0</text>
     
   
     
@@ -1478,7 +1478,7 @@
   
     
     
-      <text x="1321" y="594" class="td card">1</text>
+      <text x="1321" y="594" class="td card">0</text>
     
   
     
@@ -1488,17 +1488,17 @@
   
     
     
-      <text x="1475" y="594" class="td card">2025-12-19 09:07:33</text>
+      <text x="1475" y="594" class="td card">2025-12-19 09:11:41</text>
     
   
     
     
-      <text x="1637" y="594" class="td card">1</text>
+      <text x="1637" y="594" class="td card">3</text>
     
   
     
     
-      <text x="1735" y="594" class="td card">1</text>
+      <text x="1735" y="594" class="td card">3</text>
     
   
     
@@ -1517,28 +1517,28 @@
   
     
     
-      <text x="30" y="620" class="td card">Heat-Pump-Contribution-Analysis-Using-Real-Energy-Data</text>
+      <text x="30" y="620" class="td card">playwright-pixelscan</text>
     
   
     
     
       
       
-        <text x="444" y="618" class="td card">Understand and predict the contribution of heat pumps to</text>
+        <text x="444" y="618" class="td card">playwright-pixelscan is a Python-based project that</text>
         
-          <text x="444" y="632" class="td card">total energy usage, leveraging high-resolution temporal and…</text>
+          <text x="444" y="632" class="td card">demonstrates how to use Playwright to simulate mobile brows…</text>
         
       
     
   
     
     
-      <text x="1052" y="620" class="td card">Jupyter Notebook</text>
+      <text x="1052" y="620" class="td card">Python</text>
     
   
     
     
-      <text x="1193" y="620" class="td card">0</text>
+      <text x="1193" y="620" class="td card">1</text>
     
   
     
@@ -1548,7 +1548,7 @@
   
     
     
-      <text x="1321" y="620" class="td card">0</text>
+      <text x="1321" y="620" class="td card">1</text>
     
   
     
@@ -1558,17 +1558,17 @@
   
     
     
-      <text x="1475" y="620" class="td card">2025-04-12 07:50:49</text>
+      <text x="1475" y="620" class="td card">2025-12-19 09:07:33</text>
     
   
     
     
-      <text x="1637" y="620" class="td card">2</text>
+      <text x="1637" y="620" class="td card">0</text>
     
   
     
     
-      <text x="1735" y="620" class="td card">2</text>
+      <text x="1735" y="620" class="td card">0</text>
     
   
     
@@ -1587,16 +1587,16 @@
   
     
     
-      <text x="30" y="646" class="td card">CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES</text>
+      <text x="30" y="646" class="td card">Heat-Pump-Contribution-Analysis-Using-Real-Energy-Data</text>
     
   
     
     
       
       
-        <text x="444" y="644" class="td card">Univariate analysis of various variables from a dataset,</text>
+        <text x="444" y="644" class="td card">Understand and predict the contribution of heat pumps to</text>
         
-          <text x="444" y="658" class="td card">followed by predictive modeling using decision trees and ra…</text>
+          <text x="444" y="658" class="td card">total energy usage, leveraging high-resolution temporal and…</text>
         
       
     
@@ -1628,17 +1628,17 @@
   
     
     
-      <text x="1475" y="646" class="td card">2025-03-12 21:04:57</text>
+      <text x="1475" y="646" class="td card">2025-04-12 07:50:49</text>
     
   
     
     
-      <text x="1637" y="646" class="td card">1</text>
+      <text x="1637" y="646" class="td card">2</text>
     
   
     
     
-      <text x="1735" y="646" class="td card">1</text>
+      <text x="1735" y="646" class="td card">2</text>
     
   
     
@@ -1657,16 +1657,16 @@
   
     
     
-      <text x="30" y="672" class="td card">data-processing</text>
+      <text x="30" y="672" class="td card">CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES</text>
     
   
     
     
       
       
-        <text x="444" y="670" class="td card">Analyzes crime data in Chicago from 2008-2012, along with</text>
+        <text x="444" y="670" class="td card">Univariate analysis of various variables from a dataset,</text>
         
-          <text x="444" y="684" class="td card">selected census data. The goal is to explore correlations b…</text>
+          <text x="444" y="684" class="td card">followed by predictive modeling using decision trees and ra…</text>
         
       
     
@@ -1698,7 +1698,7 @@
   
     
     
-      <text x="1475" y="672" class="td card">2025-03-12 20:49:43</text>
+      <text x="1475" y="672" class="td card">2025-03-12 21:04:57</text>
     
   
     
@@ -1727,16 +1727,16 @@
   
     
     
-      <text x="30" y="698" class="td card">Convolutional-Neural-Networks-CNNs-from-scratch</text>
+      <text x="30" y="698" class="td card">data-processing</text>
     
   
     
     
       
       
-        <text x="444" y="696" class="td card">Convolutional Neural Networks (CNNs) from scratch, inspired</text>
+        <text x="444" y="696" class="td card">Analyzes crime data in Chicago from 2008-2012, along with</text>
         
-          <text x="444" y="710" class="td card">by models like EfficientNet and Inception, trained on the C…</text>
+          <text x="444" y="710" class="td card">selected census data. The goal is to explore correlations b…</text>
         
       
     
@@ -1768,17 +1768,17 @@
   
     
     
-      <text x="1475" y="698" class="td card">2025-03-12 19:40:36</text>
+      <text x="1475" y="698" class="td card">2025-03-12 20:49:43</text>
     
   
     
     
-      <text x="1637" y="698" class="td card">1</text>
+      <text x="1637" y="698" class="td card">0</text>
     
   
     
     
-      <text x="1735" y="698" class="td card">1</text>
+      <text x="1735" y="698" class="td card">0</text>
     
   
     
@@ -1789,6 +1789,76 @@
     
     
       <text x="1971" y="698" class="td card">N/A</text>
+    
+  
+
+  
+  <rect x="18" y="708" width="2051" height="26" class="row-odd" opacity="0.95"/>
+  
+    
+    
+      <text x="30" y="724" class="td card">Convolutional-Neural-Networks-CNNs-from-scratch</text>
+    
+  
+    
+    
+      
+      
+        <text x="444" y="722" class="td card">Convolutional Neural Networks (CNNs) from scratch, inspired</text>
+        
+          <text x="444" y="736" class="td card">by models like EfficientNet and Inception, trained on the C…</text>
+        
+      
+    
+  
+    
+    
+      <text x="1052" y="724" class="td card">Jupyter Notebook</text>
+    
+  
+    
+    
+      <text x="1193" y="724" class="td card">0</text>
+    
+  
+    
+    
+      <text x="1257" y="724" class="td card">0</text>
+    
+  
+    
+    
+      <text x="1321" y="724" class="td card">0</text>
+    
+  
+    
+    
+      <text x="1385" y="724" class="td card">0</text>
+    
+  
+    
+    
+      <text x="1475" y="724" class="td card">2025-03-12 19:40:36</text>
+    
+  
+    
+    
+      <text x="1637" y="724" class="td card">0</text>
+    
+  
+    
+    
+      <text x="1735" y="724" class="td card">0</text>
+    
+  
+    
+    
+      <text x="1853" y="724" class="td card">N/A</text>
+    
+  
+    
+    
+      <text x="1971" y="724" class="td card">N/A</text>
     
   
 

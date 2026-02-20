@@ -22,7 +22,7 @@
 
 <rect x="0" y="0" width="820" height="612" rx="12" fill="transparent"/>
 <text x="18" y="34" class="title card">GitHub repos — HelixCipher</text>
-<text x="18" y="54" class="meta card">Repos: 25 · Clones: 349 · Uniques: 260 · Combined: 609 · Downloads (14d): 0 · Downloads (total): 0 · Public repos only</text>
+<text x="18" y="54" class="meta card">Repos: 26 · Clones: 347 · Uniques: 259 · Combined: 606 · Downloads (14d): 0 · Downloads (total): 0 · Public repos only</text>
 
 <!-- LEGEND: colored squares + labels -->
 <g id="legend">
@@ -45,7 +45,7 @@
   <!-- CLONES bar (top) -->
   <rect x="150" y="116" width="570" height="18" class="bar-bg"/>
   <rect x="150" y="116" width="570" height="18" class="bar-clone"/>
-  <text x="732" y="128" class="count card">114</text>
+  <text x="732" y="128" class="count card">113</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="150" y="142" width="570" height="18" class="bar-bg"/>
@@ -55,7 +55,7 @@
   <!-- COMBINED bar (bottom) -->
   <rect x="150" y="168" width="570" height="18" class="bar-bg"/>
   <rect x="150" y="168" width="570" height="18" class="bar-comb"/>
-  <text x="732" y="180" class="count card">188</text>
+  <text x="732" y="180" class="count card">187</text>
 
   
   <!-- repository label -->
@@ -63,18 +63,18 @@
 
   <!-- CLONES bar (top) -->
   <rect x="150" y="198" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="198" width="315" height="18" class="bar-clone"/>
-  <text x="732" y="210" class="count card">63</text>
+  <rect x="150" y="198" width="307" height="18" class="bar-clone"/>
+  <text x="732" y="210" class="count card">61</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="150" y="224" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="224" width="300" height="18" class="bar-uniq"/>
-  <text x="732" y="236" class="count-small card">39</text>
+  <rect x="150" y="224" width="292" height="18" class="bar-uniq"/>
+  <text x="732" y="236" class="count-small card">38</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="150" y="250" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="250" width="309" height="18" class="bar-comb"/>
-  <text x="732" y="262" class="count card">102</text>
+  <rect x="150" y="250" width="301" height="18" class="bar-comb"/>
+  <text x="732" y="262" class="count card">99</text>
 
   
   <!-- repository label -->
@@ -82,18 +82,18 @@
 
   <!-- CLONES bar (top) -->
   <rect x="150" y="280" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="280" width="185" height="18" class="bar-clone"/>
-  <text x="732" y="292" class="count card">37</text>
+  <rect x="150" y="280" width="191" height="18" class="bar-clone"/>
+  <text x="732" y="292" class="count card">38</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="150" y="306" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="306" width="130" height="18" class="bar-uniq"/>
-  <text x="732" y="318" class="count-small card">17</text>
+  <rect x="150" y="306" width="138" height="18" class="bar-uniq"/>
+  <text x="732" y="318" class="count-small card">18</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="150" y="332" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="332" width="163" height="18" class="bar-comb"/>
-  <text x="732" y="344" class="count card">54</text>
+  <rect x="150" y="332" width="170" height="18" class="bar-comb"/>
+  <text x="732" y="344" class="count card">56</text>
 
   
   <!-- repository label -->
@@ -101,7 +101,7 @@
 
   <!-- CLONES bar (top) -->
   <rect x="150" y="362" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="362" width="140" height="18" class="bar-clone"/>
+  <rect x="150" y="362" width="141" height="18" class="bar-clone"/>
   <text x="732" y="374" class="count card">28</text>
 
   <!-- UNIQUES bar (middle) -->
@@ -111,7 +111,7 @@
 
   <!-- COMBINED bar (bottom) -->
   <rect x="150" y="414" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="414" width="163" height="18" class="bar-comb"/>
+  <rect x="150" y="414" width="164" height="18" class="bar-comb"/>
   <text x="732" y="426" class="count card">54</text>
 
   
