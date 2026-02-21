@@ -432,4 +432,4 @@ Full license text: https://creativecommons.org/licenses/by/4.0/
 
 This project is provided **“as—is”**. The author accepts no responsibility for how this material is used. There is **no warranty** or guarantee that the scripts are safe, secure, or appropriate for any particular purpose. Use at your own risk.
 
-see `DISCLAIMER.md` for full terms. Use at your own risk.
+See [DISCLAIMER.md](./DISCLAIMER.md) for full terms. Use at your own risk.
