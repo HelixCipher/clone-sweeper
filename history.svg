@@ -35,20 +35,20 @@
         stroke="#e6eaf2"/>
 
   
-    <polyline points="80,24 860,138" class="line" style="stroke:#1f6feb"/>
+    <polyline points="80,24 860,137" class="line" style="stroke:#1f6feb"/>
     <text x="86"
           y="38"
           class="axis"
           style="fill:#1f6feb">
-      clone-sweeper — clones (latest 111)
+      clone-sweeper — clones (latest 113)
     </text>
   
-    <polyline points="80,99 860,161" class="line" style="stroke:#60a5fa"/>
+    <polyline points="80,99 860,160" class="line" style="stroke:#60a5fa"/>
     <text x="86"
           y="52"
           class="axis"
           style="fill:#60a5fa">
-      clone-sweeper — uniques (latest 72)
+      clone-sweeper — uniques (latest 74)
     </text>
   
     <polyline points="80,204 860,204" class="line" style="stroke:#f59e0b"/>
@@ -59,20 +59,20 @@
       clone-sweeper — downloads (latest 0)
     </text>
   
-    <polyline points="80,191 860,167" class="line" style="stroke:#16a34a"/>
+    <polyline points="80,191 860,166" class="line" style="stroke:#16a34a"/>
     <text x="86"
           y="80"
           class="axis"
           style="fill:#16a34a">
-      HelixCipher — clones (latest 62)
+      HelixCipher — clones (latest 64)
     </text>
   
-    <polyline points="80,192 860,181" class="line" style="stroke:#34d399"/>
+    <polyline points="80,192 860,179" class="line" style="stroke:#34d399"/>
     <text x="86"
           y="94"
           class="axis"
           style="fill:#34d399">
-      HelixCipher — uniques (latest 39)
+      HelixCipher — uniques (latest 41)
     </text>
   
     <polyline points="80,204 860,204" class="line" style="stroke:#f59e0b"/>
@@ -131,20 +131,20 @@
       Atlas — downloads (latest 0)
     </text>
   
-    <polyline points="860,191" class="line" style="stroke:#a78bfa"/>
+    <polyline points="860,195" class="line" style="stroke:#a78bfa"/>
     <text x="86"
           y="206"
           class="axis"
           style="fill:#a78bfa">
-      Amnesiac-Shell — clones (latest 21)
+      digiti-signum — clones (latest 14)
     </text>
   
-    <polyline points="860,192" class="line" style="stroke:#c4b5fd"/>
+    <polyline points="860,195" class="line" style="stroke:#c4b5fd"/>
     <text x="86"
           y="220"
           class="axis"
           style="fill:#c4b5fd">
-      Amnesiac-Shell — uniques (latest 20)
+      digiti-signum — uniques (latest 14)
     </text>
   
     <polyline points="860,204" class="line" style="stroke:#f59e0b"/>
@@ -152,15 +152,15 @@
           y="234"
           class="axis"
           style="fill:#f59e0b">
-      Amnesiac-Shell — downloads (latest 0)
+      digiti-signum — downloads (latest 0)
     </text>
   
-    <polyline points="860,194" class="line" style="stroke:#06b6d4"/>
+    <polyline points="860,195" class="line" style="stroke:#06b6d4"/>
     <text x="86"
           y="248"
           class="axis"
           style="fill:#06b6d4">
-      Changeling — clones (latest 17)
+      project-jackheart — clones (latest 14)
     </text>
   
     <polyline points="860,195" class="line" style="stroke:#67e8f9"/>
@@ -168,7 +168,7 @@
           y="262"
           class="axis"
           style="fill:#67e8f9">
-      Changeling — uniques (latest 15)
+      project-jackheart — uniques (latest 14)
     </text>
   
     <polyline points="860,204" class="line" style="stroke:#f59e0b"/>
@@ -176,7 +176,7 @@
           y="276"
           class="axis"
           style="fill:#f59e0b">
-      Changeling — downloads (latest 0)
+      project-jackheart — downloads (latest 0)
     </text>
   
 
@@ -209,15 +209,15 @@
           y="38"
           class="axis"
           style="fill:#1f6feb">
-      clone-sweeper — clones (latest 417)
+      clone-sweeper — clones (latest 419)
     </text>
   
-    <polyline points="470,72" class="line" style="stroke:#60a5fa"/>
+    <polyline points="470,71" class="line" style="stroke:#60a5fa"/>
     <text x="86"
           y="52"
           class="axis"
           style="fill:#60a5fa">
-      clone-sweeper — uniques (latest 250)
+      clone-sweeper — uniques (latest 252)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#f59e0b"/>
@@ -233,15 +233,15 @@
           y="80"
           class="axis"
           style="fill:#16a34a">
-      HelixCipher — clones (latest 84)
+      HelixCipher — clones (latest 86)
     </text>
   
-    <polyline points="470,127" class="line" style="stroke:#34d399"/>
+    <polyline points="470,126" class="line" style="stroke:#34d399"/>
     <text x="86"
           y="94"
           class="axis"
           style="fill:#34d399">
-      HelixCipher — uniques (latest 59)
+      HelixCipher — uniques (latest 61)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#f59e0b"/>
@@ -300,20 +300,20 @@
       Atlas — downloads (latest 0)
     </text>
   
-    <polyline points="470,137" class="line" style="stroke:#a78bfa"/>
+    <polyline points="470,139" class="line" style="stroke:#a78bfa"/>
     <text x="86"
           y="206"
           class="axis"
           style="fill:#a78bfa">
-      Amnesiac-Shell — clones (latest 21)
+      digiti-signum — clones (latest 14)
     </text>
   
-    <polyline points="470,138" class="line" style="stroke:#c4b5fd"/>
+    <polyline points="470,139" class="line" style="stroke:#c4b5fd"/>
     <text x="86"
           y="220"
           class="axis"
           style="fill:#c4b5fd">
-      Amnesiac-Shell — uniques (latest 20)
+      digiti-signum — uniques (latest 14)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#f59e0b"/>
@@ -321,7 +321,7 @@
           y="234"
           class="axis"
           style="fill:#f59e0b">
-      Amnesiac-Shell — downloads (latest 0)
+      digiti-signum — downloads (latest 0)
     </text>
   
     <polyline points="470,139" class="line" style="stroke:#06b6d4"/>
@@ -329,7 +329,7 @@
           y="248"
           class="axis"
           style="fill:#06b6d4">
-      Changeling — clones (latest 17)
+      project-jackheart — clones (latest 14)
     </text>
   
     <polyline points="470,139" class="line" style="stroke:#67e8f9"/>
@@ -337,7 +337,7 @@
           y="262"
           class="axis"
           style="fill:#67e8f9">
-      Changeling — uniques (latest 15)
+      project-jackheart — uniques (latest 14)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#f59e0b"/>
@@ -345,7 +345,7 @@
           y="276"
           class="axis"
           style="fill:#f59e0b">
-      Changeling — downloads (latest 0)
+      project-jackheart — downloads (latest 0)
     </text>
   
 
