@@ -1224,7 +1224,7 @@ def git_commit_and_push(files: List[str], commit_message: str = "chore: update r
             original_branch = res.stdout.strip()
             
             # Check if target branch exists
-            res = subprocess.run(["git", "rev-parse", "--verify", branch], capture_output=True, stderr=subprocess.DEVNULL)
+            res = subprocess.run(["git", "rev-parse", "--verify", branch], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
             branch_exists = res.returncode == 0
             
             if branch_exists:
@@ -1258,9 +1258,13 @@ def git_commit_and_push(files: List[str], commit_message: str = "chore: update r
     if branch:
         push_cmd.extend(["origin", branch])
     
+    print(f"DEBUG: push_cmd={push_cmd}")
+    
     # Push handling: if token_env is provided, use it to push over HTTPS in CI
+    print(f"DEBUG: token_env={token_env}, force_push={force_push}, branch={branch}")
     if token_env:
         token = os.environ.get(token_env)
+        print(f"DEBUG: token={'set' if token else 'NOT SET'}")
         if not token:
             print(f"Token env var {token_env} not set; attempting normal push.")
             subprocess.run(push_cmd, check=True)
