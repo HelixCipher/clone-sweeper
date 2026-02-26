@@ -14,6 +14,7 @@ Behavior notes:
 """
 import os
 import sys
+import shutil
 import argparse
 import datetime
 import requests
@@ -1217,6 +1218,8 @@ def git_commit_and_push(files: List[str], commit_message: str = "chore: update r
 
     # Handle branch switching if requested
     original_branch = None
+    branch_exists = False
+    files_to_commit = files.copy()  # Save list of files we need to commit
     if branch:
         try:
             # Get current branch name
@@ -1232,9 +1235,20 @@ def git_commit_and_push(files: List[str], commit_message: str = "chore: update r
                 subprocess.run(["git", "checkout", branch], check=True)
             else:
                 # Create new orphan branch (no history)
+                # Save the files we need to commit before orphan checkout clears working directory
+                temp_dir = "/tmp/clone_sweeper_temp"
+                if os.path.exists(temp_dir):
+                    shutil.rmtree(temp_dir)
+                os.makedirs(temp_dir, exist_ok=True)
+                for f in files_to_commit:
+                    if os.path.exists(f):
+                        shutil.copy2(f, temp_dir)
+                
                 subprocess.run(["git", "checkout", "--orphan", branch], check=True)
-                # Remove all files from staging (orphan branch starts with all files staged)
-                subprocess.run(["git", "rm", "-rf", "."], check=True, stderr=subprocess.DEVNULL)
+                
+                # Restore the files from temp directory
+                for f in os.listdir(temp_dir):
+                    shutil.copy2(os.path.join(temp_dir, f), ".")
         except Exception as e:
             print(f"Failed to switch to branch {branch}: {e}")
             return
