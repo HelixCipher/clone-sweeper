@@ -1421,7 +1421,7 @@ def main():
         # Commit SVG files to main/current branch
         if svg_files:
             print("Committing and pushing SVG files:", svg_files)
-            git_commit_and_push(svg_files, commit_message="chore: update repo clones summary (SVGs)", token_env=args.token_env)
+            git_commit_and_push(svg_files, commit_message="chore: update repo clones summary (SVGs)", token_env=args.token_env, force_push=True)
             print("Push complete.")
         else:
             print("No SVG files to commit.")
