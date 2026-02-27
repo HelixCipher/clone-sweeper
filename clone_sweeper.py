@@ -751,6 +751,10 @@ def generate_summary_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]],
     max_clones = max((r.get("clone_count") or 0) for r in chart_rows) or 1
     max_uniques = max((r.get("clone_uniques") or 0) for r in chart_rows) or 1
     max_comb = max(((r.get("clone_count") or 0) + (r.get("clone_uniques") or 0)) for r in chart_rows) or 1
+    
+    # Use a common denominator for clones and uniques so bars are visually comparable
+    # Each bar still scales to full width, but clones and uniques use the same reference
+    common_max = max(max_clones, max_uniques)
 
     # build rows with scaled bar widths and labels
     rows_for_template = []
@@ -761,8 +765,8 @@ def generate_summary_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]],
         uval = 0 if u is None else int(u)
         comb_val = cval + uval
 
-        bar_w_clone = int((cval / max_clones) * bar_max_width) if max_clones else 0
-        bar_w_uniq  = int((uval / max_uniques) * bar_max_width) if max_uniques else 0
+        bar_w_clone = int((cval / common_max) * bar_max_width) if common_max else 0
+        bar_w_uniq  = int((uval / common_max) * bar_max_width) if common_max else 0
         bar_w_comb  = int((comb_val / max_comb) * bar_max_width) if max_comb else 0
 
         rows_for_template.append({
@@ -1272,13 +1276,9 @@ def git_commit_and_push(files: List[str], commit_message: str = "chore: update r
     if branch:
         push_cmd.extend(["origin", branch])
     
-    print(f"DEBUG: push_cmd={push_cmd}")
-    
     # Push handling: if token_env is provided, use it to push over HTTPS in CI
-    print(f"DEBUG: token_env={token_env}, force_push={force_push}, branch={branch}")
     if token_env:
         token = os.environ.get(token_env)
-        print(f"DEBUG: token={'set' if token else 'NOT SET'}")
         if not token:
             print(f"Token env var {token_env} not set; attempting normal push.")
             subprocess.run(push_cmd, check=True)
