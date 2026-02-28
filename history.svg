@@ -35,20 +35,20 @@
         stroke="#e6eaf2"/>
 
   
-    <polyline points="80,24 860,126" class="line" style="stroke:#1f6feb"/>
+    <polyline points="80,24 860,111" class="line" style="stroke:#1f6feb"/>
     <text x="86"
           y="38"
           class="axis"
           style="fill:#1f6feb">
-      clone-sweeper — clones (latest 132)
+      clone-sweeper — clones (latest 158)
     </text>
   
-    <polyline points="80,99 860,162" class="line" style="stroke:#60a5fa"/>
+    <polyline points="80,99 860,155" class="line" style="stroke:#60a5fa"/>
     <text x="86"
           y="52"
           class="axis"
           style="fill:#60a5fa">
-      clone-sweeper — uniques (latest 71)
+      clone-sweeper — uniques (latest 82)
     </text>
   
     <polyline points="80,204 860,204" class="line" style="stroke:#f59e0b"/>
@@ -59,20 +59,20 @@
       clone-sweeper — downloads (latest 0)
     </text>
   
-    <polyline points="860,155" class="line" style="stroke:#16a34a"/>
+    <polyline points="860,154" class="line" style="stroke:#16a34a"/>
     <text x="86"
           y="80"
           class="axis"
           style="fill:#16a34a">
-      machine-learning — clones (latest 83)
+      machine-learning — clones (latest 85)
     </text>
   
-    <polyline points="860,169" class="line" style="stroke:#34d399"/>
+    <polyline points="860,168" class="line" style="stroke:#34d399"/>
     <text x="86"
           y="94"
           class="axis"
           style="fill:#34d399">
-      machine-learning — uniques (latest 59)
+      machine-learning — uniques (latest 61)
     </text>
   
     <polyline points="860,204" class="line" style="stroke:#f59e0b"/>
@@ -83,20 +83,20 @@
       machine-learning — downloads (latest 0)
     </text>
   
-    <polyline points="80,191 860,168" class="line" style="stroke:#f97316"/>
+    <polyline points="80,191 860,177" class="line" style="stroke:#f97316"/>
     <text x="86"
           y="122"
           class="axis"
           style="fill:#f97316">
-      HelixCipher — clones (latest 60)
+      HelixCipher — clones (latest 45)
     </text>
   
-    <polyline points="80,192 860,181" class="line" style="stroke:#fb923c"/>
+    <polyline points="80,192 860,186" class="line" style="stroke:#fb923c"/>
     <text x="86"
           y="136"
           class="axis"
           style="fill:#fb923c">
-      HelixCipher — uniques (latest 39)
+      HelixCipher — uniques (latest 30)
     </text>
   
     <polyline points="80,204 860,204" class="line" style="stroke:#f59e0b"/>
@@ -107,12 +107,12 @@
       HelixCipher — downloads (latest 0)
     </text>
   
-    <polyline points="860,190" class="line" style="stroke:#e11d48"/>
+    <polyline points="860,189" class="line" style="stroke:#e11d48"/>
     <text x="86"
           y="164"
           class="axis"
           style="fill:#e11d48">
-      digit-recognition — clones (latest 23)
+      digit-recognition — clones (latest 24)
     </text>
   
     <polyline points="860,191" class="line" style="stroke:#fb7185"/>
@@ -120,7 +120,7 @@
           y="178"
           class="axis"
           style="fill:#fb7185">
-      digit-recognition — uniques (latest 21)
+      digit-recognition — uniques (latest 22)
     </text>
   
     <polyline points="860,204" class="line" style="stroke:#f59e0b"/>
@@ -131,20 +131,20 @@
       digit-recognition — downloads (latest 0)
     </text>
   
-    <polyline points="860,191" class="line" style="stroke:#a78bfa"/>
+    <polyline points="860,192" class="line" style="stroke:#a78bfa"/>
     <text x="86"
           y="206"
           class="axis"
           style="fill:#a78bfa">
-      Atlas — clones (latest 22)
+      Atlas — clones (latest 20)
     </text>
   
-    <polyline points="860,191" class="line" style="stroke:#c4b5fd"/>
+    <polyline points="860,192" class="line" style="stroke:#c4b5fd"/>
     <text x="86"
           y="220"
           class="axis"
           style="fill:#c4b5fd">
-      Atlas — uniques (latest 21)
+      Atlas — uniques (latest 19)
     </text>
   
     <polyline points="860,204" class="line" style="stroke:#f59e0b"/>
@@ -160,7 +160,7 @@
           y="248"
           class="axis"
           style="fill:#06b6d4">
-      digit-classifier-api — clones (latest 16)
+      digit-classifier-api — clones (latest 17)
     </text>
   
     <polyline points="860,194" class="line" style="stroke:#67e8f9"/>
@@ -168,7 +168,7 @@
           y="262"
           class="axis"
           style="fill:#67e8f9">
-      digit-classifier-api — uniques (latest 16)
+      digit-classifier-api — uniques (latest 17)
     </text>
   
     <polyline points="860,204" class="line" style="stroke:#f59e0b"/>
@@ -209,15 +209,15 @@
           y="38"
           class="axis"
           style="fill:#1f6feb">
-      clone-sweeper — clones (latest 438)
+      clone-sweeper — clones (latest 464)
     </text>
   
-    <polyline points="470,75" class="line" style="stroke:#60a5fa"/>
+    <polyline points="470,76" class="line" style="stroke:#60a5fa"/>
     <text x="86"
           y="52"
           class="axis"
           style="fill:#60a5fa">
-      clone-sweeper — uniques (latest 249)
+      clone-sweeper — uniques (latest 260)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#f59e0b"/>
@@ -228,20 +228,20 @@
       clone-sweeper — downloads (latest 0)
     </text>
   
-    <polyline points="470,121" class="line" style="stroke:#16a34a"/>
+    <polyline points="470,122" class="line" style="stroke:#16a34a"/>
     <text x="86"
           y="80"
           class="axis"
           style="fill:#16a34a">
-      machine-learning — clones (latest 83)
+      machine-learning — clones (latest 85)
     </text>
   
-    <polyline points="470,127" class="line" style="stroke:#34d399"/>
+    <polyline points="470,128" class="line" style="stroke:#34d399"/>
     <text x="86"
           y="94"
           class="axis"
           style="fill:#34d399">
-      machine-learning — uniques (latest 59)
+      machine-learning — uniques (latest 61)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#f59e0b"/>
@@ -252,20 +252,20 @@
       machine-learning — downloads (latest 0)
     </text>
   
-    <polyline points="470,121" class="line" style="stroke:#f97316"/>
+    <polyline points="470,126" class="line" style="stroke:#f97316"/>
     <text x="86"
           y="122"
           class="axis"
           style="fill:#f97316">
-      HelixCipher — clones (latest 82)
+      HelixCipher — clones (latest 67)
     </text>
   
-    <polyline points="470,127" class="line" style="stroke:#fb923c"/>
+    <polyline points="470,131" class="line" style="stroke:#fb923c"/>
     <text x="86"
           y="136"
           class="axis"
           style="fill:#fb923c">
-      HelixCipher — uniques (latest 59)
+      HelixCipher — uniques (latest 50)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#f59e0b"/>
@@ -281,7 +281,7 @@
           y="164"
           class="axis"
           style="fill:#e11d48">
-      digit-recognition — clones (latest 23)
+      digit-recognition — clones (latest 24)
     </text>
   
     <polyline points="470,138" class="line" style="stroke:#fb7185"/>
@@ -289,7 +289,7 @@
           y="178"
           class="axis"
           style="fill:#fb7185">
-      digit-recognition — uniques (latest 21)
+      digit-recognition — uniques (latest 22)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#f59e0b"/>
@@ -300,20 +300,20 @@
       digit-recognition — downloads (latest 0)
     </text>
   
-    <polyline points="470,137" class="line" style="stroke:#a78bfa"/>
+    <polyline points="470,138" class="line" style="stroke:#a78bfa"/>
     <text x="86"
           y="206"
           class="axis"
           style="fill:#a78bfa">
-      Atlas — clones (latest 22)
+      Atlas — clones (latest 20)
     </text>
   
-    <polyline points="470,138" class="line" style="stroke:#c4b5fd"/>
+    <polyline points="470,139" class="line" style="stroke:#c4b5fd"/>
     <text x="86"
           y="220"
           class="axis"
           style="fill:#c4b5fd">
-      Atlas — uniques (latest 21)
+      Atlas — uniques (latest 19)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#f59e0b"/>
@@ -329,7 +329,7 @@
           y="248"
           class="axis"
           style="fill:#06b6d4">
-      digit-classifier-api — clones (latest 16)
+      digit-classifier-api — clones (latest 17)
     </text>
   
     <polyline points="470,139" class="line" style="stroke:#67e8f9"/>
@@ -337,7 +337,7 @@
           y="262"
           class="axis"
           style="fill:#67e8f9">
-      digit-classifier-api — uniques (latest 16)
+      digit-classifier-api — uniques (latest 17)
     </text>
   
     <polyline points="470,144" class="line" style="stroke:#f59e0b"/>
