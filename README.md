@@ -341,6 +341,36 @@ repo (required to read traffic/clones and to access private repos)
 * Store it in repo Settings → Secrets → Actions as **TOKEN**.
 
 * Avoid printing secret values in logs.
+  
+### Creating a Personal Access Token
+
+1. Go to **GitHub Settings** → **Developer settings** → **Personal access tokens** → **Tokens (classic)**.
+   
+2. Click **"Generate new token (classic)"**.
+   
+3. Give it a descriptive name (e.g., "Clone Sweeper").
+   
+4. Select the **repo** scope (this grants full control of private repositories).
+   
+5. Set expiration (consider "No expiration" or 90 days).
+    
+6. Click **"Generate token"**.
+    
+7. **Copy the token** — it won't be shown again.
+
+### Adding the Secret to Your Repository
+
+1. Go to your **repository** → **Settings** → **Secrets and variables** → **Actions**.
+   
+2. Click **"New repository secret"**.
+   
+3. **Name:** `TOKEN`.
+   
+4. **Secret:** paste your PAT.
+   
+5. Click **"Add secret"**.
+
+The workflow will now have access to the token and can fetch clone statistics.
 
 
 ---
