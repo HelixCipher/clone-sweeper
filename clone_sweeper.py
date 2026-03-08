@@ -1418,17 +1418,10 @@ def main():
         print("ERROR generating summary SVG:", e)
         sys.exit(1)
 
-    try:
-        print("Generating history SVG ->", args.history_out)
-        generate_history_svg(owner, repo_rows, out_path=args.history_out, top_n=args.top_n)
-    except Exception as e:
-        print("ERROR generating history SVG:", e)
-        sys.exit(1)
-
     # If requested, stage/commit/push generated files back to the repository
     if args.push:
         # SVG files go to main branch
-        svg_files = [args.table_out, args.svg_out, args.history_out]
+        svg_files = [args.table_out, args.svg_out]
         svg_files = [f for f in svg_files if os.path.exists(f)]
         
         # Database goes to history-db branch
@@ -1445,7 +1438,7 @@ def main():
             print("No SVG files to commit.")
     else:
         # When not pushing, show which files were generated locally
-        generated = [f for f in [args.table_out, args.svg_out, args.history_out] if os.path.exists(f)]
+        generated = [f for f in [args.table_out, args.svg_out] if os.path.exists(f)]
         print("Run complete. Files generated (not pushed):", generated)
 
 if __name__ == "__main__":
