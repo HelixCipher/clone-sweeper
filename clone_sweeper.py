@@ -1266,7 +1266,7 @@ def generate_history_json(owner: str, repo_rows: List[Dict[str, Any]], out_path=
         repo_name = r.get("name")
         
         cur.execute("""
-            SELECT day, clone_count, clone_uniques, download_count
+            SELECT day, clone_count, unique_clones, download_count
             FROM repo_clones
             WHERE repo_name = ?
             ORDER BY day DESC
@@ -1292,13 +1292,13 @@ def generate_history_json(owner: str, repo_rows: List[Dict[str, Any]], out_path=
             if month_key not in by_month:
                 by_month[month_key] = {"clones": 0, "uniques": 0, "downloads": 0}
             by_month[month_key]["clones"] += row["clone_count"] or 0
-            by_month[month_key]["uniques"] += row["clone_uniques"] or 0
+            by_month[month_key]["uniques"] += row["unique_clones"] or 0
             by_month[month_key]["downloads"] += row["download_count"] or 0
             
             if year_key not in by_year:
                 by_year[year_key] = {"clones": 0, "uniques": 0, "downloads": 0}
             by_year[year_key]["clones"] += row["clone_count"] or 0
-            by_year[year_key]["uniques"] += row["clone_uniques"] or 0
+            by_year[year_key]["uniques"] += row["unique_clones"] or 0
             by_year[year_key]["downloads"] += row["download_count"] or 0
         
         sorted_months = sorted(by_month.items())
