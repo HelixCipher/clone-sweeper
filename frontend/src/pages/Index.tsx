@@ -6,6 +6,7 @@ import { RepoTable } from '@/components/RepoTable';
 import { TrendsChart } from '@/components/TrendsChart';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { Activity, ExternalLink, GitCompare } from 'lucide-react';
+import { ScrollToTop } from '@/components/ScrollToTop';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
@@ -46,7 +47,7 @@ const Index = () => {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">
-              <span className="text-gradient">Clone Sweeper</span>
+              <span className="title-beam">Clone Sweeper</span>
             </h1>
             <p className="text-sm text-muted-foreground mt-1 font-mono">
               {data.owner} · GitHub repository analytics
@@ -101,6 +102,7 @@ const Index = () => {
       <footer className="mt-8 pb-4 text-center text-xs text-muted-foreground font-mono">
         Data sourced from GitHub Traffic API via Clone Sweeper
       </footer>
+      <ScrollToTop />
     </div>
   );
 };
