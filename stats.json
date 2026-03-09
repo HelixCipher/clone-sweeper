@@ -1,0 +1,47 @@
+{
+  "owner": "HelixCipher",
+  "totalRepos": 30,
+  "totalClones": 823,
+  "totalUniques": 608,
+  "totalCombined": 1431,
+  "downloads14d": 0,
+  "downloadsTotal": 0,
+  "repos": [
+    {
+      "name": "clone-sweeper",
+      "clones": 230,
+      "uniques": 112,
+      "combined": 342
+    },
+    {
+      "name": "machine-learning",
+      "clones": 89,
+      "uniques": 63,
+      "combined": 152
+    },
+    {
+      "name": "ai-job-finder",
+      "clones": 49,
+      "uniques": 38,
+      "combined": 87
+    },
+    {
+      "name": "data-processing",
+      "clones": 49,
+      "uniques": 41,
+      "combined": 90
+    },
+    {
+      "name": "E-commerce-Conversion-Prediction",
+      "clones": 47,
+      "uniques": 36,
+      "combined": 83
+    },
+    {
+      "name": "dynamic-webscraper",
+      "clones": 44,
+      "uniques": 37,
+      "combined": 81
+    }
+  ]
+}
