@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
 Enhanced: renders SVGs using Jinja2 templates, persists per-repo history snapshots,
-and produces three artifacts:
+and produces four artifacts:
 
  - stats.svg        (summary card — top-N repos by clones)
- - REPO_CLONES.svg  (full tabular SVG)
- - history.svg      (trend charts derived from persisted snapshots)
+ - repo_clones.svg  (full tabular SVG)
+ - dashboard.json   (JSON data for frontend)
+ - history.json     (monthly/yearly history for frontend)
 
 Behavior notes:
  - By default only public repos are processed. Use INCLUDE_PRIVATE env or --include-private to opt-in.
@@ -807,10 +808,10 @@ def generate_summary_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]],
 
 
 # ---------------------------
-# Outputs - full table SVG (REPO_CLONES.svg)
+# Outputs - full table SVG (repo_clones.svg)
 # ---------------------------
 def generate_table_svg_jinja(owner: str, repo_rows: List[Dict[str, Any]], include_private: bool,
-                             out_path="REPO_CLONES.svg", max_rows: Optional[int] = None):
+                             out_path="repo_clones.svg", max_rows: Optional[int] = None):
     """
     Generate a full table as an SVG.
 
@@ -1524,8 +1525,7 @@ def main():
     parser.add_argument("--include-private", action="store_true", help="Include private repositories (opt-in)")
     parser.add_argument("--token-env", default="TOKEN", help="Environment variable name for PAT (default: TOKEN)")
     parser.add_argument("--svg-out", default="stats.svg", help="Summary SVG filename")
-    parser.add_argument("--table-out", default="REPO_CLONES.svg", help="Full table SVG filename")
-    parser.add_argument("--history-out", default="history.svg", help="History SVG filename")
+    parser.add_argument("--table-out", default="repo_clones.svg", help="Full table SVG filename")
     parser.add_argument("--top-n", default=6, type=int, help="Number of top repos to show in summary & history SVGs")
     args = parser.parse_args()
 
@@ -1625,13 +1625,6 @@ def main():
         print("ERROR generating stats JSON:", e)
         sys.exit(1)
 
-    try:
-        print("Generating history SVG ->", args.history_out)
-        generate_history_svg(owner, repo_rows, out_path=args.history_out, top_n=args.top_n)
-    except Exception as e:
-        print("ERROR generating history SVG:", e)
-        sys.exit(1)
-
     # Generate history.json
     try:
         print("Generating history JSON -> history.json")
@@ -1643,7 +1636,7 @@ def main():
     # If requested, stage/commit/push generated files back to the repository
     if args.push:
         # SVG and JSON files go to main branch
-        svg_files = [args.table_out, args.svg_out, args.history_out]
+        svg_files = [args.table_out, args.svg_out]
         json_files = ["stats.json", "repo_clones.json", "history.json"]
         all_files = svg_files + json_files
         all_files = [f for f in all_files if os.path.exists(f)]
@@ -1662,7 +1655,7 @@ def main():
             print("No files to commit.")
     else:
         # When not pushing, show which files were generated locally
-        generated = [f for f in [args.table_out, args.svg_out, args.history_out, "stats.json", "repo_clones.json", "history.json"] if os.path.exists(f)]
+        generated = [f for f in [args.table_out, args.svg_out, "stats.json", "repo_clones.json", "history.json"] if os.path.exists(f)]
         print("Run complete. Files generated (not pushed):", generated)
 
 if __name__ == "__main__":

@@ -33,7 +33,7 @@ const Index = () => {
         <div className="glass-card p-8 text-center max-w-md">
           <p className="text-destructive font-medium mb-2">Failed to load data</p>
           <p className="text-sm text-muted-foreground">
-            {error instanceof Error ? error.message : 'Could not fetch SVG data from GitHub.'}
+            {error instanceof Error ? error.message : 'Could not fetch JSON data from GitHub.'}
           </p>
         </div>
       </div>
