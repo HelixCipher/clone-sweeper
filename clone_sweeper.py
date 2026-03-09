@@ -20,6 +20,7 @@ import datetime
 import requests
 import time
 import subprocess
+import json
 from typing import Optional, List, Dict, Any, Tuple
 from urllib.parse import urlparse
 import re
@@ -1180,6 +1181,196 @@ def generate_history_svg(owner: str, repo_rows: List[Dict[str, Any]], out_path="
     print(f"Wrote history svg to {out_path}")
 
 
+def generate_stats_json(owner: str, repo_rows: List[Dict[str, Any]], include_private: bool, out_path="stats.json", top_n=6):
+    """Generate stats.json with summary data."""
+    total_clones = sum((r.get("clone_count") or 0) for r in repo_rows)
+    total_uniques = sum((r.get("clone_uniques") or 0) for r in repo_rows)
+    total_combined = total_clones + total_uniques
+    total_downloads_14d = sum((r.get("download_14d") or 0) for r in repo_rows)
+    total_downloads_all = sum((r.get("download_total") or 0) for r in repo_rows)
+    
+    rows_sorted = sorted(repo_rows, key=lambda x: (x.get("clone_count") or 0), reverse=True)
+    chart_rows = rows_sorted[:top_n]
+    
+    repos = []
+    for r in chart_rows:
+        repos.append({
+            "name": r.get("name", ""),
+            "clones": r.get("clone_count") or 0,
+            "uniques": r.get("clone_uniques") or 0,
+            "combined": (r.get("clone_count") or 0) + (r.get("clone_uniques") or 0),
+        })
+    
+    data = {
+        "owner": owner,
+        "totalRepos": len(repo_rows),
+        "totalClones": total_clones,
+        "totalUniques": total_uniques,
+        "totalCombined": total_combined,
+        "downloads14d": total_downloads_14d,
+        "downloadsTotal": total_downloads_all,
+        "repos": repos,
+    }
+    
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+    print(f"Wrote stats json to {out_path}")
+
+
+def generate_repo_clones_json(owner: str, repo_rows: List[Dict[str, Any]], include_private: bool, out_path="repo_clones.json"):
+    """Generate repo_clones.json with full repository table data."""
+    repos = []
+    for r in repo_rows:
+        repos.append({
+            "name": r.get("name", ""),
+            "description": r.get("description") or "-",
+            "language": r.get("language") or "-",
+            "stars": r.get("stars") or 0,
+            "forks": r.get("forks") or 0,
+            "watchers": r.get("watchers") or 0,
+            "openIssues": r.get("open_issues") or 0,
+            "lastPush": r.get("last_push") or "-",
+            "clones14d": r.get("clone_count"),
+            "uniques14d": r.get("clone_uniques"),
+            "downloads14d": r.get("download_14d"),
+            "downloadsTotal": r.get("download_total"),
+        })
+    
+    data = {
+        "generatedAt": "",
+        "repos": repos,
+    }
+    
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+    print(f"Wrote repo_clones json to {out_path}")
+
+
+def generate_history_json(owner: str, repo_rows: List[Dict[str, Any]], out_path="history.json", top_n=6):
+    """Generate history.json with monthly and yearly history data."""
+    rows_sorted = sorted(repo_rows, key=lambda x: (x.get("clone_count") or 0), reverse=True)
+    chart_repos = rows_sorted[:top_n]
+    
+    DB_PATH = "history.db"
+    
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    cur = conn.cursor()
+    
+    monthly_history = []
+    yearly_history = []
+    month_range = ""
+    year_range = ""
+    
+    for r in chart_repos:
+        repo_name = r.get("name")
+        
+        cur.execute("""
+            SELECT day, clone_count, clone_uniques, download_count
+            FROM repo_clones
+            WHERE repo_name = ?
+            ORDER BY day DESC
+            LIMIT 365
+        """, (repo_name,))
+        rows = cur.fetchall()
+        
+        if not rows:
+            continue
+        
+        from datetime import datetime
+        by_month = {}
+        by_year = {}
+        
+        for row in rows:
+            day = row["day"]
+            if isinstance(day, str):
+                day = datetime.fromisoformat(day)
+            
+            month_key = day.strftime("%Y-%m")
+            year_key = day.strftime("%Y")
+            
+            if month_key not in by_month:
+                by_month[month_key] = {"clones": 0, "uniques": 0, "downloads": 0}
+            by_month[month_key]["clones"] += row["clone_count"] or 0
+            by_month[month_key]["uniques"] += row["clone_uniques"] or 0
+            by_month[month_key]["downloads"] += row["download_count"] or 0
+            
+            if year_key not in by_year:
+                by_year[year_key] = {"clones": 0, "uniques": 0, "downloads": 0}
+            by_year[year_key]["clones"] += row["clone_count"] or 0
+            by_year[year_key]["uniques"] += row["clone_uniques"] or 0
+            by_year[year_key]["downloads"] += row["download_count"] or 0
+        
+        sorted_months = sorted(by_month.items())
+        sorted_years = sorted(by_year.items())
+        
+        if sorted_months:
+            latest_month = sorted_months[-1][1]
+            monthly_history.append({
+                "repo": repo_name,
+                "metric": "clones",
+                "latestValue": latest_month["clones"],
+                "color": "#1f6feb",
+                "points": [],
+            })
+            monthly_history.append({
+                "repo": repo_name,
+                "metric": "uniques",
+                "latestValue": latest_month["uniques"],
+                "color": "#60a5fa",
+                "points": [],
+            })
+            monthly_history.append({
+                "repo": repo_name,
+                "metric": "downloads",
+                "latestValue": latest_month["downloads"],
+                "color": "#f59e0b",
+                "points": [],
+            })
+        
+        if sorted_years:
+            latest_year = sorted_years[-1][1]
+            yearly_history.append({
+                "repo": repo_name,
+                "metric": "clones",
+                "latestValue": latest_year["clones"],
+                "color": "#1f6feb",
+                "points": [],
+            })
+            yearly_history.append({
+                "repo": repo_name,
+                "metric": "uniques",
+                "latestValue": latest_year["uniques"],
+                "color": "#60a5fa",
+                "points": [],
+            })
+            yearly_history.append({
+                "repo": repo_name,
+                "metric": "downloads",
+                "latestValue": latest_year["downloads"],
+                "color": "#f59e0b",
+                "points": [],
+            })
+        
+        if sorted_months:
+            month_range = f"{sorted_months[0][0]} → {sorted_months[-1][0]}"
+        if sorted_years:
+            year_range = f"{sorted_years[0][0]} → {sorted_years[-1][0]}"
+    
+    conn.close()
+    
+    data = {
+        "monthly": monthly_history,
+        "yearly": yearly_history,
+        "monthRange": month_range,
+        "yearRange": year_range,
+    }
+    
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+    print(f"Wrote history json to {out_path}")
+
+
 # ---------------------------
 # Git commit & push
 # ---------------------------
@@ -1410,12 +1601,28 @@ def main():
         print("ERROR generating table SVG:", e)
         sys.exit(1)
 
+    # Generate repo_clones.json
+    try:
+        print("Generating repo_clones JSON -> repo_clones.json")
+        generate_repo_clones_json(owner, repo_rows, include_private, out_path="repo_clones.json")
+    except Exception as e:
+        print("ERROR generating repo_clones JSON:", e)
+        sys.exit(1)
+
     # Generate the compact summary SVG
     try:
         print("Generating summary SVG ->", args.svg_out)
         generate_summary_svg_jinja(owner, repo_rows, include_private, out_path=args.svg_out, top_n=args.top_n)
     except Exception as e:
         print("ERROR generating summary SVG:", e)
+        sys.exit(1)
+
+    # Generate stats.json
+    try:
+        print("Generating stats JSON -> stats.json")
+        generate_stats_json(owner, repo_rows, include_private, out_path="stats.json", top_n=args.top_n)
+    except Exception as e:
+        print("ERROR generating stats JSON:", e)
         sys.exit(1)
 
     try:
@@ -1425,27 +1632,37 @@ def main():
         print("ERROR generating history SVG:", e)
         sys.exit(1)
 
+    # Generate history.json
+    try:
+        print("Generating history JSON -> history.json")
+        generate_history_json(owner, repo_rows, out_path="history.json", top_n=args.top_n)
+    except Exception as e:
+        print("ERROR generating history JSON:", e)
+        sys.exit(1)
+
     # If requested, stage/commit/push generated files back to the repository
     if args.push:
-        # SVG files go to main branch
+        # SVG and JSON files go to main branch
         svg_files = [args.table_out, args.svg_out, args.history_out]
-        svg_files = [f for f in svg_files if os.path.exists(f)]
+        json_files = ["stats.json", "repo_clones.json", "history.json"]
+        all_files = svg_files + json_files
+        all_files = [f for f in all_files if os.path.exists(f)]
         
         # Database goes to history-db branch
         if os.path.exists(DB_PATH):
             print(f"Committing {DB_PATH} to history-db branch")
             git_commit_and_push([DB_PATH], commit_message="chore: update clone history database", token_env=args.token_env, branch="history-db", force_push=True)
         
-        # Commit SVG files to main/current branch
-        if svg_files:
-            print("Committing and pushing SVG files:", svg_files)
-            git_commit_and_push(svg_files, commit_message="chore: update repo clones summary (SVGs)", token_env=args.token_env, force_push=True)
+        # Commit SVG and JSON files to main/current branch
+        if all_files:
+            print("Committing and pushing files:", all_files)
+            git_commit_and_push(all_files, commit_message="chore: update repo clones summary", token_env=args.token_env, force_push=True)
             print("Push complete.")
         else:
-            print("No SVG files to commit.")
+            print("No files to commit.")
     else:
         # When not pushing, show which files were generated locally
-        generated = [f for f in [args.table_out, args.svg_out, args.history_out] if os.path.exists(f)]
+        generated = [f for f in [args.table_out, args.svg_out, args.history_out, "stats.json", "repo_clones.json", "history.json"] if os.path.exists(f)]
         print("Run complete. Files generated (not pushed):", generated)
 
 if __name__ == "__main__":
