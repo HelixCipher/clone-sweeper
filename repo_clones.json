@@ -2,20 +2,6 @@
   "generatedAt": "",
   "repos": [
     {
-      "name": "clone-sweeper-wip",
-      "description": "-",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "lastPush": "-",
-      "clones14d": 527,
-      "uniques14d": 191,
-      "downloads14d": null,
-      "downloadsTotal": null
-    },
-    {
       "name": "clone-sweeper",
       "description": "Clone Sweeper is an automated GitHub repository analytics tool that collects clone traffic data.",
       "language": "TypeScript",
@@ -26,6 +12,20 @@
       "lastPush": "-",
       "clones14d": 397,
       "uniques14d": 179,
+      "downloads14d": null,
+      "downloadsTotal": null
+    },
+    {
+      "name": "clone-sweeper-wip",
+      "description": "-",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "lastPush": "-",
+      "clones14d": 527,
+      "uniques14d": 191,
       "downloads14d": null,
       "downloadsTotal": null
     },
