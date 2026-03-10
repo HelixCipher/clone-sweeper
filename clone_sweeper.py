@@ -3,10 +3,11 @@
 Enhanced: renders SVGs using Jinja2 templates, persists per-repo history snapshots,
 and produces four artifacts:
 
- - stats.svg        (summary card — top-N repos by clones)
- - repo_clones.svg  (full tabular SVG)
- - dashboard.json   (JSON data for frontend)
- - history.json     (monthly/yearly history for frontend)
+  - stats.svg        (summary card — top-N repos by clones)
+  - repo_clones.svg  (full tabular SVG)
+  - stats.json       (summary JSON for frontend)
+  - repo_clones.json (detailed JSON for frontend)
+  - history.json     (monthly/yearly history for frontend)
 
 Behavior notes:
  - By default only public repos are processed. Use INCLUDE_PRIVATE env or --include-private to opt-in.

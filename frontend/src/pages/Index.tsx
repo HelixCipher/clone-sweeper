@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { fetchDashboardData } from '@/lib/parser';
+import { getOwnerAndRepo } from '@/lib/utils';
 import { StatsOverview } from '@/components/StatsOverview';
 import { TopReposChart } from '@/components/TopReposChart';
 import { RepoTable } from '@/components/RepoTable';
@@ -8,6 +9,8 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 import { Activity, ExternalLink, GitCompare } from 'lucide-react';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { Link } from 'react-router-dom';
+
+const { owner, repo } = getOwnerAndRepo();
 
 const Index = () => {
   const { data, isLoading, error } = useQuery({
@@ -63,7 +66,7 @@ const Index = () => {
               Compare
             </Link>
             <a
-              href="https://github.com/HelixCipher/clone-sweeper"
+              href={`https://github.com/${owner}/${repo}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium bg-secondary text-secondary-foreground rounded-md hover:bg-secondary/80 transition-colors"

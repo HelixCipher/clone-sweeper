@@ -1,11 +1,13 @@
-# Clone Sweeper — GitHub repo clones summary & SVG cards
+# [Clone Sweeper — GitHub repo clones summary & SVG cards](https://helixcipher.github.io/clone-sweeper/)
 
-Clone Sweeper is an automated GitHub repository analytics tool that collects clone traffic data and renders high-quality SVG dashboards for use in READMEs, profiles, or documentation.
+![preview](project_demonstration_gif.gif)
+
+Clone Sweeper is an automated GitHub repository analytics tool that collects clone traffic data and renders high-quality SVG dashboards for use in READMEs, profiles, or documentation. It also includes an interactive GitHub Pages frontend.
 
 
 ## What it Generates
 
-Each run produces three SVG artifacts:
+Each run produces five artifacts (SVGs and JSON):
 
 1. **stats.svg** — Summary Card (Top Repos)
 
@@ -41,9 +43,9 @@ Each metric is scaled independently so smaller values remain visible.
 
 ---
 
-2. **REPO_CLONES.svg** — Full Repository Table
+2. **repo_clones.svg** — Full Repository Table
 
-![Clone Sweeper](https://raw.githubusercontent.com/HelixCipher/clone-sweeper/main/REPO_CLONES.svg)
+![Clone Sweeper](https://raw.githubusercontent.com/HelixCipher/clone-sweeper/main/repo_clones.svg)
 
 including:
 
@@ -69,15 +71,11 @@ including:
 
 Missing traffic data is clearly shown as N/A.
 
+Note: history.svg is deprecated. Use the interactive GitHub Pages frontend to view historical trends.
+
 ---
 
-3. **history.svg** — Long-Term Trends
-
-![Clone Sweeper](https://raw.githubusercontent.com/HelixCipher/clone-sweeper/main/history.svg)
-
-_A multi-series line chart derived from persisted history snapshots._
-
-* Tracks **clones and unique cloners separately**
+## Highlights
 
 * Builds accuracy over time with repeated runs
 
@@ -90,7 +88,6 @@ Runs automatically via GitHub Actions (cron + manual dispatch). Safe defaults: p
 
 ---
 
-## What’s new / highlights
 
 * SVG rendering is done with Jinja2 templates — easier to maintain and style.
 
@@ -130,71 +127,210 @@ Schema (simplified):
 
 repo_name | day | clone_count | unique_clones | download_count
 
-
 ```
 
-* One row per repo per day
+- One row per repo per day
 
-* Insert-or-replace semantics
+- Insert-or-replace semantics
 
-* Deleted repos are automatically pruned
-
+- Deleted repos are automatically pruned
 
 This design:
 
-* Avoids overlapping 14-day windows
+- Avoids overlapping 14-day windows
 
-* Enables accurate aggregation
+- Enables accurate aggregation
 
-* Keeps data compact (years of daily data remain small)
-
----
+- Keeps data compact (years of daily data remain small)
 
 ## Branch Strategy
 
-Branch                    Purpose
+Branch              Purpose
 
-**main**                  SVG artifacts (**stats.svg**, **REPO_CLONES.svg**, **history.svg**)
+main                SVG artifacts (stats.svg, repo_clones.svg) and JSON files (stats.json, repo_clones.json, history.json)
 
-**history-db**            **history.db** only (force-pushed, compact)
+history-db          history.db only (force-pushed, compact)
 
 This prevents repository bloat while keeping history durable.
 
----
-
 ## Why force-push history-db?
 
-* Database is state, not history
+- Database is state, not history
 
-* Prevents unbounded repo growth
+- Prevents unbounded repo growth
 
-* Clean separation of concerns
+- Clean separation of concerns
 
----
+## Setting Up Clone Sweeper on Your Own GitHub Account
+
+This guide walks you through setting up Clone Sweeper to display your own repository analytics on GitHub Pages.
+
+### Prerequisites
+
+- A GitHub account
+
+- A Personal Access Token (PAT) with `repo` scope
+
+- Basic familiarity with GitHub
+
+### Step 1: Fork the Repository
+
+1. Go to https://github.com/HelixCipher/clone-sweeper
+
+2. Click the "Fork" button in the top-right corner.
+
+3. Select your GitHub account as the destination.
+
+4. Wait for the fork to complete.
+
+### Step 2: Enable GitHub Pages
+
+1. In your forked repository, go to **Settings** → **Pages**.
+
+2. Under "Build and deployment", find "Source".
+
+3. Select **GitHub Actions** (not "Deploy from a branch").
+
+4. GitHub Pages is now configured to use the workflow.
+
+### Step 3: Add Your Personal Access Token
+
+1. Go to **Settings** → **Secrets and variables** → **Actions**.
+
+2. Click "New repository secret".
+
+3. Name: `TOKEN`.
+
+4. Secret: Your Personal Access Token (PAT).
+
+   - To create one: Settings → Developer settings → Personal access tokens → Tokens (classic).
+
+   - Select the `repo` scope.
+
+5. Click "Add secret".
+
+### Step 4: Run the Workflow
+
+There are two workflows available:
+
+#### Option A: Deploy to GitHub Pages (Recommended)
+
+This runs the Python script AND builds/deploys the frontend:
+
+1. Go to **Actions** → **Deploy to GitHub Pages**.
+
+2. Click "Run workflow".
+
+3. Select the main branch.
+
+4. Click "Run workflow".
+
+5. Wait for the workflow to complete (check the run for progress).
+
+#### Option B: Update Stats Only
+
+This only runs the Python script to update data (for using SVGs in your profile README):
+
+1. Go to **Actions** → **Update repo stats**.
+
+2. Click "Run workflow".
+
+3. Select the main branch.
+
+4. Click "Run workflow".
+
+### Step 5: Access Your Dashboard
+
+Once the workflow completes:
+
+1. Go to **Settings** → **Pages**.
+
+2. Look for the "GitHub Pages" section.
+
+3. Find your site URL (usually: `https://yourusername.github.io/clone-sweeper/`).
+
+4. Click the link to view your dashboard.
+
+The dashboard will automatically fetch data from your repository - no configuration needed.
+
+### How It Works
+
+1. The Python script (`clone_sweeper.py`) detects your GitHub username automatically.
+
+2. It fetches clone/download statistics for all your public repositories.
+
+3. It generates JSON files (stats.json, repo_clones.json, history.json).
+
+4. The JSON files are pushed to your main branch.
+
+5. The frontend fetches these JSON files and displays them.
+
+6. The deploy-pages.yml workflow builds and deploys the frontend to GitHub Pages.
+
+### Customizing (Optional)
+
+#### Change the Site URL Path
+
+The default path is `/clone-sweeper/`. To change it:
+
+1. Edit `frontend/vite.config.ts` - change line 6:
+   ```typescript
+   base: "/your-custom-path/",
+   ```
+2. Commit and run the deploy workflow again
+
+#### Include Private Repositories
+
+1. Go to **Actions** → **Deploy to GitHub Pages**.
+
+2. Click "Run workflow".
+
+3. Check "Include private repositories".
+
+4. Run the workflow.
+
+Note: Your TOKEN must have access to the private repos.
+
+### Troubleshooting
+
+#### "Failed to fetch" errors in the browser console
+- Ensure the workflow has run at least once to generate the JSON files.
+
+- Check that GitHub Pages is enabled and set to "GitHub Actions".
+
+#### TOKEN errors in the workflow
+
+- Verify the TOKEN secret exists in Settings → Secrets and variables → Actions.
+
+- Ensure the TOKEN has the `repo` scope.
+
+#### Clone counts show as N/A
+
+- This is normal for repos with no traffic.
+
+- Clone data only appears for repos that have been cloned.
 
 ## Limitations
 
-* GitHub traffic data is delayed and approximate
+- GitHub traffic data is delayed and approximate.
 
-* Requires repeated runs for long-term accuracy
+- Requires repeated runs for long-term accuracy.
 
-* Private repo data requires explicit opt-in
-* Download counts require published releases with downloadable assets
+- Private repo data requires explicit opt-in.
 
----
+- Download counts require published releases with downloadable assets.
 
-## TL;DR — Get it running (3 steps)
+## TL;DR - Get it running (3 steps)
 
 1. Create a repo (or use this one).
 
 2. Add repository secret TOKEN (see Secrets & permissions).
 
-3. Trigger the workflow (Actions → Update repo stats → Run workflow) or run locally.
+3. Trigger the workflow (Actions -> Update repo stats -> Run workflow) or run locally.
 
 ### Local example (public only):
 
 ```bash
-
 # install deps
 pip install -r requirements.txt
 
@@ -203,93 +339,81 @@ python clone_sweeper.py
 
 # run and push generated files back to the repo (requires TOKEN secret or local env var)
 export TOKEN="ghp_xxx"         # real PAT if you want clone stats or private repos
-python clone_sweeper.py ——push
+python clone_sweeper.py --push
 
-# include private repos (opt—in)
-python clone_sweeper.py ——include—private ——push
+# include private repos (opt-in)
+python clone_sweeper.py --include-private --push
 # or
 export INCLUDE_PRIVATE=true
-python clone_sweeper.py ——push
-
+python clone_sweeper.py --push
 ```
-
----
 
 ## How it works (short)
 
-* The script auto—detects the GitHub owner in this order:
+- The script auto-detects the GitHub owner in this order:
 
-1. **--owner** CLI arg
+  1. --owner CLI arg
 
-2. **GITHUB_REPOSITORY** env (set by Actions)
+  2. GITHUB_REPOSITORY env (set by Actions)
 
-3. **TOKEN** via **/user** API
+  3. TOKEN via /user API
 
-4. local git remote **origin** URL
+  4. local git remote origin URL
 
-* It lists repos, optionally filters out private repos (default: exclude), and calls GitHub’s traffic API for clones.
-
----
+- It lists repos, optionally filters out private repos (default: exclude), and calls GitHub's traffic API for clones.
 
 ## How to See Download Counts
 
 To have downloads tracked and displayed:
 
-1. Go to one of your repos (e.g., `image-resizer`)
-2. Click **"Releases"** tab → **"Create a new release"**
-3. Upload a file/asset (e.g., a compiled binary, installer, or documentation PDF)
-4. Publish the release
-5. When someone download that specific file, GitHub tracks it
+1. Go to one of your repos.
 
-**Important notes about downloads:**
+2. Click Releases tab -> Create a new release.
 
-* GitHub **only** tracks downloads for **release assets** (files attached to releases)
-* ZIP downloads from the repo's main page ("Download ZIP" button) are **NOT** tracked
-* Each asset download is counted individually
-* Download counts are cumulative (not time-windowed like clones)
-* `N/A` in the table means either:
-  * The repo has no releases
-  * Releases exist but have no downloadable assets
-  * Insufficient permissions to read release data
+3. Upload a file/asset (e.g., a compiled binary, installer, or documentation PDF).
 
+4. Publish the release.
 
+5. When someone downloads that specific file, GitHub tracks it.
+
+Important notes about downloads:
+
+- GitHub only tracks downloads for release assets (files attached to releases).
+
+- ZIP downloads from the repo's main page (Download ZIP button) are NOT tracked.
+
+- Each asset download is counted individually.
+
+- Download counts are cumulative (not time-windowed like clones).
+
+- N/A in the table means either:
+
+  - The repo has no releases.
+
+  - Releases exist but have no downloadable assets.
+
+  - Insufficient permissions to read release data.
 
 ## Embedding the SVGs in your profile README
 
 Add this line to your profile README to embed the compact card:
 
 ```md
-
 ![GitHub repo clones](https://raw.githubusercontent.com/<YOUR_USERNAME>/<STATS_REPO>/main/stats.svg)
-
 ```
 
 ### Example:
 
 ```md
-
 ### Compact card:
-
-![GitHub repo clones](https://raw.githubusercontent.com/HelixCipher/clone—sweeper/main/stats.svg)
-
-
+![GitHub repo clones](https://raw.githubusercontent.com/HelixCipher/clone-sweeper/main/stats.svg)
 ```
 
 ### Full table:
 
 ```md
-
-![GitHub repo clones](https://raw.githubusercontent.com/<YOUR_USERNAME>/<STATS_REPO>/main/REPO_CLONES.svg)
-
-
-
-### History chart:
-
-![Clone history](https://raw.githubusercontent.com/<YOUR_USERNAME>/<STATS_REPO>/main/history.svg)
-
-
+![GitHub repo clones](https://raw.githubusercontent.com/<YOUR_USERNAME>/<STATS_REPO>/main/repo_clones.svg)
 ```
-
 
 ## GitHub Actions: how the workflow is configured
 
@@ -379,7 +503,7 @@ The workflow will now have access to the token and can fetch clone statistics.
 
 * **--owner <owner>** — explicitly set the GitHub owner (overrides detection).
 
-* **--push** — commit & push REPO_CLONES.svg and stats.svg back to the repo.
+* **--push** — commit & push stats.svg, repo_clones.svg, stats.json, repo_clones.json, and history.json back to the repo.
 
 * **--include—private** — opt—in to include private repos (requires a PAT owned by the repo owner with **repo** scope).
 

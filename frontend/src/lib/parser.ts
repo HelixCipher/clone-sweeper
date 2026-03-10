@@ -1,6 +1,12 @@
 import type { DashboardData, RepoSummary, RepoDetails, HistoryEntry } from './types';
+import { getOwnerAndRepo } from './utils';
 
-const RAW_BASE = 'https://raw.githubusercontent.com/HelixCipher/clone-sweeper/main';
+function getRawBase(): string {
+  const { owner, repo } = getOwnerAndRepo();
+  return `https://raw.githubusercontent.com/${owner}/${repo}/main`;
+}
+
+const RAW_BASE = getRawBase();
 
 async function fetchJson<T>(filename: string): Promise<T> {
   const res = await fetch(`${RAW_BASE}/${filename}`);

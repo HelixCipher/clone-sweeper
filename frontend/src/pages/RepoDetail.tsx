@@ -1,11 +1,14 @@
 import { useParams, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { fetchDashboardData } from '@/lib/parser';
+import { getOwnerAndRepo } from '@/lib/utils';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { Activity, ArrowLeft, GitBranch, Star, GitFork, Eye, AlertCircle, Download, Copy, Users, Clock, ExternalLink } from 'lucide-react';
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend,
 } from 'recharts';
+
+const { owner, repo: repoNamePrefix } = getOwnerAndRepo();
 
 const RepoDetail = () => {
   const { repoName } = useParams<{ repoName: string }>();
@@ -120,7 +123,7 @@ const RepoDetail = () => {
           <div className="flex items-center gap-2">
             <ThemeToggle />
             <a
-              href={`https://github.com/HelixCipher/${repoName}`}
+              href={`https://github.com/${owner}/${repoName}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium bg-secondary text-secondary-foreground rounded-md hover:bg-secondary/80 transition-colors"
