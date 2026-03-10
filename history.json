@@ -1,6 +1,27 @@
 {
   "monthly": [
     {
+      "repo": "clone-sweeper-wip",
+      "metric": "clones",
+      "latestValue": 527,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper-wip",
+      "metric": "uniques",
+      "latestValue": 191,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper-wip",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "clone-sweeper",
       "metric": "clones",
       "latestValue": 397,
@@ -104,30 +125,30 @@
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
-    },
+    }
+  ],
+  "yearly": [
     {
-      "repo": "dynamic-webscraper",
+      "repo": "clone-sweeper-wip",
       "metric": "clones",
-      "latestValue": 44,
+      "latestValue": 527,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "clone-sweeper-wip",
       "metric": "uniques",
-      "latestValue": 37,
+      "latestValue": 191,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "clone-sweeper-wip",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
-    }
-  ],
-  "yearly": [
+    },
     {
       "repo": "clone-sweeper",
       "metric": "clones",
@@ -232,29 +253,8 @@
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "clones",
-      "latestValue": 44,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 37,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
     }
   ],
-  "monthRange": "2026-03 \u2192 2026-03",
+  "monthRange": "2026-01 \u2192 2026-03",
   "yearRange": "2026 \u2192 2026"
 }
