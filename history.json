@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 543,
+      "latestValue": 594,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 242,
+      "latestValue": 256,
       "color": "#60a5fa",
       "points": []
     },
@@ -22,37 +22,16 @@
       "points": []
     },
     {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 101,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "uniques",
-      "latestValue": 72,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 77,
+      "latestValue": 78,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 20,
+      "latestValue": 21,
       "color": "#60a5fa",
       "points": []
     },
@@ -66,14 +45,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 77,
+      "latestValue": 78,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 20,
+      "latestValue": 21,
       "color": "#60a5fa",
       "points": []
     },
@@ -87,14 +66,14 @@
     {
       "repo": "ai-job-finder",
       "metric": "clones",
-      "latestValue": 53,
+      "latestValue": 55,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "ai-job-finder",
       "metric": "uniques",
-      "latestValue": 41,
+      "latestValue": 43,
       "color": "#60a5fa",
       "points": []
     },
@@ -125,20 +104,41 @@
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "clones",
+      "latestValue": 49,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "uniques",
+      "latestValue": 41,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
     }
   ],
   "yearly": [
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 849,
+      "latestValue": 900,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 420,
+      "latestValue": 434,
       "color": "#60a5fa",
       "points": []
     },
@@ -150,37 +150,16 @@
       "points": []
     },
     {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 101,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "uniques",
-      "latestValue": 72,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 77,
+      "latestValue": 78,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 20,
+      "latestValue": 21,
       "color": "#60a5fa",
       "points": []
     },
@@ -194,14 +173,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 77,
+      "latestValue": 78,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 20,
+      "latestValue": 21,
       "color": "#60a5fa",
       "points": []
     },
@@ -215,14 +194,14 @@
     {
       "repo": "ai-job-finder",
       "metric": "clones",
-      "latestValue": 53,
+      "latestValue": 55,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "ai-job-finder",
       "metric": "uniques",
-      "latestValue": 41,
+      "latestValue": 43,
       "color": "#60a5fa",
       "points": []
     },
@@ -253,8 +232,29 @@
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "clones",
+      "latestValue": 49,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "uniques",
+      "latestValue": 41,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
     }
   ],
-  "monthRange": "2026-01 \u2192 2026-03",
+  "monthRange": "2026-03 \u2192 2026-03",
   "yearRange": "2026 \u2192 2026"
 }
