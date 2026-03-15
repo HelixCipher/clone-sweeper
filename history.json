@@ -1,0 +1,260 @@
+{
+  "monthly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 575,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 258,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "LeakPro",
+      "metric": "clones",
+      "latestValue": 118,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "LeakPro",
+      "metric": "uniques",
+      "latestValue": 17,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "LeakPro",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "LeakPro",
+      "metric": "clones",
+      "latestValue": 118,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "LeakPro",
+      "metric": "uniques",
+      "latestValue": 17,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "LeakPro",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "ai-job-finder",
+      "metric": "clones",
+      "latestValue": 55,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "ai-job-finder",
+      "metric": "uniques",
+      "latestValue": 44,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "ai-job-finder",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "clones",
+      "latestValue": 48,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "uniques",
+      "latestValue": 37,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "data-processing",
+      "metric": "clones",
+      "latestValue": 48,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "data-processing",
+      "metric": "uniques",
+      "latestValue": 40,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "data-processing",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "yearly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 881,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 436,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "LeakPro",
+      "metric": "clones",
+      "latestValue": 118,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "LeakPro",
+      "metric": "uniques",
+      "latestValue": 17,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "LeakPro",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "LeakPro",
+      "metric": "clones",
+      "latestValue": 118,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "LeakPro",
+      "metric": "uniques",
+      "latestValue": 17,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "LeakPro",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "ai-job-finder",
+      "metric": "clones",
+      "latestValue": 55,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "ai-job-finder",
+      "metric": "uniques",
+      "latestValue": 44,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "ai-job-finder",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "clones",
+      "latestValue": 71,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "uniques",
+      "latestValue": 58,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "data-processing",
+      "metric": "clones",
+      "latestValue": 56,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "data-processing",
+      "metric": "uniques",
+      "latestValue": 46,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "data-processing",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "monthRange": "2026-01 \u2192 2026-03",
+  "yearRange": "2026 \u2192 2026"
+}
