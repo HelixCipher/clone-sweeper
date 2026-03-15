@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 583,
+      "latestValue": 575,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 255,
+      "latestValue": 258,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 68,
+      "latestValue": 118,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 17,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,14 +45,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 68,
+      "latestValue": 118,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 17,
       "color": "#60a5fa",
       "points": []
     },
@@ -79,27 +79,6 @@
     },
     {
       "repo": "ai-job-finder",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "data-processing",
-      "metric": "clones",
-      "latestValue": 49,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "data-processing",
-      "metric": "uniques",
-      "latestValue": 41,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "data-processing",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -125,20 +104,41 @@
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
+    },
+    {
+      "repo": "data-processing",
+      "metric": "clones",
+      "latestValue": 48,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "data-processing",
+      "metric": "uniques",
+      "latestValue": 40,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "data-processing",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
     }
   ],
   "yearly": [
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 889,
+      "latestValue": 881,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 433,
+      "latestValue": 436,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 68,
+      "latestValue": 118,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 17,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,14 +173,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 68,
+      "latestValue": 118,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 17,
       "color": "#60a5fa",
       "points": []
     },
@@ -213,27 +213,6 @@
       "points": []
     },
     {
-      "repo": "data-processing",
-      "metric": "clones",
-      "latestValue": 57,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "data-processing",
-      "metric": "uniques",
-      "latestValue": 47,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "data-processing",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "E-commerce-Conversion-Prediction",
       "metric": "clones",
       "latestValue": 71,
@@ -249,6 +228,27 @@
     },
     {
       "repo": "E-commerce-Conversion-Prediction",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "data-processing",
+      "metric": "clones",
+      "latestValue": 56,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "data-processing",
+      "metric": "uniques",
+      "latestValue": 46,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "data-processing",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
