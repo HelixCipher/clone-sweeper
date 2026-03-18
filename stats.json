@@ -1,47 +1,47 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 30,
-  "totalClones": 1037,
-  "totalUniques": 500,
-  "totalCombined": 1537,
+  "totalClones": 1054,
+  "totalUniques": 492,
+  "totalCombined": 1546,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 578,
-      "uniques": 254,
-      "combined": 832
+      "clones": 589,
+      "uniques": 258,
+      "combined": 847
     },
     {
       "name": "LeakPro",
-      "clones": 120,
-      "uniques": 19,
-      "combined": 139
+      "clones": 133,
+      "uniques": 23,
+      "combined": 156
     },
     {
       "name": "LeakPro",
-      "clones": 120,
-      "uniques": 19,
-      "combined": 139
-    },
-    {
-      "name": "ai-job-finder",
-      "clones": 22,
-      "uniques": 20,
-      "combined": 42
-    },
-    {
-      "name": "machine-learning",
-      "clones": 17,
-      "uniques": 16,
-      "combined": 33
+      "clones": 133,
+      "uniques": 23,
+      "combined": 156
     },
     {
       "name": "dynamic-webscraper",
       "clones": 17,
       "uniques": 15,
       "combined": 32
+    },
+    {
+      "name": "machine-learning",
+      "clones": 15,
+      "uniques": 14,
+      "combined": 29
+    },
+    {
+      "name": "HelixCipher",
+      "clones": 13,
+      "uniques": 11,
+      "combined": 24
     }
   ]
 }
