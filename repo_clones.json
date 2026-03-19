@@ -2,20 +2,6 @@
   "generatedAt": "",
   "repos": [
     {
-      "name": "LeakPro",
-      "description": "-",
-      "language": "Python",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "lastPush": "-",
-      "clones14d": 134,
-      "uniques14d": 24,
-      "downloads14d": null,
-      "downloadsTotal": null
-    },
-    {
       "name": "clone-sweeper",
       "description": "Clone Sweeper is an automated GitHub repository analytics tool that collects clone traffic data.",
       "language": "TypeScript",
@@ -26,6 +12,20 @@
       "lastPush": "-",
       "clones14d": 602,
       "uniques14d": 259,
+      "downloads14d": null,
+      "downloadsTotal": null
+    },
+    {
+      "name": "LeakPro",
+      "description": "-",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "lastPush": "-",
+      "clones14d": 134,
+      "uniques14d": 24,
       "downloads14d": null,
       "downloadsTotal": null
     },
