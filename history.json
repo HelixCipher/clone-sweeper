@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 589,
+      "latestValue": 602,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 258,
+      "latestValue": 259,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 133,
+      "latestValue": 134,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 23,
+      "latestValue": 24,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,40 +45,19 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 133,
+      "latestValue": 134,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 23,
+      "latestValue": 24,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "LeakPro",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "clones",
-      "latestValue": 17,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 15,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -87,19 +66,40 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 15,
+      "latestValue": 16,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 15,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "clones",
+      "latestValue": 16,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
       "metric": "uniques",
       "latestValue": 14,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 895,
+      "latestValue": 908,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 436,
+      "latestValue": 437,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 133,
+      "latestValue": 134,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 23,
+      "latestValue": 24,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,40 +173,19 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 133,
+      "latestValue": 134,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 23,
+      "latestValue": 24,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "LeakPro",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "clones",
-      "latestValue": 17,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 15,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -215,19 +194,40 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 15,
+      "latestValue": 16,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 15,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "clones",
+      "latestValue": 16,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
       "metric": "uniques",
       "latestValue": 14,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
