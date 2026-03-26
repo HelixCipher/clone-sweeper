@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 387,
+      "latestValue": 371,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 170,
+      "latestValue": 166,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 242,
+      "latestValue": 185,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 35,
+      "latestValue": 31,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,14 +45,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 242,
+      "latestValue": 185,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 35,
+      "latestValue": 31,
       "color": "#60a5fa",
       "points": []
     },
@@ -85,42 +85,42 @@
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "Amnesiac-Shell",
       "metric": "clones",
       "latestValue": 12,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "Amnesiac-Shell",
       "metric": "uniques",
       "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "Amnesiac-Shell",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "dynamic-webscraper",
       "metric": "clones",
-      "latestValue": 12,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 11,
+      "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 693,
+      "latestValue": 677,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 348,
+      "latestValue": 344,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 242,
+      "latestValue": 185,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 35,
+      "latestValue": 31,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,14 +173,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 242,
+      "latestValue": 185,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 35,
+      "latestValue": 31,
       "color": "#60a5fa",
       "points": []
     },
@@ -213,42 +213,42 @@
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "Amnesiac-Shell",
       "metric": "clones",
       "latestValue": 12,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "Amnesiac-Shell",
       "metric": "uniques",
       "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "Amnesiac-Shell",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "dynamic-webscraper",
       "metric": "clones",
-      "latestValue": 12,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 11,
+      "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
