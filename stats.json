@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 30,
-  "totalClones": 874,
-  "totalUniques": 357,
-  "totalCombined": 1231,
+  "totalClones": 865,
+  "totalUniques": 363,
+  "totalCombined": 1228,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 371,
-      "uniques": 166,
-      "combined": 537
+      "clones": 351,
+      "uniques": 159,
+      "combined": 510
     },
     {
       "name": "LeakPro",
@@ -24,24 +24,24 @@
       "clones": 185,
       "uniques": 31,
       "combined": 216
-    },
-    {
-      "name": "HelixCipher",
-      "clones": 17,
-      "uniques": 15,
-      "combined": 32
     },
     {
       "name": "Amnesiac-Shell",
+      "clones": 13,
+      "uniques": 12,
+      "combined": 25
+    },
+    {
+      "name": "dynamic-webscraper",
       "clones": 12,
       "uniques": 11,
       "combined": 23
     },
     {
-      "name": "dynamic-webscraper",
-      "clones": 10,
-      "uniques": 9,
-      "combined": 19
+      "name": "HelixCipher",
+      "clones": 11,
+      "uniques": 11,
+      "combined": 22
     }
   ]
 }
