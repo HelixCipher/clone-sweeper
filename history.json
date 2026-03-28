@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 351,
+      "latestValue": 355,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 159,
+      "latestValue": 162,
       "color": "#60a5fa",
       "points": []
     },
@@ -64,37 +64,16 @@
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "dynamic-webscraper",
       "metric": "clones",
       "latestValue": 13,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
-      "metric": "uniques",
-      "latestValue": 12,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "Amnesiac-Shell",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "clones",
-      "latestValue": 12,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
       "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 11,
+      "latestValue": 12,
       "color": "#60a5fa",
       "points": []
     },
@@ -121,6 +100,27 @@
     },
     {
       "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "Amnesiac-Shell",
+      "metric": "clones",
+      "latestValue": 11,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Amnesiac-Shell",
+      "metric": "uniques",
+      "latestValue": 10,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Amnesiac-Shell",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 657,
+      "latestValue": 661,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 337,
+      "latestValue": 340,
       "color": "#60a5fa",
       "points": []
     },
@@ -192,37 +192,16 @@
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "dynamic-webscraper",
       "metric": "clones",
       "latestValue": 13,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
-      "metric": "uniques",
-      "latestValue": 12,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "Amnesiac-Shell",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "clones",
-      "latestValue": 12,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
       "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 11,
+      "latestValue": 12,
       "color": "#60a5fa",
       "points": []
     },
@@ -253,8 +232,29 @@
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
+    },
+    {
+      "repo": "Amnesiac-Shell",
+      "metric": "clones",
+      "latestValue": 11,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Amnesiac-Shell",
+      "metric": "uniques",
+      "latestValue": 10,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Amnesiac-Shell",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
     }
   ],
-  "monthRange": "2026-01 \u2192 2026-03",
+  "monthRange": "2026-03 \u2192 2026-03",
   "yearRange": "2026 \u2192 2026"
 }
