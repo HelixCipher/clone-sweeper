@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 355,
+      "latestValue": 370,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 162,
+      "latestValue": 175,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 185,
+      "latestValue": 131,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 31,
+      "latestValue": 25,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,19 +45,40 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 185,
+      "latestValue": 131,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 31,
+      "latestValue": 25,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "LeakPro",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 16,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 14,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -85,42 +106,21 @@
       "points": []
     },
     {
-      "repo": "HelixCipher",
+      "repo": "digiti-signum",
       "metric": "clones",
-      "latestValue": 11,
+      "latestValue": 9,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "HelixCipher",
+      "repo": "digiti-signum",
       "metric": "uniques",
-      "latestValue": 11,
+      "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "HelixCipher",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "Amnesiac-Shell",
-      "metric": "clones",
-      "latestValue": 11,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "Amnesiac-Shell",
-      "metric": "uniques",
-      "latestValue": 10,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "Amnesiac-Shell",
+      "repo": "digiti-signum",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 661,
+      "latestValue": 676,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 340,
+      "latestValue": 353,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 185,
+      "latestValue": 131,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 31,
+      "latestValue": 25,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,19 +173,40 @@
     {
       "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 185,
+      "latestValue": 131,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 31,
+      "latestValue": 25,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "LeakPro",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 38,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 34,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -213,42 +234,21 @@
       "points": []
     },
     {
-      "repo": "HelixCipher",
+      "repo": "digiti-signum",
       "metric": "clones",
-      "latestValue": 33,
+      "latestValue": 9,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "HelixCipher",
+      "repo": "digiti-signum",
       "metric": "uniques",
-      "latestValue": 31,
+      "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "HelixCipher",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "Amnesiac-Shell",
-      "metric": "clones",
-      "latestValue": 11,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "Amnesiac-Shell",
-      "metric": "uniques",
-      "latestValue": 10,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "Amnesiac-Shell",
+      "repo": "digiti-signum",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
