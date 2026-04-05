@@ -1,29 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 30,
-  "totalClones": 775,
-  "totalUniques": 387,
-  "totalCombined": 1162,
+  "totalClones": 570,
+  "totalUniques": 368,
+  "totalCombined": 938,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 391,
-      "uniques": 199,
-      "combined": 590
-    },
-    {
-      "name": "LeakPro",
-      "clones": 115,
-      "uniques": 19,
-      "combined": 134
-    },
-    {
-      "name": "LeakPro",
-      "clones": 115,
-      "uniques": 19,
-      "combined": 134
+      "clones": 402,
+      "uniques": 204,
+      "combined": 606
     },
     {
       "name": "HelixCipher",
@@ -33,15 +21,27 @@
     },
     {
       "name": "dynamic-webscraper",
-      "clones": 13,
-      "uniques": 13,
-      "combined": 26
+      "clones": 15,
+      "uniques": 15,
+      "combined": 30
+    },
+    {
+      "name": "LeakPro",
+      "clones": 9,
+      "uniques": 9,
+      "combined": 18
+    },
+    {
+      "name": "LeakPro",
+      "clones": 9,
+      "uniques": 9,
+      "combined": 18
     },
     {
       "name": "todays-command",
-      "clones": 10,
-      "uniques": 10,
-      "combined": 20
+      "clones": 9,
+      "uniques": 9,
+      "combined": 18
     }
   ]
 }
