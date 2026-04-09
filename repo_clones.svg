@@ -18,7 +18,7 @@
   }
 </style>
 <text x="18" y="32" class="title card">GitHub repositories — HelixCipher</text>
-<text x="18" y="50" class="meta card">Generated: 2026-04-09T04:27:18.730446Z · Mode: Public repos only · Repos: 31 · Clones: 598 · Downloads: 0</text>
+<text x="18" y="50" class="meta card">Generated: 2026-04-09T04:28:00.104751Z · Mode: Public repos only · Repos: 31 · Clones: 598 · Downloads: 0</text>
 <rect x="18" y="30" width="2001" height="890" rx="8" class="row-even"/>
 <rect x="18" y="30" width="2001" height="890" class="table-border"/>
 
@@ -53,23 +53,23 @@
   
     
     
-      <text x="30" y="74" class="td card">machine-learning</text>
+      <text x="30" y="74" class="td card">clone-sweeper</text>
     
   
     
     
       
       
-        <text x="394" y="72" class="td card">A curated collection of machine learning projects covering</text>
+        <text x="394" y="72" class="td card">Clone Sweeper is an automated GitHub repository analytics</text>
         
-          <text x="394" y="86" class="td card">various domains including computer vision, predictive model…</text>
+          <text x="394" y="86" class="td card">tool that collects clone traffic data.</text>
         
       
     
   
     
     
-      <text x="1002" y="74" class="td card"></text>
+      <text x="1002" y="74" class="td card">TypeScript</text>
     
   
     
@@ -94,17 +94,17 @@
   
     
     
-      <text x="1425" y="74" class="td card">2026-04-09 02:14:34</text>
+      <text x="1425" y="74" class="td card">2026-04-09 04:27:19</text>
     
   
     
     
-      <text x="1587" y="74" class="td card">7</text>
+      <text x="1587" y="74" class="td card">420</text>
     
   
     
     
-      <text x="1685" y="74" class="td card">7</text>
+      <text x="1685" y="74" class="td card">212</text>
     
   
     
@@ -123,23 +123,23 @@
   
     
     
-      <text x="30" y="100" class="td card">fine-tuning-an-local-llm-for-web-scraping</text>
+      <text x="30" y="100" class="td card">machine-learning</text>
     
   
     
     
       
       
-        <text x="394" y="98" class="td card">A guide to building a custom web scraping AI assistant by</text>
+        <text x="394" y="98" class="td card">A curated collection of machine learning projects covering</text>
         
-          <text x="394" y="112" class="td card">fine-tuning Qwen2.5-3B to extract structured JSON data from…</text>
+          <text x="394" y="112" class="td card">various domains including computer vision, predictive model…</text>
         
       
     
   
     
     
-      <text x="1002" y="100" class="td card">Jupyter Notebook</text>
+      <text x="1002" y="100" class="td card"></text>
     
   
     
@@ -164,17 +164,17 @@
   
     
     
-      <text x="1425" y="100" class="td card">2026-04-09 02:07:56</text>
+      <text x="1425" y="100" class="td card">2026-04-09 02:14:34</text>
     
   
     
     
-      <text x="1587" y="100" class="td card">0</text>
+      <text x="1587" y="100" class="td card">7</text>
     
   
     
     
-      <text x="1685" y="100" class="td card">0</text>
+      <text x="1685" y="100" class="td card">7</text>
     
   
     
@@ -193,20 +193,23 @@
   
     
     
-      <text x="30" y="126" class="td card">HelixCipher</text>
+      <text x="30" y="126" class="td card">fine-tuning-an-local-llm-for-web-scraping</text>
     
   
     
     
       
       
-        <text x="394" y="126" class="muted card">-</text>
+        <text x="394" y="124" class="td card">A guide to building a custom web scraping AI assistant by</text>
+        
+          <text x="394" y="138" class="td card">fine-tuning Qwen2.5-3B to extract structured JSON data from…</text>
+        
       
     
   
     
     
-      <text x="1002" y="126" class="td card"></text>
+      <text x="1002" y="126" class="td card">Jupyter Notebook</text>
     
   
     
@@ -231,17 +234,17 @@
   
     
     
-      <text x="1425" y="126" class="td card">2026-04-09 01:36:12</text>
+      <text x="1425" y="126" class="td card">2026-04-09 02:07:56</text>
     
   
     
     
-      <text x="1587" y="126" class="td card">36</text>
+      <text x="1587" y="126" class="td card">0</text>
     
   
     
     
-      <text x="1685" y="126" class="td card">29</text>
+      <text x="1685" y="126" class="td card">0</text>
     
   
     
@@ -260,23 +263,20 @@
   
     
     
-      <text x="30" y="152" class="td card">clone-sweeper</text>
+      <text x="30" y="152" class="td card">HelixCipher</text>
     
   
     
     
       
       
-        <text x="394" y="150" class="td card">Clone Sweeper is an automated GitHub repository analytics</text>
-        
-          <text x="394" y="164" class="td card">tool that collects clone traffic data.</text>
-        
+        <text x="394" y="152" class="muted card">-</text>
       
     
   
     
     
-      <text x="1002" y="152" class="td card">TypeScript</text>
+      <text x="1002" y="152" class="td card"></text>
     
   
     
@@ -301,17 +301,17 @@
   
     
     
-      <text x="1425" y="152" class="td card">2026-04-08 04:31:15</text>
+      <text x="1425" y="152" class="td card">2026-04-09 01:36:12</text>
     
   
     
     
-      <text x="1587" y="152" class="td card">420</text>
+      <text x="1587" y="152" class="td card">36</text>
     
   
     
     
-      <text x="1685" y="152" class="td card">212</text>
+      <text x="1685" y="152" class="td card">29</text>
     
   
     
