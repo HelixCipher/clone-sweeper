@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 421,
+      "latestValue": 420,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 216,
+      "latestValue": 212,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 34,
+      "latestValue": 36,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 28,
+      "latestValue": 29,
       "color": "#60a5fa",
       "points": []
     },
@@ -58,27 +58,6 @@
     },
     {
       "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "E-commerce-Conversion-Prediction",
-      "metric": "clones",
-      "latestValue": 9,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "E-commerce-Conversion-Prediction",
-      "metric": "uniques",
-      "latestValue": 9,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "E-commerce-Conversion-Prediction",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -106,21 +85,42 @@
       "points": []
     },
     {
-      "repo": "LeakPro",
+      "repo": "machine-learning",
       "metric": "clones",
       "latestValue": 7,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "LeakPro",
+      "repo": "machine-learning",
       "metric": "uniques",
       "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "LeakPro",
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "clones",
+      "latestValue": 7,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "uniques",
+      "latestValue": 7,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 727,
+      "latestValue": 726,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 394,
+      "latestValue": 390,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 56,
+      "latestValue": 58,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 48,
+      "latestValue": 49,
       "color": "#60a5fa",
       "points": []
     },
@@ -186,27 +186,6 @@
     },
     {
       "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "E-commerce-Conversion-Prediction",
-      "metric": "clones",
-      "latestValue": 32,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "E-commerce-Conversion-Prediction",
-      "metric": "uniques",
-      "latestValue": 30,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "E-commerce-Conversion-Prediction",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -234,27 +213,48 @@
       "points": []
     },
     {
-      "repo": "LeakPro",
+      "repo": "machine-learning",
       "metric": "clones",
       "latestValue": 7,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "LeakPro",
+      "repo": "machine-learning",
       "metric": "uniques",
       "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "LeakPro",
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "clones",
+      "latestValue": 30,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "uniques",
+      "latestValue": 28,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-04 \u2192 2026-04",
+  "monthRange": "2026-01 \u2192 2026-04",
   "yearRange": "2026 \u2192 2026"
 }
