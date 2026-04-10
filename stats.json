@@ -9,27 +9,21 @@
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 420,
-      "uniques": 212,
-      "combined": 632
+      "clones": 418,
+      "uniques": 210,
+      "combined": 628
     },
     {
       "name": "HelixCipher",
-      "clones": 36,
-      "uniques": 29,
-      "combined": 65
+      "clones": 37,
+      "uniques": 30,
+      "combined": 67
     },
     {
       "name": "dynamic-webscraper",
-      "clones": 14,
-      "uniques": 14,
-      "combined": 28
-    },
-    {
-      "name": "gif-maker",
-      "clones": 8,
-      "uniques": 7,
-      "combined": 15
+      "clones": 13,
+      "uniques": 13,
+      "combined": 26
     },
     {
       "name": "machine-learning",
@@ -42,6 +36,12 @@
       "clones": 7,
       "uniques": 7,
       "combined": 14
+    },
+    {
+      "name": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "clones": 7,
+      "uniques": 6,
+      "combined": 13
     }
   ]
 }

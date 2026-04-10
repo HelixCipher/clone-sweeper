@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 420,
+      "latestValue": 418,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 212,
+      "latestValue": 210,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 36,
+      "latestValue": 37,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 29,
+      "latestValue": 30,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,14 +45,14 @@
     {
       "repo": "dynamic-webscraper",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 13,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 13,
       "color": "#60a5fa",
       "points": []
     },
@@ -64,27 +64,6 @@
       "points": []
     },
     {
-      "repo": "gif-maker",
-      "metric": "clones",
-      "latestValue": 8,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "gif-maker",
-      "metric": "uniques",
-      "latestValue": 7,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "gif-maker",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "machine-learning",
       "metric": "clones",
       "latestValue": 7,
@@ -121,6 +100,27 @@
     },
     {
       "repo": "E-commerce-Conversion-Prediction",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "clones",
+      "latestValue": 7,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "uniques",
+      "latestValue": 6,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 726,
+      "latestValue": 724,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 390,
+      "latestValue": 388,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 58,
+      "latestValue": 59,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 49,
+      "latestValue": 50,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,40 +173,19 @@
     {
       "repo": "dynamic-webscraper",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 13,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 13,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "gif-maker",
-      "metric": "clones",
-      "latestValue": 28,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "gif-maker",
-      "metric": "uniques",
-      "latestValue": 26,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "gif-maker",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -249,6 +228,27 @@
     },
     {
       "repo": "E-commerce-Conversion-Prediction",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "clones",
+      "latestValue": 12,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
