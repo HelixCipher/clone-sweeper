@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 426,
+      "latestValue": 461,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 214,
+      "latestValue": 232,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,40 +45,19 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 45,
+      "latestValue": 35,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 33,
+      "latestValue": 25,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "HelixCipher",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "clones",
-      "latestValue": 12,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 12,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -86,41 +65,62 @@
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "metric": "clones",
+      "latestValue": 13,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "metric": "uniques",
+      "latestValue": 12,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
       "metric": "clones",
       "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "gif-maker",
+      "repo": "E-commerce-Conversion-Prediction",
       "metric": "clones",
       "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "gif-maker",
+      "repo": "E-commerce-Conversion-Prediction",
       "metric": "uniques",
-      "latestValue": 7,
+      "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "gif-maker",
+      "repo": "E-commerce-Conversion-Prediction",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 732,
+      "latestValue": 767,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 392,
+      "latestValue": 410,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,40 +173,19 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 67,
+      "latestValue": 57,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 53,
+      "latestValue": 45,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "HelixCipher",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "clones",
-      "latestValue": 12,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 12,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -214,41 +193,62 @@
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "metric": "clones",
+      "latestValue": 13,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "metric": "uniques",
+      "latestValue": 12,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
       "metric": "clones",
       "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "gif-maker",
+      "repo": "E-commerce-Conversion-Prediction",
       "metric": "clones",
-      "latestValue": 28,
+      "latestValue": 31,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "gif-maker",
+      "repo": "E-commerce-Conversion-Prediction",
       "metric": "uniques",
-      "latestValue": 26,
+      "latestValue": 29,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "gif-maker",
+      "repo": "E-commerce-Conversion-Prediction",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
