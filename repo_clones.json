@@ -2,20 +2,6 @@
   "generatedAt": "",
   "repos": [
     {
-      "name": "clone-sweeper",
-      "description": "Clone Sweeper is an automated GitHub repository analytics tool that collects clone traffic data.",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "lastPush": "-",
-      "clones14d": 484,
-      "uniques14d": 243,
-      "downloads14d": null,
-      "downloadsTotal": null
-    },
-    {
       "name": "LeakPro",
       "description": "-",
       "language": "Python",
@@ -30,6 +16,20 @@
       "downloadsTotal": null
     },
     {
+      "name": "clone-sweeper",
+      "description": "Clone Sweeper is an automated GitHub repository analytics tool that collects clone traffic data.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "lastPush": "-",
+      "clones14d": 505,
+      "uniques14d": 251,
+      "downloads14d": null,
+      "downloadsTotal": null
+    },
+    {
       "name": "machine-learning",
       "description": "A curated collection of machine learning projects covering various domains including computer vision, predictive modeling, and data analysis.",
       "language": "-",
@@ -38,8 +38,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 55,
-      "uniques14d": 33,
+      "clones14d": 56,
+      "uniques14d": 34,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -66,7 +66,7 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 33,
+      "clones14d": 32,
       "uniques14d": 24,
       "downloads14d": null,
       "downloadsTotal": null
@@ -94,8 +94,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 6,
-      "uniques14d": 6,
+      "clones14d": 5,
+      "uniques14d": 5,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -122,8 +122,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 7,
-      "uniques14d": 7,
+      "clones14d": 8,
+      "uniques14d": 8,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -136,8 +136,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 9,
-      "uniques14d": 9,
+      "clones14d": 11,
+      "uniques14d": 11,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -151,7 +151,7 @@
       "openIssues": 0,
       "lastPush": "-",
       "clones14d": 7,
-      "uniques14d": 7,
+      "uniques14d": 6,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -164,8 +164,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 4,
-      "uniques14d": 3,
+      "clones14d": 5,
+      "uniques14d": 5,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -178,8 +178,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 4,
-      "uniques14d": 4,
+      "clones14d": 5,
+      "uniques14d": 5,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -206,8 +206,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 16,
-      "uniques14d": 16,
+      "clones14d": 21,
+      "uniques14d": 20,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -220,8 +220,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 6,
-      "uniques14d": 6,
+      "clones14d": 8,
+      "uniques14d": 8,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -234,8 +234,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 8,
-      "uniques14d": 7,
+      "clones14d": 7,
+      "uniques14d": 6,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -276,8 +276,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 7,
-      "uniques14d": 6,
+      "clones14d": 8,
+      "uniques14d": 7,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -304,8 +304,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 5,
-      "uniques14d": 5,
+      "clones14d": 8,
+      "uniques14d": 8,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -318,8 +318,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 3,
-      "uniques14d": 3,
+      "clones14d": 4,
+      "uniques14d": 4,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -388,8 +388,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 6,
-      "uniques14d": 6,
+      "clones14d": 5,
+      "uniques14d": 5,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -430,8 +430,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 4,
-      "uniques14d": 4,
+      "clones14d": 5,
+      "uniques14d": 5,
       "downloads14d": null,
       "downloadsTotal": null
     }
