@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 557,
+      "latestValue": 577,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 262,
+      "latestValue": 259,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,35 +24,35 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 55,
+      "latestValue": 56,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 33,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "clones",
       "latestValue": 34,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 36,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 26,
+      "latestValue": 28,
       "color": "#60a5fa",
       "points": []
     },
@@ -87,14 +87,14 @@
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 15,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "uniques",
-      "latestValue": 13,
+      "latestValue": 14,
       "color": "#60a5fa",
       "points": []
     },
@@ -108,14 +108,14 @@
     {
       "repo": "E-commerce-Conversion-Prediction",
       "metric": "clones",
-      "latestValue": 10,
+      "latestValue": 12,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "E-commerce-Conversion-Prediction",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 863,
+      "latestValue": 883,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 440,
+      "latestValue": 437,
       "color": "#60a5fa",
       "points": []
     },
@@ -151,36 +151,36 @@
     },
     {
       "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 55,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "uniques",
-      "latestValue": 33,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
       "metric": "clones",
       "latestValue": 56,
       "color": "#1f6feb",
       "points": []
     },
     {
+      "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 34,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 58,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 46,
+      "latestValue": 48,
       "color": "#60a5fa",
       "points": []
     },
@@ -215,14 +215,14 @@
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 15,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "uniques",
-      "latestValue": 13,
+      "latestValue": 14,
       "color": "#60a5fa",
       "points": []
     },
@@ -236,14 +236,14 @@
     {
       "repo": "E-commerce-Conversion-Prediction",
       "metric": "clones",
-      "latestValue": 33,
+      "latestValue": 35,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "E-commerce-Conversion-Prediction",
       "metric": "uniques",
-      "latestValue": 31,
+      "latestValue": 32,
       "color": "#60a5fa",
       "points": []
     },
