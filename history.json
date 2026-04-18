@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 577,
+      "latestValue": 595,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 259,
+      "latestValue": 270,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,14 +45,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 36,
+      "latestValue": 37,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 28,
+      "latestValue": 29,
       "color": "#60a5fa",
       "points": []
     },
@@ -66,14 +66,14 @@
     {
       "repo": "dynamic-webscraper",
       "metric": "clones",
+      "latestValue": 20,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "uniques",
       "latestValue": 19,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 18,
       "color": "#60a5fa",
       "points": []
     },
@@ -87,14 +87,14 @@
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "clones",
-      "latestValue": 15,
+      "latestValue": 16,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 15,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 883,
+      "latestValue": 901,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 437,
+      "latestValue": 448,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,14 +173,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 58,
+      "latestValue": 59,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 48,
+      "latestValue": 49,
       "color": "#60a5fa",
       "points": []
     },
@@ -194,14 +194,14 @@
     {
       "repo": "dynamic-webscraper",
       "metric": "clones",
+      "latestValue": 20,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "uniques",
       "latestValue": 19,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 18,
       "color": "#60a5fa",
       "points": []
     },
@@ -215,14 +215,14 @@
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "clones",
-      "latestValue": 15,
+      "latestValue": 16,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 15,
       "color": "#60a5fa",
       "points": []
     },
