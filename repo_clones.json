@@ -16,23 +16,9 @@
       "downloadsTotal": null
     },
     {
-      "name": "helixcipher-pages",
-      "description": "A blog and portfolio site featuring a terminal-inspired design, auto-fetched GitHub projects, and build-time markdown processing. ",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "lastPush": "-",
-      "clones14d": 3,
-      "uniques14d": 3,
-      "downloads14d": null,
-      "downloadsTotal": null
-    },
-    {
       "name": "pages",
       "description": "A blog and portfolio site featuring a terminal-inspired design, auto-fetched GitHub projects, and build-time markdown processing.",
-      "language": "-",
+      "language": "TypeScript",
       "stars": 0,
       "forks": 0,
       "watchers": 0,
