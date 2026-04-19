@@ -1,6 +1,6 @@
 # [Clone Sweeper — GitHub repo clones summary & SVG cards](https://helixcipher.github.io/clone-sweeper/)
 
-![project_demonstration_gif.gif](https://github.com/HelixCipher/clone-sweeper/blob/main/project_demonstration_gif.gif)
+![project_demonstration_gif.gif](project_demonstration_gif.gif)
 
 Clone Sweeper is an automated GitHub repository analytics tool that collects clone traffic data and renders high-quality SVG dashboards for use in READMEs, profiles, or documentation. It also includes an interactive GitHub Pages frontend.
 
