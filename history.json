@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 600,
+      "latestValue": 610,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 265,
+      "latestValue": 268,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 56,
+      "latestValue": 58,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 34,
+      "latestValue": 36,
       "color": "#60a5fa",
       "points": []
     },
@@ -64,37 +64,16 @@
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "clones",
+      "latestValue": 19,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "metric": "uniques",
       "latestValue": 18,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 17,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
-      "metric": "clones",
-      "latestValue": 17,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
-      "metric": "uniques",
-      "latestValue": 16,
       "color": "#60a5fa",
       "points": []
     },
@@ -106,16 +85,37 @@
       "points": []
     },
     {
+      "repo": "dynamic-webscraper",
+      "metric": "clones",
+      "latestValue": 19,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "uniques",
+      "latestValue": 18,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "E-commerce-Conversion-Prediction",
       "metric": "clones",
-      "latestValue": 12,
+      "latestValue": 14,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "E-commerce-Conversion-Prediction",
       "metric": "uniques",
-      "latestValue": 11,
+      "latestValue": 13,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 906,
+      "latestValue": 916,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 443,
+      "latestValue": 446,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 56,
+      "latestValue": 58,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 34,
+      "latestValue": 36,
       "color": "#60a5fa",
       "points": []
     },
@@ -192,37 +192,16 @@
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "clones",
+      "latestValue": 19,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "metric": "uniques",
       "latestValue": 18,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 17,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
-      "metric": "clones",
-      "latestValue": 17,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
-      "metric": "uniques",
-      "latestValue": 16,
       "color": "#60a5fa",
       "points": []
     },
@@ -234,16 +213,37 @@
       "points": []
     },
     {
+      "repo": "dynamic-webscraper",
+      "metric": "clones",
+      "latestValue": 19,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "uniques",
+      "latestValue": 18,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "E-commerce-Conversion-Prediction",
       "metric": "clones",
-      "latestValue": 35,
+      "latestValue": 37,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "E-commerce-Conversion-Prediction",
       "metric": "uniques",
-      "latestValue": 32,
+      "latestValue": 34,
       "color": "#60a5fa",
       "points": []
     },
