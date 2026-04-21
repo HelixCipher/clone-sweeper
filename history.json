@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 610,
+      "latestValue": 650,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 268,
+      "latestValue": 288,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 58,
+      "latestValue": 60,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 36,
+      "latestValue": 38,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,19 +45,61 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 36,
+      "latestValue": 34,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 28,
+      "latestValue": 26,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "clones",
+      "latestValue": 22,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "uniques",
+      "latestValue": 18,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "clones",
+      "latestValue": 20,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "uniques",
+      "latestValue": 19,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -79,48 +121,6 @@
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "clones",
-      "latestValue": 19,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 18,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "E-commerce-Conversion-Prediction",
-      "metric": "clones",
-      "latestValue": 14,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "E-commerce-Conversion-Prediction",
-      "metric": "uniques",
-      "latestValue": 13,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "E-commerce-Conversion-Prediction",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 916,
+      "latestValue": 956,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 446,
+      "latestValue": 466,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 58,
+      "latestValue": 60,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 36,
+      "latestValue": 38,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,19 +173,61 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 58,
+      "latestValue": 56,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 48,
+      "latestValue": 46,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "clones",
+      "latestValue": 22,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "uniques",
+      "latestValue": 18,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "clones",
+      "latestValue": 20,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "uniques",
+      "latestValue": 19,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -207,54 +249,12 @@
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "clones",
-      "latestValue": 19,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 18,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "E-commerce-Conversion-Prediction",
-      "metric": "clones",
-      "latestValue": 37,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "E-commerce-Conversion-Prediction",
-      "metric": "uniques",
-      "latestValue": 34,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "E-commerce-Conversion-Prediction",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-01 \u2192 2026-04",
+  "monthRange": "2026-04 \u2192 2026-04",
   "yearRange": "2026 \u2192 2026"
 }
