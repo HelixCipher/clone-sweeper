@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 1289,
+      "latestValue": 1342,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 550,
+      "latestValue": 572,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 288,
+      "latestValue": 357,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 198,
+      "latestValue": 239,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,14 +45,14 @@
     {
       "repo": "project-jackheart",
       "metric": "clones",
-      "latestValue": 123,
+      "latestValue": 144,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "project-jackheart",
       "metric": "uniques",
-      "latestValue": 97,
+      "latestValue": 115,
       "color": "#60a5fa",
       "points": []
     },
@@ -66,14 +66,14 @@
     {
       "repo": "digit-classifier-api",
       "metric": "clones",
-      "latestValue": 104,
+      "latestValue": 127,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "digit-classifier-api",
       "metric": "uniques",
-      "latestValue": 94,
+      "latestValue": 112,
       "color": "#60a5fa",
       "points": []
     },
@@ -85,42 +85,42 @@
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "todays-command",
       "metric": "clones",
-      "latestValue": 50,
+      "latestValue": 56,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "todays-command",
       "metric": "uniques",
-      "latestValue": 34,
+      "latestValue": 52,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "todays-command",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "todays-command",
+      "repo": "one-persons-feature-is-another-persons-exploit",
       "metric": "clones",
-      "latestValue": 48,
+      "latestValue": 54,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "todays-command",
+      "repo": "one-persons-feature-is-another-persons-exploit",
       "metric": "uniques",
-      "latestValue": 45,
+      "latestValue": 52,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "todays-command",
+      "repo": "one-persons-feature-is-another-persons-exploit",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 1595,
+      "latestValue": 1648,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 728,
+      "latestValue": 750,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 310,
+      "latestValue": 379,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 218,
+      "latestValue": 259,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,14 +173,14 @@
     {
       "repo": "project-jackheart",
       "metric": "clones",
-      "latestValue": 123,
+      "latestValue": 144,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "project-jackheart",
       "metric": "uniques",
-      "latestValue": 97,
+      "latestValue": 115,
       "color": "#60a5fa",
       "points": []
     },
@@ -194,14 +194,14 @@
     {
       "repo": "digit-classifier-api",
       "metric": "clones",
-      "latestValue": 104,
+      "latestValue": 127,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "digit-classifier-api",
       "metric": "uniques",
-      "latestValue": 94,
+      "latestValue": 112,
       "color": "#60a5fa",
       "points": []
     },
@@ -213,48 +213,48 @@
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "todays-command",
       "metric": "clones",
-      "latestValue": 50,
+      "latestValue": 56,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "todays-command",
       "metric": "uniques",
-      "latestValue": 34,
+      "latestValue": 52,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "todays-command",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "todays-command",
+      "repo": "one-persons-feature-is-another-persons-exploit",
       "metric": "clones",
-      "latestValue": 48,
+      "latestValue": 64,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "todays-command",
+      "repo": "one-persons-feature-is-another-persons-exploit",
       "metric": "uniques",
-      "latestValue": 45,
+      "latestValue": 62,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "todays-command",
+      "repo": "one-persons-feature-is-another-persons-exploit",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-05 \u2192 2026-05",
+  "monthRange": "2026-01 \u2192 2026-05",
   "yearRange": "2026 \u2192 2026"
 }
