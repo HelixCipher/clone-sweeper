@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 32,
-  "totalClones": 1703,
-  "totalUniques": 966,
-  "totalCombined": 2669,
+  "totalClones": 1635,
+  "totalUniques": 927,
+  "totalCombined": 2562,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 946,
-      "uniques": 398,
-      "combined": 1344
+      "clones": 908,
+      "uniques": 383,
+      "combined": 1291
     },
     {
       "name": "HelixCipher",
@@ -27,21 +27,21 @@
     },
     {
       "name": "project-jackheart",
-      "clones": 78,
-      "uniques": 63,
-      "combined": 141
+      "clones": 62,
+      "uniques": 51,
+      "combined": 113
     },
     {
       "name": "one-persons-feature-is-another-persons-exploit",
-      "clones": 49,
-      "uniques": 45,
-      "combined": 94
+      "clones": 43,
+      "uniques": 39,
+      "combined": 82
     },
     {
-      "name": "digit-recognition",
-      "clones": 37,
-      "uniques": 34,
-      "combined": 71
+      "name": "todays-command",
+      "clones": 33,
+      "uniques": 29,
+      "combined": 62
     }
   ]
 }
