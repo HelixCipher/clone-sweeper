@@ -1,29 +1,23 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 32,
-  "totalClones": 982,
-  "totalUniques": 516,
-  "totalCombined": 1498,
+  "totalClones": 921,
+  "totalUniques": 477,
+  "totalCombined": 1398,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 750,
-      "uniques": 298,
-      "combined": 1048
+      "clones": 715,
+      "uniques": 275,
+      "combined": 990
     },
     {
       "name": "digit-classifier-api",
-      "clones": 40,
-      "uniques": 33,
-      "combined": 73
-    },
-    {
-      "name": "digit-recognition",
-      "clones": 15,
-      "uniques": 14,
-      "combined": 29
+      "clones": 23,
+      "uniques": 23,
+      "combined": 46
     },
     {
       "name": "pages",
@@ -32,16 +26,22 @@
       "combined": 26
     },
     {
-      "name": "todays-command",
-      "clones": 12,
+      "name": "HelixCipher",
+      "clones": 11,
       "uniques": 11,
-      "combined": 23
+      "combined": 22
     },
     {
-      "name": "project-jackheart",
-      "clones": 12,
-      "uniques": 11,
-      "combined": 23
+      "name": "todays-command",
+      "clones": 9,
+      "uniques": 8,
+      "combined": 17
+    },
+    {
+      "name": "ai-agent",
+      "clones": 9,
+      "uniques": 6,
+      "combined": 15
     }
   ]
 }
