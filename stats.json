@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 32,
-  "totalClones": 912,
-  "totalUniques": 464,
-  "totalCombined": 1376,
+  "totalClones": 862,
+  "totalUniques": 449,
+  "totalCombined": 1311,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 714,
-      "uniques": 277,
-      "combined": 991
+      "clones": 666,
+      "uniques": 263,
+      "combined": 929
     },
     {
       "name": "digit-classifier-api",
@@ -21,12 +21,12 @@
     },
     {
       "name": "pages",
-      "clones": 13,
-      "uniques": 13,
-      "combined": 26
+      "clones": 10,
+      "uniques": 10,
+      "combined": 20
     },
     {
-      "name": "todays-command",
+      "name": "Convolutional-Neural-Networks-CNNs-from-scratch",
       "clones": 9,
       "uniques": 8,
       "combined": 17
@@ -38,10 +38,10 @@
       "combined": 15
     },
     {
-      "name": "E-commerce-Conversion-Prediction",
-      "clones": 7,
-      "uniques": 6,
-      "combined": 13
+      "name": "project-horseshoe",
+      "clones": 8,
+      "uniques": 8,
+      "combined": 16
     }
   ]
 }
