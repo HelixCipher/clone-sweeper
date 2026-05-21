@@ -1,0 +1,47 @@
+{
+  "owner": "HelixCipher",
+  "totalRepos": 32,
+  "totalClones": 862,
+  "totalUniques": 449,
+  "totalCombined": 1311,
+  "downloads14d": 0,
+  "downloadsTotal": 0,
+  "repos": [
+    {
+      "name": "clone-sweeper",
+      "clones": 666,
+      "uniques": 263,
+      "combined": 929
+    },
+    {
+      "name": "digit-classifier-api",
+      "clones": 18,
+      "uniques": 13,
+      "combined": 31
+    },
+    {
+      "name": "pages",
+      "clones": 10,
+      "uniques": 10,
+      "combined": 20
+    },
+    {
+      "name": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "clones": 9,
+      "uniques": 8,
+      "combined": 17
+    },
+    {
+      "name": "ai-agent",
+      "clones": 9,
+      "uniques": 6,
+      "combined": 15
+    },
+    {
+      "name": "project-horseshoe",
+      "clones": 8,
+      "uniques": 8,
+      "combined": 16
+    }
+  ]
+}

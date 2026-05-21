@@ -1,0 +1,260 @@
+{
+  "monthly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 666,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 263,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "digit-classifier-api",
+      "metric": "clones",
+      "latestValue": 18,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "digit-classifier-api",
+      "metric": "uniques",
+      "latestValue": 13,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "digit-classifier-api",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "clones",
+      "latestValue": 10,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "uniques",
+      "latestValue": 10,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "clones",
+      "latestValue": 9,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "uniques",
+      "latestValue": 8,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "ai-agent",
+      "metric": "clones",
+      "latestValue": 9,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "ai-agent",
+      "metric": "uniques",
+      "latestValue": 6,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "ai-agent",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "project-horseshoe",
+      "metric": "clones",
+      "latestValue": 8,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "project-horseshoe",
+      "metric": "uniques",
+      "latestValue": 8,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "project-horseshoe",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "yearly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 972,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 441,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "digit-classifier-api",
+      "metric": "clones",
+      "latestValue": 18,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "digit-classifier-api",
+      "metric": "uniques",
+      "latestValue": 13,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "digit-classifier-api",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "clones",
+      "latestValue": 10,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "uniques",
+      "latestValue": 10,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "uniques",
+      "latestValue": 13,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "ai-agent",
+      "metric": "clones",
+      "latestValue": 27,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "ai-agent",
+      "metric": "uniques",
+      "latestValue": 21,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "ai-agent",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "project-horseshoe",
+      "metric": "clones",
+      "latestValue": 37,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "project-horseshoe",
+      "metric": "uniques",
+      "latestValue": 35,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "project-horseshoe",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "monthRange": "2026-01 \u2192 2026-05",
+  "yearRange": "2026 \u2192 2026"
+}
