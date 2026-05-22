@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 666,
+      "latestValue": 641,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 263,
+      "latestValue": 254,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,19 +24,40 @@
     {
       "repo": "digit-classifier-api",
       "metric": "clones",
-      "latestValue": 18,
+      "latestValue": 17,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "digit-classifier-api",
       "metric": "uniques",
-      "latestValue": 13,
+      "latestValue": 12,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "digit-classifier-api",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "ai-agent",
+      "metric": "clones",
+      "latestValue": 11,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "ai-agent",
+      "metric": "uniques",
+      "latestValue": 8,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "ai-agent",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -85,42 +106,21 @@
       "points": []
     },
     {
-      "repo": "ai-agent",
-      "metric": "clones",
-      "latestValue": 9,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "ai-agent",
-      "metric": "uniques",
-      "latestValue": 6,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "ai-agent",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "project-horseshoe",
+      "repo": "todays-command",
       "metric": "clones",
       "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "project-horseshoe",
+      "repo": "todays-command",
       "metric": "uniques",
       "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "project-horseshoe",
+      "repo": "todays-command",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 972,
+      "latestValue": 947,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 441,
+      "latestValue": 432,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,19 +152,40 @@
     {
       "repo": "digit-classifier-api",
       "metric": "clones",
-      "latestValue": 18,
+      "latestValue": 17,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "digit-classifier-api",
       "metric": "uniques",
-      "latestValue": 13,
+      "latestValue": 12,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "digit-classifier-api",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "ai-agent",
+      "metric": "clones",
+      "latestValue": 29,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "ai-agent",
+      "metric": "uniques",
+      "latestValue": 23,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "ai-agent",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -213,48 +234,27 @@
       "points": []
     },
     {
-      "repo": "ai-agent",
+      "repo": "todays-command",
       "metric": "clones",
-      "latestValue": 27,
+      "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "ai-agent",
+      "repo": "todays-command",
       "metric": "uniques",
-      "latestValue": 21,
+      "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "ai-agent",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "project-horseshoe",
-      "metric": "clones",
-      "latestValue": 37,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "project-horseshoe",
-      "metric": "uniques",
-      "latestValue": 35,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "project-horseshoe",
+      "repo": "todays-command",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-01 \u2192 2026-05",
+  "monthRange": "2026-05 \u2192 2026-05",
   "yearRange": "2026 \u2192 2026"
 }
