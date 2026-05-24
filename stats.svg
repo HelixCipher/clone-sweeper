@@ -22,7 +22,7 @@
 
 <rect x="0" y="0" width="820" height="612" rx="12" fill="transparent"/>
 <text x="18" y="34" class="title card">GitHub repos — HelixCipher</text>
-<text x="18" y="54" class="meta card">Repos: 32 · Clones: 824 · Uniques: 433 · Combined: 1257 · Downloads (14d): 0 · Downloads (total): 0 · Public repos only</text>
+<text x="18" y="54" class="meta card">Repos: 32 · Clones: 842 · Uniques: 439 · Combined: 1281 · Downloads (14d): 0 · Downloads (total): 0 · Public repos only</text>
 
 <!-- LEGEND: colored squares + labels -->
 <g id="legend">
@@ -45,17 +45,17 @@
   <!-- CLONES bar (top) -->
   <rect x="392" y="116" width="328" height="18" class="bar-bg"/>
   <rect x="392" y="116" width="328" height="18" class="bar-clone"/>
-  <text x="732" y="128" class="count card">626</text>
+  <text x="732" y="128" class="count card">636</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="392" y="142" width="328" height="18" class="bar-bg"/>
-  <rect x="392" y="142" width="128" height="18" class="bar-uniq"/>
-  <text x="732" y="154" class="count-small card">245</text>
+  <rect x="392" y="142" width="125" height="18" class="bar-uniq"/>
+  <text x="732" y="154" class="count-small card">243</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="392" y="168" width="328" height="18" class="bar-bg"/>
   <rect x="392" y="168" width="328" height="18" class="bar-comb"/>
-  <text x="732" y="180" class="count card">871</text>
+  <text x="732" y="180" class="count card">879</text>
 
   
   <!-- repository label -->
