@@ -1,9 +1,9 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 32,
-  "totalClones": 842,
-  "totalUniques": 445,
-  "totalCombined": 1287,
+  "totalClones": 850,
+  "totalUniques": 453,
+  "totalCombined": 1303,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
@@ -26,12 +26,6 @@
       "combined": 20
     },
     {
-      "name": "ai-agent",
-      "clones": 10,
-      "uniques": 7,
-      "combined": 17
-    },
-    {
       "name": "E-commerce-Conversion-Prediction",
       "clones": 9,
       "uniques": 8,
@@ -42,6 +36,12 @@
       "clones": 9,
       "uniques": 8,
       "combined": 17
+    },
+    {
+      "name": "ai-agent",
+      "clones": 9,
+      "uniques": 6,
+      "combined": 15
     }
   ]
 }
