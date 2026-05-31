@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 32,
-  "totalClones": 749,
-  "totalUniques": 409,
-  "totalCombined": 1158,
+  "totalClones": 729,
+  "totalUniques": 398,
+  "totalCombined": 1127,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 497,
-      "uniques": 211,
-      "combined": 708
+      "clones": 487,
+      "uniques": 210,
+      "combined": 697
     },
     {
       "name": "LeakPro",
@@ -27,9 +27,9 @@
     },
     {
       "name": "digit-classifier-api",
-      "clones": 12,
-      "uniques": 7,
-      "combined": 19
+      "clones": 11,
+      "uniques": 6,
+      "combined": 17
     },
     {
       "name": "Amnesiac-Shell",
