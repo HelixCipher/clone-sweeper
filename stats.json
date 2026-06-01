@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 32,
-  "totalClones": 729,
-  "totalUniques": 398,
-  "totalCombined": 1127,
+  "totalClones": 704,
+  "totalUniques": 372,
+  "totalCombined": 1076,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 487,
-      "uniques": 210,
-      "combined": 697
+      "clones": 492,
+      "uniques": 211,
+      "combined": 703
     },
     {
       "name": "LeakPro",
@@ -24,21 +24,21 @@
       "clones": 29,
       "uniques": 7,
       "combined": 36
+    },
+    {
+      "name": "todays-command",
+      "clones": 10,
+      "uniques": 10,
+      "combined": 20
     },
     {
       "name": "digit-classifier-api",
-      "clones": 11,
-      "uniques": 6,
-      "combined": 17
+      "clones": 10,
+      "uniques": 5,
+      "combined": 15
     },
     {
       "name": "Amnesiac-Shell",
-      "clones": 11,
-      "uniques": 11,
-      "combined": 22
-    },
-    {
-      "name": "Changeling",
       "clones": 10,
       "uniques": 10,
       "combined": 20
