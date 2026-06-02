@@ -2,20 +2,6 @@
   "generatedAt": "",
   "repos": [
     {
-      "name": "clone-sweeper",
-      "description": "Clone Sweeper is an automated GitHub repository analytics tool that collects clone traffic data.",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "openIssues": 0,
-      "lastPush": "-",
-      "clones14d": 492,
-      "uniques14d": 211,
-      "downloads14d": null,
-      "downloadsTotal": null
-    },
-    {
       "name": "LeakPro",
       "description": "-",
       "language": "Python",
@@ -26,6 +12,20 @@
       "lastPush": "-",
       "clones14d": 29,
       "uniques14d": 7,
+      "downloads14d": null,
+      "downloadsTotal": null
+    },
+    {
+      "name": "clone-sweeper",
+      "description": "Clone Sweeper is an automated GitHub repository analytics tool that collects clone traffic data.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "openIssues": 0,
+      "lastPush": "-",
+      "clones14d": 492,
+      "uniques14d": 211,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -150,8 +150,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 7,
-      "uniques14d": 6,
+      "clones14d": 8,
+      "uniques14d": 7,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -178,8 +178,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 6,
-      "uniques14d": 6,
+      "clones14d": 7,
+      "uniques14d": 7,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -234,8 +234,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 4,
-      "uniques14d": 4,
+      "clones14d": 3,
+      "uniques14d": 3,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -318,8 +318,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 3,
-      "uniques14d": 3,
+      "clones14d": 6,
+      "uniques14d": 6,
       "downloads14d": null,
       "downloadsTotal": null
     },
@@ -388,8 +388,8 @@
       "watchers": 0,
       "openIssues": 0,
       "lastPush": "-",
-      "clones14d": 8,
-      "uniques14d": 8,
+      "clones14d": 7,
+      "uniques14d": 7,
       "downloads14d": null,
       "downloadsTotal": null
     },
