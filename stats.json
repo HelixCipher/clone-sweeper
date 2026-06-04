@@ -1,9 +1,9 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 32,
-  "totalClones": 675,
-  "totalUniques": 332,
-  "totalCombined": 1007,
+  "totalClones": 663,
+  "totalUniques": 327,
+  "totalCombined": 990,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
@@ -26,19 +26,19 @@
       "combined": 28
     },
     {
-      "name": "digit-classifier-api",
-      "clones": 10,
-      "uniques": 5,
-      "combined": 15
-    },
-    {
-      "name": "Amnesiac-Shell",
-      "clones": 9,
-      "uniques": 9,
-      "combined": 18
+      "name": "machine-learning",
+      "clones": 8,
+      "uniques": 8,
+      "combined": 16
     },
     {
       "name": "todays-command",
+      "clones": 8,
+      "uniques": 8,
+      "combined": 16
+    },
+    {
+      "name": "E-commerce-Conversion-Prediction",
       "clones": 8,
       "uniques": 8,
       "combined": 16
