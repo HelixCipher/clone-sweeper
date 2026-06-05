@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 492,
+      "latestValue": 514,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 200,
+      "latestValue": 210,
       "color": "#60a5fa",
       "points": []
     },
@@ -64,42 +64,42 @@
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "digit-classifier-api",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "digit-classifier-api",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "digit-classifier-api",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "todays-command",
+      "repo": "machine-learning",
       "metric": "clones",
       "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "todays-command",
+      "repo": "machine-learning",
       "metric": "uniques",
       "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "todays-command",
+      "repo": "machine-learning",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 798,
+      "latestValue": 820,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 378,
+      "latestValue": 388,
       "color": "#60a5fa",
       "points": []
     },
@@ -192,42 +192,42 @@
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "digit-classifier-api",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "digit-classifier-api",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "digit-classifier-api",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "todays-command",
+      "repo": "machine-learning",
       "metric": "clones",
       "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "todays-command",
+      "repo": "machine-learning",
       "metric": "uniques",
       "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "todays-command",
+      "repo": "machine-learning",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
