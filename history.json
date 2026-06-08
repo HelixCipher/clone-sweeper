@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 486,
+      "latestValue": 523,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 202,
+      "latestValue": 218,
       "color": "#60a5fa",
       "points": []
     },
@@ -106,21 +106,21 @@
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "todays-command",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 7,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "todays-command",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "todays-command",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 792,
+      "latestValue": 829,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 380,
+      "latestValue": 396,
       "color": "#60a5fa",
       "points": []
     },
@@ -234,21 +234,21 @@
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "todays-command",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 7,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "todays-command",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Amnesiac-Shell",
+      "repo": "todays-command",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
