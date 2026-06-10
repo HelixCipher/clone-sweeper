@@ -22,7 +22,7 @@
 
 <rect x="0" y="0" width="820" height="612" rx="12" fill="transparent"/>
 <text x="18" y="34" class="title card">GitHub repos — HelixCipher</text>
-<text x="18" y="54" class="meta card">Repos: 32 · Clones: 702 · Uniques: 349 · Combined: 1051 · Downloads (14d): 0 · Downloads (total): 0 · Public repos only</text>
+<text x="18" y="54" class="meta card">Repos: 32 · Clones: 698 · Uniques: 346 · Combined: 1044 · Downloads (14d): 0 · Downloads (total): 0 · Public repos only</text>
 
 <!-- LEGEND: colored squares + labels -->
 <g id="legend">
@@ -45,17 +45,17 @@
   <!-- CLONES bar (top) -->
   <rect x="190" y="116" width="530" height="18" class="bar-bg"/>
   <rect x="190" y="116" width="530" height="18" class="bar-clone"/>
-  <text x="732" y="128" class="count card">528</text>
+  <text x="732" y="128" class="count card">523</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="190" y="142" width="530" height="18" class="bar-bg"/>
-  <rect x="190" y="142" width="219" height="18" class="bar-uniq"/>
-  <text x="732" y="154" class="count-small card">219</text>
+  <rect x="190" y="142" width="217" height="18" class="bar-uniq"/>
+  <text x="732" y="154" class="count-small card">215</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="190" y="168" width="530" height="18" class="bar-bg"/>
   <rect x="190" y="168" width="530" height="18" class="bar-comb"/>
-  <text x="732" y="180" class="count card">747</text>
+  <text x="732" y="180" class="count card">738</text>
 
   
   <!-- repository label -->
@@ -97,7 +97,7 @@
 
   
   <!-- repository label -->
-  <text x="18" y="348" class="label card">digit-classifier-api</text>
+  <text x="18" y="348" class="label card">pages</text>
 
   <!-- CLONES bar (top) -->
   <rect x="190" y="362" width="530" height="18" class="bar-bg"/>
@@ -116,26 +116,26 @@
 
   
   <!-- repository label -->
-  <text x="18" y="430" class="label card">pages</text>
+  <text x="18" y="430" class="label card">digit-classifier-api</text>
 
   <!-- CLONES bar (top) -->
   <rect x="190" y="444" width="530" height="18" class="bar-bg"/>
-  <rect x="190" y="444" width="9" height="18" class="bar-clone"/>
-  <text x="732" y="456" class="count card">9</text>
+  <rect x="190" y="444" width="11" height="18" class="bar-clone"/>
+  <text x="732" y="456" class="count card">11</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="190" y="470" width="530" height="18" class="bar-bg"/>
-  <rect x="190" y="470" width="9" height="18" class="bar-uniq"/>
-  <text x="732" y="482" class="count-small card">9</text>
+  <rect x="190" y="470" width="11" height="18" class="bar-uniq"/>
+  <text x="732" y="482" class="count-small card">11</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="190" y="496" width="530" height="18" class="bar-bg"/>
-  <rect x="190" y="496" width="12" height="18" class="bar-comb"/>
-  <text x="732" y="508" class="count card">18</text>
+  <rect x="190" y="496" width="15" height="18" class="bar-comb"/>
+  <text x="732" y="508" class="count card">22</text>
 
   
   <!-- repository label -->
-  <text x="18" y="512" class="label card">data-processing</text>
+  <text x="18" y="512" class="label card">todays-command</text>
 
   <!-- CLONES bar (top) -->
   <rect x="190" y="526" width="530" height="18" class="bar-bg"/>
