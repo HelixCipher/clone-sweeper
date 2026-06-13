@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 519,
+      "latestValue": 594,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 214,
+      "latestValue": 246,
       "color": "#60a5fa",
       "points": []
     },
@@ -64,6 +64,27 @@
       "points": []
     },
     {
+      "repo": "digit-classifier-api",
+      "metric": "clones",
+      "latestValue": 9,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "digit-classifier-api",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "digit-classifier-api",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "data-processing",
       "metric": "clones",
       "latestValue": 8,
@@ -85,42 +106,21 @@
       "points": []
     },
     {
-      "repo": "digit-classifier-api",
+      "repo": "podcast-retriever",
       "metric": "clones",
       "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "digit-classifier-api",
+      "repo": "podcast-retriever",
       "metric": "uniques",
       "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "digit-classifier-api",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "Understanding-Data-Augmentation",
-      "metric": "clones",
-      "latestValue": 8,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "Understanding-Data-Augmentation",
-      "metric": "uniques",
-      "latestValue": 8,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "Understanding-Data-Augmentation",
+      "repo": "podcast-retriever",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 825,
+      "latestValue": 900,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 392,
+      "latestValue": 424,
       "color": "#60a5fa",
       "points": []
     },
@@ -186,6 +186,27 @@
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "digit-classifier-api",
+      "metric": "clones",
+      "latestValue": 9,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "digit-classifier-api",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "digit-classifier-api",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -213,48 +234,27 @@
       "points": []
     },
     {
-      "repo": "digit-classifier-api",
+      "repo": "podcast-retriever",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 24,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "digit-classifier-api",
+      "repo": "podcast-retriever",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 24,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "digit-classifier-api",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "Understanding-Data-Augmentation",
-      "metric": "clones",
-      "latestValue": 8,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "Understanding-Data-Augmentation",
-      "metric": "uniques",
-      "latestValue": 8,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "Understanding-Data-Augmentation",
+      "repo": "podcast-retriever",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-06 \u2192 2026-06",
+  "monthRange": "2026-01 \u2192 2026-06",
   "yearRange": "2026 \u2192 2026"
 }
