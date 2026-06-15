@@ -1,0 +1,47 @@
+{
+  "owner": "HelixCipher",
+  "totalRepos": 32,
+  "totalClones": 787,
+  "totalUniques": 395,
+  "totalCombined": 1182,
+  "downloads14d": 0,
+  "downloadsTotal": 0,
+  "repos": [
+    {
+      "name": "clone-sweeper",
+      "clones": 636,
+      "uniques": 246,
+      "combined": 882
+    },
+    {
+      "name": "pages",
+      "clones": 10,
+      "uniques": 10,
+      "combined": 20
+    },
+    {
+      "name": "fine-tuning-an-local-llm-for-web-scraping",
+      "clones": 10,
+      "uniques": 10,
+      "combined": 20
+    },
+    {
+      "name": "digit-classifier-api",
+      "clones": 9,
+      "uniques": 9,
+      "combined": 18
+    },
+    {
+      "name": "data-processing",
+      "clones": 8,
+      "uniques": 8,
+      "combined": 16
+    },
+    {
+      "name": "podcast-retriever",
+      "clones": 8,
+      "uniques": 8,
+      "combined": 16
+    }
+  ]
+}
