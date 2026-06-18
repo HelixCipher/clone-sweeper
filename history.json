@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 628,
+      "latestValue": 650,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 248,
+      "latestValue": 257,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "clones",
-      "latestValue": 11,
+      "latestValue": 12,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "uniques",
-      "latestValue": 11,
+      "latestValue": 12,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,14 +45,14 @@
     {
       "repo": "pages",
       "metric": "clones",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "pages",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
@@ -66,14 +66,14 @@
     {
       "repo": "digit-classifier-api",
       "metric": "clones",
-      "latestValue": 9,
+      "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "digit-classifier-api",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 934,
+      "latestValue": 956,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 426,
+      "latestValue": 435,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "clones",
-      "latestValue": 11,
+      "latestValue": 12,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "uniques",
-      "latestValue": 11,
+      "latestValue": 12,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,14 +173,14 @@
     {
       "repo": "pages",
       "metric": "clones",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "pages",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
@@ -194,14 +194,14 @@
     {
       "repo": "digit-classifier-api",
       "metric": "clones",
-      "latestValue": 9,
+      "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "digit-classifier-api",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
