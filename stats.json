@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 32,
-  "totalClones": 802,
-  "totalUniques": 405,
-  "totalCombined": 1207,
+  "totalClones": 832,
+  "totalUniques": 417,
+  "totalCombined": 1249,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 650,
-      "uniques": 257,
-      "combined": 907
+      "clones": 679,
+      "uniques": 268,
+      "combined": 947
     },
     {
       "name": "fine-tuning-an-local-llm-for-web-scraping",
@@ -26,19 +26,19 @@
       "combined": 22
     },
     {
-      "name": "digit-classifier-api",
-      "clones": 8,
-      "uniques": 8,
-      "combined": 16
-    },
-    {
-      "name": "playwright-pixelscan",
-      "clones": 8,
-      "uniques": 8,
-      "combined": 16
-    },
-    {
       "name": "ai-job-finder",
+      "clones": 8,
+      "uniques": 7,
+      "combined": 15
+    },
+    {
+      "name": "digit-recognition",
+      "clones": 8,
+      "uniques": 7,
+      "combined": 15
+    },
+    {
+      "name": "gif-maker",
       "clones": 7,
       "uniques": 6,
       "combined": 13
