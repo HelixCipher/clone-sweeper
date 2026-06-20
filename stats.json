@@ -1,9 +1,9 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 32,
-  "totalClones": 832,
-  "totalUniques": 417,
-  "totalCombined": 1249,
+  "totalClones": 843,
+  "totalUniques": 428,
+  "totalCombined": 1271,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
@@ -21,9 +21,9 @@
     },
     {
       "name": "pages",
-      "clones": 11,
-      "uniques": 11,
-      "combined": 22
+      "clones": 8,
+      "uniques": 8,
+      "combined": 16
     },
     {
       "name": "ai-job-finder",
@@ -38,7 +38,7 @@
       "combined": 15
     },
     {
-      "name": "gif-maker",
+      "name": "ai-agent",
       "clones": 7,
       "uniques": 6,
       "combined": 13
