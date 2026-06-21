@@ -1,23 +1,35 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 32,
-  "totalClones": 843,
-  "totalUniques": 428,
-  "totalCombined": 1271,
+  "totalClones": 957,
+  "totalUniques": 464,
+  "totalCombined": 1421,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 679,
-      "uniques": 268,
-      "combined": 947
+      "clones": 779,
+      "uniques": 290,
+      "combined": 1069
     },
     {
-      "name": "fine-tuning-an-local-llm-for-web-scraping",
+      "name": "dynamic-webscraper",
       "clones": 12,
       "uniques": 12,
       "combined": 24
+    },
+    {
+      "name": "fine-tuning-an-local-llm-for-web-scraping",
+      "clones": 11,
+      "uniques": 11,
+      "combined": 22
+    },
+    {
+      "name": "ai-job-finder",
+      "clones": 9,
+      "uniques": 8,
+      "combined": 17
     },
     {
       "name": "pages",
@@ -26,22 +38,10 @@
       "combined": 16
     },
     {
-      "name": "ai-job-finder",
+      "name": "playwright-pixelscan",
       "clones": 8,
-      "uniques": 7,
-      "combined": 15
-    },
-    {
-      "name": "digit-recognition",
-      "clones": 8,
-      "uniques": 7,
-      "combined": 15
-    },
-    {
-      "name": "ai-agent",
-      "clones": 7,
-      "uniques": 6,
-      "combined": 13
+      "uniques": 8,
+      "combined": 16
     }
   ]
 }
