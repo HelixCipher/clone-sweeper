@@ -24,14 +24,14 @@
     {
       "repo": "dynamic-webscraper",
       "metric": "clones",
-      "latestValue": 12,
+      "latestValue": 15,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 12,
+      "latestValue": 15,
       "color": "#60a5fa",
       "points": []
     },
@@ -85,42 +85,42 @@
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "podcast-retriever",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 9,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "podcast-retriever",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "podcast-retriever",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "pages",
       "metric": "clones",
       "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "pages",
       "metric": "uniques",
       "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "pages",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -152,14 +152,14 @@
     {
       "repo": "dynamic-webscraper",
       "metric": "clones",
-      "latestValue": 12,
+      "latestValue": 15,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 12,
+      "latestValue": 15,
       "color": "#60a5fa",
       "points": []
     },
@@ -213,48 +213,48 @@
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "podcast-retriever",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 25,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "podcast-retriever",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 25,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "podcast-retriever",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "pages",
       "metric": "clones",
-      "latestValue": 16,
+      "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "pages",
       "metric": "uniques",
-      "latestValue": 16,
+      "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "pages",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-01 \u2192 2026-06",
+  "monthRange": "2026-06 \u2192 2026-06",
   "yearRange": "2026 \u2192 2026"
 }
