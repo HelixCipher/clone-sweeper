@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 779,
+      "latestValue": 808,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 290,
+      "latestValue": 296,
       "color": "#60a5fa",
       "points": []
     },
@@ -66,14 +66,14 @@
     {
       "repo": "ai-job-finder",
       "metric": "clones",
+      "latestValue": 10,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "ai-job-finder",
+      "metric": "uniques",
       "latestValue": 9,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "ai-job-finder",
-      "metric": "uniques",
-      "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 1085,
+      "latestValue": 1114,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 468,
+      "latestValue": 474,
       "color": "#60a5fa",
       "points": []
     },
@@ -194,14 +194,14 @@
     {
       "repo": "ai-job-finder",
       "metric": "clones",
+      "latestValue": 10,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "ai-job-finder",
+      "metric": "uniques",
       "latestValue": 9,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "ai-job-finder",
-      "metric": "uniques",
-      "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
