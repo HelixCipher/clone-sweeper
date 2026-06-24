@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 808,
+      "latestValue": 865,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 296,
+      "latestValue": 310,
       "color": "#60a5fa",
       "points": []
     },
@@ -37,27 +37,6 @@
     },
     {
       "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
-      "metric": "clones",
-      "latestValue": 11,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
-      "metric": "uniques",
-      "latestValue": 11,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -106,21 +85,42 @@
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "playwright-pixelscan",
+      "metric": "clones",
+      "latestValue": 9,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "playwright-pixelscan",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "playwright-pixelscan",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "digit-recognition",
       "metric": "clones",
       "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "digit-recognition",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "digit-recognition",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 1114,
+      "latestValue": 1171,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 474,
+      "latestValue": 488,
       "color": "#60a5fa",
       "points": []
     },
@@ -165,27 +165,6 @@
     },
     {
       "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
-      "metric": "clones",
-      "latestValue": 11,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
-      "metric": "uniques",
-      "latestValue": 11,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -234,21 +213,42 @@
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "playwright-pixelscan",
+      "metric": "clones",
+      "latestValue": 17,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "playwright-pixelscan",
+      "metric": "uniques",
+      "latestValue": 17,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "playwright-pixelscan",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "digit-recognition",
       "metric": "clones",
       "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "digit-recognition",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "digit-recognition",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
