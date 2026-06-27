@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 940,
+      "latestValue": 987,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 322,
+      "latestValue": 326,
       "color": "#60a5fa",
       "points": []
     },
@@ -66,14 +66,14 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 12,
+      "latestValue": 13,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 6,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
@@ -87,14 +87,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 9,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 6,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
@@ -106,21 +106,21 @@
       "points": []
     },
     {
-      "repo": "ai-job-finder",
+      "repo": "one-persons-feature-is-another-persons-exploit",
       "metric": "clones",
       "latestValue": 7,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "ai-job-finder",
+      "repo": "one-persons-feature-is-another-persons-exploit",
       "metric": "uniques",
-      "latestValue": 6,
+      "latestValue": 5,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "ai-job-finder",
+      "repo": "one-persons-feature-is-another-persons-exploit",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 1246,
+      "latestValue": 1293,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 500,
+      "latestValue": 504,
       "color": "#60a5fa",
       "points": []
     },
@@ -194,67 +194,67 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 12,
+      "latestValue": 13,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 6,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "clones",
-      "latestValue": 31,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "uniques",
-      "latestValue": 26,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "ai-job-finder",
-      "metric": "clones",
       "latestValue": 7,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "ai-job-finder",
-      "metric": "uniques",
-      "latestValue": 6,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "ai-job-finder",
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 32,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 27,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "one-persons-feature-is-another-persons-exploit",
+      "metric": "clones",
+      "latestValue": 17,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "one-persons-feature-is-another-persons-exploit",
+      "metric": "uniques",
+      "latestValue": 15,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "one-persons-feature-is-another-persons-exploit",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-06 \u2192 2026-06",
+  "monthRange": "2026-01 \u2192 2026-06",
   "yearRange": "2026 \u2192 2026"
 }
