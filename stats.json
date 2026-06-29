@@ -1,9 +1,9 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 32,
-  "totalClones": 1154,
-  "totalUniques": 474,
-  "totalCombined": 1628,
+  "totalClones": 1147,
+  "totalUniques": 467,
+  "totalCombined": 1614,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
@@ -20,16 +20,16 @@
       "combined": 23
     },
     {
-      "name": "machine-learning",
-      "clones": 13,
-      "uniques": 7,
-      "combined": 20
+      "name": "dynamic-webscraper",
+      "clones": 14,
+      "uniques": 14,
+      "combined": 28
     },
     {
-      "name": "dynamic-webscraper",
-      "clones": 13,
-      "uniques": 13,
-      "combined": 26
+      "name": "machine-learning",
+      "clones": 12,
+      "uniques": 6,
+      "combined": 18
     },
     {
       "name": "HelixCipher",
