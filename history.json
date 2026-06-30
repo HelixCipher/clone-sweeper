@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 978,
+      "latestValue": 915,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 314,
+      "latestValue": 298,
       "color": "#60a5fa",
       "points": []
     },
@@ -106,21 +106,21 @@
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "podcast-retriever",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 7,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "podcast-retriever",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "podcast-retriever",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 1284,
+      "latestValue": 1221,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 492,
+      "latestValue": 476,
       "color": "#60a5fa",
       "points": []
     },
@@ -234,21 +234,21 @@
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "podcast-retriever",
       "metric": "clones",
-      "latestValue": 16,
+      "latestValue": 23,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "podcast-retriever",
       "metric": "uniques",
-      "latestValue": 16,
+      "latestValue": 23,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "podcast-retriever",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
