@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 915,
+      "latestValue": 898,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 298,
+      "latestValue": 294,
       "color": "#60a5fa",
       "points": []
     },
@@ -22,42 +22,42 @@
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "dynamic-webscraper",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 15,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 15,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "pages",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 13,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "pages",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "pages",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -106,21 +106,21 @@
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "podcast-retriever",
       "metric": "clones",
       "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "podcast-retriever",
       "metric": "uniques",
       "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "podcast-retriever",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 1221,
+      "latestValue": 1204,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 476,
+      "latestValue": 472,
       "color": "#60a5fa",
       "points": []
     },
@@ -150,42 +150,42 @@
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "dynamic-webscraper",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 15,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 15,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "pages",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 13,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "pages",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "pages",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -234,21 +234,21 @@
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "podcast-retriever",
       "metric": "clones",
-      "latestValue": 16,
+      "latestValue": 24,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "podcast-retriever",
       "metric": "uniques",
-      "latestValue": 16,
+      "latestValue": 24,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "podcast-retriever",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
