@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 837,
+      "latestValue": 728,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 269,
+      "latestValue": 246,
       "color": "#60a5fa",
       "points": []
     },
@@ -22,37 +22,16 @@
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
-      "metric": "clones",
-      "latestValue": 15,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 15,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "pages",
       "metric": "clones",
-      "latestValue": 11,
+      "latestValue": 12,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "pages",
       "metric": "uniques",
-      "latestValue": 6,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
@@ -106,21 +85,42 @@
       "points": []
     },
     {
-      "repo": "podcast-retriever",
+      "repo": "dynamic-webscraper",
       "metric": "clones",
       "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "podcast-retriever",
+      "repo": "dynamic-webscraper",
       "metric": "uniques",
       "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "podcast-retriever",
+      "repo": "dynamic-webscraper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "playwright-pixelscan",
+      "metric": "clones",
+      "latestValue": 7,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "playwright-pixelscan",
+      "metric": "uniques",
+      "latestValue": 7,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "playwright-pixelscan",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 1143,
+      "latestValue": 1034,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 447,
+      "latestValue": 424,
       "color": "#60a5fa",
       "points": []
     },
@@ -150,37 +150,16 @@
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
-      "metric": "clones",
-      "latestValue": 15,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 15,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "pages",
       "metric": "clones",
-      "latestValue": 11,
+      "latestValue": 12,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "pages",
       "metric": "uniques",
-      "latestValue": 6,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
@@ -234,21 +213,42 @@
       "points": []
     },
     {
-      "repo": "podcast-retriever",
+      "repo": "dynamic-webscraper",
       "metric": "clones",
-      "latestValue": 24,
+      "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "podcast-retriever",
+      "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 24,
+      "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "podcast-retriever",
+      "repo": "dynamic-webscraper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "playwright-pixelscan",
+      "metric": "clones",
+      "latestValue": 15,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "playwright-pixelscan",
+      "metric": "uniques",
+      "latestValue": 15,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "playwright-pixelscan",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
