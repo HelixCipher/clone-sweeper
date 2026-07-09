@@ -3,40 +3,19 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 619,
+      "latestValue": 563,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 214,
+      "latestValue": 199,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "clone-sweeper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "clones",
-      "latestValue": 12,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "uniques",
-      "latestValue": 7,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "pages",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -64,21 +43,21 @@
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "gif-maker",
       "metric": "clones",
-      "latestValue": 10,
+      "latestValue": 5,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "gif-maker",
       "metric": "uniques",
       "latestValue": 4,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "gif-maker",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -87,14 +66,14 @@
     {
       "repo": "Atlas",
       "metric": "clones",
-      "latestValue": 6,
+      "latestValue": 5,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "Atlas",
       "metric": "uniques",
-      "latestValue": 6,
+      "latestValue": 5,
       "color": "#60a5fa",
       "points": []
     },
@@ -106,21 +85,42 @@
       "points": []
     },
     {
-      "repo": "one-persons-feature-is-another-persons-exploit",
+      "repo": "pages",
       "metric": "clones",
-      "latestValue": 6,
+      "latestValue": 4,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "one-persons-feature-is-another-persons-exploit",
+      "repo": "pages",
       "metric": "uniques",
       "latestValue": 4,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "one-persons-feature-is-another-persons-exploit",
+      "repo": "pages",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "podcast-retriever",
+      "metric": "clones",
+      "latestValue": 4,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "podcast-retriever",
+      "metric": "uniques",
+      "latestValue": 4,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "podcast-retriever",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,40 +131,19 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 925,
+      "latestValue": 869,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 392,
+      "latestValue": 377,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "clone-sweeper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "clones",
-      "latestValue": 12,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "uniques",
-      "latestValue": 7,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "pages",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -192,63 +171,84 @@
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "gif-maker",
       "metric": "clones",
-      "latestValue": 10,
+      "latestValue": 25,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "gif-maker",
+      "metric": "uniques",
+      "latestValue": 23,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "gif-maker",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "clones",
+      "latestValue": 5,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "uniques",
+      "latestValue": 5,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "clones",
+      "latestValue": 4,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "pages",
       "metric": "uniques",
       "latestValue": 4,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "pages",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "podcast-retriever",
       "metric": "clones",
-      "latestValue": 6,
+      "latestValue": 20,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "podcast-retriever",
       "metric": "uniques",
-      "latestValue": 6,
+      "latestValue": 20,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Atlas",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "one-persons-feature-is-another-persons-exploit",
-      "metric": "clones",
-      "latestValue": 16,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "one-persons-feature-is-another-persons-exploit",
-      "metric": "uniques",
-      "latestValue": 14,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "one-persons-feature-is-another-persons-exploit",
+      "repo": "podcast-retriever",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
