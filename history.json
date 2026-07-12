@@ -3,19 +3,40 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 432,
+      "latestValue": 412,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 163,
+      "latestValue": 154,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "clones",
+      "latestValue": 6,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "uniques",
+      "latestValue": 6,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -79,27 +100,6 @@
     },
     {
       "repo": "gif-maker",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "Atlas",
-      "metric": "clones",
-      "latestValue": 4,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "Atlas",
-      "metric": "uniques",
-      "latestValue": 4,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "Atlas",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,19 +131,40 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 738,
+      "latestValue": 718,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 341,
+      "latestValue": 332,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "clones",
+      "latestValue": 6,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "uniques",
+      "latestValue": 6,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -207,27 +228,6 @@
     },
     {
       "repo": "gif-maker",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "Atlas",
-      "metric": "clones",
-      "latestValue": 4,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "Atlas",
-      "metric": "uniques",
-      "latestValue": 4,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "Atlas",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
