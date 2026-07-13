@@ -18,7 +18,7 @@
   }
 </style>
 <text x="18" y="32" class="title card">GitHub repositories — HelixCipher</text>
-<text x="18" y="50" class="meta card">Generated: 2026-07-12T05:20:42.681192Z · Mode: Public repos only · Repos: 33 · Clones: 480 · Downloads: 0</text>
+<text x="18" y="50" class="meta card">Generated: 2026-07-13T05:29:36.040448Z · Mode: Public repos only · Repos: 33 · Clones: 488 · Downloads: 0</text>
 <rect x="18" y="30" width="2001" height="942" rx="8" class="row-even"/>
 <rect x="18" y="30" width="2001" height="942" class="table-border"/>
 
@@ -53,23 +53,23 @@
   
     
     
-      <text x="30" y="74" class="td card">mouse-jiggler</text>
+      <text x="30" y="74" class="td card">clone-sweeper</text>
     
   
     
     
       
       
-        <text x="394" y="72" class="td card">Cross-platform Bezier curve hardware mouse jiggler using an</text>
+        <text x="394" y="72" class="td card">Clone Sweeper is an automated GitHub repository analytics</text>
         
-          <text x="394" y="86" class="td card">RP2350-One. Spoofs a USB optical mouse with human-like curs…</text>
+          <text x="394" y="86" class="td card">tool that collects clone traffic data.</text>
         
       
     
   
     
     
-      <text x="1002" y="74" class="td card">Python</text>
+      <text x="1002" y="74" class="td card">TypeScript</text>
     
   
     
@@ -94,17 +94,17 @@
   
     
     
-      <text x="1425" y="74" class="td card">2026-07-11 18:22:09</text>
+      <text x="1425" y="74" class="td card">2026-07-12 05:20:44</text>
     
   
     
     
-      <text x="1587" y="74" class="td card">0</text>
+      <text x="1587" y="74" class="td card">400</text>
     
   
     
     
-      <text x="1685" y="74" class="td card">0</text>
+      <text x="1685" y="74" class="td card">149</text>
     
   
     
@@ -123,20 +123,23 @@
   
     
     
-      <text x="30" y="100" class="td card">HelixCipher</text>
+      <text x="30" y="100" class="td card">mouse-jiggler</text>
     
   
     
     
       
       
-        <text x="394" y="100" class="muted card">-</text>
+        <text x="394" y="98" class="td card">Cross-platform Bezier curve hardware mouse jiggler using an</text>
+        
+          <text x="394" y="112" class="td card">RP2350-One. Spoofs a USB optical mouse with human-like curs…</text>
+        
       
     
   
     
     
-      <text x="1002" y="100" class="td card"></text>
+      <text x="1002" y="100" class="td card">Python</text>
     
   
     
@@ -161,17 +164,17 @@
   
     
     
-      <text x="1425" y="100" class="td card">2026-07-11 15:58:54</text>
+      <text x="1425" y="100" class="td card">2026-07-11 18:22:09</text>
     
   
     
     
-      <text x="1587" y="100" class="td card">4</text>
+      <text x="1587" y="100" class="td card">9</text>
     
   
     
     
-      <text x="1685" y="100" class="td card">4</text>
+      <text x="1685" y="100" class="td card">7</text>
     
   
     
@@ -190,23 +193,20 @@
   
     
     
-      <text x="30" y="126" class="td card">clone-sweeper</text>
+      <text x="30" y="126" class="td card">HelixCipher</text>
     
   
     
     
       
       
-        <text x="394" y="124" class="td card">Clone Sweeper is an automated GitHub repository analytics</text>
-        
-          <text x="394" y="138" class="td card">tool that collects clone traffic data.</text>
-        
+        <text x="394" y="126" class="muted card">-</text>
       
     
   
     
     
-      <text x="1002" y="126" class="td card">TypeScript</text>
+      <text x="1002" y="126" class="td card"></text>
     
   
     
@@ -231,17 +231,17 @@
   
     
     
-      <text x="1425" y="126" class="td card">2026-07-12 05:20:17</text>
+      <text x="1425" y="126" class="td card">2026-07-11 15:58:54</text>
     
   
     
     
-      <text x="1587" y="126" class="td card">412</text>
+      <text x="1587" y="126" class="td card">19</text>
     
   
     
     
-      <text x="1685" y="126" class="td card">154</text>
+      <text x="1685" y="126" class="td card">14</text>
     
   
     
@@ -373,12 +373,12 @@
   
     
     
-      <text x="1587" y="178" class="td card">3</text>
+      <text x="1587" y="178" class="td card">4</text>
     
   
     
     
-      <text x="1685" y="178" class="td card">3</text>
+      <text x="1685" y="178" class="td card">4</text>
     
   
     
@@ -513,12 +513,12 @@
   
     
     
-      <text x="1587" y="230" class="td card">2</text>
+      <text x="1587" y="230" class="td card">3</text>
     
   
     
     
-      <text x="1685" y="230" class="td card">2</text>
+      <text x="1685" y="230" class="td card">3</text>
     
   
     
@@ -860,12 +860,12 @@
   
     
     
-      <text x="1587" y="360" class="td card">3</text>
+      <text x="1587" y="360" class="td card">2</text>
     
   
     
     
-      <text x="1685" y="360" class="td card">3</text>
+      <text x="1685" y="360" class="td card">2</text>
     
   
     
@@ -930,12 +930,12 @@
   
     
     
-      <text x="1587" y="386" class="td card">2</text>
+      <text x="1587" y="386" class="td card">1</text>
     
   
     
     
-      <text x="1685" y="386" class="td card">2</text>
+      <text x="1685" y="386" class="td card">1</text>
     
   
     
@@ -1000,12 +1000,12 @@
   
     
     
-      <text x="1587" y="412" class="td card">2</text>
+      <text x="1587" y="412" class="td card">1</text>
     
   
     
     
-      <text x="1685" y="412" class="td card">2</text>
+      <text x="1685" y="412" class="td card">1</text>
     
   
     
@@ -1070,12 +1070,12 @@
   
     
     
-      <text x="1587" y="438" class="td card">1</text>
+      <text x="1587" y="438" class="td card">2</text>
     
   
     
     
-      <text x="1685" y="438" class="td card">1</text>
+      <text x="1685" y="438" class="td card">2</text>
     
   
     
@@ -1140,12 +1140,12 @@
   
     
     
-      <text x="1587" y="464" class="td card">4</text>
+      <text x="1587" y="464" class="td card">2</text>
     
   
     
     
-      <text x="1685" y="464" class="td card">4</text>
+      <text x="1685" y="464" class="td card">2</text>
     
   
     
@@ -1280,12 +1280,12 @@
   
     
     
-      <text x="1587" y="516" class="td card">3</text>
+      <text x="1587" y="516" class="td card">2</text>
     
   
     
     
-      <text x="1685" y="516" class="td card">3</text>
+      <text x="1685" y="516" class="td card">2</text>
     
   
     
@@ -1350,12 +1350,12 @@
   
     
     
-      <text x="1587" y="542" class="td card">1</text>
+      <text x="1587" y="542" class="td card">2</text>
     
   
     
     
-      <text x="1685" y="542" class="td card">1</text>
+      <text x="1685" y="542" class="td card">2</text>
     
   
     
@@ -1560,7 +1560,7 @@
   
     
     
-      <text x="1587" y="620" class="td card">4</text>
+      <text x="1587" y="620" class="td card">3</text>
     
   
     
@@ -2330,12 +2330,12 @@
   
     
     
-      <text x="1587" y="906" class="td card">2</text>
+      <text x="1587" y="906" class="td card">1</text>
     
   
     
     
-      <text x="1685" y="906" class="td card">2</text>
+      <text x="1685" y="906" class="td card">1</text>
     
   
     

@@ -1,17 +1,29 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 33,
-  "totalClones": 480,
-  "totalUniques": 221,
-  "totalCombined": 701,
+  "totalClones": 488,
+  "totalUniques": 230,
+  "totalCombined": 718,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 412,
-      "uniques": 154,
-      "combined": 566
+      "clones": 400,
+      "uniques": 149,
+      "combined": 549
+    },
+    {
+      "name": "HelixCipher",
+      "clones": 19,
+      "uniques": 14,
+      "combined": 33
+    },
+    {
+      "name": "mouse-jiggler",
+      "clones": 9,
+      "uniques": 7,
+      "combined": 16
     },
     {
       "name": "Atlas",
@@ -20,25 +32,13 @@
       "combined": 12
     },
     {
-      "name": "HelixCipher",
-      "clones": 4,
-      "uniques": 4,
-      "combined": 8
-    },
-    {
-      "name": "podcast-retriever",
-      "clones": 4,
-      "uniques": 4,
-      "combined": 8
-    },
-    {
-      "name": "gif-maker",
-      "clones": 4,
-      "uniques": 3,
-      "combined": 7
-    },
-    {
       "name": "pages",
+      "clones": 4,
+      "uniques": 4,
+      "combined": 8
+    },
+    {
+      "name": "fine-tuning-an-local-llm-for-web-scraping",
       "clones": 3,
       "uniques": 3,
       "combined": 6
