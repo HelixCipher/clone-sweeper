@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 395,
+      "latestValue": 389,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 141,
+      "latestValue": 140,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 26,
+      "latestValue": 25,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 17,
+      "latestValue": 16,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,14 +45,14 @@
     {
       "repo": "mouse-jiggler",
       "metric": "clones",
+      "latestValue": 16,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "uniques",
       "latestValue": 13,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "mouse-jiggler",
-      "metric": "uniques",
-      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
@@ -66,14 +66,14 @@
     {
       "repo": "Atlas",
       "metric": "clones",
-      "latestValue": 5,
+      "latestValue": 4,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "Atlas",
       "metric": "uniques",
-      "latestValue": 5,
+      "latestValue": 4,
       "color": "#60a5fa",
       "points": []
     },
@@ -87,14 +87,14 @@
     {
       "repo": "pages",
       "metric": "clones",
-      "latestValue": 4,
+      "latestValue": 3,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "pages",
       "metric": "uniques",
-      "latestValue": 4,
+      "latestValue": 3,
       "color": "#60a5fa",
       "points": []
     },
@@ -108,14 +108,14 @@
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "clones",
-      "latestValue": 3,
+      "latestValue": 2,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "uniques",
-      "latestValue": 3,
+      "latestValue": 2,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 701,
+      "latestValue": 695,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 319,
+      "latestValue": 318,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 48,
+      "latestValue": 47,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 37,
+      "latestValue": 36,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,14 +173,14 @@
     {
       "repo": "mouse-jiggler",
       "metric": "clones",
+      "latestValue": 16,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "uniques",
       "latestValue": 13,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "mouse-jiggler",
-      "metric": "uniques",
-      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
@@ -194,14 +194,14 @@
     {
       "repo": "Atlas",
       "metric": "clones",
-      "latestValue": 5,
+      "latestValue": 4,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "Atlas",
       "metric": "uniques",
-      "latestValue": 5,
+      "latestValue": 4,
       "color": "#60a5fa",
       "points": []
     },
@@ -215,14 +215,14 @@
     {
       "repo": "pages",
       "metric": "clones",
-      "latestValue": 4,
+      "latestValue": 3,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "pages",
       "metric": "uniques",
-      "latestValue": 4,
+      "latestValue": 3,
       "color": "#60a5fa",
       "points": []
     },
@@ -236,14 +236,14 @@
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "clones",
-      "latestValue": 3,
+      "latestValue": 2,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "fine-tuning-an-local-llm-for-web-scraping",
       "metric": "uniques",
-      "latestValue": 3,
+      "latestValue": 2,
       "color": "#60a5fa",
       "points": []
     },
