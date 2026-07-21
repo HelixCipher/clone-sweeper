@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 368,
+      "latestValue": 339,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 125,
+      "latestValue": 120,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,19 +24,40 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 37,
+      "latestValue": 47,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 21,
+      "latestValue": 26,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 6,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 6,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -64,6 +85,27 @@
       "points": []
     },
     {
+      "repo": "mouse-jiggler",
+      "metric": "clones",
+      "latestValue": 3,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "uniques",
+      "latestValue": 3,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "ai-job-finder",
       "metric": "clones",
       "latestValue": 3,
@@ -79,48 +121,6 @@
     },
     {
       "repo": "ai-job-finder",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "mouse-jiggler",
-      "metric": "clones",
-      "latestValue": 2,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "mouse-jiggler",
-      "metric": "uniques",
-      "latestValue": 2,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "mouse-jiggler",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "clones",
-      "latestValue": 2,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "uniques",
-      "latestValue": 2,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "pages",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 674,
+      "latestValue": 645,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 303,
+      "latestValue": 298,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,19 +152,40 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 59,
+      "latestValue": 69,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 41,
+      "latestValue": 46,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 6,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 6,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -192,6 +213,27 @@
       "points": []
     },
     {
+      "repo": "mouse-jiggler",
+      "metric": "clones",
+      "latestValue": 3,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "uniques",
+      "latestValue": 3,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "ai-job-finder",
       "metric": "clones",
       "latestValue": 3,
@@ -207,48 +249,6 @@
     },
     {
       "repo": "ai-job-finder",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "mouse-jiggler",
-      "metric": "clones",
-      "latestValue": 2,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "mouse-jiggler",
-      "metric": "uniques",
-      "latestValue": 2,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "mouse-jiggler",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "clones",
-      "latestValue": 2,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "uniques",
-      "latestValue": 2,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "pages",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
