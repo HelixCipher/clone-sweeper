@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 36,
-  "totalClones": 443,
-  "totalUniques": 203,
-  "totalCombined": 646,
+  "totalClones": 448,
+  "totalUniques": 216,
+  "totalCombined": 664,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 339,
-      "uniques": 120,
-      "combined": 459
+      "clones": 326,
+      "uniques": 116,
+      "combined": 442
     },
     {
       "name": "HelixCipher",
@@ -20,28 +20,28 @@
       "combined": 73
     },
     {
+      "name": "defense-evasion",
+      "clones": 9,
+      "uniques": 9,
+      "combined": 18
+    },
+    {
+      "name": "canary-tokens",
+      "clones": 8,
+      "uniques": 7,
+      "combined": 15
+    },
+    {
       "name": "image-to-code",
-      "clones": 6,
-      "uniques": 6,
-      "combined": 12
+      "clones": 8,
+      "uniques": 8,
+      "combined": 16
     },
     {
       "name": "Atlas",
-      "clones": 6,
-      "uniques": 6,
-      "combined": 12
-    },
-    {
-      "name": "mouse-jiggler",
-      "clones": 3,
-      "uniques": 3,
-      "combined": 6
-    },
-    {
-      "name": "ai-job-finder",
-      "clones": 3,
-      "uniques": 3,
-      "combined": 6
+      "clones": 7,
+      "uniques": 7,
+      "combined": 14
     }
   ]
 }
