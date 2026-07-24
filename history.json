@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 313,
+      "latestValue": 320,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 113,
+      "latestValue": 117,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,19 +24,40 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 49,
+      "latestValue": 50,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 28,
+      "latestValue": 29,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "clones",
+      "latestValue": 10,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -58,27 +79,6 @@
     },
     {
       "repo": "defense-evasion",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "clones",
-      "latestValue": 9,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "uniques",
-      "latestValue": 8,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 619,
+      "latestValue": 626,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 291,
+      "latestValue": 295,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,19 +152,40 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 71,
+      "latestValue": 72,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 48,
+      "latestValue": 49,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "clones",
+      "latestValue": 10,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -186,27 +207,6 @@
     },
     {
       "repo": "defense-evasion",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "clones",
-      "latestValue": 9,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "uniques",
-      "latestValue": 8,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
