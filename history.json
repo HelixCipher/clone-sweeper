@@ -1,0 +1,260 @@
+{
+  "monthly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 320,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 117,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 50,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 29,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "clones",
+      "latestValue": 10,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "defense-evasion",
+      "metric": "clones",
+      "latestValue": 9,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "defense-evasion",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "defense-evasion",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 8,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 8,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "clones",
+      "latestValue": 7,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "uniques",
+      "latestValue": 7,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "yearly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 626,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 295,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 72,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 49,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "clones",
+      "latestValue": 10,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "defense-evasion",
+      "metric": "clones",
+      "latestValue": 9,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "defense-evasion",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "defense-evasion",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 8,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 8,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "clones",
+      "latestValue": 7,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "uniques",
+      "latestValue": 7,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Atlas",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "monthRange": "2026-07 \u2192 2026-07",
+  "yearRange": "2026 \u2192 2026"
+}
