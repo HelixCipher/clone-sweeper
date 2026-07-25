@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 320,
+      "latestValue": 325,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 117,
+      "latestValue": 119,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,14 +45,14 @@
     {
       "repo": "canary-tokens",
       "metric": "clones",
+      "latestValue": 11,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "uniques",
       "latestValue": 10,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "uniques",
-      "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
@@ -108,14 +108,14 @@
     {
       "repo": "Atlas",
       "metric": "clones",
-      "latestValue": 7,
+      "latestValue": 6,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "Atlas",
       "metric": "uniques",
-      "latestValue": 7,
+      "latestValue": 6,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 626,
+      "latestValue": 631,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 295,
+      "latestValue": 297,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,14 +173,14 @@
     {
       "repo": "canary-tokens",
       "metric": "clones",
+      "latestValue": 11,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "uniques",
       "latestValue": 10,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "uniques",
-      "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
@@ -236,14 +236,14 @@
     {
       "repo": "Atlas",
       "metric": "clones",
-      "latestValue": 7,
+      "latestValue": 6,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "Atlas",
       "metric": "uniques",
-      "latestValue": 7,
+      "latestValue": 6,
       "color": "#60a5fa",
       "points": []
     },
