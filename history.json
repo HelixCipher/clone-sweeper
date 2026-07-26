@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 325,
+      "latestValue": 314,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 119,
+      "latestValue": 120,
       "color": "#60a5fa",
       "points": []
     },
@@ -66,14 +66,14 @@
     {
       "repo": "defense-evasion",
       "metric": "clones",
-      "latestValue": 9,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "defense-evasion",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
@@ -87,14 +87,14 @@
     {
       "repo": "image-to-code",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 5,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "image-to-code",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 5,
       "color": "#60a5fa",
       "points": []
     },
@@ -106,21 +106,21 @@
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 6,
+      "latestValue": 4,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 6,
+      "latestValue": 4,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "machine-learning",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 631,
+      "latestValue": 620,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 297,
+      "latestValue": 298,
       "color": "#60a5fa",
       "points": []
     },
@@ -194,14 +194,14 @@
     {
       "repo": "defense-evasion",
       "metric": "clones",
-      "latestValue": 9,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "defense-evasion",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
@@ -215,14 +215,14 @@
     {
       "repo": "image-to-code",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 5,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "image-to-code",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 5,
       "color": "#60a5fa",
       "points": []
     },
@@ -234,21 +234,21 @@
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 6,
+      "latestValue": 4,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 6,
+      "latestValue": 4,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "machine-learning",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
