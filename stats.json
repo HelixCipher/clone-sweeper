@@ -1,35 +1,29 @@
 {
   "owner": "HelixCipher",
-  "totalRepos": 36,
-  "totalClones": 450,
-  "totalUniques": 234,
-  "totalCombined": 684,
+  "totalRepos": 35,
+  "totalClones": 405,
+  "totalUniques": 212,
+  "totalCombined": 617,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 314,
-      "uniques": 120,
-      "combined": 434
+      "clones": 290,
+      "uniques": 111,
+      "combined": 401
     },
     {
       "name": "HelixCipher",
-      "clones": 50,
-      "uniques": 29,
-      "combined": 79
-    },
-    {
-      "name": "canary-tokens",
-      "clones": 11,
-      "uniques": 10,
-      "combined": 21
+      "clones": 35,
+      "uniques": 21,
+      "combined": 56
     },
     {
       "name": "defense-evasion",
-      "clones": 10,
-      "uniques": 10,
-      "combined": 20
+      "clones": 11,
+      "uniques": 11,
+      "combined": 22
     },
     {
       "name": "image-to-code",
@@ -39,6 +33,12 @@
     },
     {
       "name": "machine-learning",
+      "clones": 4,
+      "uniques": 4,
+      "combined": 8
+    },
+    {
+      "name": "Convolutional-Neural-Networks-CNNs-from-scratch",
       "clones": 4,
       "uniques": 4,
       "combined": 8

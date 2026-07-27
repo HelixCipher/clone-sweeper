@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 314,
+      "latestValue": 290,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 120,
+      "latestValue": 111,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 50,
+      "latestValue": 35,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 29,
+      "latestValue": 21,
       "color": "#60a5fa",
       "points": []
     },
@@ -43,37 +43,16 @@
       "points": []
     },
     {
-      "repo": "canary-tokens",
+      "repo": "defense-evasion",
       "metric": "clones",
       "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "canary-tokens",
-      "metric": "uniques",
-      "latestValue": 10,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "defense-evasion",
-      "metric": "clones",
-      "latestValue": 10,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
       "repo": "defense-evasion",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
@@ -121,6 +100,27 @@
     },
     {
       "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "clones",
+      "latestValue": 4,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "uniques",
+      "latestValue": 4,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 620,
+      "latestValue": 596,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 298,
+      "latestValue": 289,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 72,
+      "latestValue": 57,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 49,
+      "latestValue": 41,
       "color": "#60a5fa",
       "points": []
     },
@@ -171,37 +171,16 @@
       "points": []
     },
     {
-      "repo": "canary-tokens",
+      "repo": "defense-evasion",
       "metric": "clones",
       "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "canary-tokens",
-      "metric": "uniques",
-      "latestValue": 10,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "defense-evasion",
-      "metric": "clones",
-      "latestValue": 10,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
       "repo": "defense-evasion",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
@@ -249,12 +228,33 @@
     },
     {
       "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "clones",
+      "latestValue": 9,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "Convolutional-Neural-Networks-CNNs-from-scratch",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-07 \u2192 2026-07",
+  "monthRange": "2026-01 \u2192 2026-07",
   "yearRange": "2026 \u2192 2026"
 }
