@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 36,
-  "totalClones": 368,
-  "totalUniques": 199,
-  "totalCombined": 567,
+  "totalClones": 372,
+  "totalUniques": 211,
+  "totalCombined": 583,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 263,
-      "uniques": 106,
-      "combined": 369
+      "clones": 243,
+      "uniques": 100,
+      "combined": 343
     },
     {
       "name": "HelixCipher",
@@ -20,28 +20,28 @@
       "combined": 50
     },
     {
+      "name": "canary-tokens",
+      "clones": 9,
+      "uniques": 5,
+      "combined": 14
+    },
+    {
+      "name": "image-to-code",
+      "clones": 8,
+      "uniques": 7,
+      "combined": 15
+    },
+    {
       "name": "dynamic-webscraper",
       "clones": 8,
       "uniques": 8,
       "combined": 16
     },
     {
-      "name": "Atlas",
+      "name": "defense-evasion",
       "clones": 5,
-      "uniques": 5,
-      "combined": 10
-    },
-    {
-      "name": "mouse-jiggler",
-      "clones": 4,
       "uniques": 4,
-      "combined": 8
-    },
-    {
-      "name": "E-commerce-Conversion-Prediction",
-      "clones": 4,
-      "uniques": 4,
-      "combined": 8
+      "combined": 9
     }
   ]
 }
