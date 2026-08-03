@@ -1,35 +1,35 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 36,
-  "totalClones": 372,
-  "totalUniques": 211,
-  "totalCombined": 583,
+  "totalClones": 317,
+  "totalUniques": 194,
+  "totalCombined": 511,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 243,
-      "uniques": 100,
-      "combined": 343
+      "clones": 193,
+      "uniques": 83,
+      "combined": 276
     },
     {
       "name": "HelixCipher",
-      "clones": 31,
-      "uniques": 19,
-      "combined": 50
+      "clones": 24,
+      "uniques": 17,
+      "combined": 41
     },
     {
       "name": "canary-tokens",
-      "clones": 9,
-      "uniques": 5,
-      "combined": 14
+      "clones": 11,
+      "uniques": 7,
+      "combined": 18
     },
     {
       "name": "image-to-code",
-      "clones": 8,
-      "uniques": 7,
-      "combined": 15
+      "clones": 10,
+      "uniques": 9,
+      "combined": 19
     },
     {
       "name": "dynamic-webscraper",
@@ -39,9 +39,9 @@
     },
     {
       "name": "defense-evasion",
-      "clones": 5,
-      "uniques": 4,
-      "combined": 9
+      "clones": 6,
+      "uniques": 5,
+      "combined": 11
     }
   ]
 }

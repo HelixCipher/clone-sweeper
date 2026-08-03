@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 243,
+      "latestValue": 193,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 100,
+      "latestValue": 83,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 31,
+      "latestValue": 24,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 19,
+      "latestValue": 17,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,39 +45,39 @@
     {
       "repo": "canary-tokens",
       "metric": "clones",
-      "latestValue": 9,
+      "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "canary-tokens",
-      "metric": "uniques",
-      "latestValue": 5,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
-      "metric": "clones",
-      "latestValue": 8,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
       "metric": "uniques",
       "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
     {
+      "repo": "canary-tokens",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 10,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
       "repo": "image-to-code",
       "metric": "downloads",
       "latestValue": 0,
@@ -108,14 +108,14 @@
     {
       "repo": "defense-evasion",
       "metric": "clones",
-      "latestValue": 5,
+      "latestValue": 6,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "defense-evasion",
       "metric": "uniques",
-      "latestValue": 4,
+      "latestValue": 5,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 549,
+      "latestValue": 499,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 278,
+      "latestValue": 261,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 53,
+      "latestValue": 46,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 39,
+      "latestValue": 37,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,39 +173,39 @@
     {
       "repo": "canary-tokens",
       "metric": "clones",
-      "latestValue": 9,
+      "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "canary-tokens",
-      "metric": "uniques",
-      "latestValue": 5,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
-      "metric": "clones",
-      "latestValue": 8,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
       "metric": "uniques",
       "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
     {
+      "repo": "canary-tokens",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 10,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
       "repo": "image-to-code",
       "metric": "downloads",
       "latestValue": 0,
@@ -236,14 +236,14 @@
     {
       "repo": "defense-evasion",
       "metric": "clones",
-      "latestValue": 5,
+      "latestValue": 6,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "defense-evasion",
       "metric": "uniques",
-      "latestValue": 4,
+      "latestValue": 5,
       "color": "#60a5fa",
       "points": []
     },
@@ -255,6 +255,6 @@
       "points": []
     }
   ],
-  "monthRange": "2026-07 \u2192 2026-07",
+  "monthRange": "2026-08 \u2192 2026-08",
   "yearRange": "2026 \u2192 2026"
 }
