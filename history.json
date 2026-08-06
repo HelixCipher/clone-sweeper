@@ -3,40 +3,19 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 185,
+      "latestValue": 176,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 78,
+      "latestValue": 75,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "clone-sweeper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "clones",
-      "latestValue": 12,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "uniques",
-      "latestValue": 12,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -58,6 +37,27 @@
     },
     {
       "repo": "canary-tokens",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 11,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,40 +131,19 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 491,
+      "latestValue": 482,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 256,
+      "latestValue": 253,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "clone-sweeper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "clones",
-      "latestValue": 34,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "uniques",
-      "latestValue": 32,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -186,6 +165,27 @@
     },
     {
       "repo": "canary-tokens",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 33,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 31,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",

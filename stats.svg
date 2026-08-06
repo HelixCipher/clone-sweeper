@@ -22,7 +22,7 @@
 
 <rect x="0" y="0" width="820" height="612" rx="12" fill="transparent"/>
 <text x="18" y="34" class="title card">GitHub repos — HelixCipher</text>
-<text x="18" y="54" class="meta card">Repos: 36 · Clones: 299 · Uniques: 177 · Combined: 476 · Downloads (14d): 0 · Downloads (total): 0 · Public repos only</text>
+<text x="18" y="54" class="meta card">Repos: 36 · Clones: 294 · Uniques: 176 · Combined: 470 · Downloads (14d): 0 · Downloads (total): 0 · Public repos only</text>
 
 <!-- LEGEND: colored squares + labels -->
 <g id="legend">
@@ -45,55 +45,55 @@
   <!-- CLONES bar (top) -->
   <rect x="150" y="116" width="570" height="18" class="bar-bg"/>
   <rect x="150" y="116" width="570" height="18" class="bar-clone"/>
-  <text x="732" y="128" class="count card">185</text>
+  <text x="732" y="128" class="count card">176</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="150" y="142" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="142" width="240" height="18" class="bar-uniq"/>
-  <text x="732" y="154" class="count-small card">78</text>
+  <rect x="150" y="142" width="242" height="18" class="bar-uniq"/>
+  <text x="732" y="154" class="count-small card">75</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="150" y="168" width="570" height="18" class="bar-bg"/>
   <rect x="150" y="168" width="570" height="18" class="bar-comb"/>
-  <text x="732" y="180" class="count card">263</text>
+  <text x="732" y="180" class="count card">251</text>
 
   
   <!-- repository label -->
-  <text x="18" y="184" class="label card">HelixCipher</text>
+  <text x="18" y="184" class="label card">canary-tokens</text>
 
   <!-- CLONES bar (top) -->
   <rect x="150" y="198" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="198" width="36" height="18" class="bar-clone"/>
+  <rect x="150" y="198" width="38" height="18" class="bar-clone"/>
   <text x="732" y="210" class="count card">12</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="150" y="224" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="224" width="36" height="18" class="bar-uniq"/>
-  <text x="732" y="236" class="count-small card">12</text>
+  <rect x="150" y="224" width="25" height="18" class="bar-uniq"/>
+  <text x="732" y="236" class="count-small card">8</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="150" y="250" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="250" width="52" height="18" class="bar-comb"/>
-  <text x="732" y="262" class="count card">24</text>
+  <rect x="150" y="250" width="45" height="18" class="bar-comb"/>
+  <text x="732" y="262" class="count card">20</text>
 
   
   <!-- repository label -->
-  <text x="18" y="266" class="label card">canary-tokens</text>
+  <text x="18" y="266" class="label card">HelixCipher</text>
 
   <!-- CLONES bar (top) -->
   <rect x="150" y="280" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="280" width="36" height="18" class="bar-clone"/>
-  <text x="732" y="292" class="count card">12</text>
+  <rect x="150" y="280" width="35" height="18" class="bar-clone"/>
+  <text x="732" y="292" class="count card">11</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="150" y="306" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="306" width="24" height="18" class="bar-uniq"/>
-  <text x="732" y="318" class="count-small card">8</text>
+  <rect x="150" y="306" width="35" height="18" class="bar-uniq"/>
+  <text x="732" y="318" class="count-small card">11</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="150" y="332" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="332" width="43" height="18" class="bar-comb"/>
-  <text x="732" y="344" class="count card">20</text>
+  <rect x="150" y="332" width="49" height="18" class="bar-comb"/>
+  <text x="732" y="344" class="count card">22</text>
 
   
   <!-- repository label -->
@@ -101,17 +101,17 @@
 
   <!-- CLONES bar (top) -->
   <rect x="150" y="362" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="362" width="30" height="18" class="bar-clone"/>
+  <rect x="150" y="362" width="32" height="18" class="bar-clone"/>
   <text x="732" y="374" class="count card">10</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="150" y="388" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="388" width="27" height="18" class="bar-uniq"/>
+  <rect x="150" y="388" width="29" height="18" class="bar-uniq"/>
   <text x="732" y="400" class="count-small card">9</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="150" y="414" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="414" width="41" height="18" class="bar-comb"/>
+  <rect x="150" y="414" width="43" height="18" class="bar-comb"/>
   <text x="732" y="426" class="count card">19</text>
 
   
@@ -120,7 +120,7 @@
 
   <!-- CLONES bar (top) -->
   <rect x="150" y="444" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="444" width="21" height="18" class="bar-clone"/>
+  <rect x="150" y="444" width="22" height="18" class="bar-clone"/>
   <text x="732" y="456" class="count card">7</text>
 
   <!-- UNIQUES bar (middle) -->
@@ -130,7 +130,7 @@
 
   <!-- COMBINED bar (bottom) -->
   <rect x="150" y="496" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="496" width="21" height="18" class="bar-comb"/>
+  <rect x="150" y="496" width="22" height="18" class="bar-comb"/>
   <text x="732" y="508" class="count card">10</text>
 
   
@@ -139,7 +139,7 @@
 
   <!-- CLONES bar (top) -->
   <rect x="150" y="526" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="526" width="21" height="18" class="bar-clone"/>
+  <rect x="150" y="526" width="22" height="18" class="bar-clone"/>
   <text x="732" y="538" class="count card">7</text>
 
   <!-- UNIQUES bar (middle) -->
@@ -149,7 +149,7 @@
 
   <!-- COMBINED bar (bottom) -->
   <rect x="150" y="578" width="570" height="18" class="bar-bg"/>
-  <rect x="150" y="578" width="21" height="18" class="bar-comb"/>
+  <rect x="150" y="578" width="22" height="18" class="bar-comb"/>
   <text x="732" y="590" class="count card">10</text>
 
 

@@ -1,29 +1,29 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 36,
-  "totalClones": 299,
-  "totalUniques": 177,
-  "totalCombined": 476,
+  "totalClones": 294,
+  "totalUniques": 176,
+  "totalCombined": 470,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 185,
-      "uniques": 78,
-      "combined": 263
-    },
-    {
-      "name": "HelixCipher",
-      "clones": 12,
-      "uniques": 12,
-      "combined": 24
+      "clones": 176,
+      "uniques": 75,
+      "combined": 251
     },
     {
       "name": "canary-tokens",
       "clones": 12,
       "uniques": 8,
       "combined": 20
+    },
+    {
+      "name": "HelixCipher",
+      "clones": 11,
+      "uniques": 11,
+      "combined": 22
     },
     {
       "name": "image-to-code",
