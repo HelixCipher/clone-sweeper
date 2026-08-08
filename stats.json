@@ -1,0 +1,47 @@
+{
+  "owner": "HelixCipher",
+  "totalRepos": 36,
+  "totalClones": 275,
+  "totalUniques": 170,
+  "totalCombined": 445,
+  "downloads14d": 0,
+  "downloadsTotal": 0,
+  "repos": [
+    {
+      "name": "clone-sweeper",
+      "clones": 156,
+      "uniques": 71,
+      "combined": 227
+    },
+    {
+      "name": "canary-tokens",
+      "clones": 12,
+      "uniques": 8,
+      "combined": 20
+    },
+    {
+      "name": "image-to-code",
+      "clones": 11,
+      "uniques": 10,
+      "combined": 21
+    },
+    {
+      "name": "HelixCipher",
+      "clones": 10,
+      "uniques": 10,
+      "combined": 20
+    },
+    {
+      "name": "mouse-jiggler",
+      "clones": 8,
+      "uniques": 6,
+      "combined": 14
+    },
+    {
+      "name": "project-bytehide",
+      "clones": 8,
+      "uniques": 5,
+      "combined": 13
+    }
+  ]
+}
