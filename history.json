@@ -3,19 +3,40 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 154,
+      "latestValue": 169,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 69,
+      "latestValue": 76,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "clones",
+      "latestValue": 13,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -37,27 +58,6 @@
     },
     {
       "repo": "image-to-code",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "clones",
-      "latestValue": 12,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "uniques",
-      "latestValue": 8,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -108,14 +108,14 @@
     {
       "repo": "mouse-jiggler",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 9,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "mouse-jiggler",
       "metric": "uniques",
-      "latestValue": 6,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,19 +131,40 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 460,
+      "latestValue": 475,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 247,
+      "latestValue": 254,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "clones",
+      "latestValue": 13,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "canary-tokens",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -165,27 +186,6 @@
     },
     {
       "repo": "image-to-code",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "clones",
-      "latestValue": 12,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
-      "metric": "uniques",
-      "latestValue": 8,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "canary-tokens",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -236,14 +236,14 @@
     {
       "repo": "mouse-jiggler",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 9,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "mouse-jiggler",
       "metric": "uniques",
-      "latestValue": 6,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
