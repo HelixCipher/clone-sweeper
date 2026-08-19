@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 175,
+      "latestValue": 161,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 91,
+      "latestValue": 82,
       "color": "#60a5fa",
       "points": []
     },
@@ -64,42 +64,21 @@
       "points": []
     },
     {
-      "repo": "project-bytehide",
+      "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 10,
+      "latestValue": 6,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "project-bytehide",
+      "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 7,
+      "latestValue": 2,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "project-bytehide",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "clones",
-      "latestValue": 7,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "uniques",
-      "latestValue": 7,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
+      "repo": "LeakPro",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -121,6 +100,27 @@
     },
     {
       "repo": "LeakPro",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 5,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 5,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 481,
+      "latestValue": 467,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 269,
+      "latestValue": 260,
       "color": "#60a5fa",
       "points": []
     },
@@ -192,42 +192,21 @@
       "points": []
     },
     {
-      "repo": "project-bytehide",
+      "repo": "LeakPro",
       "metric": "clones",
-      "latestValue": 10,
+      "latestValue": 6,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "project-bytehide",
+      "repo": "LeakPro",
       "metric": "uniques",
-      "latestValue": 7,
+      "latestValue": 2,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "project-bytehide",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "clones",
-      "latestValue": 29,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "uniques",
-      "latestValue": 27,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
+      "repo": "LeakPro",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -249,6 +228,27 @@
     },
     {
       "repo": "LeakPro",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 5,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 5,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
