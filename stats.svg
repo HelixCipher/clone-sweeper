@@ -22,7 +22,7 @@
 
 <rect x="0" y="0" width="820" height="612" rx="12" fill="transparent"/>
 <text x="18" y="34" class="title card">GitHub repos — HelixCipher</text>
-<text x="18" y="54" class="meta card">Repos: 36 · Clones: 278 · Uniques: 173 · Combined: 451 · Downloads (14d): 0 · Downloads (total): 0 · Public repos only</text>
+<text x="18" y="54" class="meta card">Repos: 36 · Clones: 278 · Uniques: 175 · Combined: 453 · Downloads (14d): 0 · Downloads (total): 0 · Public repos only</text>
 
 <!-- LEGEND: colored squares + labels -->
 <g id="legend">
@@ -45,12 +45,12 @@
   <!-- CLONES bar (top) -->
   <rect x="160" y="116" width="560" height="18" class="bar-bg"/>
   <rect x="160" y="116" width="560" height="18" class="bar-clone"/>
-  <text x="732" y="128" class="count card">178</text>
+  <text x="732" y="128" class="count card">177</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="160" y="142" width="560" height="18" class="bar-bg"/>
-  <rect x="160" y="142" width="261" height="18" class="bar-uniq"/>
-  <text x="732" y="154" class="count-small card">83</text>
+  <rect x="160" y="142" width="265" height="18" class="bar-uniq"/>
+  <text x="732" y="154" class="count-small card">84</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="160" y="168" width="560" height="18" class="bar-bg"/>
@@ -59,45 +59,45 @@
 
   
   <!-- repository label -->
-  <text x="18" y="184" class="label card">machine-learning</text>
+  <text x="18" y="184" class="label card">HelixCipher</text>
 
   <!-- CLONES bar (top) -->
   <rect x="160" y="198" width="560" height="18" class="bar-bg"/>
-  <rect x="160" y="198" width="22" height="18" class="bar-clone"/>
-  <text x="732" y="210" class="count card">7</text>
+  <rect x="160" y="198" width="25" height="18" class="bar-clone"/>
+  <text x="732" y="210" class="count card">8</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="160" y="224" width="560" height="18" class="bar-bg"/>
-  <rect x="160" y="224" width="22" height="18" class="bar-uniq"/>
-  <text x="732" y="236" class="count-small card">7</text>
+  <rect x="160" y="224" width="25" height="18" class="bar-uniq"/>
+  <text x="732" y="236" class="count-small card">8</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="160" y="250" width="560" height="18" class="bar-bg"/>
-  <rect x="160" y="250" width="30" height="18" class="bar-comb"/>
-  <text x="732" y="262" class="count card">14</text>
+  <rect x="160" y="250" width="34" height="18" class="bar-comb"/>
+  <text x="732" y="262" class="count card">16</text>
 
   
   <!-- repository label -->
-  <text x="18" y="266" class="label card">LeakPro</text>
+  <text x="18" y="266" class="label card">machine-learning</text>
 
   <!-- CLONES bar (top) -->
   <rect x="160" y="280" width="560" height="18" class="bar-bg"/>
-  <rect x="160" y="280" width="18" height="18" class="bar-clone"/>
-  <text x="732" y="292" class="count card">6</text>
+  <rect x="160" y="280" width="22" height="18" class="bar-clone"/>
+  <text x="732" y="292" class="count card">7</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="160" y="306" width="560" height="18" class="bar-bg"/>
-  <rect x="160" y="306" width="6" height="18" class="bar-uniq"/>
-  <text x="732" y="318" class="count-small card">2</text>
+  <rect x="160" y="306" width="22" height="18" class="bar-uniq"/>
+  <text x="732" y="318" class="count-small card">7</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="160" y="332" width="560" height="18" class="bar-bg"/>
-  <rect x="160" y="332" width="17" height="18" class="bar-comb"/>
-  <text x="732" y="344" class="count card">8</text>
+  <rect x="160" y="332" width="30" height="18" class="bar-comb"/>
+  <text x="732" y="344" class="count card">14</text>
 
   
   <!-- repository label -->
-  <text x="18" y="348" class="label card">HelixCipher</text>
+  <text x="18" y="348" class="label card">LeakPro</text>
 
   <!-- CLONES bar (top) -->
   <rect x="160" y="362" width="560" height="18" class="bar-bg"/>
@@ -106,13 +106,13 @@
 
   <!-- UNIQUES bar (middle) -->
   <rect x="160" y="388" width="560" height="18" class="bar-bg"/>
-  <rect x="160" y="388" width="18" height="18" class="bar-uniq"/>
-  <text x="732" y="400" class="count-small card">6</text>
+  <rect x="160" y="388" width="6" height="18" class="bar-uniq"/>
+  <text x="732" y="400" class="count-small card">2</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="160" y="414" width="560" height="18" class="bar-bg"/>
-  <rect x="160" y="414" width="25" height="18" class="bar-comb"/>
-  <text x="732" y="426" class="count card">12</text>
+  <rect x="160" y="414" width="17" height="18" class="bar-comb"/>
+  <text x="732" y="426" class="count card">8</text>
 
   
   <!-- repository label -->

@@ -2,16 +2,22 @@
   "owner": "HelixCipher",
   "totalRepos": 36,
   "totalClones": 278,
-  "totalUniques": 173,
-  "totalCombined": 451,
+  "totalUniques": 175,
+  "totalCombined": 453,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 178,
-      "uniques": 83,
+      "clones": 177,
+      "uniques": 84,
       "combined": 261
+    },
+    {
+      "name": "HelixCipher",
+      "clones": 8,
+      "uniques": 8,
+      "combined": 16
     },
     {
       "name": "machine-learning",
@@ -24,12 +30,6 @@
       "clones": 6,
       "uniques": 2,
       "combined": 8
-    },
-    {
-      "name": "HelixCipher",
-      "clones": 6,
-      "uniques": 6,
-      "combined": 12
     },
     {
       "name": "LeakPro",
