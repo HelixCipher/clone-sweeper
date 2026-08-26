@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 177,
+      "latestValue": 194,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 84,
+      "latestValue": 90,
       "color": "#60a5fa",
       "points": []
     },
@@ -85,6 +85,27 @@
       "points": []
     },
     {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 6,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 6,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "LeakPro",
       "metric": "clones",
       "latestValue": 6,
@@ -100,27 +121,6 @@
     },
     {
       "repo": "LeakPro",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
-      "metric": "clones",
-      "latestValue": 5,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
-      "metric": "uniques",
-      "latestValue": 5,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 483,
+      "latestValue": 500,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 262,
+      "latestValue": 268,
       "color": "#60a5fa",
       "points": []
     },
@@ -213,6 +213,27 @@
       "points": []
     },
     {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 6,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 6,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "LeakPro",
       "metric": "clones",
       "latestValue": 6,
@@ -228,27 +249,6 @@
     },
     {
       "repo": "LeakPro",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
-      "metric": "clones",
-      "latestValue": 5,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
-      "metric": "uniques",
-      "latestValue": 5,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
