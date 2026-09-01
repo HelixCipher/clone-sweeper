@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 36,
-  "totalClones": 327,
-  "totalUniques": 223,
-  "totalCombined": 550,
+  "totalClones": 843,
+  "totalUniques": 463,
+  "totalCombined": 1306,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 177,
-      "uniques": 79,
-      "combined": 256
+      "clones": 684,
+      "uniques": 310,
+      "combined": 994
     },
     {
       "name": "digiti-signum",
@@ -20,13 +20,13 @@
       "combined": 19
     },
     {
-      "name": "mouse-jiggler",
-      "clones": 9,
-      "uniques": 9,
-      "combined": 18
+      "name": "HelixCipher",
+      "clones": 10,
+      "uniques": 10,
+      "combined": 20
     },
     {
-      "name": "HelixCipher",
+      "name": "mouse-jiggler",
       "clones": 9,
       "uniques": 9,
       "combined": 18
