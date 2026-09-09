@@ -1,9 +1,9 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 36,
-  "totalClones": 871,
-  "totalUniques": 488,
-  "totalCombined": 1359,
+  "totalClones": 884,
+  "totalUniques": 501,
+  "totalCombined": 1385,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
@@ -20,28 +20,28 @@
       "combined": 26
     },
     {
+      "name": "todays-command",
+      "clones": 11,
+      "uniques": 9,
+      "combined": 20
+    },
+    {
       "name": "defense-evasion",
       "clones": 9,
       "uniques": 9,
       "combined": 18
     },
     {
-      "name": "HelixCipher",
-      "clones": 9,
-      "uniques": 9,
-      "combined": 18
-    },
-    {
-      "name": "todays-command",
-      "clones": 9,
-      "uniques": 7,
-      "combined": 16
-    },
-    {
       "name": "digiti-signum",
       "clones": 9,
       "uniques": 6,
       "combined": 15
+    },
+    {
+      "name": "HelixCipher",
+      "clones": 8,
+      "uniques": 8,
+      "combined": 16
     }
   ]
 }
