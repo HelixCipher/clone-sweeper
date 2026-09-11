@@ -1,9 +1,9 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 36,
-  "totalClones": 932,
-  "totalUniques": 529,
-  "totalCombined": 1461,
+  "totalClones": 946,
+  "totalUniques": 544,
+  "totalCombined": 1490,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
@@ -14,7 +14,7 @@
       "combined": 1037
     },
     {
-      "name": "mouse-jiggler",
+      "name": "image-to-code",
       "clones": 13,
       "uniques": 13,
       "combined": 26
@@ -26,22 +26,22 @@
       "combined": 24
     },
     {
+      "name": "digiti-signum",
+      "clones": 12,
+      "uniques": 9,
+      "combined": 21
+    },
+    {
       "name": "defense-evasion",
       "clones": 11,
       "uniques": 10,
       "combined": 21
     },
     {
-      "name": "image-to-code",
+      "name": "mouse-jiggler",
       "clones": 11,
       "uniques": 11,
       "combined": 22
-    },
-    {
-      "name": "digiti-signum",
-      "clones": 10,
-      "uniques": 7,
-      "combined": 17
     }
   ]
 }
