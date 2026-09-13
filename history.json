@@ -1,0 +1,260 @@
+{
+  "monthly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 729,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 336,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 14,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "todays-command",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "todays-command",
+      "metric": "uniques",
+      "latestValue": 12,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "todays-command",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "digiti-signum",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "digiti-signum",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "digiti-signum",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "clones",
+      "latestValue": 11,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 11,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "yearly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 1035,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 514,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 14,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "todays-command",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "todays-command",
+      "metric": "uniques",
+      "latestValue": 12,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "todays-command",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "digiti-signum",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "digiti-signum",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "digiti-signum",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "clones",
+      "latestValue": 11,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 33,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 31,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "monthRange": "2026-01 \u2192 2026-09",
+  "yearRange": "2026 \u2192 2026"
+}
