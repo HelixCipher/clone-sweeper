@@ -3,19 +3,40 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 725,
+      "latestValue": 729,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 327,
+      "latestValue": 336,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 14,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -64,27 +85,6 @@
       "points": []
     },
     {
-      "repo": "image-to-code",
-      "metric": "clones",
-      "latestValue": 13,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
-      "metric": "uniques",
-      "latestValue": 13,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "mouse-jiggler",
       "metric": "clones",
       "latestValue": 11,
@@ -106,21 +106,21 @@
       "points": []
     },
     {
-      "repo": "defense-evasion",
+      "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "defense-evasion",
+      "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "defense-evasion",
+      "repo": "HelixCipher",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,19 +131,40 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 1031,
+      "latestValue": 1035,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 505,
+      "latestValue": 514,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 14,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -192,27 +213,6 @@
       "points": []
     },
     {
-      "repo": "image-to-code",
-      "metric": "clones",
-      "latestValue": 13,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
-      "metric": "uniques",
-      "latestValue": 13,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "image-to-code",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "mouse-jiggler",
       "metric": "clones",
       "latestValue": 11,
@@ -234,27 +234,27 @@
       "points": []
     },
     {
-      "repo": "defense-evasion",
+      "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 10,
+      "latestValue": 33,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "defense-evasion",
+      "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 31,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "defense-evasion",
+      "repo": "HelixCipher",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-09 \u2192 2026-09",
+  "monthRange": "2026-01 \u2192 2026-09",
   "yearRange": "2026 \u2192 2026"
 }
