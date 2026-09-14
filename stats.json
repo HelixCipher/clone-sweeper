@@ -1,23 +1,17 @@
 {
   "owner": "HelixCipher",
-  "totalRepos": 36,
-  "totalClones": 990,
-  "totalUniques": 587,
-  "totalCombined": 1577,
+  "totalRepos": 37,
+  "totalClones": 961,
+  "totalUniques": 544,
+  "totalCombined": 1505,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 729,
-      "uniques": 336,
-      "combined": 1065
-    },
-    {
-      "name": "image-to-code",
-      "clones": 14,
-      "uniques": 14,
-      "combined": 28
+      "clones": 760,
+      "uniques": 350,
+      "combined": 1110
     },
     {
       "name": "todays-command",
@@ -26,22 +20,28 @@
       "combined": 26
     },
     {
-      "name": "digiti-signum",
-      "clones": 14,
-      "uniques": 11,
-      "combined": 25
-    },
-    {
-      "name": "mouse-jiggler",
-      "clones": 11,
-      "uniques": 11,
-      "combined": 22
+      "name": "dynamic-webscraper",
+      "clones": 12,
+      "uniques": 12,
+      "combined": 24
     },
     {
       "name": "HelixCipher",
       "clones": 11,
       "uniques": 11,
       "combined": 22
+    },
+    {
+      "name": "defense-evasion",
+      "clones": 10,
+      "uniques": 9,
+      "combined": 19
+    },
+    {
+      "name": "project-bytehide",
+      "clones": 9,
+      "uniques": 9,
+      "combined": 18
     }
   ]
 }
