@@ -1,32 +1,32 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 37,
-  "totalClones": 961,
-  "totalUniques": 544,
-  "totalCombined": 1505,
+  "totalClones": 514,
+  "totalUniques": 336,
+  "totalCombined": 850,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 760,
-      "uniques": 350,
-      "combined": 1110
-    },
-    {
-      "name": "todays-command",
-      "clones": 14,
-      "uniques": 12,
-      "combined": 26
-    },
-    {
-      "name": "dynamic-webscraper",
-      "clones": 12,
-      "uniques": 12,
-      "combined": 24
+      "clones": 265,
+      "uniques": 127,
+      "combined": 392
     },
     {
       "name": "HelixCipher",
+      "clones": 52,
+      "uniques": 30,
+      "combined": 82
+    },
+    {
+      "name": "mouse-jiggler",
+      "clones": 14,
+      "uniques": 11,
+      "combined": 25
+    },
+    {
+      "name": "dynamic-webscraper",
       "clones": 11,
       "uniques": 11,
       "combined": 22
@@ -38,9 +38,9 @@
       "combined": 19
     },
     {
-      "name": "project-bytehide",
-      "clones": 9,
-      "uniques": 9,
+      "name": "todays-command",
+      "clones": 10,
+      "uniques": 8,
       "combined": 18
     }
   ]
