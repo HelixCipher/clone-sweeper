@@ -1,0 +1,260 @@
+{
+  "monthly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 314,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 137,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 60,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 35,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "clones",
+      "latestValue": 21,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "uniques",
+      "latestValue": 20,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "clones",
+      "latestValue": 17,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "uniques",
+      "latestValue": 14,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "clones",
+      "latestValue": 15,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "uniques",
+      "latestValue": 12,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "clones",
+      "latestValue": 12,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "yearly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 620,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 315,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 82,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 55,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "clones",
+      "latestValue": 21,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "uniques",
+      "latestValue": 20,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "dynamic-webscraper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "clones",
+      "latestValue": 17,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "uniques",
+      "latestValue": 14,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "mouse-jiggler",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "clones",
+      "latestValue": 38,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "uniques",
+      "latestValue": 33,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "clones",
+      "latestValue": 16,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "uniques",
+      "latestValue": 13,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "monthRange": "2026-01 \u2192 2026-09",
+  "yearRange": "2026 \u2192 2026"
+}

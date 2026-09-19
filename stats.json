@@ -1,0 +1,47 @@
+{
+  "owner": "HelixCipher",
+  "totalRepos": 37,
+  "totalClones": 643,
+  "totalUniques": 413,
+  "totalCombined": 1056,
+  "downloads14d": 0,
+  "downloadsTotal": 0,
+  "repos": [
+    {
+      "name": "clone-sweeper",
+      "clones": 314,
+      "uniques": 137,
+      "combined": 451
+    },
+    {
+      "name": "HelixCipher",
+      "clones": 60,
+      "uniques": 35,
+      "combined": 95
+    },
+    {
+      "name": "dynamic-webscraper",
+      "clones": 21,
+      "uniques": 20,
+      "combined": 41
+    },
+    {
+      "name": "mouse-jiggler",
+      "clones": 17,
+      "uniques": 14,
+      "combined": 31
+    },
+    {
+      "name": "E-commerce-Conversion-Prediction",
+      "clones": 15,
+      "uniques": 12,
+      "combined": 27
+    },
+    {
+      "name": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "clones": 12,
+      "uniques": 9,
+      "combined": 21
+    }
+  ]
+}
