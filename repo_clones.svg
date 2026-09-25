@@ -18,7 +18,7 @@
   }
 </style>
 <text x="18" y="32" class="title card">GitHub repositories — HelixCipher</text>
-<text x="18" y="50" class="meta card">Generated: 2026-09-24T06:59:51.978065Z · Mode: Public repos only · Repos: 39 · Clones: 692 · Downloads: 0</text>
+<text x="18" y="50" class="meta card">Generated: 2026-09-25T06:54:17.992123Z · Mode: Public repos only · Repos: 39 · Clones: 717 · Downloads: 0</text>
 <rect x="18" y="30" width="2001" height="1098" rx="8" class="row-even"/>
 <rect x="18" y="30" width="2001" height="1098" class="table-border"/>
 
@@ -53,23 +53,23 @@
   
     
     
-      <text x="30" y="74" class="td card">spam-detection-using-AI</text>
+      <text x="30" y="74" class="td card">machine-learning</text>
     
   
     
     
       
       
-        <text x="394" y="72" class="td card">End-to-end spam classification pipelines for SMS (UCI SMS</text>
+        <text x="394" y="72" class="td card">A curated collection of machine learning projects covering</text>
         
-          <text x="394" y="86" class="td card">Spam Collection). Includes text preprocessing, model traini…</text>
+          <text x="394" y="86" class="td card">various domains including computer vision, predictive model…</text>
         
       
     
   
     
     
-      <text x="1002" y="74" class="td card">Jupyter Notebook</text>
+      <text x="1002" y="74" class="td card"></text>
     
   
     
@@ -94,17 +94,17 @@
   
     
     
-      <text x="1425" y="74" class="td card">2026-09-23 16:04:47</text>
+      <text x="1425" y="74" class="td card">2026-09-24 14:58:43</text>
     
   
     
     
-      <text x="1587" y="74" class="td card">19</text>
+      <text x="1587" y="74" class="td card">9</text>
     
   
     
     
-      <text x="1685" y="74" class="td card">12</text>
+      <text x="1685" y="74" class="td card">7</text>
     
   
     
@@ -123,7 +123,7 @@
   
     
     
-      <text x="30" y="100" class="td card">HelixCipher</text>
+      <text x="30" y="100" class="td card">LeakPro</text>
     
   
     
@@ -136,42 +136,42 @@
   
     
     
-      <text x="1002" y="100" class="td card"></text>
+      <text x="1002" y="100" class="td card">Python</text>
     
   
     
     
-      <text x="1143" y="100" class="td card">0</text>
+      <text x="1143" y="100" class="td card">24</text>
     
   
     
     
-      <text x="1207" y="100" class="td card">0</text>
+      <text x="1207" y="100" class="td card">30</text>
     
   
     
     
-      <text x="1271" y="100" class="td card">0</text>
+      <text x="1271" y="100" class="td card">24</text>
     
   
     
     
-      <text x="1335" y="100" class="td card">0</text>
+      <text x="1335" y="100" class="td card">83</text>
     
   
     
     
-      <text x="1425" y="100" class="td card">2026-09-23 15:59:28</text>
+      <text x="1425" y="100" class="td card">2026-09-24 14:47:38</text>
     
   
     
     
-      <text x="1587" y="100" class="td card">65</text>
+      <text x="1587" y="100" class="td card">5</text>
     
   
     
     
-      <text x="1685" y="100" class="td card">39</text>
+      <text x="1685" y="100" class="td card">5</text>
     
   
     
@@ -190,55 +190,58 @@
   
     
     
-      <text x="30" y="126" class="td card">LeakPro</text>
+      <text x="30" y="126" class="td card">clone-sweeper</text>
     
   
     
     
       
       
-        <text x="394" y="126" class="muted card">-</text>
+        <text x="394" y="124" class="td card">Clone Sweeper is an automated GitHub repository analytics</text>
+        
+          <text x="394" y="138" class="td card">tool that collects clone traffic data.</text>
+        
       
     
   
     
     
-      <text x="1002" y="126" class="td card">Python</text>
+      <text x="1002" y="126" class="td card">TypeScript</text>
     
   
     
     
-      <text x="1143" y="126" class="td card">24</text>
+      <text x="1143" y="126" class="td card">0</text>
     
   
     
     
-      <text x="1207" y="126" class="td card">30</text>
+      <text x="1207" y="126" class="td card">0</text>
     
   
     
     
-      <text x="1271" y="126" class="td card">24</text>
+      <text x="1271" y="126" class="td card">0</text>
     
   
     
     
-      <text x="1335" y="126" class="td card">83</text>
+      <text x="1335" y="126" class="td card">0</text>
     
   
     
     
-      <text x="1425" y="126" class="td card">2026-09-23 15:03:46</text>
+      <text x="1425" y="126" class="td card">2026-09-24 06:59:54</text>
     
   
     
     
-      <text x="1587" y="126" class="td card">5</text>
+      <text x="1587" y="126" class="td card">323</text>
     
   
     
     
-      <text x="1685" y="126" class="td card">5</text>
+      <text x="1685" y="126" class="td card">142</text>
     
   
     
@@ -257,23 +260,23 @@
   
     
     
-      <text x="30" y="152" class="td card">clone-sweeper</text>
+      <text x="30" y="152" class="td card">spam-detection-using-AI</text>
     
   
     
     
       
       
-        <text x="394" y="150" class="td card">Clone Sweeper is an automated GitHub repository analytics</text>
+        <text x="394" y="150" class="td card">End-to-end spam classification pipelines for SMS (UCI SMS</text>
         
-          <text x="394" y="164" class="td card">tool that collects clone traffic data.</text>
+          <text x="394" y="164" class="td card">Spam Collection). Includes text preprocessing, model traini…</text>
         
       
     
   
     
     
-      <text x="1002" y="152" class="td card">TypeScript</text>
+      <text x="1002" y="152" class="td card">Jupyter Notebook</text>
     
   
     
@@ -298,17 +301,17 @@
   
     
     
-      <text x="1425" y="152" class="td card">2026-09-24 06:59:21</text>
+      <text x="1425" y="152" class="td card">2026-09-23 16:04:47</text>
     
   
     
     
-      <text x="1587" y="152" class="td card">317</text>
+      <text x="1587" y="152" class="td card">19</text>
     
   
     
     
-      <text x="1685" y="152" class="td card">138</text>
+      <text x="1685" y="152" class="td card">12</text>
     
   
     
@@ -327,23 +330,20 @@
   
     
     
-      <text x="30" y="178" class="td card">cybersecurity</text>
+      <text x="30" y="178" class="td card">HelixCipher</text>
     
   
     
     
       
       
-        <text x="394" y="176" class="td card">A curated collection of cybersecurity projects covering</text>
-        
-          <text x="394" y="190" class="td card">operational security, defense evasion, steganography, netwo…</text>
-        
+        <text x="394" y="178" class="muted card">-</text>
       
     
   
     
     
-      <text x="1002" y="178" class="td card">Jupyter Notebook</text>
+      <text x="1002" y="178" class="td card"></text>
     
   
     
@@ -368,17 +368,17 @@
   
     
     
-      <text x="1425" y="178" class="td card">2026-09-21 06:02:43</text>
+      <text x="1425" y="178" class="td card">2026-09-23 15:59:28</text>
     
   
     
     
-      <text x="1587" y="178" class="td card">6</text>
+      <text x="1587" y="178" class="td card">78</text>
     
   
     
     
-      <text x="1685" y="178" class="td card">6</text>
+      <text x="1685" y="178" class="td card">45</text>
     
   
     
@@ -397,23 +397,23 @@
   
     
     
-      <text x="30" y="204" class="td card">image-to-code</text>
+      <text x="30" y="204" class="td card">cybersecurity</text>
     
   
     
     
       
       
-        <text x="394" y="202" class="td card">Learn how to convert an image into Base64 text and embed it</text>
+        <text x="394" y="202" class="td card">A curated collection of cybersecurity projects covering</text>
         
-          <text x="394" y="216" class="td card">directly into Markdown. No external hosting. No broken link…</text>
+          <text x="394" y="216" class="td card">operational security, defense evasion, steganography, netwo…</text>
         
       
     
   
     
     
-      <text x="1002" y="204" class="td card">Python</text>
+      <text x="1002" y="204" class="td card">Jupyter Notebook</text>
     
   
     
@@ -438,17 +438,17 @@
   
     
     
-      <text x="1425" y="204" class="td card">2026-09-20 12:18:11</text>
+      <text x="1425" y="204" class="td card">2026-09-21 06:02:43</text>
     
   
     
     
-      <text x="1587" y="204" class="td card">10</text>
+      <text x="1587" y="204" class="td card">6</text>
     
   
     
     
-      <text x="1685" y="204" class="td card">8</text>
+      <text x="1685" y="204" class="td card">6</text>
     
   
     
@@ -467,23 +467,23 @@
   
     
     
-      <text x="30" y="230" class="td card">machine-learning</text>
+      <text x="30" y="230" class="td card">image-to-code</text>
     
   
     
     
       
       
-        <text x="394" y="228" class="td card">A curated collection of machine learning projects covering</text>
+        <text x="394" y="228" class="td card">Learn how to convert an image into Base64 text and embed it</text>
         
-          <text x="394" y="242" class="td card">various domains including computer vision, predictive model…</text>
+          <text x="394" y="242" class="td card">directly into Markdown. No external hosting. No broken link…</text>
         
       
     
   
     
     
-      <text x="1002" y="230" class="td card"></text>
+      <text x="1002" y="230" class="td card">Python</text>
     
   
     
@@ -508,17 +508,17 @@
   
     
     
-      <text x="1425" y="230" class="td card">2026-09-14 09:55:43</text>
+      <text x="1425" y="230" class="td card">2026-09-20 12:18:11</text>
     
   
     
     
-      <text x="1587" y="230" class="td card">9</text>
+      <text x="1587" y="230" class="td card">10</text>
     
   
     
     
-      <text x="1685" y="230" class="td card">7</text>
+      <text x="1685" y="230" class="td card">8</text>
     
   
     
@@ -723,12 +723,12 @@
   
     
     
-      <text x="1587" y="308" class="td card">12</text>
+      <text x="1587" y="308" class="td card">14</text>
     
   
     
     
-      <text x="1685" y="308" class="td card">9</text>
+      <text x="1685" y="308" class="td card">11</text>
     
   
     
@@ -933,12 +933,12 @@
   
     
     
-      <text x="1587" y="386" class="td card">20</text>
+      <text x="1587" y="386" class="td card">21</text>
     
   
     
     
-      <text x="1685" y="386" class="td card">17</text>
+      <text x="1685" y="386" class="td card">18</text>
     
   
     
@@ -1073,12 +1073,12 @@
   
     
     
-      <text x="1587" y="438" class="td card">11</text>
+      <text x="1587" y="438" class="td card">12</text>
     
   
     
     
-      <text x="1685" y="438" class="td card">11</text>
+      <text x="1685" y="438" class="td card">12</text>
     
   
     
@@ -1143,12 +1143,12 @@
   
     
     
-      <text x="1587" y="464" class="td card">7</text>
+      <text x="1587" y="464" class="td card">8</text>
     
   
     
     
-      <text x="1685" y="464" class="td card">7</text>
+      <text x="1685" y="464" class="td card">8</text>
     
   
     
@@ -1213,12 +1213,12 @@
   
     
     
-      <text x="1587" y="490" class="td card">6</text>
+      <text x="1587" y="490" class="td card">7</text>
     
   
     
     
-      <text x="1685" y="490" class="td card">6</text>
+      <text x="1685" y="490" class="td card">7</text>
     
   
     
@@ -1560,12 +1560,12 @@
   
     
     
-      <text x="1587" y="620" class="td card">4</text>
+      <text x="1587" y="620" class="td card">3</text>
     
   
     
     
-      <text x="1685" y="620" class="td card">4</text>
+      <text x="1685" y="620" class="td card">3</text>
     
   
     
@@ -1700,12 +1700,12 @@
   
     
     
-      <text x="1587" y="672" class="td card">5</text>
+      <text x="1587" y="672" class="td card">6</text>
     
   
     
     
-      <text x="1685" y="672" class="td card">5</text>
+      <text x="1685" y="672" class="td card">6</text>
     
   
     
@@ -1840,12 +1840,12 @@
   
     
     
-      <text x="1587" y="724" class="td card">5</text>
+      <text x="1587" y="724" class="td card">4</text>
     
   
     
     
-      <text x="1685" y="724" class="td card">5</text>
+      <text x="1685" y="724" class="td card">4</text>
     
   
     
@@ -1980,12 +1980,12 @@
   
     
     
-      <text x="1587" y="776" class="td card">4</text>
+      <text x="1587" y="776" class="td card">5</text>
     
   
     
     
-      <text x="1685" y="776" class="td card">4</text>
+      <text x="1685" y="776" class="td card">5</text>
     
   
     
@@ -2120,12 +2120,12 @@
   
     
     
-      <text x="1587" y="828" class="td card">2</text>
+      <text x="1587" y="828" class="td card">1</text>
     
   
     
     
-      <text x="1685" y="828" class="td card">2</text>
+      <text x="1685" y="828" class="td card">1</text>
     
   
     
@@ -2260,12 +2260,12 @@
   
     
     
-      <text x="1587" y="880" class="td card">4</text>
+      <text x="1587" y="880" class="td card">3</text>
     
   
     
     
-      <text x="1685" y="880" class="td card">4</text>
+      <text x="1685" y="880" class="td card">3</text>
     
   
     
@@ -2680,12 +2680,12 @@
   
     
     
-      <text x="1587" y="1036" class="td card">5</text>
+      <text x="1587" y="1036" class="td card">6</text>
     
   
     
     
-      <text x="1685" y="1036" class="td card">5</text>
+      <text x="1685" y="1036" class="td card">6</text>
     
   
     
@@ -2750,12 +2750,12 @@
   
     
     
-      <text x="1587" y="1062" class="td card">11</text>
+      <text x="1587" y="1062" class="td card">12</text>
     
   
     
     
-      <text x="1685" y="1062" class="td card">10</text>
+      <text x="1685" y="1062" class="td card">11</text>
     
   
     
