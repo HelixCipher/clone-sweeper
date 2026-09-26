@@ -1,0 +1,47 @@
+{
+  "owner": "HelixCipher",
+  "totalRepos": 39,
+  "totalClones": 717,
+  "totalUniques": 469,
+  "totalCombined": 1186,
+  "downloads14d": 0,
+  "downloadsTotal": 0,
+  "repos": [
+    {
+      "name": "clone-sweeper",
+      "clones": 323,
+      "uniques": 142,
+      "combined": 465
+    },
+    {
+      "name": "HelixCipher",
+      "clones": 78,
+      "uniques": 45,
+      "combined": 123
+    },
+    {
+      "name": "mouse-jiggler",
+      "clones": 21,
+      "uniques": 18,
+      "combined": 39
+    },
+    {
+      "name": "dynamic-webscraper",
+      "clones": 21,
+      "uniques": 20,
+      "combined": 41
+    },
+    {
+      "name": "spam-detection-using-AI",
+      "clones": 19,
+      "uniques": 12,
+      "combined": 31
+    },
+    {
+      "name": "E-commerce-Conversion-Prediction",
+      "clones": 17,
+      "uniques": 14,
+      "combined": 31
+    }
+  ]
+}
