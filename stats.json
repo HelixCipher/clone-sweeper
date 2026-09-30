@@ -1,47 +1,47 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 39,
-  "totalClones": 717,
-  "totalUniques": 469,
-  "totalCombined": 1186,
+  "totalClones": 689,
+  "totalUniques": 437,
+  "totalCombined": 1126,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 323,
-      "uniques": 142,
-      "combined": 465
-    },
-    {
-      "name": "HelixCipher",
-      "clones": 78,
-      "uniques": 45,
-      "combined": 123
-    },
-    {
-      "name": "mouse-jiggler",
-      "clones": 21,
-      "uniques": 18,
-      "combined": 39
-    },
-    {
-      "name": "dynamic-webscraper",
-      "clones": 21,
-      "uniques": 20,
-      "combined": 41
+      "clones": 388,
+      "uniques": 161,
+      "combined": 549
     },
     {
       "name": "spam-detection-using-AI",
-      "clones": 19,
-      "uniques": 12,
-      "combined": 31
+      "clones": 27,
+      "uniques": 18,
+      "combined": 45
     },
     {
-      "name": "E-commerce-Conversion-Prediction",
-      "clones": 17,
+      "name": "HelixCipher",
+      "clones": 25,
+      "uniques": 17,
+      "combined": 42
+    },
+    {
+      "name": "dynamic-webscraper",
+      "clones": 15,
       "uniques": 14,
-      "combined": 31
+      "combined": 29
+    },
+    {
+      "name": "machine-learning",
+      "clones": 14,
+      "uniques": 12,
+      "combined": 26
+    },
+    {
+      "name": "image-to-code",
+      "clones": 14,
+      "uniques": 12,
+      "combined": 26
     }
   ]
 }
