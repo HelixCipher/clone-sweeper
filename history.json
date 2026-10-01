@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 388,
+      "latestValue": 392,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 161,
+      "latestValue": 166,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "spam-detection-using-AI",
       "metric": "clones",
-      "latestValue": 27,
+      "latestValue": 28,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "spam-detection-using-AI",
       "metric": "uniques",
-      "latestValue": 18,
+      "latestValue": 19,
       "color": "#60a5fa",
       "points": []
     },
@@ -64,37 +64,16 @@
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "machine-learning",
       "metric": "clones",
       "latestValue": 15,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 14,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 14,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 12,
+      "latestValue": 13,
       "color": "#60a5fa",
       "points": []
     },
@@ -121,6 +100,27 @@
     },
     {
       "repo": "image-to-code",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "clones",
+      "latestValue": 13,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 694,
+      "latestValue": 698,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 339,
+      "latestValue": 344,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "spam-detection-using-AI",
       "metric": "clones",
-      "latestValue": 27,
+      "latestValue": 28,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "spam-detection-using-AI",
       "metric": "uniques",
-      "latestValue": 18,
+      "latestValue": 19,
       "color": "#60a5fa",
       "points": []
     },
@@ -192,37 +192,16 @@
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "machine-learning",
       "metric": "clones",
       "latestValue": 15,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
-      "metric": "uniques",
-      "latestValue": 14,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "dynamic-webscraper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 14,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 12,
+      "latestValue": 13,
       "color": "#60a5fa",
       "points": []
     },
@@ -249,12 +228,33 @@
     },
     {
       "repo": "image-to-code",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "clones",
+      "latestValue": 17,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "uniques",
+      "latestValue": 15,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-09 \u2192 2026-09",
+  "monthRange": "2026-01 \u2192 2026-10",
   "yearRange": "2026 \u2192 2026"
 }
