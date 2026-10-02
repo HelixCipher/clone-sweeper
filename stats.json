@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 39,
-  "totalClones": 686,
-  "totalUniques": 436,
-  "totalCombined": 1122,
+  "totalClones": 695,
+  "totalUniques": 434,
+  "totalCombined": 1129,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 392,
-      "uniques": 166,
-      "combined": 558
+      "clones": 408,
+      "uniques": 171,
+      "combined": 579
     },
     {
       "name": "spam-detection-using-AI",
@@ -21,15 +21,9 @@
     },
     {
       "name": "HelixCipher",
-      "clones": 25,
-      "uniques": 17,
-      "combined": 42
-    },
-    {
-      "name": "machine-learning",
-      "clones": 15,
-      "uniques": 13,
-      "combined": 28
+      "clones": 27,
+      "uniques": 19,
+      "combined": 46
     },
     {
       "name": "image-to-code",
@@ -42,6 +36,12 @@
       "clones": 13,
       "uniques": 11,
       "combined": 24
+    },
+    {
+      "name": "machine-learning",
+      "clones": 12,
+      "uniques": 10,
+      "combined": 22
     }
   ]
 }
