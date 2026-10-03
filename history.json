@@ -24,14 +24,14 @@
     {
       "repo": "spam-detection-using-AI",
       "metric": "clones",
-      "latestValue": 28,
+      "latestValue": 29,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "spam-detection-using-AI",
       "metric": "uniques",
-      "latestValue": 19,
+      "latestValue": 20,
       "color": "#60a5fa",
       "points": []
     },
@@ -66,14 +66,14 @@
     {
       "repo": "image-to-code",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 16,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "image-to-code",
       "metric": "uniques",
-      "latestValue": 12,
+      "latestValue": 14,
       "color": "#60a5fa",
       "points": []
     },
@@ -85,9 +85,30 @@
       "points": []
     },
     {
+      "repo": "machine-learning",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 12,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
       "metric": "clones",
-      "latestValue": 13,
+      "latestValue": 12,
       "color": "#1f6feb",
       "points": []
     },
@@ -100,27 +121,6 @@
     },
     {
       "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 12,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "uniques",
-      "latestValue": 10,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -152,14 +152,14 @@
     {
       "repo": "spam-detection-using-AI",
       "metric": "clones",
-      "latestValue": 28,
+      "latestValue": 29,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "spam-detection-using-AI",
       "metric": "uniques",
-      "latestValue": 19,
+      "latestValue": 20,
       "color": "#60a5fa",
       "points": []
     },
@@ -194,14 +194,14 @@
     {
       "repo": "image-to-code",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 16,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "image-to-code",
       "metric": "uniques",
-      "latestValue": 12,
+      "latestValue": 14,
       "color": "#60a5fa",
       "points": []
     },
@@ -213,9 +213,30 @@
       "points": []
     },
     {
+      "repo": "machine-learning",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 12,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
       "metric": "clones",
-      "latestValue": 17,
+      "latestValue": 16,
       "color": "#1f6feb",
       "points": []
     },
@@ -232,29 +253,8 @@
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 12,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "uniques",
-      "latestValue": 10,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
     }
   ],
-  "monthRange": "2026-10 \u2192 2026-10",
+  "monthRange": "2026-01 \u2192 2026-10",
   "yearRange": "2026 \u2192 2026"
 }
