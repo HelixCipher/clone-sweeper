@@ -1,0 +1,47 @@
+{
+  "owner": "HelixCipher",
+  "totalRepos": 39,
+  "totalClones": 696,
+  "totalUniques": 436,
+  "totalCombined": 1132,
+  "downloads14d": 0,
+  "downloadsTotal": 0,
+  "repos": [
+    {
+      "name": "clone-sweeper",
+      "clones": 408,
+      "uniques": 171,
+      "combined": 579
+    },
+    {
+      "name": "spam-detection-using-AI",
+      "clones": 29,
+      "uniques": 20,
+      "combined": 49
+    },
+    {
+      "name": "HelixCipher",
+      "clones": 27,
+      "uniques": 19,
+      "combined": 46
+    },
+    {
+      "name": "image-to-code",
+      "clones": 16,
+      "uniques": 14,
+      "combined": 30
+    },
+    {
+      "name": "machine-learning",
+      "clones": 14,
+      "uniques": 12,
+      "combined": 26
+    },
+    {
+      "name": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "clones": 12,
+      "uniques": 11,
+      "combined": 23
+    }
+  ]
+}

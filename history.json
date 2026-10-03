@@ -1,0 +1,260 @@
+{
+  "monthly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 408,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 171,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "spam-detection-using-AI",
+      "metric": "clones",
+      "latestValue": 29,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "spam-detection-using-AI",
+      "metric": "uniques",
+      "latestValue": 20,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "spam-detection-using-AI",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 27,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 19,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 16,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 14,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 12,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "clones",
+      "latestValue": 12,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "yearly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 714,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 349,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "spam-detection-using-AI",
+      "metric": "clones",
+      "latestValue": 29,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "spam-detection-using-AI",
+      "metric": "uniques",
+      "latestValue": 20,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "spam-detection-using-AI",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 49,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 39,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "clones",
+      "latestValue": 16,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "uniques",
+      "latestValue": 14,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "image-to-code",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "clones",
+      "latestValue": 14,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 12,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "clones",
+      "latestValue": 16,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "uniques",
+      "latestValue": 15,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "CAN-T-SEE-THE-FOREST-FOR-ALL-THE-TREES",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "monthRange": "2026-01 \u2192 2026-10",
+  "yearRange": "2026 \u2192 2026"
+}
