@@ -1,23 +1,23 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 40,
-  "totalClones": 749,
-  "totalUniques": 481,
-  "totalCombined": 1230,
+  "totalClones": 780,
+  "totalUniques": 502,
+  "totalCombined": 1282,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 430,
-      "uniques": 187,
-      "combined": 617
+      "clones": 437,
+      "uniques": 193,
+      "combined": 630
     },
     {
       "name": "HelixCipher",
-      "clones": 35,
-      "uniques": 24,
-      "combined": 59
+      "clones": 50,
+      "uniques": 32,
+      "combined": 82
     },
     {
       "name": "spam-detection-using-AI",
@@ -26,22 +26,22 @@
       "combined": 55
     },
     {
-      "name": "image-to-code",
+      "name": "machine-learning",
       "clones": 16,
       "uniques": 14,
       "combined": 30
     },
     {
-      "name": "machine-learning",
-      "clones": 15,
-      "uniques": 13,
-      "combined": 28
+      "name": "image-to-code",
+      "clones": 11,
+      "uniques": 11,
+      "combined": 22
     },
     {
-      "name": "cybersecurity",
-      "clones": 12,
-      "uniques": 12,
-      "combined": 24
+      "name": "Convolutional-Neural-Networks-CNNs-from-scratch",
+      "clones": 11,
+      "uniques": 11,
+      "combined": 22
     }
   ]
 }
