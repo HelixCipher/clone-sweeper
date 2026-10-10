@@ -1,0 +1,47 @@
+{
+  "owner": "HelixCipher",
+  "totalRepos": 40,
+  "totalClones": 721,
+  "totalUniques": 442,
+  "totalCombined": 1163,
+  "downloads14d": 0,
+  "downloadsTotal": 0,
+  "repos": [
+    {
+      "name": "clone-sweeper",
+      "clones": 473,
+      "uniques": 212,
+      "combined": 685
+    },
+    {
+      "name": "HelixCipher",
+      "clones": 34,
+      "uniques": 25,
+      "combined": 59
+    },
+    {
+      "name": "machine-learning",
+      "clones": 18,
+      "uniques": 14,
+      "combined": 32
+    },
+    {
+      "name": "malware-classification",
+      "clones": 18,
+      "uniques": 14,
+      "combined": 32
+    },
+    {
+      "name": "cybersecurity",
+      "clones": 9,
+      "uniques": 9,
+      "combined": 18
+    },
+    {
+      "name": "Atlas",
+      "clones": 9,
+      "uniques": 9,
+      "combined": 18
+    }
+  ]
+}
