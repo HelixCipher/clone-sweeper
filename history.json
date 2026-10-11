@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 473,
+      "latestValue": 455,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 212,
+      "latestValue": 202,
       "color": "#60a5fa",
       "points": []
     },
@@ -85,42 +85,42 @@
       "points": []
     },
     {
-      "repo": "cybersecurity",
+      "repo": "Atlas",
       "metric": "clones",
       "latestValue": 9,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "cybersecurity",
+      "repo": "Atlas",
       "metric": "uniques",
       "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "cybersecurity",
+      "repo": "Atlas",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "image-to-code",
       "metric": "clones",
-      "latestValue": 9,
+      "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "image-to-code",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "image-to-code",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 779,
+      "latestValue": 761,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 390,
+      "latestValue": 380,
       "color": "#60a5fa",
       "points": []
     },
@@ -213,42 +213,42 @@
       "points": []
     },
     {
-      "repo": "cybersecurity",
+      "repo": "Atlas",
       "metric": "clones",
       "latestValue": 9,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "cybersecurity",
+      "repo": "Atlas",
       "metric": "uniques",
       "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "cybersecurity",
+      "repo": "Atlas",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "image-to-code",
       "metric": "clones",
-      "latestValue": 9,
+      "latestValue": 8,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "image-to-code",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 8,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "image-to-code",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
