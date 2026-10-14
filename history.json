@@ -64,27 +64,6 @@
       "points": []
     },
     {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 16,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "uniques",
-      "latestValue": 12,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "api-forge",
       "metric": "clones",
       "latestValue": 15,
@@ -106,16 +85,37 @@
       "points": []
     },
     {
+      "repo": "machine-learning",
+      "metric": "clones",
+      "latestValue": 15,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "playwright-pixelscan",
       "metric": "clones",
-      "latestValue": 13,
+      "latestValue": 14,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "playwright-pixelscan",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
@@ -192,27 +192,6 @@
       "points": []
     },
     {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 16,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "uniques",
-      "latestValue": 12,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "api-forge",
       "metric": "clones",
       "latestValue": 37,
@@ -234,16 +213,37 @@
       "points": []
     },
     {
+      "repo": "machine-learning",
+      "metric": "clones",
+      "latestValue": 15,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "playwright-pixelscan",
       "metric": "clones",
-      "latestValue": 21,
+      "latestValue": 22,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "playwright-pixelscan",
       "metric": "uniques",
-      "latestValue": 17,
+      "latestValue": 18,
       "color": "#60a5fa",
       "points": []
     },

@@ -22,7 +22,7 @@
 
 <rect x="0" y="0" width="820" height="612" rx="12" fill="transparent"/>
 <text x="18" y="34" class="title card">GitHub repos — HelixCipher</text>
-<text x="18" y="54" class="meta card">Repos: 40 · Clones: 704 · Uniques: 427 · Combined: 1131 · Downloads (14d): 0 · Downloads (total): 0 · Public repos only</text>
+<text x="18" y="54" class="meta card">Repos: 40 · Clones: 716 · Uniques: 439 · Combined: 1155 · Downloads (14d): 0 · Downloads (total): 0 · Public repos only</text>
 
 <!-- LEGEND: colored squares + labels -->
 <g id="legend">
@@ -97,26 +97,26 @@
 
   
   <!-- repository label -->
-  <text x="18" y="348" class="label card">machine-learning</text>
+  <text x="18" y="348" class="label card">api-forge</text>
 
   <!-- CLONES bar (top) -->
   <rect x="205" y="362" width="515" height="18" class="bar-bg"/>
-  <rect x="205" y="362" width="18" height="18" class="bar-clone"/>
-  <text x="732" y="374" class="count card">16</text>
+  <rect x="205" y="362" width="17" height="18" class="bar-clone"/>
+  <text x="732" y="374" class="count card">15</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="205" y="388" width="515" height="18" class="bar-bg"/>
-  <rect x="205" y="388" width="13" height="18" class="bar-uniq"/>
-  <text x="732" y="400" class="count-small card">12</text>
+  <rect x="205" y="388" width="12" height="18" class="bar-uniq"/>
+  <text x="732" y="400" class="count-small card">11</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="205" y="414" width="515" height="18" class="bar-bg"/>
-  <rect x="205" y="414" width="22" height="18" class="bar-comb"/>
-  <text x="732" y="426" class="count card">28</text>
+  <rect x="205" y="414" width="20" height="18" class="bar-comb"/>
+  <text x="732" y="426" class="count card">26</text>
 
   
   <!-- repository label -->
-  <text x="18" y="430" class="label card">api-forge</text>
+  <text x="18" y="430" class="label card">machine-learning</text>
 
   <!-- CLONES bar (top) -->
   <rect x="205" y="444" width="515" height="18" class="bar-bg"/>
@@ -139,18 +139,18 @@
 
   <!-- CLONES bar (top) -->
   <rect x="205" y="526" width="515" height="18" class="bar-bg"/>
-  <rect x="205" y="526" width="14" height="18" class="bar-clone"/>
-  <text x="732" y="538" class="count card">13</text>
+  <rect x="205" y="526" width="16" height="18" class="bar-clone"/>
+  <text x="732" y="538" class="count card">14</text>
 
   <!-- UNIQUES bar (middle) -->
   <rect x="205" y="552" width="515" height="18" class="bar-bg"/>
-  <rect x="205" y="552" width="10" height="18" class="bar-uniq"/>
-  <text x="732" y="564" class="count-small card">9</text>
+  <rect x="205" y="552" width="11" height="18" class="bar-uniq"/>
+  <text x="732" y="564" class="count-small card">10</text>
 
   <!-- COMBINED bar (bottom) -->
   <rect x="205" y="578" width="515" height="18" class="bar-bg"/>
-  <rect x="205" y="578" width="17" height="18" class="bar-comb"/>
-  <text x="732" y="590" class="count card">22</text>
+  <rect x="205" y="578" width="19" height="18" class="bar-comb"/>
+  <text x="732" y="590" class="count card">24</text>
 
 
 </svg>
