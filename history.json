@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 447,
+      "latestValue": 429,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 198,
+      "latestValue": 191,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 39,
+      "latestValue": 48,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 27,
+      "latestValue": 33,
       "color": "#60a5fa",
       "points": []
     },
@@ -43,42 +43,42 @@
       "points": []
     },
     {
-      "repo": "malware-classification",
+      "repo": "api-forge",
       "metric": "clones",
+      "latestValue": 26,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "api-forge",
+      "metric": "uniques",
       "latestValue": 18,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "malware-classification",
-      "metric": "uniques",
-      "latestValue": 14,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "malware-classification",
+      "repo": "api-forge",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "api-forge",
+      "repo": "malware-classification",
       "metric": "clones",
-      "latestValue": 15,
+      "latestValue": 19,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "api-forge",
+      "repo": "malware-classification",
       "metric": "uniques",
-      "latestValue": 11,
+      "latestValue": 15,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "api-forge",
+      "repo": "malware-classification",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 753,
+      "latestValue": 735,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 376,
+      "latestValue": 369,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 61,
+      "latestValue": 70,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 47,
+      "latestValue": 53,
       "color": "#60a5fa",
       "points": []
     },
@@ -171,42 +171,42 @@
       "points": []
     },
     {
-      "repo": "malware-classification",
+      "repo": "api-forge",
       "metric": "clones",
-      "latestValue": 18,
+      "latestValue": 48,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "malware-classification",
+      "repo": "api-forge",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 38,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "malware-classification",
+      "repo": "api-forge",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "api-forge",
+      "repo": "malware-classification",
       "metric": "clones",
-      "latestValue": 37,
+      "latestValue": 19,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "api-forge",
+      "repo": "malware-classification",
       "metric": "uniques",
-      "latestValue": 31,
+      "latestValue": 15,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "api-forge",
+      "repo": "malware-classification",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
