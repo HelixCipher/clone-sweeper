@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 40,
-  "totalClones": 727,
-  "totalUniques": 454,
-  "totalCombined": 1181,
+  "totalClones": 768,
+  "totalUniques": 479,
+  "totalCombined": 1247,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 429,
-      "uniques": 191,
-      "combined": 620
+      "clones": 459,
+      "uniques": 205,
+      "combined": 664
     },
     {
       "name": "HelixCipher",
@@ -27,9 +27,9 @@
     },
     {
       "name": "malware-classification",
-      "clones": 19,
-      "uniques": 15,
-      "combined": 34
+      "clones": 20,
+      "uniques": 16,
+      "combined": 36
     },
     {
       "name": "machine-learning",
