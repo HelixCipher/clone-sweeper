@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 459,
+      "latestValue": 446,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 205,
+      "latestValue": 197,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 48,
+      "latestValue": 78,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 33,
+      "latestValue": 41,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,14 +45,14 @@
     {
       "repo": "api-forge",
       "metric": "clones",
-      "latestValue": 26,
+      "latestValue": 27,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "api-forge",
       "metric": "uniques",
-      "latestValue": 18,
+      "latestValue": 19,
       "color": "#60a5fa",
       "points": []
     },
@@ -79,27 +79,6 @@
     },
     {
       "repo": "malware-classification",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 15,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "uniques",
-      "latestValue": 11,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -125,20 +104,41 @@
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "clones",
+      "latestValue": 13,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
     }
   ],
   "yearly": [
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 765,
+      "latestValue": 752,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 383,
+      "latestValue": 375,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 70,
+      "latestValue": 100,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 53,
+      "latestValue": 61,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,14 +173,14 @@
     {
       "repo": "api-forge",
       "metric": "clones",
-      "latestValue": 48,
+      "latestValue": 49,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "api-forge",
       "metric": "uniques",
-      "latestValue": 38,
+      "latestValue": 39,
       "color": "#60a5fa",
       "points": []
     },
@@ -213,27 +213,6 @@
       "points": []
     },
     {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 15,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "uniques",
-      "latestValue": 11,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "playwright-pixelscan",
       "metric": "clones",
       "latestValue": 22,
@@ -253,8 +232,29 @@
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "clones",
+      "latestValue": 13,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 9,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
     }
   ],
-  "monthRange": "2026-01 \u2192 2026-10",
+  "monthRange": "2026-10 \u2192 2026-10",
   "yearRange": "2026 \u2192 2026"
 }
