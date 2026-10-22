@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 466,
+      "latestValue": 447,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 198,
+      "latestValue": 189,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 65,
+      "latestValue": 64,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 29,
+      "latestValue": 28,
       "color": "#60a5fa",
       "points": []
     },
@@ -66,35 +66,35 @@
     {
       "repo": "playwright-pixelscan",
       "metric": "clones",
-      "latestValue": 17,
+      "latestValue": 15,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "playwright-pixelscan",
       "metric": "uniques",
+      "latestValue": 12,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "playwright-pixelscan",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "clones",
       "latestValue": 13,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "playwright-pixelscan",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 14,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
@@ -106,21 +106,21 @@
       "points": []
     },
     {
-      "repo": "malware-classification",
+      "repo": "dynamic-webscraper",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 12,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "malware-classification",
+      "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 12,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "malware-classification",
+      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 772,
+      "latestValue": 753,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 376,
+      "latestValue": 367,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 87,
+      "latestValue": 86,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 49,
+      "latestValue": 48,
       "color": "#60a5fa",
       "points": []
     },
@@ -194,14 +194,14 @@
     {
       "repo": "playwright-pixelscan",
       "metric": "clones",
-      "latestValue": 25,
+      "latestValue": 23,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "playwright-pixelscan",
       "metric": "uniques",
-      "latestValue": 21,
+      "latestValue": 20,
       "color": "#60a5fa",
       "points": []
     },
@@ -215,14 +215,14 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 13,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
@@ -234,21 +234,21 @@
       "points": []
     },
     {
-      "repo": "malware-classification",
+      "repo": "dynamic-webscraper",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 12,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "malware-classification",
+      "repo": "dynamic-webscraper",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 12,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "malware-classification",
+      "repo": "dynamic-webscraper",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
