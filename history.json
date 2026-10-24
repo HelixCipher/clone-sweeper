@@ -85,42 +85,42 @@
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "pages",
       "metric": "clones",
-      "latestValue": 12,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "pages",
       "metric": "uniques",
-      "latestValue": 12,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "pages",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "digit-recognition",
       "metric": "clones",
-      "latestValue": 11,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "digit-recognition",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "digit-recognition",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -213,42 +213,42 @@
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "pages",
       "metric": "clones",
-      "latestValue": 12,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "pages",
       "metric": "uniques",
-      "latestValue": 12,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "dynamic-webscraper",
+      "repo": "pages",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "digit-recognition",
       "metric": "clones",
-      "latestValue": 11,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "digit-recognition",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "machine-learning",
+      "repo": "digit-recognition",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
