@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 405,
+      "latestValue": 397,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 174,
+      "latestValue": 170,
       "color": "#60a5fa",
       "points": []
     },
@@ -87,14 +87,14 @@
     {
       "repo": "pages",
       "metric": "clones",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "pages",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
@@ -108,14 +108,14 @@
     {
       "repo": "ai-job-finder",
       "metric": "clones",
-      "latestValue": 9,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "ai-job-finder",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 711,
+      "latestValue": 703,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 352,
+      "latestValue": 348,
       "color": "#60a5fa",
       "points": []
     },
@@ -215,14 +215,14 @@
     {
       "repo": "pages",
       "metric": "clones",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "pages",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
@@ -236,14 +236,14 @@
     {
       "repo": "ai-job-finder",
       "metric": "clones",
-      "latestValue": 9,
+      "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "ai-job-finder",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 7,
       "color": "#60a5fa",
       "points": []
     },
