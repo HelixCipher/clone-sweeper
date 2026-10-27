@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 397,
+      "latestValue": 387,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 170,
+      "latestValue": 165,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 63,
+      "latestValue": 58,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 27,
+      "latestValue": 23,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,14 +45,14 @@
     {
       "repo": "api-forge",
       "metric": "clones",
-      "latestValue": 29,
+      "latestValue": 18,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "api-forge",
       "metric": "uniques",
-      "latestValue": 21,
+      "latestValue": 14,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 703,
+      "latestValue": 693,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 348,
+      "latestValue": 343,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 85,
+      "latestValue": 80,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 47,
+      "latestValue": 43,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,14 +173,14 @@
     {
       "repo": "api-forge",
       "metric": "clones",
-      "latestValue": 51,
+      "latestValue": 40,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "api-forge",
       "metric": "uniques",
-      "latestValue": 41,
+      "latestValue": 34,
       "color": "#60a5fa",
       "points": []
     },
