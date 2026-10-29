@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 409,
+      "latestValue": 378,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 162,
+      "latestValue": 150,
       "color": "#60a5fa",
       "points": []
     },
@@ -43,48 +43,6 @@
       "points": []
     },
     {
-      "repo": "api-forge",
-      "metric": "clones",
-      "latestValue": 18,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "api-forge",
-      "metric": "uniques",
-      "latestValue": 14,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "api-forge",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "clones",
-      "latestValue": 11,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "uniques",
-      "latestValue": 11,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "playwright-pixelscan",
       "metric": "clones",
       "latestValue": 10,
@@ -106,6 +64,27 @@
       "points": []
     },
     {
+      "repo": "pages",
+      "metric": "clones",
+      "latestValue": 10,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "uniques",
+      "latestValue": 10,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "malware-classification",
       "metric": "clones",
       "latestValue": 8,
@@ -125,20 +104,41 @@
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
+    },
+    {
+      "repo": "spam-detection-using-AI",
+      "metric": "clones",
+      "latestValue": 8,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "spam-detection-using-AI",
+      "metric": "uniques",
+      "latestValue": 8,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "spam-detection-using-AI",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
     }
   ],
   "yearly": [
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 715,
+      "latestValue": 684,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 340,
+      "latestValue": 328,
       "color": "#60a5fa",
       "points": []
     },
@@ -171,48 +171,6 @@
       "points": []
     },
     {
-      "repo": "api-forge",
-      "metric": "clones",
-      "latestValue": 40,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "api-forge",
-      "metric": "uniques",
-      "latestValue": 34,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "api-forge",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "clones",
-      "latestValue": 11,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "uniques",
-      "latestValue": 11,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "pages",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
       "repo": "playwright-pixelscan",
       "metric": "clones",
       "latestValue": 18,
@@ -234,6 +192,27 @@
       "points": []
     },
     {
+      "repo": "pages",
+      "metric": "clones",
+      "latestValue": 10,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "uniques",
+      "latestValue": 10,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "malware-classification",
       "metric": "clones",
       "latestValue": 8,
@@ -249,6 +228,27 @@
     },
     {
       "repo": "malware-classification",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "spam-detection-using-AI",
+      "metric": "clones",
+      "latestValue": 8,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "spam-detection-using-AI",
+      "metric": "uniques",
+      "latestValue": 8,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "spam-detection-using-AI",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",

@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 37,
-  "totalClones": 687,
-  "totalUniques": 395,
-  "totalCombined": 1082,
+  "totalClones": 639,
+  "totalUniques": 369,
+  "totalCombined": 1008,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 409,
-      "uniques": 162,
-      "combined": 571
+      "clones": 378,
+      "uniques": 150,
+      "combined": 528
     },
     {
       "name": "HelixCipher",
@@ -20,25 +20,25 @@
       "combined": 88
     },
     {
-      "name": "api-forge",
-      "clones": 18,
-      "uniques": 14,
-      "combined": 32
-    },
-    {
-      "name": "pages",
-      "clones": 11,
-      "uniques": 11,
-      "combined": 22
-    },
-    {
       "name": "playwright-pixelscan",
       "clones": 10,
       "uniques": 8,
       "combined": 18
     },
     {
+      "name": "pages",
+      "clones": 10,
+      "uniques": 10,
+      "combined": 20
+    },
+    {
       "name": "malware-classification",
+      "clones": 8,
+      "uniques": 8,
+      "combined": 16
+    },
+    {
+      "name": "spam-detection-using-AI",
       "clones": 8,
       "uniques": 8,
       "combined": 16
