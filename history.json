@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 378,
+      "latestValue": 370,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 150,
+      "latestValue": 148,
       "color": "#60a5fa",
       "points": []
     },
@@ -43,6 +43,27 @@
       "points": []
     },
     {
+      "repo": "pages",
+      "metric": "clones",
+      "latestValue": 11,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "playwright-pixelscan",
       "metric": "clones",
       "latestValue": 10,
@@ -64,21 +85,21 @@
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "spam-detection-using-AI",
       "metric": "clones",
       "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "spam-detection-using-AI",
       "metric": "uniques",
       "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "spam-detection-using-AI",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -87,40 +108,19 @@
     {
       "repo": "malware-classification",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 9,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "malware-classification",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "malware-classification",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "spam-detection-using-AI",
-      "metric": "clones",
-      "latestValue": 8,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "spam-detection-using-AI",
-      "metric": "uniques",
-      "latestValue": 8,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "spam-detection-using-AI",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 684,
+      "latestValue": 676,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 328,
+      "latestValue": 326,
       "color": "#60a5fa",
       "points": []
     },
@@ -171,6 +171,27 @@
       "points": []
     },
     {
+      "repo": "pages",
+      "metric": "clones",
+      "latestValue": 11,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
       "repo": "playwright-pixelscan",
       "metric": "clones",
       "latestValue": 18,
@@ -192,21 +213,21 @@
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "spam-detection-using-AI",
       "metric": "clones",
       "latestValue": 10,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "spam-detection-using-AI",
       "metric": "uniques",
       "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "pages",
+      "repo": "spam-detection-using-AI",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -215,40 +236,19 @@
     {
       "repo": "malware-classification",
       "metric": "clones",
-      "latestValue": 8,
+      "latestValue": 9,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "malware-classification",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "malware-classification",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "spam-detection-using-AI",
-      "metric": "clones",
-      "latestValue": 8,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "spam-detection-using-AI",
-      "metric": "uniques",
-      "latestValue": 8,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "spam-detection-using-AI",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
