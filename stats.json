@@ -1,0 +1,47 @@
+{
+  "owner": "HelixCipher",
+  "totalRepos": 37,
+  "totalClones": 635,
+  "totalUniques": 385,
+  "totalCombined": 1020,
+  "downloads14d": 0,
+  "downloadsTotal": 0,
+  "repos": [
+    {
+      "name": "clone-sweeper",
+      "clones": 385,
+      "uniques": 151,
+      "combined": 536
+    },
+    {
+      "name": "HelixCipher",
+      "clones": 28,
+      "uniques": 19,
+      "combined": 47
+    },
+    {
+      "name": "playwright-pixelscan",
+      "clones": 12,
+      "uniques": 10,
+      "combined": 22
+    },
+    {
+      "name": "image-to-code",
+      "clones": 11,
+      "uniques": 10,
+      "combined": 21
+    },
+    {
+      "name": "pages",
+      "clones": 11,
+      "uniques": 11,
+      "combined": 22
+    },
+    {
+      "name": "spam-detection-using-AI",
+      "clones": 10,
+      "uniques": 10,
+      "combined": 20
+    }
+  ]
+}
