@@ -1,17 +1,17 @@
 {
   "owner": "HelixCipher",
-  "totalRepos": 37,
-  "totalClones": 684,
-  "totalUniques": 398,
-  "totalCombined": 1082,
+  "totalRepos": 36,
+  "totalClones": 690,
+  "totalUniques": 393,
+  "totalCombined": 1083,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 389,
-      "uniques": 148,
-      "combined": 537
+      "clones": 398,
+      "uniques": 152,
+      "combined": 550
     },
     {
       "name": "HelixCipher",
@@ -20,10 +20,10 @@
       "combined": 80
     },
     {
-      "name": "malware-detection",
-      "clones": 24,
-      "uniques": 22,
-      "combined": 46
+      "name": "digiti-signum",
+      "clones": 22,
+      "uniques": 14,
+      "combined": 36
     },
     {
       "name": "machine-learning",
@@ -32,16 +32,16 @@
       "combined": 26
     },
     {
+      "name": "malware-detection",
+      "clones": 13,
+      "uniques": 11,
+      "combined": 24
+    },
+    {
       "name": "image-to-code",
       "clones": 12,
       "uniques": 10,
       "combined": 22
-    },
-    {
-      "name": "playwright-pixelscan",
-      "clones": 11,
-      "uniques": 8,
-      "combined": 19
     }
   ]
 }
