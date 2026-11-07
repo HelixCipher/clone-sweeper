@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 398,
+      "latestValue": 389,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 142,
+      "latestValue": 141,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 67,
+      "latestValue": 87,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 34,
+      "latestValue": 41,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,14 +45,14 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 32,
+      "latestValue": 33,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 17,
+      "latestValue": 18,
       "color": "#60a5fa",
       "points": []
     },
@@ -66,14 +66,14 @@
     {
       "repo": "digiti-signum",
       "metric": "clones",
-      "latestValue": 30,
+      "latestValue": 29,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "digiti-signum",
       "metric": "uniques",
-      "latestValue": 21,
+      "latestValue": 20,
       "color": "#60a5fa",
       "points": []
     },
@@ -87,14 +87,14 @@
     {
       "repo": "malware-detection",
       "metric": "clones",
-      "latestValue": 14,
+      "latestValue": 15,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "malware-detection",
       "metric": "uniques",
-      "latestValue": 12,
+      "latestValue": 13,
       "color": "#60a5fa",
       "points": []
     },
@@ -108,14 +108,14 @@
     {
       "repo": "playwright-pixelscan",
       "metric": "clones",
-      "latestValue": 11,
+      "latestValue": 13,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "playwright-pixelscan",
       "metric": "uniques",
-      "latestValue": 8,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 704,
+      "latestValue": 695,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 320,
+      "latestValue": 319,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 89,
+      "latestValue": 109,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 54,
+      "latestValue": 61,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,14 +173,14 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 32,
+      "latestValue": 33,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 17,
+      "latestValue": 18,
       "color": "#60a5fa",
       "points": []
     },
@@ -194,56 +194,56 @@
     {
       "repo": "digiti-signum",
       "metric": "clones",
-      "latestValue": 30,
+      "latestValue": 29,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "digiti-signum",
       "metric": "uniques",
+      "latestValue": 20,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "digiti-signum",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "malware-detection",
+      "metric": "clones",
+      "latestValue": 15,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "malware-detection",
+      "metric": "uniques",
+      "latestValue": 13,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "malware-detection",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "playwright-pixelscan",
+      "metric": "clones",
       "latestValue": 21,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "digiti-signum",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "malware-detection",
-      "metric": "clones",
-      "latestValue": 14,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "malware-detection",
-      "metric": "uniques",
-      "latestValue": 12,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "malware-detection",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "playwright-pixelscan",
-      "metric": "clones",
-      "latestValue": 19,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "playwright-pixelscan",
       "metric": "uniques",
-      "latestValue": 16,
+      "latestValue": 18,
       "color": "#60a5fa",
       "points": []
     },
