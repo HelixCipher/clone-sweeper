@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 420,
+      "latestValue": 415,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 155,
+      "latestValue": 149,
       "color": "#60a5fa",
       "points": []
     },
@@ -108,14 +108,14 @@
     {
       "repo": "playwright-pixelscan",
       "metric": "clones",
-      "latestValue": 12,
+      "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "playwright-pixelscan",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 9,
       "color": "#60a5fa",
       "points": []
     },
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 726,
+      "latestValue": 721,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 333,
+      "latestValue": 327,
       "color": "#60a5fa",
       "points": []
     },
@@ -236,14 +236,14 @@
     {
       "repo": "playwright-pixelscan",
       "metric": "clones",
-      "latestValue": 20,
+      "latestValue": 19,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "playwright-pixelscan",
       "metric": "uniques",
-      "latestValue": 18,
+      "latestValue": 17,
       "color": "#60a5fa",
       "points": []
     },
