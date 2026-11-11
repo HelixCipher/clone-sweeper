@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 415,
+      "latestValue": 412,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 149,
+      "latestValue": 143,
       "color": "#60a5fa",
       "points": []
     },
@@ -24,14 +24,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 109,
+      "latestValue": 96,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 51,
+      "latestValue": 47,
       "color": "#60a5fa",
       "points": []
     },
@@ -66,14 +66,14 @@
     {
       "repo": "digiti-signum",
       "metric": "clones",
-      "latestValue": 30,
+      "latestValue": 31,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "digiti-signum",
       "metric": "uniques",
-      "latestValue": 21,
+      "latestValue": 22,
       "color": "#60a5fa",
       "points": []
     },
@@ -106,21 +106,21 @@
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "Atlas",
       "metric": "clones",
       "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "Atlas",
       "metric": "uniques",
-      "latestValue": 9,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "Atlas",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 721,
+      "latestValue": 718,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 327,
+      "latestValue": 321,
       "color": "#60a5fa",
       "points": []
     },
@@ -152,14 +152,14 @@
     {
       "repo": "HelixCipher",
       "metric": "clones",
-      "latestValue": 131,
+      "latestValue": 118,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "HelixCipher",
       "metric": "uniques",
-      "latestValue": 71,
+      "latestValue": 67,
       "color": "#60a5fa",
       "points": []
     },
@@ -194,14 +194,14 @@
     {
       "repo": "digiti-signum",
       "metric": "clones",
-      "latestValue": 30,
+      "latestValue": 31,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "digiti-signum",
       "metric": "uniques",
-      "latestValue": 21,
+      "latestValue": 22,
       "color": "#60a5fa",
       "points": []
     },
@@ -234,27 +234,27 @@
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "Atlas",
       "metric": "clones",
-      "latestValue": 19,
+      "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "Atlas",
       "metric": "uniques",
-      "latestValue": 17,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "playwright-pixelscan",
+      "repo": "Atlas",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-01 \u2192 2026-11",
+  "monthRange": "2026-11 \u2192 2026-11",
   "yearRange": "2026 \u2192 2026"
 }
