@@ -3,14 +3,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 409,
+      "latestValue": 365,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 143,
+      "latestValue": 130,
       "color": "#60a5fa",
       "points": []
     },
@@ -45,14 +45,14 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 33,
+      "latestValue": 35,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 18,
+      "latestValue": 20,
       "color": "#60a5fa",
       "points": []
     },
@@ -87,14 +87,14 @@
     {
       "repo": "malware-detection",
       "metric": "clones",
-      "latestValue": 16,
+      "latestValue": 18,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "malware-detection",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 16,
       "color": "#60a5fa",
       "points": []
     },
@@ -106,21 +106,21 @@
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "Ikigai",
       "metric": "clones",
-      "latestValue": 11,
+      "latestValue": 12,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "Ikigai",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 11,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "Ikigai",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -131,14 +131,14 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 715,
+      "latestValue": 671,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 321,
+      "latestValue": 308,
       "color": "#60a5fa",
       "points": []
     },
@@ -173,14 +173,14 @@
     {
       "repo": "machine-learning",
       "metric": "clones",
-      "latestValue": 33,
+      "latestValue": 35,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "machine-learning",
       "metric": "uniques",
-      "latestValue": 18,
+      "latestValue": 20,
       "color": "#60a5fa",
       "points": []
     },
@@ -215,14 +215,14 @@
     {
       "repo": "malware-detection",
       "metric": "clones",
-      "latestValue": 16,
+      "latestValue": 18,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "malware-detection",
       "metric": "uniques",
-      "latestValue": 14,
+      "latestValue": 16,
       "color": "#60a5fa",
       "points": []
     },
@@ -234,27 +234,27 @@
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "Ikigai",
       "metric": "clones",
-      "latestValue": 11,
+      "latestValue": 62,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "Ikigai",
       "metric": "uniques",
-      "latestValue": 10,
+      "latestValue": 54,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Atlas",
+      "repo": "Ikigai",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-11 \u2192 2026-11",
+  "monthRange": "2026-01 \u2192 2026-11",
   "yearRange": "2026 \u2192 2026"
 }
