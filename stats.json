@@ -1,0 +1,47 @@
+{
+  "owner": "HelixCipher",
+  "totalRepos": 34,
+  "totalClones": 713,
+  "totalUniques": 386,
+  "totalCombined": 1099,
+  "downloads14d": 0,
+  "downloadsTotal": 0,
+  "repos": [
+    {
+      "name": "clone-sweeper",
+      "clones": 365,
+      "uniques": 130,
+      "combined": 495
+    },
+    {
+      "name": "HelixCipher",
+      "clones": 92,
+      "uniques": 47,
+      "combined": 139
+    },
+    {
+      "name": "machine-learning",
+      "clones": 35,
+      "uniques": 20,
+      "combined": 55
+    },
+    {
+      "name": "digiti-signum",
+      "clones": 32,
+      "uniques": 23,
+      "combined": 55
+    },
+    {
+      "name": "malware-detection",
+      "clones": 18,
+      "uniques": 16,
+      "combined": 34
+    },
+    {
+      "name": "Ikigai",
+      "clones": 12,
+      "uniques": 11,
+      "combined": 23
+    }
+  ]
+}
