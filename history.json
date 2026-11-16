@@ -106,21 +106,21 @@
       "points": []
     },
     {
-      "repo": "Ikigai",
+      "repo": "Atlas",
       "metric": "clones",
-      "latestValue": 12,
+      "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Ikigai",
+      "repo": "Atlas",
       "metric": "uniques",
-      "latestValue": 11,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Ikigai",
+      "repo": "Atlas",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -234,27 +234,27 @@
       "points": []
     },
     {
-      "repo": "Ikigai",
+      "repo": "Atlas",
       "metric": "clones",
-      "latestValue": 62,
+      "latestValue": 11,
       "color": "#1f6feb",
       "points": []
     },
     {
-      "repo": "Ikigai",
+      "repo": "Atlas",
       "metric": "uniques",
-      "latestValue": 54,
+      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "Ikigai",
+      "repo": "Atlas",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
       "points": []
     }
   ],
-  "monthRange": "2026-01 \u2192 2026-11",
+  "monthRange": "2026-11 \u2192 2026-11",
   "yearRange": "2026 \u2192 2026"
 }
