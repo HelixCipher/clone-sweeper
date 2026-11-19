@@ -1,35 +1,23 @@
 {
   "owner": "HelixCipher",
   "totalRepos": 28,
-  "totalClones": 633,
-  "totalUniques": 344,
-  "totalCombined": 977,
+  "totalClones": 613,
+  "totalUniques": 336,
+  "totalCombined": 949,
   "downloads14d": 0,
   "downloadsTotal": 0,
   "repos": [
     {
       "name": "clone-sweeper",
-      "clones": 333,
-      "uniques": 125,
-      "combined": 458
+      "clones": 339,
+      "uniques": 132,
+      "combined": 471
     },
     {
       "name": "HelixCipher",
-      "clones": 113,
-      "uniques": 57,
-      "combined": 170
-    },
-    {
-      "name": "digiti-signum",
-      "clones": 18,
-      "uniques": 16,
-      "combined": 34
-    },
-    {
-      "name": "Atlas",
-      "clones": 13,
-      "uniques": 12,
-      "combined": 25
+      "clones": 98,
+      "uniques": 51,
+      "combined": 149
     },
     {
       "name": "cybersecurity",
@@ -38,10 +26,22 @@
       "combined": 22
     },
     {
-      "name": "machine-learning",
+      "name": "Atlas",
       "clones": 12,
+      "uniques": 11,
+      "combined": 23
+    },
+    {
+      "name": "machine-learning",
+      "clones": 11,
+      "uniques": 9,
+      "combined": 20
+    },
+    {
+      "name": "digit-classifier-api",
+      "clones": 11,
       "uniques": 10,
-      "combined": 22
+      "combined": 21
     }
   ]
 }
