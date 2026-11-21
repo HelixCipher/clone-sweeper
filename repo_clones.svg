@@ -18,7 +18,7 @@
   }
 </style>
 <text x="18" y="32" class="title card">GitHub repositories — HelixCipher</text>
-<text x="18" y="50" class="meta card">Generated: 2026-11-20T09:29:37.075038Z · Mode: Public repos only · Repos: 28 · Clones: 589 · Downloads: 0</text>
+<text x="18" y="50" class="meta card">Generated: 2026-11-21T08:59:57.712929Z · Mode: Public repos only · Repos: 28 · Clones: 606 · Downloads: 0</text>
 <rect x="18" y="30" width="2001" height="812" rx="8" class="row-even"/>
 <rect x="18" y="30" width="2001" height="812" class="table-border"/>
 
@@ -91,17 +91,17 @@
   
     
     
-      <text x="1425" y="74" class="td card">2026-11-20 03:49:02</text>
+      <text x="1425" y="74" class="td card">2026-11-21 00:26:19</text>
     
   
     
     
-      <text x="1587" y="74" class="td card">6</text>
+      <text x="1587" y="74" class="td card">5</text>
     
   
     
     
-      <text x="1685" y="74" class="td card">6</text>
+      <text x="1685" y="74" class="td card">5</text>
     
   
     
@@ -120,23 +120,23 @@
   
     
     
-      <text x="30" y="100" class="td card">clone-sweeper</text>
+      <text x="30" y="100" class="td card">machine-learning</text>
     
   
     
     
       
       
-        <text x="394" y="98" class="td card">Clone Sweeper is an automated GitHub repository analytics</text>
+        <text x="394" y="98" class="td card">A curated collection of machine learning projects covering</text>
         
-          <text x="394" y="112" class="td card">tool that collects clone traffic data.</text>
+          <text x="394" y="112" class="td card">various domains including computer vision, predictive model…</text>
         
       
     
   
     
     
-      <text x="1002" y="100" class="td card">TypeScript</text>
+      <text x="1002" y="100" class="td card"></text>
     
   
     
@@ -161,17 +161,17 @@
   
     
     
-      <text x="1425" y="100" class="td card">2026-11-20 09:28:57</text>
+      <text x="1425" y="100" class="td card">2026-11-20 17:18:49</text>
     
   
     
     
-      <text x="1587" y="100" class="td card">339</text>
+      <text x="1587" y="100" class="td card">37</text>
     
   
     
     
-      <text x="1685" y="100" class="td card">132</text>
+      <text x="1685" y="100" class="td card">23</text>
     
   
     
@@ -190,20 +190,23 @@
   
     
     
-      <text x="30" y="126" class="td card">HelixCipher</text>
+      <text x="30" y="126" class="td card">E-commerce-Conversion-Prediction</text>
     
   
     
     
       
       
-        <text x="394" y="126" class="muted card">-</text>
+        <text x="394" y="124" class="td card">A guided walkthrough of the development of an AI model that</text>
+        
+          <text x="394" y="138" class="td card">aims to predict whether a visitor session on an e-commerce …</text>
+        
       
     
   
     
     
-      <text x="1002" y="126" class="td card"></text>
+      <text x="1002" y="126" class="td card">Jupyter Notebook</text>
     
   
     
@@ -228,17 +231,17 @@
   
     
     
-      <text x="1425" y="126" class="td card">2026-11-16 07:17:51</text>
+      <text x="1425" y="126" class="td card">2026-11-20 17:14:29</text>
     
   
     
     
-      <text x="1587" y="126" class="td card">78</text>
+      <text x="1587" y="126" class="td card">0</text>
     
   
     
     
-      <text x="1685" y="126" class="td card">44</text>
+      <text x="1685" y="126" class="td card">0</text>
     
   
     
@@ -257,23 +260,23 @@
   
     
     
-      <text x="30" y="152" class="td card">cybersecurity</text>
+      <text x="30" y="152" class="td card">clone-sweeper</text>
     
   
     
     
       
       
-        <text x="394" y="150" class="td card">A curated collection of cybersecurity projects covering</text>
+        <text x="394" y="150" class="td card">Clone Sweeper is an automated GitHub repository analytics</text>
         
-          <text x="394" y="164" class="td card">operational security, defense evasion, steganography, netwo…</text>
+          <text x="394" y="164" class="td card">tool that collects clone traffic data.</text>
         
       
     
   
     
     
-      <text x="1002" y="152" class="td card">Jupyter Notebook</text>
+      <text x="1002" y="152" class="td card">TypeScript</text>
     
   
     
@@ -298,17 +301,17 @@
   
     
     
-      <text x="1425" y="152" class="td card">2026-11-16 02:35:30</text>
+      <text x="1425" y="152" class="td card">2026-11-20 09:29:39</text>
     
   
     
     
-      <text x="1587" y="152" class="td card">12</text>
+      <text x="1587" y="152" class="td card">336</text>
     
   
     
     
-      <text x="1685" y="152" class="td card">10</text>
+      <text x="1685" y="152" class="td card">131</text>
     
   
     
@@ -327,23 +330,20 @@
   
     
     
-      <text x="30" y="178" class="td card">malware-detection</text>
+      <text x="30" y="178" class="td card">HelixCipher</text>
     
   
     
     
       
       
-        <text x="394" y="176" class="td card">Unsupervised malware detection: anomaly scoring trained on</text>
-        
-          <text x="394" y="190" class="td card">benign software only (autoencoder + frozen DINOv2/Mahalanob…</text>
-        
+        <text x="394" y="178" class="muted card">-</text>
       
     
   
     
     
-      <text x="1002" y="178" class="td card">Jupyter Notebook</text>
+      <text x="1002" y="178" class="td card"></text>
     
   
     
@@ -368,17 +368,17 @@
   
     
     
-      <text x="1425" y="178" class="td card">2026-11-03 11:12:38</text>
+      <text x="1425" y="178" class="td card">2026-11-16 07:17:51</text>
     
   
     
     
-      <text x="1587" y="178" class="td card">4</text>
+      <text x="1587" y="178" class="td card">78</text>
     
   
     
     
-      <text x="1685" y="178" class="td card">4</text>
+      <text x="1685" y="178" class="td card">44</text>
     
   
     
@@ -397,23 +397,23 @@
   
     
     
-      <text x="30" y="204" class="td card">machine-learning</text>
+      <text x="30" y="204" class="td card">cybersecurity</text>
     
   
     
     
       
       
-        <text x="394" y="202" class="td card">A curated collection of machine learning projects covering</text>
+        <text x="394" y="202" class="td card">A curated collection of cybersecurity projects covering</text>
         
-          <text x="394" y="216" class="td card">various domains including computer vision, predictive model…</text>
+          <text x="394" y="216" class="td card">operational security, defense evasion, steganography, netwo…</text>
         
       
     
   
     
     
-      <text x="1002" y="204" class="td card"></text>
+      <text x="1002" y="204" class="td card">Jupyter Notebook</text>
     
   
     
@@ -438,17 +438,17 @@
   
     
     
-      <text x="1425" y="204" class="td card">2026-11-03 00:35:01</text>
+      <text x="1425" y="204" class="td card">2026-11-16 02:35:30</text>
     
   
     
     
-      <text x="1587" y="204" class="td card">11</text>
+      <text x="1587" y="204" class="td card">12</text>
     
   
     
     
-      <text x="1685" y="204" class="td card">9</text>
+      <text x="1685" y="204" class="td card">10</text>
     
   
     
@@ -467,16 +467,16 @@
   
     
     
-      <text x="30" y="230" class="td card">digiti-signum</text>
+      <text x="30" y="230" class="td card">malware-detection</text>
     
   
     
     
       
       
-        <text x="394" y="228" class="td card">An scientific research project that explores classical and</text>
+        <text x="394" y="228" class="td card">Unsupervised malware detection: anomaly scoring trained on</text>
         
-          <text x="394" y="242" class="td card">forensic fingerprint matching techniques using the SOCOFing…</text>
+          <text x="394" y="242" class="td card">benign software only (autoencoder + frozen DINOv2/Mahalanob…</text>
         
       
     
@@ -508,17 +508,17 @@
   
     
     
-      <text x="1425" y="230" class="td card">2026-11-02 03:51:51</text>
+      <text x="1425" y="230" class="td card">2026-11-03 11:12:38</text>
     
   
     
     
-      <text x="1587" y="230" class="td card">10</text>
+      <text x="1587" y="230" class="td card">5</text>
     
   
     
     
-      <text x="1685" y="230" class="td card">9</text>
+      <text x="1685" y="230" class="td card">5</text>
     
   
     
@@ -537,20 +537,23 @@
   
     
     
-      <text x="30" y="256" class="td card">LeakPro</text>
+      <text x="30" y="256" class="td card">digiti-signum</text>
     
   
     
     
       
       
-        <text x="394" y="256" class="muted card">-</text>
+        <text x="394" y="254" class="td card">An scientific research project that explores classical and</text>
+        
+          <text x="394" y="268" class="td card">forensic fingerprint matching techniques using the SOCOFing…</text>
+        
       
     
   
     
     
-      <text x="1002" y="256" class="td card">Python</text>
+      <text x="1002" y="256" class="td card">Jupyter Notebook</text>
     
   
     
@@ -575,17 +578,17 @@
   
     
     
-      <text x="1425" y="256" class="td card">2026-10-23 15:26:05</text>
+      <text x="1425" y="256" class="td card">2026-11-02 03:51:51</text>
     
   
     
     
-      <text x="1587" y="256" class="td card">6</text>
+      <text x="1587" y="256" class="td card">10</text>
     
   
     
     
-      <text x="1685" y="256" class="td card">6</text>
+      <text x="1685" y="256" class="td card">9</text>
     
   
     
@@ -604,17 +607,14 @@
   
     
     
-      <text x="30" y="282" class="td card">playwright-pixelscan</text>
+      <text x="30" y="282" class="td card">LeakPro</text>
     
   
     
     
       
       
-        <text x="394" y="280" class="td card">playwright-pixelscan is a Python-based project that</text>
-        
-          <text x="394" y="294" class="td card">demonstrates how to use Playwright to simulate mobile brows…</text>
-        
+        <text x="394" y="282" class="muted card">-</text>
       
     
   
@@ -625,7 +625,7 @@
   
     
     
-      <text x="1143" y="282" class="td card">1</text>
+      <text x="1143" y="282" class="td card">0</text>
     
   
     
@@ -635,7 +635,7 @@
   
     
     
-      <text x="1271" y="282" class="td card">1</text>
+      <text x="1271" y="282" class="td card">0</text>
     
   
     
@@ -645,17 +645,17 @@
   
     
     
-      <text x="1425" y="282" class="td card">2026-10-12 13:08:13</text>
+      <text x="1425" y="282" class="td card">2026-10-23 15:26:05</text>
     
   
     
     
-      <text x="1587" y="282" class="td card">7</text>
+      <text x="1587" y="282" class="td card">5</text>
     
   
     
     
-      <text x="1685" y="282" class="td card">6</text>
+      <text x="1685" y="282" class="td card">5</text>
     
   
     
@@ -674,28 +674,28 @@
   
     
     
-      <text x="30" y="308" class="td card">malware-classification</text>
+      <text x="30" y="308" class="td card">playwright-pixelscan</text>
     
   
     
     
       
       
-        <text x="394" y="306" class="td card">An educational implementation of image-based malware family</text>
+        <text x="394" y="306" class="td card">playwright-pixelscan is a Python-based project that</text>
         
-          <text x="394" y="320" class="td card">classification, encompassing a convolutional neural network…</text>
+          <text x="394" y="320" class="td card">demonstrates how to use Playwright to simulate mobile brows…</text>
         
       
     
   
     
     
-      <text x="1002" y="308" class="td card">Jupyter Notebook</text>
+      <text x="1002" y="308" class="td card">Python</text>
     
   
     
     
-      <text x="1143" y="308" class="td card">0</text>
+      <text x="1143" y="308" class="td card">1</text>
     
   
     
@@ -705,7 +705,7 @@
   
     
     
-      <text x="1271" y="308" class="td card">0</text>
+      <text x="1271" y="308" class="td card">1</text>
     
   
     
@@ -715,17 +715,17 @@
   
     
     
-      <text x="1425" y="308" class="td card">2026-10-05 20:40:23</text>
+      <text x="1425" y="308" class="td card">2026-10-12 13:08:13</text>
     
   
     
     
-      <text x="1587" y="308" class="td card">10</text>
+      <text x="1587" y="308" class="td card">5</text>
     
   
     
     
-      <text x="1685" y="308" class="td card">9</text>
+      <text x="1685" y="308" class="td card">4</text>
     
   
     
@@ -744,16 +744,16 @@
   
     
     
-      <text x="30" y="334" class="td card">spam-detection-using-AI</text>
+      <text x="30" y="334" class="td card">malware-classification</text>
     
   
     
     
       
       
-        <text x="394" y="332" class="td card">End-to-end spam classification pipelines for SMS (UCI SMS</text>
+        <text x="394" y="332" class="td card">An educational implementation of image-based malware family</text>
         
-          <text x="394" y="346" class="td card">Spam Collection). Includes text preprocessing, model traini…</text>
+          <text x="394" y="346" class="td card">classification, encompassing a convolutional neural network…</text>
         
       
     
@@ -785,17 +785,17 @@
   
     
     
-      <text x="1425" y="334" class="td card">2026-09-23 16:04:47</text>
+      <text x="1425" y="334" class="td card">2026-10-05 20:40:23</text>
     
   
     
     
-      <text x="1587" y="334" class="td card">9</text>
+      <text x="1587" y="334" class="td card">10</text>
     
   
     
     
-      <text x="1685" y="334" class="td card">8</text>
+      <text x="1685" y="334" class="td card">9</text>
     
   
     
@@ -814,16 +814,16 @@
   
     
     
-      <text x="30" y="360" class="td card">E-commerce-Conversion-Prediction</text>
+      <text x="30" y="360" class="td card">spam-detection-using-AI</text>
     
   
     
     
       
       
-        <text x="394" y="358" class="td card">Aims to develop an AI model that predicts whether a visitor</text>
+        <text x="394" y="358" class="td card">End-to-end spam classification pipelines for SMS (UCI SMS</text>
         
-          <text x="394" y="372" class="td card">session on an e-commerce website will result in a purchase.…</text>
+          <text x="394" y="372" class="td card">Spam Collection). Includes text preprocessing, model traini…</text>
         
       
     
@@ -855,17 +855,17 @@
   
     
     
-      <text x="1425" y="360" class="td card">2026-09-14 09:49:40</text>
+      <text x="1425" y="360" class="td card">2026-09-23 16:04:47</text>
     
   
     
     
-      <text x="1587" y="360" class="td card">6</text>
+      <text x="1587" y="360" class="td card">9</text>
     
   
     
     
-      <text x="1685" y="360" class="td card">4</text>
+      <text x="1685" y="360" class="td card">8</text>
     
   
     
@@ -1140,12 +1140,12 @@
   
     
     
-      <text x="1587" y="464" class="td card">6</text>
+      <text x="1587" y="464" class="td card">10</text>
     
   
     
     
-      <text x="1685" y="464" class="td card">5</text>
+      <text x="1685" y="464" class="td card">10</text>
     
   
     
@@ -1490,12 +1490,12 @@
   
     
     
-      <text x="1587" y="594" class="td card">6</text>
+      <text x="1587" y="594" class="td card">8</text>
     
   
     
     
-      <text x="1685" y="594" class="td card">5</text>
+      <text x="1685" y="594" class="td card">7</text>
     
   
     
@@ -1630,12 +1630,12 @@
   
     
     
-      <text x="1587" y="646" class="td card">8</text>
+      <text x="1587" y="646" class="td card">6</text>
     
   
     
     
-      <text x="1685" y="646" class="td card">7</text>
+      <text x="1685" y="646" class="td card">5</text>
     
   
     
@@ -1770,12 +1770,12 @@
   
     
     
-      <text x="1587" y="698" class="td card">7</text>
+      <text x="1587" y="698" class="td card">6</text>
     
   
     
     
-      <text x="1685" y="698" class="td card">6</text>
+      <text x="1685" y="698" class="td card">5</text>
     
   
     
