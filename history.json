@@ -3,19 +3,168 @@
     {
       "repo": "clone-sweeper",
       "metric": "clones",
-      "latestValue": 336,
+      "latestValue": 303,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "clone-sweeper",
       "metric": "uniques",
-      "latestValue": 131,
+      "latestValue": 124,
       "color": "#60a5fa",
       "points": []
     },
     {
       "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "clones",
+      "latestValue": 69,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 38,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "clones",
+      "latestValue": 56,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "uniques",
+      "latestValue": 34,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "clones",
+      "latestValue": 29,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "uniques",
+      "latestValue": 23,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "cybersecurity",
+      "metric": "clones",
+      "latestValue": 13,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "cybersecurity",
+      "metric": "uniques",
+      "latestValue": 11,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "cybersecurity",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "clones",
+      "latestValue": 13,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "uniques",
+      "latestValue": 12,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    }
+  ],
+  "yearly": [
+    {
+      "repo": "clone-sweeper",
+      "metric": "clones",
+      "latestValue": 609,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "uniques",
+      "latestValue": 302,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "clone-sweeper",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "clones",
+      "latestValue": 69,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
+      "metric": "uniques",
+      "latestValue": 38,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "machine-learning",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -31,33 +180,33 @@
     {
       "repo": "HelixCipher",
       "metric": "uniques",
+      "latestValue": 54,
+      "color": "#60a5fa",
+      "points": []
+    },
+    {
+      "repo": "HelixCipher",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "clones",
+      "latestValue": 52,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "E-commerce-Conversion-Prediction",
+      "metric": "uniques",
       "latestValue": 44,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "HelixCipher",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 37,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "uniques",
-      "latestValue": 23,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
+      "repo": "E-commerce-Conversion-Prediction",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
@@ -66,189 +215,40 @@
     {
       "repo": "cybersecurity",
       "metric": "clones",
-      "latestValue": 12,
+      "latestValue": 13,
       "color": "#1f6feb",
       "points": []
     },
     {
       "repo": "cybersecurity",
       "metric": "uniques",
-      "latestValue": 10,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "cybersecurity",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "Atlas",
-      "metric": "clones",
       "latestValue": 11,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "Atlas",
-      "metric": "uniques",
-      "latestValue": 10,
       "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "Atlas",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "digiti-signum",
-      "metric": "clones",
-      "latestValue": 10,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "digiti-signum",
-      "metric": "uniques",
-      "latestValue": 9,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "digiti-signum",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    }
-  ],
-  "yearly": [
-    {
-      "repo": "clone-sweeper",
-      "metric": "clones",
-      "latestValue": 642,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "clone-sweeper",
-      "metric": "uniques",
-      "latestValue": 309,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "clone-sweeper",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "clones",
-      "latestValue": 100,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "uniques",
-      "latestValue": 64,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "HelixCipher",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "clones",
-      "latestValue": 37,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "uniques",
-      "latestValue": 23,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "machine-learning",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
       "points": []
     },
     {
       "repo": "cybersecurity",
+      "metric": "downloads",
+      "latestValue": 0,
+      "color": "#f59e0b",
+      "points": []
+    },
+    {
+      "repo": "pages",
       "metric": "clones",
+      "latestValue": 13,
+      "color": "#1f6feb",
+      "points": []
+    },
+    {
+      "repo": "pages",
+      "metric": "uniques",
       "latestValue": 12,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "cybersecurity",
-      "metric": "uniques",
-      "latestValue": 10,
       "color": "#60a5fa",
       "points": []
     },
     {
-      "repo": "cybersecurity",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "Atlas",
-      "metric": "clones",
-      "latestValue": 11,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "Atlas",
-      "metric": "uniques",
-      "latestValue": 10,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "Atlas",
-      "metric": "downloads",
-      "latestValue": 0,
-      "color": "#f59e0b",
-      "points": []
-    },
-    {
-      "repo": "digiti-signum",
-      "metric": "clones",
-      "latestValue": 10,
-      "color": "#1f6feb",
-      "points": []
-    },
-    {
-      "repo": "digiti-signum",
-      "metric": "uniques",
-      "latestValue": 9,
-      "color": "#60a5fa",
-      "points": []
-    },
-    {
-      "repo": "digiti-signum",
+      "repo": "pages",
       "metric": "downloads",
       "latestValue": 0,
       "color": "#f59e0b",
